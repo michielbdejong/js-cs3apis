@@ -1,2 +1,5 @@
-# js-cs3apis
-Javascript CS3APIS
+# CS3APIS for Javascript
+
+API definitions can be found at https://github.com/cs3org/cs3apis
+
+
