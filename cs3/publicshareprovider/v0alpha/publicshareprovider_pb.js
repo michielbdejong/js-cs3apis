@@ -386,7 +386,7 @@ proto.cs3.publicshareproviderv0alpha.CreatePublicShareRequest.prototype.toObject
 proto.cs3.publicshareproviderv0alpha.CreatePublicShareRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     opaque: (f = msg.getOpaque()) && cs3_types_types_pb.Opaque.toObject(includeInstance, f),
-    resourceId: (f = msg.getResourceId()) && cs3_storageprovider_v0alpha_resources_pb.ResourceId.toObject(includeInstance, f),
+    resourceInfo: (f = msg.getResourceInfo()) && cs3_storageprovider_v0alpha_resources_pb.ResourceInfo.toObject(includeInstance, f),
     grant: (f = msg.getGrant()) && proto.cs3.publicshareproviderv0alpha.Grant.toObject(includeInstance, f)
   };
 
@@ -430,9 +430,9 @@ proto.cs3.publicshareproviderv0alpha.CreatePublicShareRequest.deserializeBinaryF
       msg.setOpaque(value);
       break;
     case 2:
-      var value = new cs3_storageprovider_v0alpha_resources_pb.ResourceId;
-      reader.readMessage(value,cs3_storageprovider_v0alpha_resources_pb.ResourceId.deserializeBinaryFromReader);
-      msg.setResourceId(value);
+      var value = new cs3_storageprovider_v0alpha_resources_pb.ResourceInfo;
+      reader.readMessage(value,cs3_storageprovider_v0alpha_resources_pb.ResourceInfo.deserializeBinaryFromReader);
+      msg.setResourceInfo(value);
       break;
     case 3:
       var value = new proto.cs3.publicshareproviderv0alpha.Grant;
@@ -476,12 +476,12 @@ proto.cs3.publicshareproviderv0alpha.CreatePublicShareRequest.serializeBinaryToW
       cs3_types_types_pb.Opaque.serializeBinaryToWriter
     );
   }
-  f = message.getResourceId();
+  f = message.getResourceInfo();
   if (f != null) {
     writer.writeMessage(
       2,
       f,
-      cs3_storageprovider_v0alpha_resources_pb.ResourceId.serializeBinaryToWriter
+      cs3_storageprovider_v0alpha_resources_pb.ResourceInfo.serializeBinaryToWriter
     );
   }
   f = message.getGrant();
@@ -529,17 +529,17 @@ proto.cs3.publicshareproviderv0alpha.CreatePublicShareRequest.prototype.hasOpaqu
 
 
 /**
- * optional cs3.storageproviderv0alpha.ResourceId resource_id = 2;
- * @return {?proto.cs3.storageproviderv0alpha.ResourceId}
+ * optional cs3.storageproviderv0alpha.ResourceInfo resource_info = 2;
+ * @return {?proto.cs3.storageproviderv0alpha.ResourceInfo}
  */
-proto.cs3.publicshareproviderv0alpha.CreatePublicShareRequest.prototype.getResourceId = function() {
-  return /** @type{?proto.cs3.storageproviderv0alpha.ResourceId} */ (
-    jspb.Message.getWrapperField(this, cs3_storageprovider_v0alpha_resources_pb.ResourceId, 2));
+proto.cs3.publicshareproviderv0alpha.CreatePublicShareRequest.prototype.getResourceInfo = function() {
+  return /** @type{?proto.cs3.storageproviderv0alpha.ResourceInfo} */ (
+    jspb.Message.getWrapperField(this, cs3_storageprovider_v0alpha_resources_pb.ResourceInfo, 2));
 };
 
 
-/** @param {?proto.cs3.storageproviderv0alpha.ResourceId|undefined} value */
-proto.cs3.publicshareproviderv0alpha.CreatePublicShareRequest.prototype.setResourceId = function(value) {
+/** @param {?proto.cs3.storageproviderv0alpha.ResourceInfo|undefined} value */
+proto.cs3.publicshareproviderv0alpha.CreatePublicShareRequest.prototype.setResourceInfo = function(value) {
   jspb.Message.setWrapperField(this, 2, value);
 };
 
@@ -547,8 +547,8 @@ proto.cs3.publicshareproviderv0alpha.CreatePublicShareRequest.prototype.setResou
 /**
  * Clears the message field making it undefined.
  */
-proto.cs3.publicshareproviderv0alpha.CreatePublicShareRequest.prototype.clearResourceId = function() {
-  this.setResourceId(undefined);
+proto.cs3.publicshareproviderv0alpha.CreatePublicShareRequest.prototype.clearResourceInfo = function() {
+  this.setResourceInfo(undefined);
 };
 
 
@@ -556,7 +556,7 @@ proto.cs3.publicshareproviderv0alpha.CreatePublicShareRequest.prototype.clearRes
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.cs3.publicshareproviderv0alpha.CreatePublicShareRequest.prototype.hasResourceId = function() {
+proto.cs3.publicshareproviderv0alpha.CreatePublicShareRequest.prototype.hasResourceInfo = function() {
   return jspb.Message.getField(this, 2) != null;
 };
 
