@@ -470,15 +470,15 @@ proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.getPath =
 /**
  * @const
  * @type {!grpc.web.MethodDescriptor<
- *   !proto.cs3.storageproviderv0alpha.GetQuotaRequest,
+ *   !proto.cs3.gatewayv0alpha.GetQuotaRequest,
  *   !proto.cs3.storageproviderv0alpha.GetQuotaResponse>}
  */
 const methodDescriptor_GatewayService_GetQuota = new grpc.web.MethodDescriptor(
   '/cs3.gatewayv0alpha.GatewayService/GetQuota',
   grpc.web.MethodType.UNARY,
-  cs3_storageprovider_v0alpha_storageprovider_pb.GetQuotaRequest,
+  proto.cs3.gatewayv0alpha.GetQuotaRequest,
   cs3_storageprovider_v0alpha_storageprovider_pb.GetQuotaResponse,
-  /** @param {!proto.cs3.storageproviderv0alpha.GetQuotaRequest} request */
+  /** @param {!proto.cs3.gatewayv0alpha.GetQuotaRequest} request */
   function(request) {
     return request.serializeBinary();
   },
@@ -489,12 +489,12 @@ const methodDescriptor_GatewayService_GetQuota = new grpc.web.MethodDescriptor(
 /**
  * @const
  * @type {!grpc.web.AbstractClientBase.MethodInfo<
- *   !proto.cs3.storageproviderv0alpha.GetQuotaRequest,
+ *   !proto.cs3.gatewayv0alpha.GetQuotaRequest,
  *   !proto.cs3.storageproviderv0alpha.GetQuotaResponse>}
  */
 const methodInfo_GatewayService_GetQuota = new grpc.web.AbstractClientBase.MethodInfo(
   cs3_storageprovider_v0alpha_storageprovider_pb.GetQuotaResponse,
-  /** @param {!proto.cs3.storageproviderv0alpha.GetQuotaRequest} request */
+  /** @param {!proto.cs3.gatewayv0alpha.GetQuotaRequest} request */
   function(request) {
     return request.serializeBinary();
   },
@@ -503,7 +503,7 @@ const methodInfo_GatewayService_GetQuota = new grpc.web.AbstractClientBase.Metho
 
 
 /**
- * @param {!proto.cs3.storageproviderv0alpha.GetQuotaRequest} request The
+ * @param {!proto.cs3.gatewayv0alpha.GetQuotaRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
@@ -524,7 +524,7 @@ proto.cs3.gatewayv0alpha.GatewayServiceClient.prototype.getQuota =
 
 
 /**
- * @param {!proto.cs3.storageproviderv0alpha.GetQuotaRequest} request The
+ * @param {!proto.cs3.gatewayv0alpha.GetQuotaRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
