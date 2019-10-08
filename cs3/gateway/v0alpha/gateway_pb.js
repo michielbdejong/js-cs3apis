@@ -12,8 +12,16 @@ var jspb = require('google-protobuf');
 var goog = jspb;
 var global = Function('return this')();
 
+var cs3_appregistry_v0alpha_appregistry_pb = require('../../../cs3/appregistry/v0alpha/appregistry_pb.js');
+goog.object.extend(proto, cs3_appregistry_v0alpha_appregistry_pb);
 var cs3_auth_v0alpha_auth_pb = require('../../../cs3/auth/v0alpha/auth_pb.js');
 goog.object.extend(proto, cs3_auth_v0alpha_auth_pb);
+var cs3_ocmshareprovider_v0alpha_ocmshareprovider_pb = require('../../../cs3/ocmshareprovider/v0alpha/ocmshareprovider_pb.js');
+goog.object.extend(proto, cs3_ocmshareprovider_v0alpha_ocmshareprovider_pb);
+var cs3_preferences_v0alpha_preferences_pb = require('../../../cs3/preferences/v0alpha/preferences_pb.js');
+goog.object.extend(proto, cs3_preferences_v0alpha_preferences_pb);
+var cs3_publicshareprovider_v0alpha_publicshareprovider_pb = require('../../../cs3/publicshareprovider/v0alpha/publicshareprovider_pb.js');
+goog.object.extend(proto, cs3_publicshareprovider_v0alpha_publicshareprovider_pb);
 var cs3_storageprovider_v0alpha_resources_pb = require('../../../cs3/storageprovider/v0alpha/resources_pb.js');
 goog.object.extend(proto, cs3_storageprovider_v0alpha_resources_pb);
 var cs3_storageprovider_v0alpha_storageprovider_pb = require('../../../cs3/storageprovider/v0alpha/storageprovider_pb.js');
