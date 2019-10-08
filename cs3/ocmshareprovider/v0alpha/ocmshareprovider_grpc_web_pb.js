@@ -394,74 +394,74 @@ proto.cs3.ocmshareproviderv0alpha.OCMShareProviderServicePromiseClient.prototype
 /**
  * @const
  * @type {!grpc.web.MethodDescriptor<
- *   !proto.cs3.ocmshareproviderv0alpha.UpdateOCMSharesRequest,
- *   !proto.cs3.ocmshareproviderv0alpha.UpdateOCMSharesResponse>}
+ *   !proto.cs3.ocmshareproviderv0alpha.UpdateOCMShareRequest,
+ *   !proto.cs3.ocmshareproviderv0alpha.UpdateOCMShareResponse>}
  */
-const methodDescriptor_OCMShareProviderService_UpdateOCMShares = new grpc.web.MethodDescriptor(
-  '/cs3.ocmshareproviderv0alpha.OCMShareProviderService/UpdateOCMShares',
+const methodDescriptor_OCMShareProviderService_UpdateOCMShare = new grpc.web.MethodDescriptor(
+  '/cs3.ocmshareproviderv0alpha.OCMShareProviderService/UpdateOCMShare',
   grpc.web.MethodType.UNARY,
-  proto.cs3.ocmshareproviderv0alpha.UpdateOCMSharesRequest,
-  proto.cs3.ocmshareproviderv0alpha.UpdateOCMSharesResponse,
-  /** @param {!proto.cs3.ocmshareproviderv0alpha.UpdateOCMSharesRequest} request */
+  proto.cs3.ocmshareproviderv0alpha.UpdateOCMShareRequest,
+  proto.cs3.ocmshareproviderv0alpha.UpdateOCMShareResponse,
+  /** @param {!proto.cs3.ocmshareproviderv0alpha.UpdateOCMShareRequest} request */
   function(request) {
     return request.serializeBinary();
   },
-  proto.cs3.ocmshareproviderv0alpha.UpdateOCMSharesResponse.deserializeBinary
+  proto.cs3.ocmshareproviderv0alpha.UpdateOCMShareResponse.deserializeBinary
 );
 
 
 /**
  * @const
  * @type {!grpc.web.AbstractClientBase.MethodInfo<
- *   !proto.cs3.ocmshareproviderv0alpha.UpdateOCMSharesRequest,
- *   !proto.cs3.ocmshareproviderv0alpha.UpdateOCMSharesResponse>}
+ *   !proto.cs3.ocmshareproviderv0alpha.UpdateOCMShareRequest,
+ *   !proto.cs3.ocmshareproviderv0alpha.UpdateOCMShareResponse>}
  */
-const methodInfo_OCMShareProviderService_UpdateOCMShares = new grpc.web.AbstractClientBase.MethodInfo(
-  proto.cs3.ocmshareproviderv0alpha.UpdateOCMSharesResponse,
-  /** @param {!proto.cs3.ocmshareproviderv0alpha.UpdateOCMSharesRequest} request */
+const methodInfo_OCMShareProviderService_UpdateOCMShare = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.cs3.ocmshareproviderv0alpha.UpdateOCMShareResponse,
+  /** @param {!proto.cs3.ocmshareproviderv0alpha.UpdateOCMShareRequest} request */
   function(request) {
     return request.serializeBinary();
   },
-  proto.cs3.ocmshareproviderv0alpha.UpdateOCMSharesResponse.deserializeBinary
+  proto.cs3.ocmshareproviderv0alpha.UpdateOCMShareResponse.deserializeBinary
 );
 
 
 /**
- * @param {!proto.cs3.ocmshareproviderv0alpha.UpdateOCMSharesRequest} request The
+ * @param {!proto.cs3.ocmshareproviderv0alpha.UpdateOCMShareRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @param {function(?grpc.web.Error, ?proto.cs3.ocmshareproviderv0alpha.UpdateOCMSharesResponse)}
+ * @param {function(?grpc.web.Error, ?proto.cs3.ocmshareproviderv0alpha.UpdateOCMShareResponse)}
  *     callback The callback function(error, response)
- * @return {!grpc.web.ClientReadableStream<!proto.cs3.ocmshareproviderv0alpha.UpdateOCMSharesResponse>|undefined}
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.ocmshareproviderv0alpha.UpdateOCMShareResponse>|undefined}
  *     The XHR Node Readable Stream
  */
-proto.cs3.ocmshareproviderv0alpha.OCMShareProviderServiceClient.prototype.updateOCMShares =
+proto.cs3.ocmshareproviderv0alpha.OCMShareProviderServiceClient.prototype.updateOCMShare =
     function(request, metadata, callback) {
   return this.client_.rpcCall(this.hostname_ +
-      '/cs3.ocmshareproviderv0alpha.OCMShareProviderService/UpdateOCMShares',
+      '/cs3.ocmshareproviderv0alpha.OCMShareProviderService/UpdateOCMShare',
       request,
       metadata || {},
-      methodDescriptor_OCMShareProviderService_UpdateOCMShares,
+      methodDescriptor_OCMShareProviderService_UpdateOCMShare,
       callback);
 };
 
 
 /**
- * @param {!proto.cs3.ocmshareproviderv0alpha.UpdateOCMSharesRequest} request The
+ * @param {!proto.cs3.ocmshareproviderv0alpha.UpdateOCMShareRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @return {!Promise<!proto.cs3.ocmshareproviderv0alpha.UpdateOCMSharesResponse>}
+ * @return {!Promise<!proto.cs3.ocmshareproviderv0alpha.UpdateOCMShareResponse>}
  *     A native promise that resolves to the response
  */
-proto.cs3.ocmshareproviderv0alpha.OCMShareProviderServicePromiseClient.prototype.updateOCMShares =
+proto.cs3.ocmshareproviderv0alpha.OCMShareProviderServicePromiseClient.prototype.updateOCMShare =
     function(request, metadata) {
   return this.client_.unaryCall(this.hostname_ +
-      '/cs3.ocmshareproviderv0alpha.OCMShareProviderService/UpdateOCMShares',
+      '/cs3.ocmshareproviderv0alpha.OCMShareProviderService/UpdateOCMShare',
       request,
       metadata || {},
-      methodDescriptor_OCMShareProviderService_UpdateOCMShares);
+      methodDescriptor_OCMShareProviderService_UpdateOCMShare);
 };
 
 
