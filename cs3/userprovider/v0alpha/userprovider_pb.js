@@ -227,7 +227,7 @@ proto.cs3.userproviderv0alpha.GetUserRequest.prototype.toObject = function(opt_i
 proto.cs3.userproviderv0alpha.GetUserRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     opaque: (f = msg.getOpaque()) && cs3_types_types_pb.Opaque.toObject(includeInstance, f),
-    userId: (f = msg.getUserId()) && cs3_auth_v0alpha_resources_pb.User.toObject(includeInstance, f)
+    userId: (f = msg.getUserId()) && cs3_types_types_pb.UserId.toObject(includeInstance, f)
   };
 
   if (includeInstance) {
@@ -270,8 +270,8 @@ proto.cs3.userproviderv0alpha.GetUserRequest.deserializeBinaryFromReader = funct
       msg.setOpaque(value);
       break;
     case 2:
-      var value = new cs3_auth_v0alpha_resources_pb.User;
-      reader.readMessage(value,cs3_auth_v0alpha_resources_pb.User.deserializeBinaryFromReader);
+      var value = new cs3_types_types_pb.UserId;
+      reader.readMessage(value,cs3_types_types_pb.UserId.deserializeBinaryFromReader);
       msg.setUserId(value);
       break;
     default:
@@ -316,7 +316,7 @@ proto.cs3.userproviderv0alpha.GetUserRequest.serializeBinaryToWriter = function(
     writer.writeMessage(
       2,
       f,
-      cs3_auth_v0alpha_resources_pb.User.serializeBinaryToWriter
+      cs3_types_types_pb.UserId.serializeBinaryToWriter
     );
   }
 };
@@ -356,16 +356,16 @@ proto.cs3.userproviderv0alpha.GetUserRequest.prototype.hasOpaque = function() {
 
 
 /**
- * optional cs3.authv0alpha.User user_id = 2;
- * @return {?proto.cs3.authv0alpha.User}
+ * optional cs3.types.UserId user_id = 2;
+ * @return {?proto.cs3.types.UserId}
  */
 proto.cs3.userproviderv0alpha.GetUserRequest.prototype.getUserId = function() {
-  return /** @type{?proto.cs3.authv0alpha.User} */ (
-    jspb.Message.getWrapperField(this, cs3_auth_v0alpha_resources_pb.User, 2));
+  return /** @type{?proto.cs3.types.UserId} */ (
+    jspb.Message.getWrapperField(this, cs3_types_types_pb.UserId, 2));
 };
 
 
-/** @param {?proto.cs3.authv0alpha.User|undefined} value */
+/** @param {?proto.cs3.types.UserId|undefined} value */
 proto.cs3.userproviderv0alpha.GetUserRequest.prototype.setUserId = function(value) {
   jspb.Message.setWrapperField(this, 2, value);
 };
@@ -662,7 +662,7 @@ proto.cs3.userproviderv0alpha.GetUserGroupsRequest.prototype.toObject = function
 proto.cs3.userproviderv0alpha.GetUserGroupsRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     opaque: (f = msg.getOpaque()) && cs3_types_types_pb.Opaque.toObject(includeInstance, f),
-    userId: (f = msg.getUserId()) && cs3_auth_v0alpha_resources_pb.User.toObject(includeInstance, f)
+    userId: (f = msg.getUserId()) && cs3_types_types_pb.UserId.toObject(includeInstance, f)
   };
 
   if (includeInstance) {
@@ -705,8 +705,8 @@ proto.cs3.userproviderv0alpha.GetUserGroupsRequest.deserializeBinaryFromReader =
       msg.setOpaque(value);
       break;
     case 2:
-      var value = new cs3_auth_v0alpha_resources_pb.User;
-      reader.readMessage(value,cs3_auth_v0alpha_resources_pb.User.deserializeBinaryFromReader);
+      var value = new cs3_types_types_pb.UserId;
+      reader.readMessage(value,cs3_types_types_pb.UserId.deserializeBinaryFromReader);
       msg.setUserId(value);
       break;
     default:
@@ -751,7 +751,7 @@ proto.cs3.userproviderv0alpha.GetUserGroupsRequest.serializeBinaryToWriter = fun
     writer.writeMessage(
       2,
       f,
-      cs3_auth_v0alpha_resources_pb.User.serializeBinaryToWriter
+      cs3_types_types_pb.UserId.serializeBinaryToWriter
     );
   }
 };
@@ -791,16 +791,16 @@ proto.cs3.userproviderv0alpha.GetUserGroupsRequest.prototype.hasOpaque = functio
 
 
 /**
- * optional cs3.authv0alpha.User user_id = 2;
- * @return {?proto.cs3.authv0alpha.User}
+ * optional cs3.types.UserId user_id = 2;
+ * @return {?proto.cs3.types.UserId}
  */
 proto.cs3.userproviderv0alpha.GetUserGroupsRequest.prototype.getUserId = function() {
-  return /** @type{?proto.cs3.authv0alpha.User} */ (
-    jspb.Message.getWrapperField(this, cs3_auth_v0alpha_resources_pb.User, 2));
+  return /** @type{?proto.cs3.types.UserId} */ (
+    jspb.Message.getWrapperField(this, cs3_types_types_pb.UserId, 2));
 };
 
 
-/** @param {?proto.cs3.authv0alpha.User|undefined} value */
+/** @param {?proto.cs3.types.UserId|undefined} value */
 proto.cs3.userproviderv0alpha.GetUserGroupsRequest.prototype.setUserId = function(value) {
   jspb.Message.setWrapperField(this, 2, value);
 };
@@ -1101,7 +1101,7 @@ proto.cs3.userproviderv0alpha.IsInGroupRequest.prototype.toObject = function(opt
 proto.cs3.userproviderv0alpha.IsInGroupRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     opaque: (f = msg.getOpaque()) && cs3_types_types_pb.Opaque.toObject(includeInstance, f),
-    userId: (f = msg.getUserId()) && cs3_auth_v0alpha_resources_pb.User.toObject(includeInstance, f),
+    userId: (f = msg.getUserId()) && cs3_types_types_pb.UserId.toObject(includeInstance, f),
     group: jspb.Message.getFieldWithDefault(msg, 3, "")
   };
 
@@ -1145,8 +1145,8 @@ proto.cs3.userproviderv0alpha.IsInGroupRequest.deserializeBinaryFromReader = fun
       msg.setOpaque(value);
       break;
     case 2:
-      var value = new cs3_auth_v0alpha_resources_pb.User;
-      reader.readMessage(value,cs3_auth_v0alpha_resources_pb.User.deserializeBinaryFromReader);
+      var value = new cs3_types_types_pb.UserId;
+      reader.readMessage(value,cs3_types_types_pb.UserId.deserializeBinaryFromReader);
       msg.setUserId(value);
       break;
     case 3:
@@ -1195,7 +1195,7 @@ proto.cs3.userproviderv0alpha.IsInGroupRequest.serializeBinaryToWriter = functio
     writer.writeMessage(
       2,
       f,
-      cs3_auth_v0alpha_resources_pb.User.serializeBinaryToWriter
+      cs3_types_types_pb.UserId.serializeBinaryToWriter
     );
   }
   f = message.getGroup();
@@ -1242,16 +1242,16 @@ proto.cs3.userproviderv0alpha.IsInGroupRequest.prototype.hasOpaque = function() 
 
 
 /**
- * optional cs3.authv0alpha.User user_id = 2;
- * @return {?proto.cs3.authv0alpha.User}
+ * optional cs3.types.UserId user_id = 2;
+ * @return {?proto.cs3.types.UserId}
  */
 proto.cs3.userproviderv0alpha.IsInGroupRequest.prototype.getUserId = function() {
-  return /** @type{?proto.cs3.authv0alpha.User} */ (
-    jspb.Message.getWrapperField(this, cs3_auth_v0alpha_resources_pb.User, 2));
+  return /** @type{?proto.cs3.types.UserId} */ (
+    jspb.Message.getWrapperField(this, cs3_types_types_pb.UserId, 2));
 };
 
 
-/** @param {?proto.cs3.authv0alpha.User|undefined} value */
+/** @param {?proto.cs3.types.UserId|undefined} value */
 proto.cs3.userproviderv0alpha.IsInGroupRequest.prototype.setUserId = function(value) {
   jspb.Message.setWrapperField(this, 2, value);
 };
