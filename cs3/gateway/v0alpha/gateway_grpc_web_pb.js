@@ -22,6 +22,8 @@ var cs3_preferences_v0alpha_preferences_pb = require('../../../cs3/preferences/v
 
 var cs3_publicshareprovider_v0alpha_publicshareprovider_pb = require('../../../cs3/publicshareprovider/v0alpha/publicshareprovider_pb.js')
 
+var cs3_rpc_status_pb = require('../../../cs3/rpc/status_pb.js')
+
 var cs3_storageprovider_v0alpha_resources_pb = require('../../../cs3/storageprovider/v0alpha/resources_pb.js')
 
 var cs3_storageprovider_v0alpha_storageprovider_pb = require('../../../cs3/storageprovider/v0alpha/storageprovider_pb.js')
@@ -553,18 +555,18 @@ proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.getQuota =
  * @const
  * @type {!grpc.web.MethodDescriptor<
  *   !proto.cs3.storageproviderv0alpha.InitiateFileDownloadRequest,
- *   !proto.cs3.storageproviderv0alpha.InitiateFileDownloadResponse>}
+ *   !proto.cs3.gatewayv0alpha.InitiateFileDownloadResponse>}
  */
 const methodDescriptor_GatewayService_InitiateFileDownload = new grpc.web.MethodDescriptor(
   '/cs3.gatewayv0alpha.GatewayService/InitiateFileDownload',
   grpc.web.MethodType.UNARY,
   cs3_storageprovider_v0alpha_storageprovider_pb.InitiateFileDownloadRequest,
-  cs3_storageprovider_v0alpha_storageprovider_pb.InitiateFileDownloadResponse,
+  proto.cs3.gatewayv0alpha.InitiateFileDownloadResponse,
   /** @param {!proto.cs3.storageproviderv0alpha.InitiateFileDownloadRequest} request */
   function(request) {
     return request.serializeBinary();
   },
-  cs3_storageprovider_v0alpha_storageprovider_pb.InitiateFileDownloadResponse.deserializeBinary
+  proto.cs3.gatewayv0alpha.InitiateFileDownloadResponse.deserializeBinary
 );
 
 
@@ -572,15 +574,15 @@ const methodDescriptor_GatewayService_InitiateFileDownload = new grpc.web.Method
  * @const
  * @type {!grpc.web.AbstractClientBase.MethodInfo<
  *   !proto.cs3.storageproviderv0alpha.InitiateFileDownloadRequest,
- *   !proto.cs3.storageproviderv0alpha.InitiateFileDownloadResponse>}
+ *   !proto.cs3.gatewayv0alpha.InitiateFileDownloadResponse>}
  */
 const methodInfo_GatewayService_InitiateFileDownload = new grpc.web.AbstractClientBase.MethodInfo(
-  cs3_storageprovider_v0alpha_storageprovider_pb.InitiateFileDownloadResponse,
+  proto.cs3.gatewayv0alpha.InitiateFileDownloadResponse,
   /** @param {!proto.cs3.storageproviderv0alpha.InitiateFileDownloadRequest} request */
   function(request) {
     return request.serializeBinary();
   },
-  cs3_storageprovider_v0alpha_storageprovider_pb.InitiateFileDownloadResponse.deserializeBinary
+  proto.cs3.gatewayv0alpha.InitiateFileDownloadResponse.deserializeBinary
 );
 
 
@@ -589,9 +591,9 @@ const methodInfo_GatewayService_InitiateFileDownload = new grpc.web.AbstractClie
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @param {function(?grpc.web.Error, ?proto.cs3.storageproviderv0alpha.InitiateFileDownloadResponse)}
+ * @param {function(?grpc.web.Error, ?proto.cs3.gatewayv0alpha.InitiateFileDownloadResponse)}
  *     callback The callback function(error, response)
- * @return {!grpc.web.ClientReadableStream<!proto.cs3.storageproviderv0alpha.InitiateFileDownloadResponse>|undefined}
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.gatewayv0alpha.InitiateFileDownloadResponse>|undefined}
  *     The XHR Node Readable Stream
  */
 proto.cs3.gatewayv0alpha.GatewayServiceClient.prototype.initiateFileDownload =
@@ -610,7 +612,7 @@ proto.cs3.gatewayv0alpha.GatewayServiceClient.prototype.initiateFileDownload =
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @return {!Promise<!proto.cs3.storageproviderv0alpha.InitiateFileDownloadResponse>}
+ * @return {!Promise<!proto.cs3.gatewayv0alpha.InitiateFileDownloadResponse>}
  *     A native promise that resolves to the response
  */
 proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.initiateFileDownload =
@@ -627,18 +629,18 @@ proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.initiateFileDownl
  * @const
  * @type {!grpc.web.MethodDescriptor<
  *   !proto.cs3.storageproviderv0alpha.InitiateFileUploadRequest,
- *   !proto.cs3.storageproviderv0alpha.InitiateFileUploadResponse>}
+ *   !proto.cs3.gatewayv0alpha.InitiateFileUploadResponse>}
  */
 const methodDescriptor_GatewayService_InitiateFileUpload = new grpc.web.MethodDescriptor(
   '/cs3.gatewayv0alpha.GatewayService/InitiateFileUpload',
   grpc.web.MethodType.UNARY,
   cs3_storageprovider_v0alpha_storageprovider_pb.InitiateFileUploadRequest,
-  cs3_storageprovider_v0alpha_storageprovider_pb.InitiateFileUploadResponse,
+  proto.cs3.gatewayv0alpha.InitiateFileUploadResponse,
   /** @param {!proto.cs3.storageproviderv0alpha.InitiateFileUploadRequest} request */
   function(request) {
     return request.serializeBinary();
   },
-  cs3_storageprovider_v0alpha_storageprovider_pb.InitiateFileUploadResponse.deserializeBinary
+  proto.cs3.gatewayv0alpha.InitiateFileUploadResponse.deserializeBinary
 );
 
 
@@ -646,15 +648,15 @@ const methodDescriptor_GatewayService_InitiateFileUpload = new grpc.web.MethodDe
  * @const
  * @type {!grpc.web.AbstractClientBase.MethodInfo<
  *   !proto.cs3.storageproviderv0alpha.InitiateFileUploadRequest,
- *   !proto.cs3.storageproviderv0alpha.InitiateFileUploadResponse>}
+ *   !proto.cs3.gatewayv0alpha.InitiateFileUploadResponse>}
  */
 const methodInfo_GatewayService_InitiateFileUpload = new grpc.web.AbstractClientBase.MethodInfo(
-  cs3_storageprovider_v0alpha_storageprovider_pb.InitiateFileUploadResponse,
+  proto.cs3.gatewayv0alpha.InitiateFileUploadResponse,
   /** @param {!proto.cs3.storageproviderv0alpha.InitiateFileUploadRequest} request */
   function(request) {
     return request.serializeBinary();
   },
-  cs3_storageprovider_v0alpha_storageprovider_pb.InitiateFileUploadResponse.deserializeBinary
+  proto.cs3.gatewayv0alpha.InitiateFileUploadResponse.deserializeBinary
 );
 
 
@@ -663,9 +665,9 @@ const methodInfo_GatewayService_InitiateFileUpload = new grpc.web.AbstractClient
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @param {function(?grpc.web.Error, ?proto.cs3.storageproviderv0alpha.InitiateFileUploadResponse)}
+ * @param {function(?grpc.web.Error, ?proto.cs3.gatewayv0alpha.InitiateFileUploadResponse)}
  *     callback The callback function(error, response)
- * @return {!grpc.web.ClientReadableStream<!proto.cs3.storageproviderv0alpha.InitiateFileUploadResponse>|undefined}
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.gatewayv0alpha.InitiateFileUploadResponse>|undefined}
  *     The XHR Node Readable Stream
  */
 proto.cs3.gatewayv0alpha.GatewayServiceClient.prototype.initiateFileUpload =
@@ -684,7 +686,7 @@ proto.cs3.gatewayv0alpha.GatewayServiceClient.prototype.initiateFileUpload =
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @return {!Promise<!proto.cs3.storageproviderv0alpha.InitiateFileUploadResponse>}
+ * @return {!Promise<!proto.cs3.gatewayv0alpha.InitiateFileUploadResponse>}
  *     A native promise that resolves to the response
  */
 proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.initiateFileUpload =
