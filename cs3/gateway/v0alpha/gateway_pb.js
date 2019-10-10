@@ -30,6 +30,8 @@ var cs3_storageprovider_v0alpha_storageprovider_pb = require('../../../cs3/stora
 goog.object.extend(proto, cs3_storageprovider_v0alpha_storageprovider_pb);
 var cs3_types_types_pb = require('../../../cs3/types/types_pb.js');
 goog.object.extend(proto, cs3_types_types_pb);
+var cs3_userprovider_v0alpha_userprovider_pb = require('../../../cs3/userprovider/v0alpha/userprovider_pb.js');
+goog.object.extend(proto, cs3_userprovider_v0alpha_userprovider_pb);
 var cs3_usershareprovider_v0alpha_usershareprovider_pb = require('../../../cs3/usershareprovider/v0alpha/usershareprovider_pb.js');
 goog.object.extend(proto, cs3_usershareprovider_v0alpha_usershareprovider_pb);
 goog.exportSymbol('proto.cs3.gatewayv0alpha.GetQuotaRequest', null, global);

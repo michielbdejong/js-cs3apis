@@ -30,6 +30,8 @@ var cs3_storageprovider_v0alpha_storageprovider_pb = require('../../../cs3/stora
 
 var cs3_types_types_pb = require('../../../cs3/types/types_pb.js')
 
+var cs3_userprovider_v0alpha_userprovider_pb = require('../../../cs3/userprovider/v0alpha/userprovider_pb.js')
+
 var cs3_usershareprovider_v0alpha_usershareprovider_pb = require('../../../cs3/usershareprovider/v0alpha/usershareprovider_pb.js')
 const proto = {};
 proto.cs3 = {};
@@ -3424,6 +3426,302 @@ proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.listAppProviders 
       request,
       metadata || {},
       methodDescriptor_GatewayService_ListAppProviders);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.userproviderv0alpha.GetUserRequest,
+ *   !proto.cs3.userproviderv0alpha.GetUserResponse>}
+ */
+const methodDescriptor_GatewayService_GetUser = new grpc.web.MethodDescriptor(
+  '/cs3.gatewayv0alpha.GatewayService/GetUser',
+  grpc.web.MethodType.UNARY,
+  cs3_userprovider_v0alpha_userprovider_pb.GetUserRequest,
+  cs3_userprovider_v0alpha_userprovider_pb.GetUserResponse,
+  /** @param {!proto.cs3.userproviderv0alpha.GetUserRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_userprovider_v0alpha_userprovider_pb.GetUserResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.userproviderv0alpha.GetUserRequest,
+ *   !proto.cs3.userproviderv0alpha.GetUserResponse>}
+ */
+const methodInfo_GatewayService_GetUser = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_userprovider_v0alpha_userprovider_pb.GetUserResponse,
+  /** @param {!proto.cs3.userproviderv0alpha.GetUserRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_userprovider_v0alpha_userprovider_pb.GetUserResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.userproviderv0alpha.GetUserRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.userproviderv0alpha.GetUserResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.userproviderv0alpha.GetUserResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gatewayv0alpha.GatewayServiceClient.prototype.getUser =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/GetUser',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_GetUser,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.userproviderv0alpha.GetUserRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.userproviderv0alpha.GetUserResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.getUser =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/GetUser',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_GetUser);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.userproviderv0alpha.GetUserGroupsRequest,
+ *   !proto.cs3.userproviderv0alpha.GetUserGroupsResponse>}
+ */
+const methodDescriptor_GatewayService_GetUserGroups = new grpc.web.MethodDescriptor(
+  '/cs3.gatewayv0alpha.GatewayService/GetUserGroups',
+  grpc.web.MethodType.UNARY,
+  cs3_userprovider_v0alpha_userprovider_pb.GetUserGroupsRequest,
+  cs3_userprovider_v0alpha_userprovider_pb.GetUserGroupsResponse,
+  /** @param {!proto.cs3.userproviderv0alpha.GetUserGroupsRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_userprovider_v0alpha_userprovider_pb.GetUserGroupsResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.userproviderv0alpha.GetUserGroupsRequest,
+ *   !proto.cs3.userproviderv0alpha.GetUserGroupsResponse>}
+ */
+const methodInfo_GatewayService_GetUserGroups = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_userprovider_v0alpha_userprovider_pb.GetUserGroupsResponse,
+  /** @param {!proto.cs3.userproviderv0alpha.GetUserGroupsRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_userprovider_v0alpha_userprovider_pb.GetUserGroupsResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.userproviderv0alpha.GetUserGroupsRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.userproviderv0alpha.GetUserGroupsResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.userproviderv0alpha.GetUserGroupsResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gatewayv0alpha.GatewayServiceClient.prototype.getUserGroups =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/GetUserGroups',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_GetUserGroups,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.userproviderv0alpha.GetUserGroupsRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.userproviderv0alpha.GetUserGroupsResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.getUserGroups =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/GetUserGroups',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_GetUserGroups);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.userproviderv0alpha.IsInGroupRequest,
+ *   !proto.cs3.userproviderv0alpha.IsInGroupResponse>}
+ */
+const methodDescriptor_GatewayService_IsInGroup = new grpc.web.MethodDescriptor(
+  '/cs3.gatewayv0alpha.GatewayService/IsInGroup',
+  grpc.web.MethodType.UNARY,
+  cs3_userprovider_v0alpha_userprovider_pb.IsInGroupRequest,
+  cs3_userprovider_v0alpha_userprovider_pb.IsInGroupResponse,
+  /** @param {!proto.cs3.userproviderv0alpha.IsInGroupRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_userprovider_v0alpha_userprovider_pb.IsInGroupResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.userproviderv0alpha.IsInGroupRequest,
+ *   !proto.cs3.userproviderv0alpha.IsInGroupResponse>}
+ */
+const methodInfo_GatewayService_IsInGroup = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_userprovider_v0alpha_userprovider_pb.IsInGroupResponse,
+  /** @param {!proto.cs3.userproviderv0alpha.IsInGroupRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_userprovider_v0alpha_userprovider_pb.IsInGroupResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.userproviderv0alpha.IsInGroupRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.userproviderv0alpha.IsInGroupResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.userproviderv0alpha.IsInGroupResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gatewayv0alpha.GatewayServiceClient.prototype.isInGroup =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/IsInGroup',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_IsInGroup,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.userproviderv0alpha.IsInGroupRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.userproviderv0alpha.IsInGroupResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.isInGroup =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/IsInGroup',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_IsInGroup);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.userproviderv0alpha.FindUsersRequest,
+ *   !proto.cs3.userproviderv0alpha.FindUsersResponse>}
+ */
+const methodDescriptor_GatewayService_FindUsers = new grpc.web.MethodDescriptor(
+  '/cs3.gatewayv0alpha.GatewayService/FindUsers',
+  grpc.web.MethodType.UNARY,
+  cs3_userprovider_v0alpha_userprovider_pb.FindUsersRequest,
+  cs3_userprovider_v0alpha_userprovider_pb.FindUsersResponse,
+  /** @param {!proto.cs3.userproviderv0alpha.FindUsersRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_userprovider_v0alpha_userprovider_pb.FindUsersResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.userproviderv0alpha.FindUsersRequest,
+ *   !proto.cs3.userproviderv0alpha.FindUsersResponse>}
+ */
+const methodInfo_GatewayService_FindUsers = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_userprovider_v0alpha_userprovider_pb.FindUsersResponse,
+  /** @param {!proto.cs3.userproviderv0alpha.FindUsersRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_userprovider_v0alpha_userprovider_pb.FindUsersResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.userproviderv0alpha.FindUsersRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.userproviderv0alpha.FindUsersResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.userproviderv0alpha.FindUsersResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gatewayv0alpha.GatewayServiceClient.prototype.findUsers =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/FindUsers',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_FindUsers,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.userproviderv0alpha.FindUsersRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.userproviderv0alpha.FindUsersResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.findUsers =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/FindUsers',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_FindUsers);
 };
 
 
