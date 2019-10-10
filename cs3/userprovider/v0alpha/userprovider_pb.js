@@ -142,7 +142,7 @@ if (goog.DEBUG && !COMPILED) {
  * @constructor
  */
 proto.cs3.userproviderv0alpha.IsInGroupResponse = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, proto.cs3.userproviderv0alpha.IsInGroupResponse.repeatedFields_, null);
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.cs3.userproviderv0alpha.IsInGroupResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
@@ -1290,13 +1290,6 @@ proto.cs3.userproviderv0alpha.IsInGroupRequest.prototype.setGroup = function(val
 
 
 
-/**
- * List of repeated fields within this message type.
- * @private {!Array<number>}
- * @const
- */
-proto.cs3.userproviderv0alpha.IsInGroupResponse.repeatedFields_ = [3];
-
 
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
@@ -1330,7 +1323,7 @@ proto.cs3.userproviderv0alpha.IsInGroupResponse.toObject = function(includeInsta
   var f, obj = {
     status: (f = msg.getStatus()) && cs3_rpc_status_pb.Status.toObject(includeInstance, f),
     opaque: (f = msg.getOpaque()) && cs3_types_types_pb.Opaque.toObject(includeInstance, f),
-    groupsList: (f = jspb.Message.getRepeatedField(msg, 3)) == null ? undefined : f
+    ok: jspb.Message.getBooleanFieldWithDefault(msg, 3, false)
   };
 
   if (includeInstance) {
@@ -1378,8 +1371,8 @@ proto.cs3.userproviderv0alpha.IsInGroupResponse.deserializeBinaryFromReader = fu
       msg.setOpaque(value);
       break;
     case 3:
-      var value = /** @type {string} */ (reader.readString());
-      msg.addGroups(value);
+      var value = /** @type {boolean} */ (reader.readBool());
+      msg.setOk(value);
       break;
     default:
       reader.skipField();
@@ -1426,9 +1419,9 @@ proto.cs3.userproviderv0alpha.IsInGroupResponse.serializeBinaryToWriter = functi
       cs3_types_types_pb.Opaque.serializeBinaryToWriter
     );
   }
-  f = message.getGroupsList();
-  if (f.length > 0) {
-    writer.writeRepeatedString(
+  f = message.getOk();
+  if (f) {
+    writer.writeBool(
       3,
       f
     );
@@ -1503,34 +1496,17 @@ proto.cs3.userproviderv0alpha.IsInGroupResponse.prototype.hasOpaque = function()
 
 
 /**
- * repeated string groups = 3;
- * @return {!Array<string>}
+ * optional bool ok = 3;
+ * @return {boolean}
  */
-proto.cs3.userproviderv0alpha.IsInGroupResponse.prototype.getGroupsList = function() {
-  return /** @type {!Array<string>} */ (jspb.Message.getRepeatedField(this, 3));
+proto.cs3.userproviderv0alpha.IsInGroupResponse.prototype.getOk = function() {
+  return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 3, false));
 };
 
 
-/** @param {!Array<string>} value */
-proto.cs3.userproviderv0alpha.IsInGroupResponse.prototype.setGroupsList = function(value) {
-  jspb.Message.setField(this, 3, value || []);
-};
-
-
-/**
- * @param {string} value
- * @param {number=} opt_index
- */
-proto.cs3.userproviderv0alpha.IsInGroupResponse.prototype.addGroups = function(value, opt_index) {
-  jspb.Message.addToRepeatedField(this, 3, value, opt_index);
-};
-
-
-/**
- * Clears the list making it empty but non-null.
- */
-proto.cs3.userproviderv0alpha.IsInGroupResponse.prototype.clearGroupsList = function() {
-  this.setGroupsList([]);
+/** @param {boolean} value */
+proto.cs3.userproviderv0alpha.IsInGroupResponse.prototype.setOk = function(value) {
+  jspb.Message.setProto3BooleanField(this, 3, value);
 };
 
 
