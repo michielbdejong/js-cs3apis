@@ -16,6 +16,8 @@ var cs3_auth_v0alpha_resources_pb = require('../../../cs3/auth/v0alpha/resources
 goog.object.extend(proto, cs3_auth_v0alpha_resources_pb);
 var cs3_rpc_status_pb = require('../../../cs3/rpc/status_pb.js');
 goog.object.extend(proto, cs3_rpc_status_pb);
+var cs3_types_types_pb = require('../../../cs3/types/types_pb.js');
+goog.object.extend(proto, cs3_types_types_pb);
 goog.exportSymbol('proto.cs3.authv0alpha.GenerateAccessTokenRequest', null, global);
 goog.exportSymbol('proto.cs3.authv0alpha.GenerateAccessTokenResponse', null, global);
 goog.exportSymbol('proto.cs3.authv0alpha.WhoAmIRequest', null, global);
@@ -291,7 +293,8 @@ proto.cs3.authv0alpha.GenerateAccessTokenResponse.prototype.toObject = function(
 proto.cs3.authv0alpha.GenerateAccessTokenResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
     status: (f = msg.getStatus()) && cs3_rpc_status_pb.Status.toObject(includeInstance, f),
-    accessToken: jspb.Message.getFieldWithDefault(msg, 2, "")
+    accessToken: jspb.Message.getFieldWithDefault(msg, 2, ""),
+    userId: (f = msg.getUserId()) && cs3_types_types_pb.UserId.toObject(includeInstance, f)
   };
 
   if (includeInstance) {
@@ -337,6 +340,11 @@ proto.cs3.authv0alpha.GenerateAccessTokenResponse.deserializeBinaryFromReader = 
       var value = /** @type {string} */ (reader.readString());
       msg.setAccessToken(value);
       break;
+    case 3:
+      var value = new cs3_types_types_pb.UserId;
+      reader.readMessage(value,cs3_types_types_pb.UserId.deserializeBinaryFromReader);
+      msg.setUserId(value);
+      break;
     default:
       reader.skipField();
       break;
@@ -379,6 +387,14 @@ proto.cs3.authv0alpha.GenerateAccessTokenResponse.serializeBinaryToWriter = func
     writer.writeString(
       2,
       f
+    );
+  }
+  f = message.getUserId();
+  if (f != null) {
+    writer.writeMessage(
+      3,
+      f,
+      cs3_types_types_pb.UserId.serializeBinaryToWriter
     );
   }
 };
@@ -429,6 +445,39 @@ proto.cs3.authv0alpha.GenerateAccessTokenResponse.prototype.getAccessToken = fun
 /** @param {string} value */
 proto.cs3.authv0alpha.GenerateAccessTokenResponse.prototype.setAccessToken = function(value) {
   jspb.Message.setProto3StringField(this, 2, value);
+};
+
+
+/**
+ * optional cs3.types.UserId user_id = 3;
+ * @return {?proto.cs3.types.UserId}
+ */
+proto.cs3.authv0alpha.GenerateAccessTokenResponse.prototype.getUserId = function() {
+  return /** @type{?proto.cs3.types.UserId} */ (
+    jspb.Message.getWrapperField(this, cs3_types_types_pb.UserId, 3));
+};
+
+
+/** @param {?proto.cs3.types.UserId|undefined} value */
+proto.cs3.authv0alpha.GenerateAccessTokenResponse.prototype.setUserId = function(value) {
+  jspb.Message.setWrapperField(this, 3, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.cs3.authv0alpha.GenerateAccessTokenResponse.prototype.clearUserId = function() {
+  this.setUserId(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.cs3.authv0alpha.GenerateAccessTokenResponse.prototype.hasUserId = function() {
+  return jspb.Message.getField(this, 3) != null;
 };
 
 
