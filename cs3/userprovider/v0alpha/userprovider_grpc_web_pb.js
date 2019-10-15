@@ -12,11 +12,11 @@ const grpc = {};
 grpc.web = require('grpc-web');
 
 
-var cs3_authprovider_v0alpha_resources_pb = require('../../../cs3/authprovider/v0alpha/resources_pb.js')
-
 var cs3_rpc_status_pb = require('../../../cs3/rpc/status_pb.js')
 
 var cs3_types_types_pb = require('../../../cs3/types/types_pb.js')
+
+var cs3_userprovider_v0alpha_resources_pb = require('../../../cs3/userprovider/v0alpha/resources_pb.js')
 const proto = {};
 proto.cs3 = {};
 proto.cs3.userproviderv0alpha = require('./userprovider_pb.js');
