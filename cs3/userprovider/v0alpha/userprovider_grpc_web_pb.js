@@ -12,7 +12,7 @@ const grpc = {};
 grpc.web = require('grpc-web');
 
 
-var cs3_auth_v0alpha_resources_pb = require('../../../cs3/auth/v0alpha/resources_pb.js')
+var cs3_authprovider_v0alpha_resources_pb = require('../../../cs3/authprovider/v0alpha/resources_pb.js')
 
 var cs3_rpc_status_pb = require('../../../cs3/rpc/status_pb.js')
 

@@ -12,8 +12,8 @@ var jspb = require('google-protobuf');
 var goog = jspb;
 var global = Function('return this')();
 
-var cs3_auth_v0alpha_resources_pb = require('../../../cs3/auth/v0alpha/resources_pb.js');
-goog.object.extend(proto, cs3_auth_v0alpha_resources_pb);
+var cs3_authprovider_v0alpha_resources_pb = require('../../../cs3/authprovider/v0alpha/resources_pb.js');
+goog.object.extend(proto, cs3_authprovider_v0alpha_resources_pb);
 var cs3_rpc_status_pb = require('../../../cs3/rpc/status_pb.js');
 goog.object.extend(proto, cs3_rpc_status_pb);
 var cs3_types_types_pb = require('../../../cs3/types/types_pb.js');
@@ -422,7 +422,7 @@ proto.cs3.userproviderv0alpha.GetUserResponse.toObject = function(includeInstanc
   var f, obj = {
     status: (f = msg.getStatus()) && cs3_rpc_status_pb.Status.toObject(includeInstance, f),
     opaque: (f = msg.getOpaque()) && cs3_types_types_pb.Opaque.toObject(includeInstance, f),
-    user: (f = msg.getUser()) && cs3_auth_v0alpha_resources_pb.User.toObject(includeInstance, f)
+    user: (f = msg.getUser()) && cs3_authprovider_v0alpha_resources_pb.User.toObject(includeInstance, f)
   };
 
   if (includeInstance) {
@@ -470,8 +470,8 @@ proto.cs3.userproviderv0alpha.GetUserResponse.deserializeBinaryFromReader = func
       msg.setOpaque(value);
       break;
     case 3:
-      var value = new cs3_auth_v0alpha_resources_pb.User;
-      reader.readMessage(value,cs3_auth_v0alpha_resources_pb.User.deserializeBinaryFromReader);
+      var value = new cs3_authprovider_v0alpha_resources_pb.User;
+      reader.readMessage(value,cs3_authprovider_v0alpha_resources_pb.User.deserializeBinaryFromReader);
       msg.setUser(value);
       break;
     default:
@@ -524,7 +524,7 @@ proto.cs3.userproviderv0alpha.GetUserResponse.serializeBinaryToWriter = function
     writer.writeMessage(
       3,
       f,
-      cs3_auth_v0alpha_resources_pb.User.serializeBinaryToWriter
+      cs3_authprovider_v0alpha_resources_pb.User.serializeBinaryToWriter
     );
   }
 };
@@ -597,16 +597,16 @@ proto.cs3.userproviderv0alpha.GetUserResponse.prototype.hasOpaque = function() {
 
 
 /**
- * optional cs3.authv0alpha.User user = 3;
- * @return {?proto.cs3.authv0alpha.User}
+ * optional cs3.authproviderv0alpha.User user = 3;
+ * @return {?proto.cs3.authproviderv0alpha.User}
  */
 proto.cs3.userproviderv0alpha.GetUserResponse.prototype.getUser = function() {
-  return /** @type{?proto.cs3.authv0alpha.User} */ (
-    jspb.Message.getWrapperField(this, cs3_auth_v0alpha_resources_pb.User, 3));
+  return /** @type{?proto.cs3.authproviderv0alpha.User} */ (
+    jspb.Message.getWrapperField(this, cs3_authprovider_v0alpha_resources_pb.User, 3));
 };
 
 
-/** @param {?proto.cs3.authv0alpha.User|undefined} value */
+/** @param {?proto.cs3.authproviderv0alpha.User|undefined} value */
 proto.cs3.userproviderv0alpha.GetUserResponse.prototype.setUser = function(value) {
   jspb.Message.setWrapperField(this, 3, value);
 };
@@ -1726,7 +1726,7 @@ proto.cs3.userproviderv0alpha.FindUsersResponse.toObject = function(includeInsta
     status: (f = msg.getStatus()) && cs3_rpc_status_pb.Status.toObject(includeInstance, f),
     opaque: (f = msg.getOpaque()) && cs3_types_types_pb.Opaque.toObject(includeInstance, f),
     usersList: jspb.Message.toObjectList(msg.getUsersList(),
-    cs3_auth_v0alpha_resources_pb.User.toObject, includeInstance)
+    cs3_authprovider_v0alpha_resources_pb.User.toObject, includeInstance)
   };
 
   if (includeInstance) {
@@ -1774,8 +1774,8 @@ proto.cs3.userproviderv0alpha.FindUsersResponse.deserializeBinaryFromReader = fu
       msg.setOpaque(value);
       break;
     case 3:
-      var value = new cs3_auth_v0alpha_resources_pb.User;
-      reader.readMessage(value,cs3_auth_v0alpha_resources_pb.User.deserializeBinaryFromReader);
+      var value = new cs3_authprovider_v0alpha_resources_pb.User;
+      reader.readMessage(value,cs3_authprovider_v0alpha_resources_pb.User.deserializeBinaryFromReader);
       msg.addUsers(value);
       break;
     default:
@@ -1828,7 +1828,7 @@ proto.cs3.userproviderv0alpha.FindUsersResponse.serializeBinaryToWriter = functi
     writer.writeRepeatedMessage(
       3,
       f,
-      cs3_auth_v0alpha_resources_pb.User.serializeBinaryToWriter
+      cs3_authprovider_v0alpha_resources_pb.User.serializeBinaryToWriter
     );
   }
 };
@@ -1901,28 +1901,28 @@ proto.cs3.userproviderv0alpha.FindUsersResponse.prototype.hasOpaque = function()
 
 
 /**
- * repeated cs3.authv0alpha.User users = 3;
- * @return {!Array<!proto.cs3.authv0alpha.User>}
+ * repeated cs3.authproviderv0alpha.User users = 3;
+ * @return {!Array<!proto.cs3.authproviderv0alpha.User>}
  */
 proto.cs3.userproviderv0alpha.FindUsersResponse.prototype.getUsersList = function() {
-  return /** @type{!Array<!proto.cs3.authv0alpha.User>} */ (
-    jspb.Message.getRepeatedWrapperField(this, cs3_auth_v0alpha_resources_pb.User, 3));
+  return /** @type{!Array<!proto.cs3.authproviderv0alpha.User>} */ (
+    jspb.Message.getRepeatedWrapperField(this, cs3_authprovider_v0alpha_resources_pb.User, 3));
 };
 
 
-/** @param {!Array<!proto.cs3.authv0alpha.User>} value */
+/** @param {!Array<!proto.cs3.authproviderv0alpha.User>} value */
 proto.cs3.userproviderv0alpha.FindUsersResponse.prototype.setUsersList = function(value) {
   jspb.Message.setRepeatedWrapperField(this, 3, value);
 };
 
 
 /**
- * @param {!proto.cs3.authv0alpha.User=} opt_value
+ * @param {!proto.cs3.authproviderv0alpha.User=} opt_value
  * @param {number=} opt_index
- * @return {!proto.cs3.authv0alpha.User}
+ * @return {!proto.cs3.authproviderv0alpha.User}
  */
 proto.cs3.userproviderv0alpha.FindUsersResponse.prototype.addUsers = function(opt_value, opt_index) {
-  return jspb.Message.addToRepeatedWrapperField(this, 3, opt_value, proto.cs3.authv0alpha.User, opt_index);
+  return jspb.Message.addToRepeatedWrapperField(this, 3, opt_value, proto.cs3.authproviderv0alpha.User, opt_index);
 };
 
 

@@ -14,7 +14,9 @@ grpc.web = require('grpc-web');
 
 var cs3_appregistry_v0alpha_appregistry_pb = require('../../../cs3/appregistry/v0alpha/appregistry_pb.js')
 
-var cs3_auth_v0alpha_auth_pb = require('../../../cs3/auth/v0alpha/auth_pb.js')
+var cs3_authprovider_v0alpha_authprovider_pb = require('../../../cs3/authprovider/v0alpha/authprovider_pb.js')
+
+var cs3_authregistry_v0alpha_authregistry_pb = require('../../../cs3/authregistry/v0alpha/authregistry_pb.js')
 
 var cs3_ocmshareprovider_v0alpha_ocmshareprovider_pb = require('../../../cs3/ocmshareprovider/v0alpha/ocmshareprovider_pb.js')
 
@@ -112,46 +114,46 @@ proto.cs3.gatewayv0alpha.GatewayServicePromiseClient =
 /**
  * @const
  * @type {!grpc.web.MethodDescriptor<
- *   !proto.cs3.authv0alpha.GenerateAccessTokenRequest,
- *   !proto.cs3.authv0alpha.GenerateAccessTokenResponse>}
+ *   !proto.cs3.gatewayv0alpha.GenerateAccessTokenRequest,
+ *   !proto.cs3.authproviderv0alpha.GenerateAccessTokenResponse>}
  */
 const methodDescriptor_GatewayService_GenerateAccessToken = new grpc.web.MethodDescriptor(
   '/cs3.gatewayv0alpha.GatewayService/GenerateAccessToken',
   grpc.web.MethodType.UNARY,
-  cs3_auth_v0alpha_auth_pb.GenerateAccessTokenRequest,
-  cs3_auth_v0alpha_auth_pb.GenerateAccessTokenResponse,
-  /** @param {!proto.cs3.authv0alpha.GenerateAccessTokenRequest} request */
+  proto.cs3.gatewayv0alpha.GenerateAccessTokenRequest,
+  cs3_authprovider_v0alpha_authprovider_pb.GenerateAccessTokenResponse,
+  /** @param {!proto.cs3.gatewayv0alpha.GenerateAccessTokenRequest} request */
   function(request) {
     return request.serializeBinary();
   },
-  cs3_auth_v0alpha_auth_pb.GenerateAccessTokenResponse.deserializeBinary
+  cs3_authprovider_v0alpha_authprovider_pb.GenerateAccessTokenResponse.deserializeBinary
 );
 
 
 /**
  * @const
  * @type {!grpc.web.AbstractClientBase.MethodInfo<
- *   !proto.cs3.authv0alpha.GenerateAccessTokenRequest,
- *   !proto.cs3.authv0alpha.GenerateAccessTokenResponse>}
+ *   !proto.cs3.gatewayv0alpha.GenerateAccessTokenRequest,
+ *   !proto.cs3.authproviderv0alpha.GenerateAccessTokenResponse>}
  */
 const methodInfo_GatewayService_GenerateAccessToken = new grpc.web.AbstractClientBase.MethodInfo(
-  cs3_auth_v0alpha_auth_pb.GenerateAccessTokenResponse,
-  /** @param {!proto.cs3.authv0alpha.GenerateAccessTokenRequest} request */
+  cs3_authprovider_v0alpha_authprovider_pb.GenerateAccessTokenResponse,
+  /** @param {!proto.cs3.gatewayv0alpha.GenerateAccessTokenRequest} request */
   function(request) {
     return request.serializeBinary();
   },
-  cs3_auth_v0alpha_auth_pb.GenerateAccessTokenResponse.deserializeBinary
+  cs3_authprovider_v0alpha_authprovider_pb.GenerateAccessTokenResponse.deserializeBinary
 );
 
 
 /**
- * @param {!proto.cs3.authv0alpha.GenerateAccessTokenRequest} request The
+ * @param {!proto.cs3.gatewayv0alpha.GenerateAccessTokenRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @param {function(?grpc.web.Error, ?proto.cs3.authv0alpha.GenerateAccessTokenResponse)}
+ * @param {function(?grpc.web.Error, ?proto.cs3.authproviderv0alpha.GenerateAccessTokenResponse)}
  *     callback The callback function(error, response)
- * @return {!grpc.web.ClientReadableStream<!proto.cs3.authv0alpha.GenerateAccessTokenResponse>|undefined}
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.authproviderv0alpha.GenerateAccessTokenResponse>|undefined}
  *     The XHR Node Readable Stream
  */
 proto.cs3.gatewayv0alpha.GatewayServiceClient.prototype.generateAccessToken =
@@ -166,11 +168,11 @@ proto.cs3.gatewayv0alpha.GatewayServiceClient.prototype.generateAccessToken =
 
 
 /**
- * @param {!proto.cs3.authv0alpha.GenerateAccessTokenRequest} request The
+ * @param {!proto.cs3.gatewayv0alpha.GenerateAccessTokenRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @return {!Promise<!proto.cs3.authv0alpha.GenerateAccessTokenResponse>}
+ * @return {!Promise<!proto.cs3.authproviderv0alpha.GenerateAccessTokenResponse>}
  *     A native promise that resolves to the response
  */
 proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.generateAccessToken =
@@ -186,46 +188,46 @@ proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.generateAccessTok
 /**
  * @const
  * @type {!grpc.web.MethodDescriptor<
- *   !proto.cs3.authv0alpha.WhoAmIRequest,
- *   !proto.cs3.authv0alpha.WhoAmIResponse>}
+ *   !proto.cs3.authproviderv0alpha.WhoAmIRequest,
+ *   !proto.cs3.authproviderv0alpha.WhoAmIResponse>}
  */
 const methodDescriptor_GatewayService_WhoAmI = new grpc.web.MethodDescriptor(
   '/cs3.gatewayv0alpha.GatewayService/WhoAmI',
   grpc.web.MethodType.UNARY,
-  cs3_auth_v0alpha_auth_pb.WhoAmIRequest,
-  cs3_auth_v0alpha_auth_pb.WhoAmIResponse,
-  /** @param {!proto.cs3.authv0alpha.WhoAmIRequest} request */
+  cs3_authprovider_v0alpha_authprovider_pb.WhoAmIRequest,
+  cs3_authprovider_v0alpha_authprovider_pb.WhoAmIResponse,
+  /** @param {!proto.cs3.authproviderv0alpha.WhoAmIRequest} request */
   function(request) {
     return request.serializeBinary();
   },
-  cs3_auth_v0alpha_auth_pb.WhoAmIResponse.deserializeBinary
+  cs3_authprovider_v0alpha_authprovider_pb.WhoAmIResponse.deserializeBinary
 );
 
 
 /**
  * @const
  * @type {!grpc.web.AbstractClientBase.MethodInfo<
- *   !proto.cs3.authv0alpha.WhoAmIRequest,
- *   !proto.cs3.authv0alpha.WhoAmIResponse>}
+ *   !proto.cs3.authproviderv0alpha.WhoAmIRequest,
+ *   !proto.cs3.authproviderv0alpha.WhoAmIResponse>}
  */
 const methodInfo_GatewayService_WhoAmI = new grpc.web.AbstractClientBase.MethodInfo(
-  cs3_auth_v0alpha_auth_pb.WhoAmIResponse,
-  /** @param {!proto.cs3.authv0alpha.WhoAmIRequest} request */
+  cs3_authprovider_v0alpha_authprovider_pb.WhoAmIResponse,
+  /** @param {!proto.cs3.authproviderv0alpha.WhoAmIRequest} request */
   function(request) {
     return request.serializeBinary();
   },
-  cs3_auth_v0alpha_auth_pb.WhoAmIResponse.deserializeBinary
+  cs3_authprovider_v0alpha_authprovider_pb.WhoAmIResponse.deserializeBinary
 );
 
 
 /**
- * @param {!proto.cs3.authv0alpha.WhoAmIRequest} request The
+ * @param {!proto.cs3.authproviderv0alpha.WhoAmIRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @param {function(?grpc.web.Error, ?proto.cs3.authv0alpha.WhoAmIResponse)}
+ * @param {function(?grpc.web.Error, ?proto.cs3.authproviderv0alpha.WhoAmIResponse)}
  *     callback The callback function(error, response)
- * @return {!grpc.web.ClientReadableStream<!proto.cs3.authv0alpha.WhoAmIResponse>|undefined}
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.authproviderv0alpha.WhoAmIResponse>|undefined}
  *     The XHR Node Readable Stream
  */
 proto.cs3.gatewayv0alpha.GatewayServiceClient.prototype.whoAmI =
@@ -240,11 +242,11 @@ proto.cs3.gatewayv0alpha.GatewayServiceClient.prototype.whoAmI =
 
 
 /**
- * @param {!proto.cs3.authv0alpha.WhoAmIRequest} request The
+ * @param {!proto.cs3.authproviderv0alpha.WhoAmIRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @return {!Promise<!proto.cs3.authv0alpha.WhoAmIResponse>}
+ * @return {!Promise<!proto.cs3.authproviderv0alpha.WhoAmIResponse>}
  *     A native promise that resolves to the response
  */
 proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.whoAmI =
@@ -3722,6 +3724,80 @@ proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.findUsers =
       request,
       metadata || {},
       methodDescriptor_GatewayService_FindUsers);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.authregistryv0alpha.ListAuthProvidersRequest,
+ *   !proto.cs3.gatewayv0alpha.ListAuthProvidersResponse>}
+ */
+const methodDescriptor_GatewayService_ListAuthProviders = new grpc.web.MethodDescriptor(
+  '/cs3.gatewayv0alpha.GatewayService/ListAuthProviders',
+  grpc.web.MethodType.UNARY,
+  cs3_authregistry_v0alpha_authregistry_pb.ListAuthProvidersRequest,
+  proto.cs3.gatewayv0alpha.ListAuthProvidersResponse,
+  /** @param {!proto.cs3.authregistryv0alpha.ListAuthProvidersRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.cs3.gatewayv0alpha.ListAuthProvidersResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.authregistryv0alpha.ListAuthProvidersRequest,
+ *   !proto.cs3.gatewayv0alpha.ListAuthProvidersResponse>}
+ */
+const methodInfo_GatewayService_ListAuthProviders = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.cs3.gatewayv0alpha.ListAuthProvidersResponse,
+  /** @param {!proto.cs3.authregistryv0alpha.ListAuthProvidersRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.cs3.gatewayv0alpha.ListAuthProvidersResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.authregistryv0alpha.ListAuthProvidersRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.gatewayv0alpha.ListAuthProvidersResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.gatewayv0alpha.ListAuthProvidersResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gatewayv0alpha.GatewayServiceClient.prototype.listAuthProviders =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/ListAuthProviders',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_ListAuthProviders,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.authregistryv0alpha.ListAuthProvidersRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.gatewayv0alpha.ListAuthProvidersResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.listAuthProviders =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/ListAuthProviders',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_ListAuthProviders);
 };
 
 
