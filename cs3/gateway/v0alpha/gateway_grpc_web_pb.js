@@ -12,7 +12,17 @@ const grpc = {};
 grpc.web = require('grpc-web');
 
 
-var cs3_auth_v0alpha_auth_pb = require('../../../cs3/auth/v0alpha/auth_pb.js')
+var cs3_appregistry_v0alpha_appregistry_pb = require('../../../cs3/appregistry/v0alpha/appregistry_pb.js')
+
+var cs3_authregistry_v0alpha_authregistry_pb = require('../../../cs3/authregistry/v0alpha/authregistry_pb.js')
+
+var cs3_ocmshareprovider_v0alpha_ocmshareprovider_pb = require('../../../cs3/ocmshareprovider/v0alpha/ocmshareprovider_pb.js')
+
+var cs3_preferences_v0alpha_preferences_pb = require('../../../cs3/preferences/v0alpha/preferences_pb.js')
+
+var cs3_publicshareprovider_v0alpha_publicshareprovider_pb = require('../../../cs3/publicshareprovider/v0alpha/publicshareprovider_pb.js')
+
+var cs3_rpc_status_pb = require('../../../cs3/rpc/status_pb.js')
 
 var cs3_storageprovider_v0alpha_resources_pb = require('../../../cs3/storageprovider/v0alpha/resources_pb.js')
 
@@ -21,6 +31,10 @@ var cs3_storageprovider_v0alpha_storageprovider_pb = require('../../../cs3/stora
 var cs3_storageregistry_v0alpha_storageregistry_pb = require('../../../cs3/storageregistry/v0alpha/storageregistry_pb.js')
 
 var cs3_types_types_pb = require('../../../cs3/types/types_pb.js')
+
+var cs3_userprovider_v0alpha_resources_pb = require('../../../cs3/userprovider/v0alpha/resources_pb.js')
+
+var cs3_userprovider_v0alpha_userprovider_pb = require('../../../cs3/userprovider/v0alpha/userprovider_pb.js')
 
 var cs3_usershareprovider_v0alpha_usershareprovider_pb = require('../../../cs3/usershareprovider/v0alpha/usershareprovider_pb.js')
 const proto = {};
@@ -102,120 +116,120 @@ proto.cs3.gatewayv0alpha.GatewayServicePromiseClient =
 /**
  * @const
  * @type {!grpc.web.MethodDescriptor<
- *   !proto.cs3.authv0alpha.GenerateAccessTokenRequest,
- *   !proto.cs3.authv0alpha.GenerateAccessTokenResponse>}
+ *   !proto.cs3.gatewayv0alpha.AuthenticateRequest,
+ *   !proto.cs3.gatewayv0alpha.AuthenticateResponse>}
  */
-const methodDescriptor_GatewayService_GenerateAccessToken = new grpc.web.MethodDescriptor(
-  '/cs3.gatewayv0alpha.GatewayService/GenerateAccessToken',
+const methodDescriptor_GatewayService_Authenticate = new grpc.web.MethodDescriptor(
+  '/cs3.gatewayv0alpha.GatewayService/Authenticate',
   grpc.web.MethodType.UNARY,
-  cs3_auth_v0alpha_auth_pb.GenerateAccessTokenRequest,
-  cs3_auth_v0alpha_auth_pb.GenerateAccessTokenResponse,
-  /** @param {!proto.cs3.authv0alpha.GenerateAccessTokenRequest} request */
+  proto.cs3.gatewayv0alpha.AuthenticateRequest,
+  proto.cs3.gatewayv0alpha.AuthenticateResponse,
+  /** @param {!proto.cs3.gatewayv0alpha.AuthenticateRequest} request */
   function(request) {
     return request.serializeBinary();
   },
-  cs3_auth_v0alpha_auth_pb.GenerateAccessTokenResponse.deserializeBinary
+  proto.cs3.gatewayv0alpha.AuthenticateResponse.deserializeBinary
 );
 
 
 /**
  * @const
  * @type {!grpc.web.AbstractClientBase.MethodInfo<
- *   !proto.cs3.authv0alpha.GenerateAccessTokenRequest,
- *   !proto.cs3.authv0alpha.GenerateAccessTokenResponse>}
+ *   !proto.cs3.gatewayv0alpha.AuthenticateRequest,
+ *   !proto.cs3.gatewayv0alpha.AuthenticateResponse>}
  */
-const methodInfo_GatewayService_GenerateAccessToken = new grpc.web.AbstractClientBase.MethodInfo(
-  cs3_auth_v0alpha_auth_pb.GenerateAccessTokenResponse,
-  /** @param {!proto.cs3.authv0alpha.GenerateAccessTokenRequest} request */
+const methodInfo_GatewayService_Authenticate = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.cs3.gatewayv0alpha.AuthenticateResponse,
+  /** @param {!proto.cs3.gatewayv0alpha.AuthenticateRequest} request */
   function(request) {
     return request.serializeBinary();
   },
-  cs3_auth_v0alpha_auth_pb.GenerateAccessTokenResponse.deserializeBinary
+  proto.cs3.gatewayv0alpha.AuthenticateResponse.deserializeBinary
 );
 
 
 /**
- * @param {!proto.cs3.authv0alpha.GenerateAccessTokenRequest} request The
+ * @param {!proto.cs3.gatewayv0alpha.AuthenticateRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @param {function(?grpc.web.Error, ?proto.cs3.authv0alpha.GenerateAccessTokenResponse)}
+ * @param {function(?grpc.web.Error, ?proto.cs3.gatewayv0alpha.AuthenticateResponse)}
  *     callback The callback function(error, response)
- * @return {!grpc.web.ClientReadableStream<!proto.cs3.authv0alpha.GenerateAccessTokenResponse>|undefined}
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.gatewayv0alpha.AuthenticateResponse>|undefined}
  *     The XHR Node Readable Stream
  */
-proto.cs3.gatewayv0alpha.GatewayServiceClient.prototype.generateAccessToken =
+proto.cs3.gatewayv0alpha.GatewayServiceClient.prototype.authenticate =
     function(request, metadata, callback) {
   return this.client_.rpcCall(this.hostname_ +
-      '/cs3.gatewayv0alpha.GatewayService/GenerateAccessToken',
+      '/cs3.gatewayv0alpha.GatewayService/Authenticate',
       request,
       metadata || {},
-      methodDescriptor_GatewayService_GenerateAccessToken,
+      methodDescriptor_GatewayService_Authenticate,
       callback);
 };
 
 
 /**
- * @param {!proto.cs3.authv0alpha.GenerateAccessTokenRequest} request The
+ * @param {!proto.cs3.gatewayv0alpha.AuthenticateRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @return {!Promise<!proto.cs3.authv0alpha.GenerateAccessTokenResponse>}
+ * @return {!Promise<!proto.cs3.gatewayv0alpha.AuthenticateResponse>}
  *     A native promise that resolves to the response
  */
-proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.generateAccessToken =
+proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.authenticate =
     function(request, metadata) {
   return this.client_.unaryCall(this.hostname_ +
-      '/cs3.gatewayv0alpha.GatewayService/GenerateAccessToken',
+      '/cs3.gatewayv0alpha.GatewayService/Authenticate',
       request,
       metadata || {},
-      methodDescriptor_GatewayService_GenerateAccessToken);
+      methodDescriptor_GatewayService_Authenticate);
 };
 
 
 /**
  * @const
  * @type {!grpc.web.MethodDescriptor<
- *   !proto.cs3.authv0alpha.WhoAmIRequest,
- *   !proto.cs3.authv0alpha.WhoAmIResponse>}
+ *   !proto.cs3.gatewayv0alpha.WhoAmIRequest,
+ *   !proto.cs3.gatewayv0alpha.WhoAmIResponse>}
  */
 const methodDescriptor_GatewayService_WhoAmI = new grpc.web.MethodDescriptor(
   '/cs3.gatewayv0alpha.GatewayService/WhoAmI',
   grpc.web.MethodType.UNARY,
-  cs3_auth_v0alpha_auth_pb.WhoAmIRequest,
-  cs3_auth_v0alpha_auth_pb.WhoAmIResponse,
-  /** @param {!proto.cs3.authv0alpha.WhoAmIRequest} request */
+  proto.cs3.gatewayv0alpha.WhoAmIRequest,
+  proto.cs3.gatewayv0alpha.WhoAmIResponse,
+  /** @param {!proto.cs3.gatewayv0alpha.WhoAmIRequest} request */
   function(request) {
     return request.serializeBinary();
   },
-  cs3_auth_v0alpha_auth_pb.WhoAmIResponse.deserializeBinary
+  proto.cs3.gatewayv0alpha.WhoAmIResponse.deserializeBinary
 );
 
 
 /**
  * @const
  * @type {!grpc.web.AbstractClientBase.MethodInfo<
- *   !proto.cs3.authv0alpha.WhoAmIRequest,
- *   !proto.cs3.authv0alpha.WhoAmIResponse>}
+ *   !proto.cs3.gatewayv0alpha.WhoAmIRequest,
+ *   !proto.cs3.gatewayv0alpha.WhoAmIResponse>}
  */
 const methodInfo_GatewayService_WhoAmI = new grpc.web.AbstractClientBase.MethodInfo(
-  cs3_auth_v0alpha_auth_pb.WhoAmIResponse,
-  /** @param {!proto.cs3.authv0alpha.WhoAmIRequest} request */
+  proto.cs3.gatewayv0alpha.WhoAmIResponse,
+  /** @param {!proto.cs3.gatewayv0alpha.WhoAmIRequest} request */
   function(request) {
     return request.serializeBinary();
   },
-  cs3_auth_v0alpha_auth_pb.WhoAmIResponse.deserializeBinary
+  proto.cs3.gatewayv0alpha.WhoAmIResponse.deserializeBinary
 );
 
 
 /**
- * @param {!proto.cs3.authv0alpha.WhoAmIRequest} request The
+ * @param {!proto.cs3.gatewayv0alpha.WhoAmIRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @param {function(?grpc.web.Error, ?proto.cs3.authv0alpha.WhoAmIResponse)}
+ * @param {function(?grpc.web.Error, ?proto.cs3.gatewayv0alpha.WhoAmIResponse)}
  *     callback The callback function(error, response)
- * @return {!grpc.web.ClientReadableStream<!proto.cs3.authv0alpha.WhoAmIResponse>|undefined}
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.gatewayv0alpha.WhoAmIResponse>|undefined}
  *     The XHR Node Readable Stream
  */
 proto.cs3.gatewayv0alpha.GatewayServiceClient.prototype.whoAmI =
@@ -230,11 +244,11 @@ proto.cs3.gatewayv0alpha.GatewayServiceClient.prototype.whoAmI =
 
 
 /**
- * @param {!proto.cs3.authv0alpha.WhoAmIRequest} request The
+ * @param {!proto.cs3.gatewayv0alpha.WhoAmIRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @return {!Promise<!proto.cs3.authv0alpha.WhoAmIResponse>}
+ * @return {!Promise<!proto.cs3.gatewayv0alpha.WhoAmIResponse>}
  *     A native promise that resolves to the response
  */
 proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.whoAmI =
@@ -547,18 +561,18 @@ proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.getQuota =
  * @const
  * @type {!grpc.web.MethodDescriptor<
  *   !proto.cs3.storageproviderv0alpha.InitiateFileDownloadRequest,
- *   !proto.cs3.storageproviderv0alpha.InitiateFileDownloadResponse>}
+ *   !proto.cs3.gatewayv0alpha.InitiateFileDownloadResponse>}
  */
 const methodDescriptor_GatewayService_InitiateFileDownload = new grpc.web.MethodDescriptor(
   '/cs3.gatewayv0alpha.GatewayService/InitiateFileDownload',
   grpc.web.MethodType.UNARY,
   cs3_storageprovider_v0alpha_storageprovider_pb.InitiateFileDownloadRequest,
-  cs3_storageprovider_v0alpha_storageprovider_pb.InitiateFileDownloadResponse,
+  proto.cs3.gatewayv0alpha.InitiateFileDownloadResponse,
   /** @param {!proto.cs3.storageproviderv0alpha.InitiateFileDownloadRequest} request */
   function(request) {
     return request.serializeBinary();
   },
-  cs3_storageprovider_v0alpha_storageprovider_pb.InitiateFileDownloadResponse.deserializeBinary
+  proto.cs3.gatewayv0alpha.InitiateFileDownloadResponse.deserializeBinary
 );
 
 
@@ -566,15 +580,15 @@ const methodDescriptor_GatewayService_InitiateFileDownload = new grpc.web.Method
  * @const
  * @type {!grpc.web.AbstractClientBase.MethodInfo<
  *   !proto.cs3.storageproviderv0alpha.InitiateFileDownloadRequest,
- *   !proto.cs3.storageproviderv0alpha.InitiateFileDownloadResponse>}
+ *   !proto.cs3.gatewayv0alpha.InitiateFileDownloadResponse>}
  */
 const methodInfo_GatewayService_InitiateFileDownload = new grpc.web.AbstractClientBase.MethodInfo(
-  cs3_storageprovider_v0alpha_storageprovider_pb.InitiateFileDownloadResponse,
+  proto.cs3.gatewayv0alpha.InitiateFileDownloadResponse,
   /** @param {!proto.cs3.storageproviderv0alpha.InitiateFileDownloadRequest} request */
   function(request) {
     return request.serializeBinary();
   },
-  cs3_storageprovider_v0alpha_storageprovider_pb.InitiateFileDownloadResponse.deserializeBinary
+  proto.cs3.gatewayv0alpha.InitiateFileDownloadResponse.deserializeBinary
 );
 
 
@@ -583,9 +597,9 @@ const methodInfo_GatewayService_InitiateFileDownload = new grpc.web.AbstractClie
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @param {function(?grpc.web.Error, ?proto.cs3.storageproviderv0alpha.InitiateFileDownloadResponse)}
+ * @param {function(?grpc.web.Error, ?proto.cs3.gatewayv0alpha.InitiateFileDownloadResponse)}
  *     callback The callback function(error, response)
- * @return {!grpc.web.ClientReadableStream<!proto.cs3.storageproviderv0alpha.InitiateFileDownloadResponse>|undefined}
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.gatewayv0alpha.InitiateFileDownloadResponse>|undefined}
  *     The XHR Node Readable Stream
  */
 proto.cs3.gatewayv0alpha.GatewayServiceClient.prototype.initiateFileDownload =
@@ -604,7 +618,7 @@ proto.cs3.gatewayv0alpha.GatewayServiceClient.prototype.initiateFileDownload =
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @return {!Promise<!proto.cs3.storageproviderv0alpha.InitiateFileDownloadResponse>}
+ * @return {!Promise<!proto.cs3.gatewayv0alpha.InitiateFileDownloadResponse>}
  *     A native promise that resolves to the response
  */
 proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.initiateFileDownload =
@@ -621,18 +635,18 @@ proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.initiateFileDownl
  * @const
  * @type {!grpc.web.MethodDescriptor<
  *   !proto.cs3.storageproviderv0alpha.InitiateFileUploadRequest,
- *   !proto.cs3.storageproviderv0alpha.InitiateFileUploadResponse>}
+ *   !proto.cs3.gatewayv0alpha.InitiateFileUploadResponse>}
  */
 const methodDescriptor_GatewayService_InitiateFileUpload = new grpc.web.MethodDescriptor(
   '/cs3.gatewayv0alpha.GatewayService/InitiateFileUpload',
   grpc.web.MethodType.UNARY,
   cs3_storageprovider_v0alpha_storageprovider_pb.InitiateFileUploadRequest,
-  cs3_storageprovider_v0alpha_storageprovider_pb.InitiateFileUploadResponse,
+  proto.cs3.gatewayv0alpha.InitiateFileUploadResponse,
   /** @param {!proto.cs3.storageproviderv0alpha.InitiateFileUploadRequest} request */
   function(request) {
     return request.serializeBinary();
   },
-  cs3_storageprovider_v0alpha_storageprovider_pb.InitiateFileUploadResponse.deserializeBinary
+  proto.cs3.gatewayv0alpha.InitiateFileUploadResponse.deserializeBinary
 );
 
 
@@ -640,15 +654,15 @@ const methodDescriptor_GatewayService_InitiateFileUpload = new grpc.web.MethodDe
  * @const
  * @type {!grpc.web.AbstractClientBase.MethodInfo<
  *   !proto.cs3.storageproviderv0alpha.InitiateFileUploadRequest,
- *   !proto.cs3.storageproviderv0alpha.InitiateFileUploadResponse>}
+ *   !proto.cs3.gatewayv0alpha.InitiateFileUploadResponse>}
  */
 const methodInfo_GatewayService_InitiateFileUpload = new grpc.web.AbstractClientBase.MethodInfo(
-  cs3_storageprovider_v0alpha_storageprovider_pb.InitiateFileUploadResponse,
+  proto.cs3.gatewayv0alpha.InitiateFileUploadResponse,
   /** @param {!proto.cs3.storageproviderv0alpha.InitiateFileUploadRequest} request */
   function(request) {
     return request.serializeBinary();
   },
-  cs3_storageprovider_v0alpha_storageprovider_pb.InitiateFileUploadResponse.deserializeBinary
+  proto.cs3.gatewayv0alpha.InitiateFileUploadResponse.deserializeBinary
 );
 
 
@@ -657,9 +671,9 @@ const methodInfo_GatewayService_InitiateFileUpload = new grpc.web.AbstractClient
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @param {function(?grpc.web.Error, ?proto.cs3.storageproviderv0alpha.InitiateFileUploadResponse)}
+ * @param {function(?grpc.web.Error, ?proto.cs3.gatewayv0alpha.InitiateFileUploadResponse)}
  *     callback The callback function(error, response)
- * @return {!grpc.web.ClientReadableStream<!proto.cs3.storageproviderv0alpha.InitiateFileUploadResponse>|undefined}
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.gatewayv0alpha.InitiateFileUploadResponse>|undefined}
  *     The XHR Node Readable Stream
  */
 proto.cs3.gatewayv0alpha.GatewayServiceClient.prototype.initiateFileUpload =
@@ -678,7 +692,7 @@ proto.cs3.gatewayv0alpha.GatewayServiceClient.prototype.initiateFileUpload =
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @return {!Promise<!proto.cs3.storageproviderv0alpha.InitiateFileUploadResponse>}
+ * @return {!Promise<!proto.cs3.gatewayv0alpha.InitiateFileUploadResponse>}
  *     A native promise that resolves to the response
  */
 proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.initiateFileUpload =
@@ -1424,6 +1438,154 @@ proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.stat =
 /**
  * @const
  * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.storageproviderv0alpha.SetArbitraryMetadataRequest,
+ *   !proto.cs3.storageproviderv0alpha.SetArbitraryMetadataResponse>}
+ */
+const methodDescriptor_GatewayService_SetArbitraryMetadata = new grpc.web.MethodDescriptor(
+  '/cs3.gatewayv0alpha.GatewayService/SetArbitraryMetadata',
+  grpc.web.MethodType.UNARY,
+  cs3_storageprovider_v0alpha_storageprovider_pb.SetArbitraryMetadataRequest,
+  cs3_storageprovider_v0alpha_storageprovider_pb.SetArbitraryMetadataResponse,
+  /** @param {!proto.cs3.storageproviderv0alpha.SetArbitraryMetadataRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_storageprovider_v0alpha_storageprovider_pb.SetArbitraryMetadataResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.storageproviderv0alpha.SetArbitraryMetadataRequest,
+ *   !proto.cs3.storageproviderv0alpha.SetArbitraryMetadataResponse>}
+ */
+const methodInfo_GatewayService_SetArbitraryMetadata = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_storageprovider_v0alpha_storageprovider_pb.SetArbitraryMetadataResponse,
+  /** @param {!proto.cs3.storageproviderv0alpha.SetArbitraryMetadataRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_storageprovider_v0alpha_storageprovider_pb.SetArbitraryMetadataResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.storageproviderv0alpha.SetArbitraryMetadataRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.storageproviderv0alpha.SetArbitraryMetadataResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.storageproviderv0alpha.SetArbitraryMetadataResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gatewayv0alpha.GatewayServiceClient.prototype.setArbitraryMetadata =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/SetArbitraryMetadata',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_SetArbitraryMetadata,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.storageproviderv0alpha.SetArbitraryMetadataRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.storageproviderv0alpha.SetArbitraryMetadataResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.setArbitraryMetadata =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/SetArbitraryMetadata',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_SetArbitraryMetadata);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.storageproviderv0alpha.UnsetArbitraryMetadataRequest,
+ *   !proto.cs3.storageproviderv0alpha.UnsetArbitraryMetadataResponse>}
+ */
+const methodDescriptor_GatewayService_UnsetArbitraryMetadata = new grpc.web.MethodDescriptor(
+  '/cs3.gatewayv0alpha.GatewayService/UnsetArbitraryMetadata',
+  grpc.web.MethodType.UNARY,
+  cs3_storageprovider_v0alpha_storageprovider_pb.UnsetArbitraryMetadataRequest,
+  cs3_storageprovider_v0alpha_storageprovider_pb.UnsetArbitraryMetadataResponse,
+  /** @param {!proto.cs3.storageproviderv0alpha.UnsetArbitraryMetadataRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_storageprovider_v0alpha_storageprovider_pb.UnsetArbitraryMetadataResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.storageproviderv0alpha.UnsetArbitraryMetadataRequest,
+ *   !proto.cs3.storageproviderv0alpha.UnsetArbitraryMetadataResponse>}
+ */
+const methodInfo_GatewayService_UnsetArbitraryMetadata = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_storageprovider_v0alpha_storageprovider_pb.UnsetArbitraryMetadataResponse,
+  /** @param {!proto.cs3.storageproviderv0alpha.UnsetArbitraryMetadataRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_storageprovider_v0alpha_storageprovider_pb.UnsetArbitraryMetadataResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.storageproviderv0alpha.UnsetArbitraryMetadataRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.storageproviderv0alpha.UnsetArbitraryMetadataResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.storageproviderv0alpha.UnsetArbitraryMetadataResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gatewayv0alpha.GatewayServiceClient.prototype.unsetArbitraryMetadata =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/UnsetArbitraryMetadata',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_UnsetArbitraryMetadata,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.storageproviderv0alpha.UnsetArbitraryMetadataRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.storageproviderv0alpha.UnsetArbitraryMetadataResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.unsetArbitraryMetadata =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/UnsetArbitraryMetadata',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_UnsetArbitraryMetadata);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
  *   !proto.cs3.usershareproviderv0alpha.CreateShareRequest,
  *   !proto.cs3.usershareproviderv0alpha.CreateShareResponse>}
  */
@@ -2010,6 +2172,1634 @@ proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.getReceivedShare 
       request,
       metadata || {},
       methodDescriptor_GatewayService_GetReceivedShare);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.preferencesv0alpha.SetKeyRequest,
+ *   !proto.cs3.preferencesv0alpha.SetKeyResponse>}
+ */
+const methodDescriptor_GatewayService_SetKey = new grpc.web.MethodDescriptor(
+  '/cs3.gatewayv0alpha.GatewayService/SetKey',
+  grpc.web.MethodType.UNARY,
+  cs3_preferences_v0alpha_preferences_pb.SetKeyRequest,
+  cs3_preferences_v0alpha_preferences_pb.SetKeyResponse,
+  /** @param {!proto.cs3.preferencesv0alpha.SetKeyRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_preferences_v0alpha_preferences_pb.SetKeyResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.preferencesv0alpha.SetKeyRequest,
+ *   !proto.cs3.preferencesv0alpha.SetKeyResponse>}
+ */
+const methodInfo_GatewayService_SetKey = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_preferences_v0alpha_preferences_pb.SetKeyResponse,
+  /** @param {!proto.cs3.preferencesv0alpha.SetKeyRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_preferences_v0alpha_preferences_pb.SetKeyResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.preferencesv0alpha.SetKeyRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.preferencesv0alpha.SetKeyResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.preferencesv0alpha.SetKeyResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gatewayv0alpha.GatewayServiceClient.prototype.setKey =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/SetKey',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_SetKey,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.preferencesv0alpha.SetKeyRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.preferencesv0alpha.SetKeyResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.setKey =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/SetKey',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_SetKey);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.preferencesv0alpha.GetKeyRequest,
+ *   !proto.cs3.preferencesv0alpha.GetKeyResponse>}
+ */
+const methodDescriptor_GatewayService_GetKey = new grpc.web.MethodDescriptor(
+  '/cs3.gatewayv0alpha.GatewayService/GetKey',
+  grpc.web.MethodType.UNARY,
+  cs3_preferences_v0alpha_preferences_pb.GetKeyRequest,
+  cs3_preferences_v0alpha_preferences_pb.GetKeyResponse,
+  /** @param {!proto.cs3.preferencesv0alpha.GetKeyRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_preferences_v0alpha_preferences_pb.GetKeyResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.preferencesv0alpha.GetKeyRequest,
+ *   !proto.cs3.preferencesv0alpha.GetKeyResponse>}
+ */
+const methodInfo_GatewayService_GetKey = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_preferences_v0alpha_preferences_pb.GetKeyResponse,
+  /** @param {!proto.cs3.preferencesv0alpha.GetKeyRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_preferences_v0alpha_preferences_pb.GetKeyResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.preferencesv0alpha.GetKeyRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.preferencesv0alpha.GetKeyResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.preferencesv0alpha.GetKeyResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gatewayv0alpha.GatewayServiceClient.prototype.getKey =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/GetKey',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_GetKey,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.preferencesv0alpha.GetKeyRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.preferencesv0alpha.GetKeyResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.getKey =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/GetKey',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_GetKey);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.publicshareproviderv0alpha.CreatePublicShareRequest,
+ *   !proto.cs3.publicshareproviderv0alpha.CreatePublicShareResponse>}
+ */
+const methodDescriptor_GatewayService_CreatePublicShare = new grpc.web.MethodDescriptor(
+  '/cs3.gatewayv0alpha.GatewayService/CreatePublicShare',
+  grpc.web.MethodType.UNARY,
+  cs3_publicshareprovider_v0alpha_publicshareprovider_pb.CreatePublicShareRequest,
+  cs3_publicshareprovider_v0alpha_publicshareprovider_pb.CreatePublicShareResponse,
+  /** @param {!proto.cs3.publicshareproviderv0alpha.CreatePublicShareRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_publicshareprovider_v0alpha_publicshareprovider_pb.CreatePublicShareResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.publicshareproviderv0alpha.CreatePublicShareRequest,
+ *   !proto.cs3.publicshareproviderv0alpha.CreatePublicShareResponse>}
+ */
+const methodInfo_GatewayService_CreatePublicShare = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_publicshareprovider_v0alpha_publicshareprovider_pb.CreatePublicShareResponse,
+  /** @param {!proto.cs3.publicshareproviderv0alpha.CreatePublicShareRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_publicshareprovider_v0alpha_publicshareprovider_pb.CreatePublicShareResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.publicshareproviderv0alpha.CreatePublicShareRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.publicshareproviderv0alpha.CreatePublicShareResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.publicshareproviderv0alpha.CreatePublicShareResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gatewayv0alpha.GatewayServiceClient.prototype.createPublicShare =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/CreatePublicShare',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_CreatePublicShare,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.publicshareproviderv0alpha.CreatePublicShareRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.publicshareproviderv0alpha.CreatePublicShareResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.createPublicShare =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/CreatePublicShare',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_CreatePublicShare);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.publicshareproviderv0alpha.RemovePublicShareRequest,
+ *   !proto.cs3.publicshareproviderv0alpha.RemovePublicShareResponse>}
+ */
+const methodDescriptor_GatewayService_RemovePublicShare = new grpc.web.MethodDescriptor(
+  '/cs3.gatewayv0alpha.GatewayService/RemovePublicShare',
+  grpc.web.MethodType.UNARY,
+  cs3_publicshareprovider_v0alpha_publicshareprovider_pb.RemovePublicShareRequest,
+  cs3_publicshareprovider_v0alpha_publicshareprovider_pb.RemovePublicShareResponse,
+  /** @param {!proto.cs3.publicshareproviderv0alpha.RemovePublicShareRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_publicshareprovider_v0alpha_publicshareprovider_pb.RemovePublicShareResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.publicshareproviderv0alpha.RemovePublicShareRequest,
+ *   !proto.cs3.publicshareproviderv0alpha.RemovePublicShareResponse>}
+ */
+const methodInfo_GatewayService_RemovePublicShare = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_publicshareprovider_v0alpha_publicshareprovider_pb.RemovePublicShareResponse,
+  /** @param {!proto.cs3.publicshareproviderv0alpha.RemovePublicShareRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_publicshareprovider_v0alpha_publicshareprovider_pb.RemovePublicShareResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.publicshareproviderv0alpha.RemovePublicShareRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.publicshareproviderv0alpha.RemovePublicShareResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.publicshareproviderv0alpha.RemovePublicShareResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gatewayv0alpha.GatewayServiceClient.prototype.removePublicShare =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/RemovePublicShare',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_RemovePublicShare,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.publicshareproviderv0alpha.RemovePublicShareRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.publicshareproviderv0alpha.RemovePublicShareResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.removePublicShare =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/RemovePublicShare',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_RemovePublicShare);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.publicshareproviderv0alpha.GetPublicShareRequest,
+ *   !proto.cs3.publicshareproviderv0alpha.GetPublicShareResponse>}
+ */
+const methodDescriptor_GatewayService_GetPublicShare = new grpc.web.MethodDescriptor(
+  '/cs3.gatewayv0alpha.GatewayService/GetPublicShare',
+  grpc.web.MethodType.UNARY,
+  cs3_publicshareprovider_v0alpha_publicshareprovider_pb.GetPublicShareRequest,
+  cs3_publicshareprovider_v0alpha_publicshareprovider_pb.GetPublicShareResponse,
+  /** @param {!proto.cs3.publicshareproviderv0alpha.GetPublicShareRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_publicshareprovider_v0alpha_publicshareprovider_pb.GetPublicShareResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.publicshareproviderv0alpha.GetPublicShareRequest,
+ *   !proto.cs3.publicshareproviderv0alpha.GetPublicShareResponse>}
+ */
+const methodInfo_GatewayService_GetPublicShare = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_publicshareprovider_v0alpha_publicshareprovider_pb.GetPublicShareResponse,
+  /** @param {!proto.cs3.publicshareproviderv0alpha.GetPublicShareRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_publicshareprovider_v0alpha_publicshareprovider_pb.GetPublicShareResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.publicshareproviderv0alpha.GetPublicShareRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.publicshareproviderv0alpha.GetPublicShareResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.publicshareproviderv0alpha.GetPublicShareResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gatewayv0alpha.GatewayServiceClient.prototype.getPublicShare =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/GetPublicShare',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_GetPublicShare,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.publicshareproviderv0alpha.GetPublicShareRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.publicshareproviderv0alpha.GetPublicShareResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.getPublicShare =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/GetPublicShare',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_GetPublicShare);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.publicshareproviderv0alpha.GetPublicShareByTokenRequest,
+ *   !proto.cs3.publicshareproviderv0alpha.GetPublicShareByTokenResponse>}
+ */
+const methodDescriptor_GatewayService_GetPublicShareByToken = new grpc.web.MethodDescriptor(
+  '/cs3.gatewayv0alpha.GatewayService/GetPublicShareByToken',
+  grpc.web.MethodType.UNARY,
+  cs3_publicshareprovider_v0alpha_publicshareprovider_pb.GetPublicShareByTokenRequest,
+  cs3_publicshareprovider_v0alpha_publicshareprovider_pb.GetPublicShareByTokenResponse,
+  /** @param {!proto.cs3.publicshareproviderv0alpha.GetPublicShareByTokenRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_publicshareprovider_v0alpha_publicshareprovider_pb.GetPublicShareByTokenResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.publicshareproviderv0alpha.GetPublicShareByTokenRequest,
+ *   !proto.cs3.publicshareproviderv0alpha.GetPublicShareByTokenResponse>}
+ */
+const methodInfo_GatewayService_GetPublicShareByToken = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_publicshareprovider_v0alpha_publicshareprovider_pb.GetPublicShareByTokenResponse,
+  /** @param {!proto.cs3.publicshareproviderv0alpha.GetPublicShareByTokenRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_publicshareprovider_v0alpha_publicshareprovider_pb.GetPublicShareByTokenResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.publicshareproviderv0alpha.GetPublicShareByTokenRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.publicshareproviderv0alpha.GetPublicShareByTokenResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.publicshareproviderv0alpha.GetPublicShareByTokenResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gatewayv0alpha.GatewayServiceClient.prototype.getPublicShareByToken =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/GetPublicShareByToken',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_GetPublicShareByToken,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.publicshareproviderv0alpha.GetPublicShareByTokenRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.publicshareproviderv0alpha.GetPublicShareByTokenResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.getPublicShareByToken =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/GetPublicShareByToken',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_GetPublicShareByToken);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.publicshareproviderv0alpha.ListPublicSharesRequest,
+ *   !proto.cs3.publicshareproviderv0alpha.ListPublicSharesResponse>}
+ */
+const methodDescriptor_GatewayService_ListPublicShares = new grpc.web.MethodDescriptor(
+  '/cs3.gatewayv0alpha.GatewayService/ListPublicShares',
+  grpc.web.MethodType.UNARY,
+  cs3_publicshareprovider_v0alpha_publicshareprovider_pb.ListPublicSharesRequest,
+  cs3_publicshareprovider_v0alpha_publicshareprovider_pb.ListPublicSharesResponse,
+  /** @param {!proto.cs3.publicshareproviderv0alpha.ListPublicSharesRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_publicshareprovider_v0alpha_publicshareprovider_pb.ListPublicSharesResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.publicshareproviderv0alpha.ListPublicSharesRequest,
+ *   !proto.cs3.publicshareproviderv0alpha.ListPublicSharesResponse>}
+ */
+const methodInfo_GatewayService_ListPublicShares = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_publicshareprovider_v0alpha_publicshareprovider_pb.ListPublicSharesResponse,
+  /** @param {!proto.cs3.publicshareproviderv0alpha.ListPublicSharesRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_publicshareprovider_v0alpha_publicshareprovider_pb.ListPublicSharesResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.publicshareproviderv0alpha.ListPublicSharesRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.publicshareproviderv0alpha.ListPublicSharesResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.publicshareproviderv0alpha.ListPublicSharesResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gatewayv0alpha.GatewayServiceClient.prototype.listPublicShares =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/ListPublicShares',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_ListPublicShares,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.publicshareproviderv0alpha.ListPublicSharesRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.publicshareproviderv0alpha.ListPublicSharesResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.listPublicShares =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/ListPublicShares',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_ListPublicShares);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.publicshareproviderv0alpha.UpdatePublicShareRequest,
+ *   !proto.cs3.publicshareproviderv0alpha.UpdatePublicShareResponse>}
+ */
+const methodDescriptor_GatewayService_UpdatePublicShare = new grpc.web.MethodDescriptor(
+  '/cs3.gatewayv0alpha.GatewayService/UpdatePublicShare',
+  grpc.web.MethodType.UNARY,
+  cs3_publicshareprovider_v0alpha_publicshareprovider_pb.UpdatePublicShareRequest,
+  cs3_publicshareprovider_v0alpha_publicshareprovider_pb.UpdatePublicShareResponse,
+  /** @param {!proto.cs3.publicshareproviderv0alpha.UpdatePublicShareRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_publicshareprovider_v0alpha_publicshareprovider_pb.UpdatePublicShareResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.publicshareproviderv0alpha.UpdatePublicShareRequest,
+ *   !proto.cs3.publicshareproviderv0alpha.UpdatePublicShareResponse>}
+ */
+const methodInfo_GatewayService_UpdatePublicShare = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_publicshareprovider_v0alpha_publicshareprovider_pb.UpdatePublicShareResponse,
+  /** @param {!proto.cs3.publicshareproviderv0alpha.UpdatePublicShareRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_publicshareprovider_v0alpha_publicshareprovider_pb.UpdatePublicShareResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.publicshareproviderv0alpha.UpdatePublicShareRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.publicshareproviderv0alpha.UpdatePublicShareResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.publicshareproviderv0alpha.UpdatePublicShareResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gatewayv0alpha.GatewayServiceClient.prototype.updatePublicShare =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/UpdatePublicShare',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_UpdatePublicShare,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.publicshareproviderv0alpha.UpdatePublicShareRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.publicshareproviderv0alpha.UpdatePublicShareResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.updatePublicShare =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/UpdatePublicShare',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_UpdatePublicShare);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.ocmshareproviderv0alpha.CreateOCMShareRequest,
+ *   !proto.cs3.ocmshareproviderv0alpha.CreateOCMShareResponse>}
+ */
+const methodDescriptor_GatewayService_CreateOCMShare = new grpc.web.MethodDescriptor(
+  '/cs3.gatewayv0alpha.GatewayService/CreateOCMShare',
+  grpc.web.MethodType.UNARY,
+  cs3_ocmshareprovider_v0alpha_ocmshareprovider_pb.CreateOCMShareRequest,
+  cs3_ocmshareprovider_v0alpha_ocmshareprovider_pb.CreateOCMShareResponse,
+  /** @param {!proto.cs3.ocmshareproviderv0alpha.CreateOCMShareRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_ocmshareprovider_v0alpha_ocmshareprovider_pb.CreateOCMShareResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.ocmshareproviderv0alpha.CreateOCMShareRequest,
+ *   !proto.cs3.ocmshareproviderv0alpha.CreateOCMShareResponse>}
+ */
+const methodInfo_GatewayService_CreateOCMShare = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_ocmshareprovider_v0alpha_ocmshareprovider_pb.CreateOCMShareResponse,
+  /** @param {!proto.cs3.ocmshareproviderv0alpha.CreateOCMShareRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_ocmshareprovider_v0alpha_ocmshareprovider_pb.CreateOCMShareResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.ocmshareproviderv0alpha.CreateOCMShareRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.ocmshareproviderv0alpha.CreateOCMShareResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.ocmshareproviderv0alpha.CreateOCMShareResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gatewayv0alpha.GatewayServiceClient.prototype.createOCMShare =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/CreateOCMShare',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_CreateOCMShare,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.ocmshareproviderv0alpha.CreateOCMShareRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.ocmshareproviderv0alpha.CreateOCMShareResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.createOCMShare =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/CreateOCMShare',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_CreateOCMShare);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.ocmshareproviderv0alpha.RemoveOCMShareRequest,
+ *   !proto.cs3.ocmshareproviderv0alpha.RemoveOCMShareResponse>}
+ */
+const methodDescriptor_GatewayService_RemoveOCMShare = new grpc.web.MethodDescriptor(
+  '/cs3.gatewayv0alpha.GatewayService/RemoveOCMShare',
+  grpc.web.MethodType.UNARY,
+  cs3_ocmshareprovider_v0alpha_ocmshareprovider_pb.RemoveOCMShareRequest,
+  cs3_ocmshareprovider_v0alpha_ocmshareprovider_pb.RemoveOCMShareResponse,
+  /** @param {!proto.cs3.ocmshareproviderv0alpha.RemoveOCMShareRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_ocmshareprovider_v0alpha_ocmshareprovider_pb.RemoveOCMShareResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.ocmshareproviderv0alpha.RemoveOCMShareRequest,
+ *   !proto.cs3.ocmshareproviderv0alpha.RemoveOCMShareResponse>}
+ */
+const methodInfo_GatewayService_RemoveOCMShare = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_ocmshareprovider_v0alpha_ocmshareprovider_pb.RemoveOCMShareResponse,
+  /** @param {!proto.cs3.ocmshareproviderv0alpha.RemoveOCMShareRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_ocmshareprovider_v0alpha_ocmshareprovider_pb.RemoveOCMShareResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.ocmshareproviderv0alpha.RemoveOCMShareRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.ocmshareproviderv0alpha.RemoveOCMShareResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.ocmshareproviderv0alpha.RemoveOCMShareResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gatewayv0alpha.GatewayServiceClient.prototype.removeOCMShare =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/RemoveOCMShare',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_RemoveOCMShare,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.ocmshareproviderv0alpha.RemoveOCMShareRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.ocmshareproviderv0alpha.RemoveOCMShareResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.removeOCMShare =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/RemoveOCMShare',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_RemoveOCMShare);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.ocmshareproviderv0alpha.GetOCMShareRequest,
+ *   !proto.cs3.ocmshareproviderv0alpha.GetOCMShareResponse>}
+ */
+const methodDescriptor_GatewayService_GetOCMShare = new grpc.web.MethodDescriptor(
+  '/cs3.gatewayv0alpha.GatewayService/GetOCMShare',
+  grpc.web.MethodType.UNARY,
+  cs3_ocmshareprovider_v0alpha_ocmshareprovider_pb.GetOCMShareRequest,
+  cs3_ocmshareprovider_v0alpha_ocmshareprovider_pb.GetOCMShareResponse,
+  /** @param {!proto.cs3.ocmshareproviderv0alpha.GetOCMShareRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_ocmshareprovider_v0alpha_ocmshareprovider_pb.GetOCMShareResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.ocmshareproviderv0alpha.GetOCMShareRequest,
+ *   !proto.cs3.ocmshareproviderv0alpha.GetOCMShareResponse>}
+ */
+const methodInfo_GatewayService_GetOCMShare = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_ocmshareprovider_v0alpha_ocmshareprovider_pb.GetOCMShareResponse,
+  /** @param {!proto.cs3.ocmshareproviderv0alpha.GetOCMShareRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_ocmshareprovider_v0alpha_ocmshareprovider_pb.GetOCMShareResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.ocmshareproviderv0alpha.GetOCMShareRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.ocmshareproviderv0alpha.GetOCMShareResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.ocmshareproviderv0alpha.GetOCMShareResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gatewayv0alpha.GatewayServiceClient.prototype.getOCMShare =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/GetOCMShare',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_GetOCMShare,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.ocmshareproviderv0alpha.GetOCMShareRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.ocmshareproviderv0alpha.GetOCMShareResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.getOCMShare =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/GetOCMShare',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_GetOCMShare);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.ocmshareproviderv0alpha.ListOCMSharesRequest,
+ *   !proto.cs3.ocmshareproviderv0alpha.ListOCMSharesResponse>}
+ */
+const methodDescriptor_GatewayService_ListOCMShares = new grpc.web.MethodDescriptor(
+  '/cs3.gatewayv0alpha.GatewayService/ListOCMShares',
+  grpc.web.MethodType.UNARY,
+  cs3_ocmshareprovider_v0alpha_ocmshareprovider_pb.ListOCMSharesRequest,
+  cs3_ocmshareprovider_v0alpha_ocmshareprovider_pb.ListOCMSharesResponse,
+  /** @param {!proto.cs3.ocmshareproviderv0alpha.ListOCMSharesRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_ocmshareprovider_v0alpha_ocmshareprovider_pb.ListOCMSharesResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.ocmshareproviderv0alpha.ListOCMSharesRequest,
+ *   !proto.cs3.ocmshareproviderv0alpha.ListOCMSharesResponse>}
+ */
+const methodInfo_GatewayService_ListOCMShares = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_ocmshareprovider_v0alpha_ocmshareprovider_pb.ListOCMSharesResponse,
+  /** @param {!proto.cs3.ocmshareproviderv0alpha.ListOCMSharesRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_ocmshareprovider_v0alpha_ocmshareprovider_pb.ListOCMSharesResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.ocmshareproviderv0alpha.ListOCMSharesRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.ocmshareproviderv0alpha.ListOCMSharesResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.ocmshareproviderv0alpha.ListOCMSharesResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gatewayv0alpha.GatewayServiceClient.prototype.listOCMShares =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/ListOCMShares',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_ListOCMShares,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.ocmshareproviderv0alpha.ListOCMSharesRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.ocmshareproviderv0alpha.ListOCMSharesResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.listOCMShares =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/ListOCMShares',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_ListOCMShares);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.ocmshareproviderv0alpha.UpdateOCMShareRequest,
+ *   !proto.cs3.ocmshareproviderv0alpha.UpdateOCMShareResponse>}
+ */
+const methodDescriptor_GatewayService_UpdateOCMShare = new grpc.web.MethodDescriptor(
+  '/cs3.gatewayv0alpha.GatewayService/UpdateOCMShare',
+  grpc.web.MethodType.UNARY,
+  cs3_ocmshareprovider_v0alpha_ocmshareprovider_pb.UpdateOCMShareRequest,
+  cs3_ocmshareprovider_v0alpha_ocmshareprovider_pb.UpdateOCMShareResponse,
+  /** @param {!proto.cs3.ocmshareproviderv0alpha.UpdateOCMShareRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_ocmshareprovider_v0alpha_ocmshareprovider_pb.UpdateOCMShareResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.ocmshareproviderv0alpha.UpdateOCMShareRequest,
+ *   !proto.cs3.ocmshareproviderv0alpha.UpdateOCMShareResponse>}
+ */
+const methodInfo_GatewayService_UpdateOCMShare = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_ocmshareprovider_v0alpha_ocmshareprovider_pb.UpdateOCMShareResponse,
+  /** @param {!proto.cs3.ocmshareproviderv0alpha.UpdateOCMShareRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_ocmshareprovider_v0alpha_ocmshareprovider_pb.UpdateOCMShareResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.ocmshareproviderv0alpha.UpdateOCMShareRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.ocmshareproviderv0alpha.UpdateOCMShareResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.ocmshareproviderv0alpha.UpdateOCMShareResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gatewayv0alpha.GatewayServiceClient.prototype.updateOCMShare =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/UpdateOCMShare',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_UpdateOCMShare,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.ocmshareproviderv0alpha.UpdateOCMShareRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.ocmshareproviderv0alpha.UpdateOCMShareResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.updateOCMShare =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/UpdateOCMShare',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_UpdateOCMShare);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.ocmshareproviderv0alpha.ListReceivedOCMSharesRequest,
+ *   !proto.cs3.ocmshareproviderv0alpha.ListReceivedOCMSharesResponse>}
+ */
+const methodDescriptor_GatewayService_ListReceivedOCMShares = new grpc.web.MethodDescriptor(
+  '/cs3.gatewayv0alpha.GatewayService/ListReceivedOCMShares',
+  grpc.web.MethodType.UNARY,
+  cs3_ocmshareprovider_v0alpha_ocmshareprovider_pb.ListReceivedOCMSharesRequest,
+  cs3_ocmshareprovider_v0alpha_ocmshareprovider_pb.ListReceivedOCMSharesResponse,
+  /** @param {!proto.cs3.ocmshareproviderv0alpha.ListReceivedOCMSharesRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_ocmshareprovider_v0alpha_ocmshareprovider_pb.ListReceivedOCMSharesResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.ocmshareproviderv0alpha.ListReceivedOCMSharesRequest,
+ *   !proto.cs3.ocmshareproviderv0alpha.ListReceivedOCMSharesResponse>}
+ */
+const methodInfo_GatewayService_ListReceivedOCMShares = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_ocmshareprovider_v0alpha_ocmshareprovider_pb.ListReceivedOCMSharesResponse,
+  /** @param {!proto.cs3.ocmshareproviderv0alpha.ListReceivedOCMSharesRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_ocmshareprovider_v0alpha_ocmshareprovider_pb.ListReceivedOCMSharesResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.ocmshareproviderv0alpha.ListReceivedOCMSharesRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.ocmshareproviderv0alpha.ListReceivedOCMSharesResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.ocmshareproviderv0alpha.ListReceivedOCMSharesResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gatewayv0alpha.GatewayServiceClient.prototype.listReceivedOCMShares =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/ListReceivedOCMShares',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_ListReceivedOCMShares,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.ocmshareproviderv0alpha.ListReceivedOCMSharesRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.ocmshareproviderv0alpha.ListReceivedOCMSharesResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.listReceivedOCMShares =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/ListReceivedOCMShares',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_ListReceivedOCMShares);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.ocmshareproviderv0alpha.UpdateReceivedOCMShareRequest,
+ *   !proto.cs3.ocmshareproviderv0alpha.UpdateReceivedOCMShareResponse>}
+ */
+const methodDescriptor_GatewayService_UpdateReceivedOCMShare = new grpc.web.MethodDescriptor(
+  '/cs3.gatewayv0alpha.GatewayService/UpdateReceivedOCMShare',
+  grpc.web.MethodType.UNARY,
+  cs3_ocmshareprovider_v0alpha_ocmshareprovider_pb.UpdateReceivedOCMShareRequest,
+  cs3_ocmshareprovider_v0alpha_ocmshareprovider_pb.UpdateReceivedOCMShareResponse,
+  /** @param {!proto.cs3.ocmshareproviderv0alpha.UpdateReceivedOCMShareRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_ocmshareprovider_v0alpha_ocmshareprovider_pb.UpdateReceivedOCMShareResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.ocmshareproviderv0alpha.UpdateReceivedOCMShareRequest,
+ *   !proto.cs3.ocmshareproviderv0alpha.UpdateReceivedOCMShareResponse>}
+ */
+const methodInfo_GatewayService_UpdateReceivedOCMShare = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_ocmshareprovider_v0alpha_ocmshareprovider_pb.UpdateReceivedOCMShareResponse,
+  /** @param {!proto.cs3.ocmshareproviderv0alpha.UpdateReceivedOCMShareRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_ocmshareprovider_v0alpha_ocmshareprovider_pb.UpdateReceivedOCMShareResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.ocmshareproviderv0alpha.UpdateReceivedOCMShareRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.ocmshareproviderv0alpha.UpdateReceivedOCMShareResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.ocmshareproviderv0alpha.UpdateReceivedOCMShareResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gatewayv0alpha.GatewayServiceClient.prototype.updateReceivedOCMShare =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/UpdateReceivedOCMShare',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_UpdateReceivedOCMShare,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.ocmshareproviderv0alpha.UpdateReceivedOCMShareRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.ocmshareproviderv0alpha.UpdateReceivedOCMShareResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.updateReceivedOCMShare =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/UpdateReceivedOCMShare',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_UpdateReceivedOCMShare);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.appregistryv0alpha.GetAppProvidersRequest,
+ *   !proto.cs3.appregistryv0alpha.GetAppProvidersResponse>}
+ */
+const methodDescriptor_GatewayService_GetAppProviders = new grpc.web.MethodDescriptor(
+  '/cs3.gatewayv0alpha.GatewayService/GetAppProviders',
+  grpc.web.MethodType.UNARY,
+  cs3_appregistry_v0alpha_appregistry_pb.GetAppProvidersRequest,
+  cs3_appregistry_v0alpha_appregistry_pb.GetAppProvidersResponse,
+  /** @param {!proto.cs3.appregistryv0alpha.GetAppProvidersRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_appregistry_v0alpha_appregistry_pb.GetAppProvidersResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.appregistryv0alpha.GetAppProvidersRequest,
+ *   !proto.cs3.appregistryv0alpha.GetAppProvidersResponse>}
+ */
+const methodInfo_GatewayService_GetAppProviders = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_appregistry_v0alpha_appregistry_pb.GetAppProvidersResponse,
+  /** @param {!proto.cs3.appregistryv0alpha.GetAppProvidersRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_appregistry_v0alpha_appregistry_pb.GetAppProvidersResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.appregistryv0alpha.GetAppProvidersRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.appregistryv0alpha.GetAppProvidersResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.appregistryv0alpha.GetAppProvidersResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gatewayv0alpha.GatewayServiceClient.prototype.getAppProviders =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/GetAppProviders',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_GetAppProviders,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.appregistryv0alpha.GetAppProvidersRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.appregistryv0alpha.GetAppProvidersResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.getAppProviders =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/GetAppProviders',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_GetAppProviders);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.appregistryv0alpha.ListAppProvidersRequest,
+ *   !proto.cs3.appregistryv0alpha.ListAppProvidersResponse>}
+ */
+const methodDescriptor_GatewayService_ListAppProviders = new grpc.web.MethodDescriptor(
+  '/cs3.gatewayv0alpha.GatewayService/ListAppProviders',
+  grpc.web.MethodType.UNARY,
+  cs3_appregistry_v0alpha_appregistry_pb.ListAppProvidersRequest,
+  cs3_appregistry_v0alpha_appregistry_pb.ListAppProvidersResponse,
+  /** @param {!proto.cs3.appregistryv0alpha.ListAppProvidersRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_appregistry_v0alpha_appregistry_pb.ListAppProvidersResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.appregistryv0alpha.ListAppProvidersRequest,
+ *   !proto.cs3.appregistryv0alpha.ListAppProvidersResponse>}
+ */
+const methodInfo_GatewayService_ListAppProviders = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_appregistry_v0alpha_appregistry_pb.ListAppProvidersResponse,
+  /** @param {!proto.cs3.appregistryv0alpha.ListAppProvidersRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_appregistry_v0alpha_appregistry_pb.ListAppProvidersResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.appregistryv0alpha.ListAppProvidersRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.appregistryv0alpha.ListAppProvidersResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.appregistryv0alpha.ListAppProvidersResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gatewayv0alpha.GatewayServiceClient.prototype.listAppProviders =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/ListAppProviders',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_ListAppProviders,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.appregistryv0alpha.ListAppProvidersRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.appregistryv0alpha.ListAppProvidersResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.listAppProviders =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/ListAppProviders',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_ListAppProviders);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.userproviderv0alpha.GetUserRequest,
+ *   !proto.cs3.userproviderv0alpha.GetUserResponse>}
+ */
+const methodDescriptor_GatewayService_GetUser = new grpc.web.MethodDescriptor(
+  '/cs3.gatewayv0alpha.GatewayService/GetUser',
+  grpc.web.MethodType.UNARY,
+  cs3_userprovider_v0alpha_userprovider_pb.GetUserRequest,
+  cs3_userprovider_v0alpha_userprovider_pb.GetUserResponse,
+  /** @param {!proto.cs3.userproviderv0alpha.GetUserRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_userprovider_v0alpha_userprovider_pb.GetUserResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.userproviderv0alpha.GetUserRequest,
+ *   !proto.cs3.userproviderv0alpha.GetUserResponse>}
+ */
+const methodInfo_GatewayService_GetUser = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_userprovider_v0alpha_userprovider_pb.GetUserResponse,
+  /** @param {!proto.cs3.userproviderv0alpha.GetUserRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_userprovider_v0alpha_userprovider_pb.GetUserResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.userproviderv0alpha.GetUserRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.userproviderv0alpha.GetUserResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.userproviderv0alpha.GetUserResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gatewayv0alpha.GatewayServiceClient.prototype.getUser =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/GetUser',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_GetUser,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.userproviderv0alpha.GetUserRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.userproviderv0alpha.GetUserResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.getUser =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/GetUser',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_GetUser);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.userproviderv0alpha.GetUserGroupsRequest,
+ *   !proto.cs3.userproviderv0alpha.GetUserGroupsResponse>}
+ */
+const methodDescriptor_GatewayService_GetUserGroups = new grpc.web.MethodDescriptor(
+  '/cs3.gatewayv0alpha.GatewayService/GetUserGroups',
+  grpc.web.MethodType.UNARY,
+  cs3_userprovider_v0alpha_userprovider_pb.GetUserGroupsRequest,
+  cs3_userprovider_v0alpha_userprovider_pb.GetUserGroupsResponse,
+  /** @param {!proto.cs3.userproviderv0alpha.GetUserGroupsRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_userprovider_v0alpha_userprovider_pb.GetUserGroupsResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.userproviderv0alpha.GetUserGroupsRequest,
+ *   !proto.cs3.userproviderv0alpha.GetUserGroupsResponse>}
+ */
+const methodInfo_GatewayService_GetUserGroups = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_userprovider_v0alpha_userprovider_pb.GetUserGroupsResponse,
+  /** @param {!proto.cs3.userproviderv0alpha.GetUserGroupsRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_userprovider_v0alpha_userprovider_pb.GetUserGroupsResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.userproviderv0alpha.GetUserGroupsRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.userproviderv0alpha.GetUserGroupsResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.userproviderv0alpha.GetUserGroupsResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gatewayv0alpha.GatewayServiceClient.prototype.getUserGroups =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/GetUserGroups',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_GetUserGroups,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.userproviderv0alpha.GetUserGroupsRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.userproviderv0alpha.GetUserGroupsResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.getUserGroups =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/GetUserGroups',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_GetUserGroups);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.userproviderv0alpha.IsInGroupRequest,
+ *   !proto.cs3.userproviderv0alpha.IsInGroupResponse>}
+ */
+const methodDescriptor_GatewayService_IsInGroup = new grpc.web.MethodDescriptor(
+  '/cs3.gatewayv0alpha.GatewayService/IsInGroup',
+  grpc.web.MethodType.UNARY,
+  cs3_userprovider_v0alpha_userprovider_pb.IsInGroupRequest,
+  cs3_userprovider_v0alpha_userprovider_pb.IsInGroupResponse,
+  /** @param {!proto.cs3.userproviderv0alpha.IsInGroupRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_userprovider_v0alpha_userprovider_pb.IsInGroupResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.userproviderv0alpha.IsInGroupRequest,
+ *   !proto.cs3.userproviderv0alpha.IsInGroupResponse>}
+ */
+const methodInfo_GatewayService_IsInGroup = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_userprovider_v0alpha_userprovider_pb.IsInGroupResponse,
+  /** @param {!proto.cs3.userproviderv0alpha.IsInGroupRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_userprovider_v0alpha_userprovider_pb.IsInGroupResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.userproviderv0alpha.IsInGroupRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.userproviderv0alpha.IsInGroupResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.userproviderv0alpha.IsInGroupResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gatewayv0alpha.GatewayServiceClient.prototype.isInGroup =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/IsInGroup',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_IsInGroup,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.userproviderv0alpha.IsInGroupRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.userproviderv0alpha.IsInGroupResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.isInGroup =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/IsInGroup',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_IsInGroup);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.userproviderv0alpha.FindUsersRequest,
+ *   !proto.cs3.userproviderv0alpha.FindUsersResponse>}
+ */
+const methodDescriptor_GatewayService_FindUsers = new grpc.web.MethodDescriptor(
+  '/cs3.gatewayv0alpha.GatewayService/FindUsers',
+  grpc.web.MethodType.UNARY,
+  cs3_userprovider_v0alpha_userprovider_pb.FindUsersRequest,
+  cs3_userprovider_v0alpha_userprovider_pb.FindUsersResponse,
+  /** @param {!proto.cs3.userproviderv0alpha.FindUsersRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_userprovider_v0alpha_userprovider_pb.FindUsersResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.userproviderv0alpha.FindUsersRequest,
+ *   !proto.cs3.userproviderv0alpha.FindUsersResponse>}
+ */
+const methodInfo_GatewayService_FindUsers = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_userprovider_v0alpha_userprovider_pb.FindUsersResponse,
+  /** @param {!proto.cs3.userproviderv0alpha.FindUsersRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_userprovider_v0alpha_userprovider_pb.FindUsersResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.userproviderv0alpha.FindUsersRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.userproviderv0alpha.FindUsersResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.userproviderv0alpha.FindUsersResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gatewayv0alpha.GatewayServiceClient.prototype.findUsers =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/FindUsers',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_FindUsers,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.userproviderv0alpha.FindUsersRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.userproviderv0alpha.FindUsersResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.findUsers =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/FindUsers',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_FindUsers);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.authregistryv0alpha.ListAuthProvidersRequest,
+ *   !proto.cs3.gatewayv0alpha.ListAuthProvidersResponse>}
+ */
+const methodDescriptor_GatewayService_ListAuthProviders = new grpc.web.MethodDescriptor(
+  '/cs3.gatewayv0alpha.GatewayService/ListAuthProviders',
+  grpc.web.MethodType.UNARY,
+  cs3_authregistry_v0alpha_authregistry_pb.ListAuthProvidersRequest,
+  proto.cs3.gatewayv0alpha.ListAuthProvidersResponse,
+  /** @param {!proto.cs3.authregistryv0alpha.ListAuthProvidersRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.cs3.gatewayv0alpha.ListAuthProvidersResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.authregistryv0alpha.ListAuthProvidersRequest,
+ *   !proto.cs3.gatewayv0alpha.ListAuthProvidersResponse>}
+ */
+const methodInfo_GatewayService_ListAuthProviders = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.cs3.gatewayv0alpha.ListAuthProvidersResponse,
+  /** @param {!proto.cs3.authregistryv0alpha.ListAuthProvidersRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.cs3.gatewayv0alpha.ListAuthProvidersResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.authregistryv0alpha.ListAuthProvidersRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.gatewayv0alpha.ListAuthProvidersResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.gatewayv0alpha.ListAuthProvidersResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gatewayv0alpha.GatewayServiceClient.prototype.listAuthProviders =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/ListAuthProviders',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_ListAuthProviders,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.authregistryv0alpha.ListAuthProvidersRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.gatewayv0alpha.ListAuthProvidersResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.listAuthProviders =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/ListAuthProviders',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_ListAuthProviders);
 };
 
 
