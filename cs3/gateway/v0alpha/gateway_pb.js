@@ -18,6 +18,8 @@ var cs3_storageprovider_v0alpha_resources_pb = require('../../../cs3/storageprov
 goog.object.extend(proto, cs3_storageprovider_v0alpha_resources_pb);
 var cs3_storageprovider_v0alpha_storageprovider_pb = require('../../../cs3/storageprovider/v0alpha/storageprovider_pb.js');
 goog.object.extend(proto, cs3_storageprovider_v0alpha_storageprovider_pb);
+var cs3_storageregistry_v0alpha_storageregistry_pb = require('../../../cs3/storageregistry/v0alpha/storageregistry_pb.js');
+goog.object.extend(proto, cs3_storageregistry_v0alpha_storageregistry_pb);
 var cs3_types_types_pb = require('../../../cs3/types/types_pb.js');
 goog.object.extend(proto, cs3_types_types_pb);
 var cs3_usershareprovider_v0alpha_usershareprovider_pb = require('../../../cs3/usershareprovider/v0alpha/usershareprovider_pb.js');
