@@ -18,6 +18,8 @@ var cs3_storageprovider_v0alpha_resources_pb = require('../../../cs3/storageprov
 
 var cs3_storageprovider_v0alpha_storageprovider_pb = require('../../../cs3/storageprovider/v0alpha/storageprovider_pb.js')
 
+var cs3_storageregistry_v0alpha_storageregistry_pb = require('../../../cs3/storageregistry/v0alpha/storageregistry_pb.js')
+
 var cs3_types_types_pb = require('../../../cs3/types/types_pb.js')
 
 var cs3_usershareprovider_v0alpha_usershareprovider_pb = require('../../../cs3/usershareprovider/v0alpha/usershareprovider_pb.js')
@@ -2008,6 +2010,80 @@ proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.getReceivedShare 
       request,
       metadata || {},
       methodDescriptor_GatewayService_GetReceivedShare);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.storageregistryv0alpha.GetHomeRequest,
+ *   !proto.cs3.storageregistryv0alpha.GetHomeResponse>}
+ */
+const methodDescriptor_GatewayService_GetHome = new grpc.web.MethodDescriptor(
+  '/cs3.gatewayv0alpha.GatewayService/GetHome',
+  grpc.web.MethodType.UNARY,
+  cs3_storageregistry_v0alpha_storageregistry_pb.GetHomeRequest,
+  cs3_storageregistry_v0alpha_storageregistry_pb.GetHomeResponse,
+  /** @param {!proto.cs3.storageregistryv0alpha.GetHomeRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_storageregistry_v0alpha_storageregistry_pb.GetHomeResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.storageregistryv0alpha.GetHomeRequest,
+ *   !proto.cs3.storageregistryv0alpha.GetHomeResponse>}
+ */
+const methodInfo_GatewayService_GetHome = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_storageregistry_v0alpha_storageregistry_pb.GetHomeResponse,
+  /** @param {!proto.cs3.storageregistryv0alpha.GetHomeRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_storageregistry_v0alpha_storageregistry_pb.GetHomeResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.storageregistryv0alpha.GetHomeRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.storageregistryv0alpha.GetHomeResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.storageregistryv0alpha.GetHomeResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gatewayv0alpha.GatewayServiceClient.prototype.getHome =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/GetHome',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_GetHome,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.storageregistryv0alpha.GetHomeRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.storageregistryv0alpha.GetHomeResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gatewayv0alpha.GatewayServicePromiseClient.prototype.getHome =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gatewayv0alpha.GatewayService/GetHome',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayService_GetHome);
 };
 
 
