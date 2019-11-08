@@ -3722,7 +3722,8 @@ proto.cs3.storageproviderv0alpha.InitiateFileUploadResponse.toObject = function(
     opaque: (f = msg.getOpaque()) && cs3_types_types_pb.Opaque.toObject(includeInstance, f),
     uploadEndpoint: jspb.Message.getFieldWithDefault(msg, 3, ""),
     availableChecksumsList: jspb.Message.toObjectList(msg.getAvailableChecksumsList(),
-    cs3_storageprovider_v0alpha_resources_pb.ResourceChecksumPriority.toObject, includeInstance)
+    cs3_storageprovider_v0alpha_resources_pb.ResourceChecksumPriority.toObject, includeInstance),
+    expose: jspb.Message.getBooleanFieldWithDefault(msg, 5, false)
   };
 
   if (includeInstance) {
@@ -3777,6 +3778,10 @@ proto.cs3.storageproviderv0alpha.InitiateFileUploadResponse.deserializeBinaryFro
       var value = new cs3_storageprovider_v0alpha_resources_pb.ResourceChecksumPriority;
       reader.readMessage(value,cs3_storageprovider_v0alpha_resources_pb.ResourceChecksumPriority.deserializeBinaryFromReader);
       msg.addAvailableChecksums(value);
+      break;
+    case 5:
+      var value = /** @type {boolean} */ (reader.readBool());
+      msg.setExpose(value);
       break;
     default:
       reader.skipField();
@@ -3836,6 +3841,13 @@ proto.cs3.storageproviderv0alpha.InitiateFileUploadResponse.serializeBinaryToWri
       4,
       f,
       cs3_storageprovider_v0alpha_resources_pb.ResourceChecksumPriority.serializeBinaryToWriter
+    );
+  }
+  f = message.getExpose();
+  if (f) {
+    writer.writeBool(
+      5,
+      f
     );
   }
 };
@@ -3953,6 +3965,21 @@ proto.cs3.storageproviderv0alpha.InitiateFileUploadResponse.prototype.addAvailab
  */
 proto.cs3.storageproviderv0alpha.InitiateFileUploadResponse.prototype.clearAvailableChecksumsList = function() {
   this.setAvailableChecksumsList([]);
+};
+
+
+/**
+ * optional bool expose = 5;
+ * @return {boolean}
+ */
+proto.cs3.storageproviderv0alpha.InitiateFileUploadResponse.prototype.getExpose = function() {
+  return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 5, false));
+};
+
+
+/** @param {boolean} value */
+proto.cs3.storageproviderv0alpha.InitiateFileUploadResponse.prototype.setExpose = function(value) {
+  jspb.Message.setProto3BooleanField(this, 5, value);
 };
 
 
@@ -4184,7 +4211,8 @@ proto.cs3.storageproviderv0alpha.InitiateFileDownloadResponse.toObject = functio
   var f, obj = {
     status: (f = msg.getStatus()) && cs3_rpc_status_pb.Status.toObject(includeInstance, f),
     opaque: (f = msg.getOpaque()) && cs3_types_types_pb.Opaque.toObject(includeInstance, f),
-    downloadEndpoint: jspb.Message.getFieldWithDefault(msg, 3, "")
+    downloadEndpoint: jspb.Message.getFieldWithDefault(msg, 3, ""),
+    expose: jspb.Message.getBooleanFieldWithDefault(msg, 5, false)
   };
 
   if (includeInstance) {
@@ -4235,6 +4263,10 @@ proto.cs3.storageproviderv0alpha.InitiateFileDownloadResponse.deserializeBinaryF
       var value = /** @type {string} */ (reader.readString());
       msg.setDownloadEndpoint(value);
       break;
+    case 5:
+      var value = /** @type {boolean} */ (reader.readBool());
+      msg.setExpose(value);
+      break;
     default:
       reader.skipField();
       break;
@@ -4284,6 +4316,13 @@ proto.cs3.storageproviderv0alpha.InitiateFileDownloadResponse.serializeBinaryToW
   if (f.length > 0) {
     writer.writeString(
       3,
+      f
+    );
+  }
+  f = message.getExpose();
+  if (f) {
+    writer.writeBool(
+      5,
       f
     );
   }
@@ -4368,6 +4407,21 @@ proto.cs3.storageproviderv0alpha.InitiateFileDownloadResponse.prototype.getDownl
 /** @param {string} value */
 proto.cs3.storageproviderv0alpha.InitiateFileDownloadResponse.prototype.setDownloadEndpoint = function(value) {
   jspb.Message.setProto3StringField(this, 3, value);
+};
+
+
+/**
+ * optional bool expose = 5;
+ * @return {boolean}
+ */
+proto.cs3.storageproviderv0alpha.InitiateFileDownloadResponse.prototype.getExpose = function() {
+  return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 5, false));
+};
+
+
+/** @param {boolean} value */
+proto.cs3.storageproviderv0alpha.InitiateFileDownloadResponse.prototype.setExpose = function(value) {
+  jspb.Message.setProto3BooleanField(this, 5, value);
 };
 
 
