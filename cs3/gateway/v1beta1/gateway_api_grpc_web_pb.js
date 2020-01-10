@@ -1587,6 +1587,80 @@ proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.unsetArbitraryMetada
 /**
  * @const
  * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.storage.provider.v1beta1.CreateHomeRequest,
+ *   !proto.cs3.storage.provider.v1beta1.CreateHomeResponse>}
+ */
+const methodDescriptor_GatewayAPI_CreateHome = new grpc.web.MethodDescriptor(
+  '/cs3.gateway.v1beta1.GatewayAPI/CreateHome',
+  grpc.web.MethodType.UNARY,
+  cs3_storage_provider_v1beta1_provider_api_pb.CreateHomeRequest,
+  cs3_storage_provider_v1beta1_provider_api_pb.CreateHomeResponse,
+  /** @param {!proto.cs3.storage.provider.v1beta1.CreateHomeRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_storage_provider_v1beta1_provider_api_pb.CreateHomeResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.storage.provider.v1beta1.CreateHomeRequest,
+ *   !proto.cs3.storage.provider.v1beta1.CreateHomeResponse>}
+ */
+const methodInfo_GatewayAPI_CreateHome = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_storage_provider_v1beta1_provider_api_pb.CreateHomeResponse,
+  /** @param {!proto.cs3.storage.provider.v1beta1.CreateHomeRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_storage_provider_v1beta1_provider_api_pb.CreateHomeResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.storage.provider.v1beta1.CreateHomeRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.storage.provider.v1beta1.CreateHomeResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.storage.provider.v1beta1.CreateHomeResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIClient.prototype.createHome =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/CreateHome',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_CreateHome,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.storage.provider.v1beta1.CreateHomeRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.storage.provider.v1beta1.CreateHomeResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.createHome =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/CreateHome',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_CreateHome);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
  *   !proto.cs3.sharing.collaboration.v1beta1.CreateShareRequest,
  *   !proto.cs3.sharing.collaboration.v1beta1.CreateShareResponse>}
  */
