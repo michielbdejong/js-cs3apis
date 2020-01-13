@@ -1165,7 +1165,8 @@ proto.cs3.storage.registry.v1beta1.GetHomeResponse.toObject = function(includeIn
   var f, obj = {
     status: (f = msg.getStatus()) && cs3_rpc_v1beta1_status_pb.Status.toObject(includeInstance, f),
     opaque: (f = msg.getOpaque()) && cs3_types_v1beta1_types_pb.Opaque.toObject(includeInstance, f),
-    path: jspb.Message.getFieldWithDefault(msg, 3, "")
+    path: jspb.Message.getFieldWithDefault(msg, 3, ""),
+    provider: (f = msg.getProvider()) && cs3_storage_registry_v1beta1_resources_pb.ProviderInfo.toObject(includeInstance, f)
   };
 
   if (includeInstance) {
@@ -1215,6 +1216,11 @@ proto.cs3.storage.registry.v1beta1.GetHomeResponse.deserializeBinaryFromReader =
     case 3:
       var value = /** @type {string} */ (reader.readString());
       msg.setPath(value);
+      break;
+    case 4:
+      var value = new cs3_storage_registry_v1beta1_resources_pb.ProviderInfo;
+      reader.readMessage(value,cs3_storage_registry_v1beta1_resources_pb.ProviderInfo.deserializeBinaryFromReader);
+      msg.setProvider(value);
       break;
     default:
       reader.skipField();
@@ -1266,6 +1272,14 @@ proto.cs3.storage.registry.v1beta1.GetHomeResponse.serializeBinaryToWriter = fun
     writer.writeString(
       3,
       f
+    );
+  }
+  f = message.getProvider();
+  if (f != null) {
+    writer.writeMessage(
+      4,
+      f,
+      cs3_storage_registry_v1beta1_resources_pb.ProviderInfo.serializeBinaryToWriter
     );
   }
 };
@@ -1349,6 +1363,39 @@ proto.cs3.storage.registry.v1beta1.GetHomeResponse.prototype.getPath = function(
 /** @param {string} value */
 proto.cs3.storage.registry.v1beta1.GetHomeResponse.prototype.setPath = function(value) {
   jspb.Message.setProto3StringField(this, 3, value);
+};
+
+
+/**
+ * optional ProviderInfo provider = 4;
+ * @return {?proto.cs3.storage.registry.v1beta1.ProviderInfo}
+ */
+proto.cs3.storage.registry.v1beta1.GetHomeResponse.prototype.getProvider = function() {
+  return /** @type{?proto.cs3.storage.registry.v1beta1.ProviderInfo} */ (
+    jspb.Message.getWrapperField(this, cs3_storage_registry_v1beta1_resources_pb.ProviderInfo, 4));
+};
+
+
+/** @param {?proto.cs3.storage.registry.v1beta1.ProviderInfo|undefined} value */
+proto.cs3.storage.registry.v1beta1.GetHomeResponse.prototype.setProvider = function(value) {
+  jspb.Message.setWrapperField(this, 4, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.cs3.storage.registry.v1beta1.GetHomeResponse.prototype.clearProvider = function() {
+  this.setProvider(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.cs3.storage.registry.v1beta1.GetHomeResponse.prototype.hasProvider = function() {
+  return jspb.Message.getField(this, 4) != null;
 };
 
 
