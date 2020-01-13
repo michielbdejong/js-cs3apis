@@ -34,8 +34,6 @@ var cs3_storage_provider_v1beta1_provider_api_pb = require('../../../cs3/storage
 
 var cs3_storage_provider_v1beta1_resources_pb = require('../../../cs3/storage/provider/v1beta1/resources_pb.js')
 
-var cs3_storage_registry_v1beta1_registry_api_pb = require('../../../cs3/storage/registry/v1beta1/registry_api_pb.js')
-
 var cs3_types_v1beta1_types_pb = require('../../../cs3/types/v1beta1/types_pb.js')
 const proto = {};
 proto.cs3 = {};
@@ -3881,46 +3879,46 @@ proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.listAuthProviders =
 /**
  * @const
  * @type {!grpc.web.MethodDescriptor<
- *   !proto.cs3.storage.registry.v1beta1.GetHomeRequest,
- *   !proto.cs3.storage.registry.v1beta1.GetHomeResponse>}
+ *   !proto.cs3.storage.provider.v1beta1.GetHomeRequest,
+ *   !proto.cs3.storage.provider.v1beta1.GetHomeResponse>}
  */
 const methodDescriptor_GatewayAPI_GetHome = new grpc.web.MethodDescriptor(
   '/cs3.gateway.v1beta1.GatewayAPI/GetHome',
   grpc.web.MethodType.UNARY,
-  cs3_storage_registry_v1beta1_registry_api_pb.GetHomeRequest,
-  cs3_storage_registry_v1beta1_registry_api_pb.GetHomeResponse,
-  /** @param {!proto.cs3.storage.registry.v1beta1.GetHomeRequest} request */
+  cs3_storage_provider_v1beta1_provider_api_pb.GetHomeRequest,
+  cs3_storage_provider_v1beta1_provider_api_pb.GetHomeResponse,
+  /** @param {!proto.cs3.storage.provider.v1beta1.GetHomeRequest} request */
   function(request) {
     return request.serializeBinary();
   },
-  cs3_storage_registry_v1beta1_registry_api_pb.GetHomeResponse.deserializeBinary
+  cs3_storage_provider_v1beta1_provider_api_pb.GetHomeResponse.deserializeBinary
 );
 
 
 /**
  * @const
  * @type {!grpc.web.AbstractClientBase.MethodInfo<
- *   !proto.cs3.storage.registry.v1beta1.GetHomeRequest,
- *   !proto.cs3.storage.registry.v1beta1.GetHomeResponse>}
+ *   !proto.cs3.storage.provider.v1beta1.GetHomeRequest,
+ *   !proto.cs3.storage.provider.v1beta1.GetHomeResponse>}
  */
 const methodInfo_GatewayAPI_GetHome = new grpc.web.AbstractClientBase.MethodInfo(
-  cs3_storage_registry_v1beta1_registry_api_pb.GetHomeResponse,
-  /** @param {!proto.cs3.storage.registry.v1beta1.GetHomeRequest} request */
+  cs3_storage_provider_v1beta1_provider_api_pb.GetHomeResponse,
+  /** @param {!proto.cs3.storage.provider.v1beta1.GetHomeRequest} request */
   function(request) {
     return request.serializeBinary();
   },
-  cs3_storage_registry_v1beta1_registry_api_pb.GetHomeResponse.deserializeBinary
+  cs3_storage_provider_v1beta1_provider_api_pb.GetHomeResponse.deserializeBinary
 );
 
 
 /**
- * @param {!proto.cs3.storage.registry.v1beta1.GetHomeRequest} request The
+ * @param {!proto.cs3.storage.provider.v1beta1.GetHomeRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @param {function(?grpc.web.Error, ?proto.cs3.storage.registry.v1beta1.GetHomeResponse)}
+ * @param {function(?grpc.web.Error, ?proto.cs3.storage.provider.v1beta1.GetHomeResponse)}
  *     callback The callback function(error, response)
- * @return {!grpc.web.ClientReadableStream<!proto.cs3.storage.registry.v1beta1.GetHomeResponse>|undefined}
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.storage.provider.v1beta1.GetHomeResponse>|undefined}
  *     The XHR Node Readable Stream
  */
 proto.cs3.gateway.v1beta1.GatewayAPIClient.prototype.getHome =
@@ -3935,11 +3933,11 @@ proto.cs3.gateway.v1beta1.GatewayAPIClient.prototype.getHome =
 
 
 /**
- * @param {!proto.cs3.storage.registry.v1beta1.GetHomeRequest} request The
+ * @param {!proto.cs3.storage.provider.v1beta1.GetHomeRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @return {!Promise<!proto.cs3.storage.registry.v1beta1.GetHomeResponse>}
+ * @return {!Promise<!proto.cs3.storage.provider.v1beta1.GetHomeResponse>}
  *     A native promise that resolves to the response
  */
 proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.getHome =

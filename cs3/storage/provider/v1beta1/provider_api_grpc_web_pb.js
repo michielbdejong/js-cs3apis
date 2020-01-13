@@ -1861,5 +1861,79 @@ proto.cs3.storage.provider.v1beta1.ProviderAPIPromiseClient.prototype.createHome
 };
 
 
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.storage.provider.v1beta1.GetHomeRequest,
+ *   !proto.cs3.storage.provider.v1beta1.GetHomeResponse>}
+ */
+const methodDescriptor_ProviderAPI_GetHome = new grpc.web.MethodDescriptor(
+  '/cs3.storage.provider.v1beta1.ProviderAPI/GetHome',
+  grpc.web.MethodType.UNARY,
+  proto.cs3.storage.provider.v1beta1.GetHomeRequest,
+  proto.cs3.storage.provider.v1beta1.GetHomeResponse,
+  /** @param {!proto.cs3.storage.provider.v1beta1.GetHomeRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.cs3.storage.provider.v1beta1.GetHomeResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.storage.provider.v1beta1.GetHomeRequest,
+ *   !proto.cs3.storage.provider.v1beta1.GetHomeResponse>}
+ */
+const methodInfo_ProviderAPI_GetHome = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.cs3.storage.provider.v1beta1.GetHomeResponse,
+  /** @param {!proto.cs3.storage.provider.v1beta1.GetHomeRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.cs3.storage.provider.v1beta1.GetHomeResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.storage.provider.v1beta1.GetHomeRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.storage.provider.v1beta1.GetHomeResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.storage.provider.v1beta1.GetHomeResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.storage.provider.v1beta1.ProviderAPIClient.prototype.getHome =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.storage.provider.v1beta1.ProviderAPI/GetHome',
+      request,
+      metadata || {},
+      methodDescriptor_ProviderAPI_GetHome,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.storage.provider.v1beta1.GetHomeRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.storage.provider.v1beta1.GetHomeResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.storage.provider.v1beta1.ProviderAPIPromiseClient.prototype.getHome =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.storage.provider.v1beta1.ProviderAPI/GetHome',
+      request,
+      metadata || {},
+      methodDescriptor_ProviderAPI_GetHome);
+};
+
+
 module.exports = proto.cs3.storage.provider.v1beta1;
 
