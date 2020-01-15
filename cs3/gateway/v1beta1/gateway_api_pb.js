@@ -34,8 +34,6 @@ var cs3_storage_provider_v1beta1_provider_api_pb = require('../../../cs3/storage
 goog.object.extend(proto, cs3_storage_provider_v1beta1_provider_api_pb);
 var cs3_storage_provider_v1beta1_resources_pb = require('../../../cs3/storage/provider/v1beta1/resources_pb.js');
 goog.object.extend(proto, cs3_storage_provider_v1beta1_resources_pb);
-var cs3_storage_registry_v1beta1_registry_api_pb = require('../../../cs3/storage/registry/v1beta1/registry_api_pb.js');
-goog.object.extend(proto, cs3_storage_registry_v1beta1_registry_api_pb);
 var cs3_types_v1beta1_types_pb = require('../../../cs3/types/v1beta1/types_pb.js');
 goog.object.extend(proto, cs3_types_v1beta1_types_pb);
 goog.exportSymbol('proto.cs3.gateway.v1beta1.AuthenticateRequest', null, global);
