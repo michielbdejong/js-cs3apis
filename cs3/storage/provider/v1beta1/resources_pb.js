@@ -327,6 +327,7 @@ proto.cs3.storage.provider.v1beta1.ResourceInfo.toObject = function(includeInsta
     permissionSet: (f = msg.getPermissionSet()) && proto.cs3.storage.provider.v1beta1.ResourcePermissions.toObject(includeInstance, f),
     size: jspb.Message.getFieldWithDefault(msg, 10, 0),
     owner: (f = msg.getOwner()) && cs3_identity_user_v1beta1_resources_pb.UserId.toObject(includeInstance, f),
+    target: jspb.Message.getFieldWithDefault(msg, 12, ""),
     canonicalMetadata: (f = msg.getCanonicalMetadata()) && proto.cs3.storage.provider.v1beta1.CanonicalMetadata.toObject(includeInstance, f),
     arbitraryMetadata: (f = msg.getArbitraryMetadata()) && proto.cs3.storage.provider.v1beta1.ArbitraryMetadata.toObject(includeInstance, f)
   };
@@ -414,6 +415,10 @@ proto.cs3.storage.provider.v1beta1.ResourceInfo.deserializeBinaryFromReader = fu
       var value = new cs3_identity_user_v1beta1_resources_pb.UserId;
       reader.readMessage(value,cs3_identity_user_v1beta1_resources_pb.UserId.deserializeBinaryFromReader);
       msg.setOwner(value);
+      break;
+    case 12:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setTarget(value);
       break;
     case 13:
       var value = new proto.cs3.storage.provider.v1beta1.CanonicalMetadata;
@@ -535,6 +540,13 @@ proto.cs3.storage.provider.v1beta1.ResourceInfo.serializeBinaryToWriter = functi
       11,
       f,
       cs3_identity_user_v1beta1_resources_pb.UserId.serializeBinaryToWriter
+    );
+  }
+  f = message.getTarget();
+  if (f.length > 0) {
+    writer.writeString(
+      12,
+      f
     );
   }
   f = message.getCanonicalMetadata();
@@ -826,6 +838,21 @@ proto.cs3.storage.provider.v1beta1.ResourceInfo.prototype.clearOwner = function(
  */
 proto.cs3.storage.provider.v1beta1.ResourceInfo.prototype.hasOwner = function() {
   return jspb.Message.getField(this, 11) != null;
+};
+
+
+/**
+ * optional string target = 12;
+ * @return {string}
+ */
+proto.cs3.storage.provider.v1beta1.ResourceInfo.prototype.getTarget = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 12, ""));
+};
+
+
+/** @param {string} value */
+proto.cs3.storage.provider.v1beta1.ResourceInfo.prototype.setTarget = function(value) {
+  jspb.Message.setProto3StringField(this, 12, value);
 };
 
 
