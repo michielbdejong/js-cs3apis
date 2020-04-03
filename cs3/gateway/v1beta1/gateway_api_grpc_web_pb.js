@@ -20,6 +20,8 @@ var cs3_identity_user_v1beta1_resources_pb = require('../../../cs3/identity/user
 
 var cs3_identity_user_v1beta1_user_api_pb = require('../../../cs3/identity/user/v1beta1/user_api_pb.js')
 
+var cs3_invite_v1beta1_invite_api_pb = require('../../../cs3/invite/v1beta1/invite_api_pb.js')
+
 var cs3_preferences_v1beta1_preferences_api_pb = require('../../../cs3/preferences/v1beta1/preferences_api_pb.js')
 
 var cs3_rpc_v1beta1_status_pb = require('../../../cs3/rpc/v1beta1/status_pb.js')
@@ -3361,6 +3363,80 @@ proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.updateReceivedOCMSha
 /**
  * @const
  * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.sharing.ocm.v1beta1.GetReceivedOCMShareRequest,
+ *   !proto.cs3.sharing.ocm.v1beta1.GetReceivedOCMShareResponse>}
+ */
+const methodDescriptor_GatewayAPI_GetReceivedOCMShare = new grpc.web.MethodDescriptor(
+  '/cs3.gateway.v1beta1.GatewayAPI/GetReceivedOCMShare',
+  grpc.web.MethodType.UNARY,
+  cs3_sharing_ocm_v1beta1_ocm_api_pb.GetReceivedOCMShareRequest,
+  cs3_sharing_ocm_v1beta1_ocm_api_pb.GetReceivedOCMShareResponse,
+  /** @param {!proto.cs3.sharing.ocm.v1beta1.GetReceivedOCMShareRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_sharing_ocm_v1beta1_ocm_api_pb.GetReceivedOCMShareResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.sharing.ocm.v1beta1.GetReceivedOCMShareRequest,
+ *   !proto.cs3.sharing.ocm.v1beta1.GetReceivedOCMShareResponse>}
+ */
+const methodInfo_GatewayAPI_GetReceivedOCMShare = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_sharing_ocm_v1beta1_ocm_api_pb.GetReceivedOCMShareResponse,
+  /** @param {!proto.cs3.sharing.ocm.v1beta1.GetReceivedOCMShareRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_sharing_ocm_v1beta1_ocm_api_pb.GetReceivedOCMShareResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.sharing.ocm.v1beta1.GetReceivedOCMShareRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.sharing.ocm.v1beta1.GetReceivedOCMShareResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.sharing.ocm.v1beta1.GetReceivedOCMShareResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIClient.prototype.getReceivedOCMShare =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/GetReceivedOCMShare',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_GetReceivedOCMShare,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.sharing.ocm.v1beta1.GetReceivedOCMShareRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.sharing.ocm.v1beta1.GetReceivedOCMShareResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.getReceivedOCMShare =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/GetReceivedOCMShare',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_GetReceivedOCMShare);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
  *   !proto.cs3.app.registry.v1beta1.GetAppProvidersRequest,
  *   !proto.cs3.app.registry.v1beta1.GetAppProvidersResponse>}
  */
@@ -3947,6 +4023,228 @@ proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.getHome =
       request,
       metadata || {},
       methodDescriptor_GatewayAPI_GetHome);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.invite.v1beta1.GenerateInviteTokenRequest,
+ *   !proto.cs3.invite.v1beta1.GenerateInviteTokenResponse>}
+ */
+const methodDescriptor_GatewayAPI_GenerateInviteToken = new grpc.web.MethodDescriptor(
+  '/cs3.gateway.v1beta1.GatewayAPI/GenerateInviteToken',
+  grpc.web.MethodType.UNARY,
+  cs3_invite_v1beta1_invite_api_pb.GenerateInviteTokenRequest,
+  cs3_invite_v1beta1_invite_api_pb.GenerateInviteTokenResponse,
+  /** @param {!proto.cs3.invite.v1beta1.GenerateInviteTokenRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_invite_v1beta1_invite_api_pb.GenerateInviteTokenResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.invite.v1beta1.GenerateInviteTokenRequest,
+ *   !proto.cs3.invite.v1beta1.GenerateInviteTokenResponse>}
+ */
+const methodInfo_GatewayAPI_GenerateInviteToken = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_invite_v1beta1_invite_api_pb.GenerateInviteTokenResponse,
+  /** @param {!proto.cs3.invite.v1beta1.GenerateInviteTokenRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_invite_v1beta1_invite_api_pb.GenerateInviteTokenResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.invite.v1beta1.GenerateInviteTokenRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.invite.v1beta1.GenerateInviteTokenResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.invite.v1beta1.GenerateInviteTokenResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIClient.prototype.generateInviteToken =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/GenerateInviteToken',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_GenerateInviteToken,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.invite.v1beta1.GenerateInviteTokenRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.invite.v1beta1.GenerateInviteTokenResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.generateInviteToken =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/GenerateInviteToken',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_GenerateInviteToken);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.invite.v1beta1.ForwardInviteRequest,
+ *   !proto.cs3.invite.v1beta1.ForwardInviteResponse>}
+ */
+const methodDescriptor_GatewayAPI_ForwardInvite = new grpc.web.MethodDescriptor(
+  '/cs3.gateway.v1beta1.GatewayAPI/ForwardInvite',
+  grpc.web.MethodType.UNARY,
+  cs3_invite_v1beta1_invite_api_pb.ForwardInviteRequest,
+  cs3_invite_v1beta1_invite_api_pb.ForwardInviteResponse,
+  /** @param {!proto.cs3.invite.v1beta1.ForwardInviteRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_invite_v1beta1_invite_api_pb.ForwardInviteResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.invite.v1beta1.ForwardInviteRequest,
+ *   !proto.cs3.invite.v1beta1.ForwardInviteResponse>}
+ */
+const methodInfo_GatewayAPI_ForwardInvite = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_invite_v1beta1_invite_api_pb.ForwardInviteResponse,
+  /** @param {!proto.cs3.invite.v1beta1.ForwardInviteRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_invite_v1beta1_invite_api_pb.ForwardInviteResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.invite.v1beta1.ForwardInviteRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.invite.v1beta1.ForwardInviteResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.invite.v1beta1.ForwardInviteResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIClient.prototype.forwardInvite =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/ForwardInvite',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_ForwardInvite,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.invite.v1beta1.ForwardInviteRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.invite.v1beta1.ForwardInviteResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.forwardInvite =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/ForwardInvite',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_ForwardInvite);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.invite.v1beta1.AcceptInviteRequest,
+ *   !proto.cs3.invite.v1beta1.AcceptInviteResponse>}
+ */
+const methodDescriptor_GatewayAPI_AcceptInvite = new grpc.web.MethodDescriptor(
+  '/cs3.gateway.v1beta1.GatewayAPI/AcceptInvite',
+  grpc.web.MethodType.UNARY,
+  cs3_invite_v1beta1_invite_api_pb.AcceptInviteRequest,
+  cs3_invite_v1beta1_invite_api_pb.AcceptInviteResponse,
+  /** @param {!proto.cs3.invite.v1beta1.AcceptInviteRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_invite_v1beta1_invite_api_pb.AcceptInviteResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.invite.v1beta1.AcceptInviteRequest,
+ *   !proto.cs3.invite.v1beta1.AcceptInviteResponse>}
+ */
+const methodInfo_GatewayAPI_AcceptInvite = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_invite_v1beta1_invite_api_pb.AcceptInviteResponse,
+  /** @param {!proto.cs3.invite.v1beta1.AcceptInviteRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_invite_v1beta1_invite_api_pb.AcceptInviteResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.invite.v1beta1.AcceptInviteRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.invite.v1beta1.AcceptInviteResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.invite.v1beta1.AcceptInviteResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIClient.prototype.acceptInvite =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/AcceptInvite',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_AcceptInvite,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.invite.v1beta1.AcceptInviteRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.invite.v1beta1.AcceptInviteResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.acceptInvite =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/AcceptInvite',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_AcceptInvite);
 };
 
 

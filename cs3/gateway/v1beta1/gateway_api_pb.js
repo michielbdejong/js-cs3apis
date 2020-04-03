@@ -20,6 +20,8 @@ var cs3_identity_user_v1beta1_resources_pb = require('../../../cs3/identity/user
 goog.object.extend(proto, cs3_identity_user_v1beta1_resources_pb);
 var cs3_identity_user_v1beta1_user_api_pb = require('../../../cs3/identity/user/v1beta1/user_api_pb.js');
 goog.object.extend(proto, cs3_identity_user_v1beta1_user_api_pb);
+var cs3_invite_v1beta1_invite_api_pb = require('../../../cs3/invite/v1beta1/invite_api_pb.js');
+goog.object.extend(proto, cs3_invite_v1beta1_invite_api_pb);
 var cs3_preferences_v1beta1_preferences_api_pb = require('../../../cs3/preferences/v1beta1/preferences_api_pb.js');
 goog.object.extend(proto, cs3_preferences_v1beta1_preferences_api_pb);
 var cs3_rpc_v1beta1_status_pb = require('../../../cs3/rpc/v1beta1/status_pb.js');
