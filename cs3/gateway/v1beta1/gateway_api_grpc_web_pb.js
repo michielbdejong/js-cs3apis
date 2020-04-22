@@ -20,6 +20,8 @@ var cs3_identity_user_v1beta1_resources_pb = require('../../../cs3/identity/user
 
 var cs3_identity_user_v1beta1_user_api_pb = require('../../../cs3/identity/user/v1beta1/user_api_pb.js')
 
+var cs3_ocm_core_v1beta1_ocm_core_api_pb = require('../../../cs3/ocm/core/v1beta1/ocm_core_api_pb.js')
+
 var cs3_ocm_invite_v1beta1_invite_api_pb = require('../../../cs3/ocm/invite/v1beta1/invite_api_pb.js')
 
 var cs3_ocm_provider_v1beta1_provider_api_pb = require('../../../cs3/ocm/provider/v1beta1/provider_api_pb.js')
@@ -4253,6 +4255,80 @@ proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.acceptInvite =
 /**
  * @const
  * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.ocm.invite.v1beta1.GetRemoteUserRequest,
+ *   !proto.cs3.ocm.invite.v1beta1.GetRemoteUserResponse>}
+ */
+const methodDescriptor_GatewayAPI_GetRemoteUser = new grpc.web.MethodDescriptor(
+  '/cs3.gateway.v1beta1.GatewayAPI/GetRemoteUser',
+  grpc.web.MethodType.UNARY,
+  cs3_ocm_invite_v1beta1_invite_api_pb.GetRemoteUserRequest,
+  cs3_ocm_invite_v1beta1_invite_api_pb.GetRemoteUserResponse,
+  /** @param {!proto.cs3.ocm.invite.v1beta1.GetRemoteUserRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_ocm_invite_v1beta1_invite_api_pb.GetRemoteUserResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.ocm.invite.v1beta1.GetRemoteUserRequest,
+ *   !proto.cs3.ocm.invite.v1beta1.GetRemoteUserResponse>}
+ */
+const methodInfo_GatewayAPI_GetRemoteUser = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_ocm_invite_v1beta1_invite_api_pb.GetRemoteUserResponse,
+  /** @param {!proto.cs3.ocm.invite.v1beta1.GetRemoteUserRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_ocm_invite_v1beta1_invite_api_pb.GetRemoteUserResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.ocm.invite.v1beta1.GetRemoteUserRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.ocm.invite.v1beta1.GetRemoteUserResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.ocm.invite.v1beta1.GetRemoteUserResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIClient.prototype.getRemoteUser =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/GetRemoteUser',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_GetRemoteUser,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.ocm.invite.v1beta1.GetRemoteUserRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.ocm.invite.v1beta1.GetRemoteUserResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.getRemoteUser =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/GetRemoteUser',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_GetRemoteUser);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
  *   !proto.cs3.ocm.provider.v1beta1.IsProviderAllowedRequest,
  *   !proto.cs3.ocm.provider.v1beta1.IsProviderAllowedResponse>}
  */
@@ -4469,6 +4545,80 @@ proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.listAllProviders =
       request,
       metadata || {},
       methodDescriptor_GatewayAPI_ListAllProviders);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareRequest,
+ *   !proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareResponse>}
+ */
+const methodDescriptor_GatewayAPI_CreateOCMCoreShare = new grpc.web.MethodDescriptor(
+  '/cs3.gateway.v1beta1.GatewayAPI/CreateOCMCoreShare',
+  grpc.web.MethodType.UNARY,
+  cs3_ocm_core_v1beta1_ocm_core_api_pb.CreateOCMCoreShareRequest,
+  cs3_ocm_core_v1beta1_ocm_core_api_pb.CreateOCMCoreShareResponse,
+  /** @param {!proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_ocm_core_v1beta1_ocm_core_api_pb.CreateOCMCoreShareResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareRequest,
+ *   !proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareResponse>}
+ */
+const methodInfo_GatewayAPI_CreateOCMCoreShare = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_ocm_core_v1beta1_ocm_core_api_pb.CreateOCMCoreShareResponse,
+  /** @param {!proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_ocm_core_v1beta1_ocm_core_api_pb.CreateOCMCoreShareResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIClient.prototype.createOCMCoreShare =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/CreateOCMCoreShare',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_CreateOCMCoreShare,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.createOCMCoreShare =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/CreateOCMCoreShare',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_CreateOCMCoreShare);
 };
 
 

@@ -321,5 +321,79 @@ proto.cs3.ocm.invite.v1beta1.InviteAPIPromiseClient.prototype.acceptInvite =
 };
 
 
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.ocm.invite.v1beta1.GetRemoteUserRequest,
+ *   !proto.cs3.ocm.invite.v1beta1.GetRemoteUserResponse>}
+ */
+const methodDescriptor_InviteAPI_GetRemoteUser = new grpc.web.MethodDescriptor(
+  '/cs3.ocm.invite.v1beta1.InviteAPI/GetRemoteUser',
+  grpc.web.MethodType.UNARY,
+  proto.cs3.ocm.invite.v1beta1.GetRemoteUserRequest,
+  proto.cs3.ocm.invite.v1beta1.GetRemoteUserResponse,
+  /** @param {!proto.cs3.ocm.invite.v1beta1.GetRemoteUserRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.cs3.ocm.invite.v1beta1.GetRemoteUserResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.ocm.invite.v1beta1.GetRemoteUserRequest,
+ *   !proto.cs3.ocm.invite.v1beta1.GetRemoteUserResponse>}
+ */
+const methodInfo_InviteAPI_GetRemoteUser = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.cs3.ocm.invite.v1beta1.GetRemoteUserResponse,
+  /** @param {!proto.cs3.ocm.invite.v1beta1.GetRemoteUserRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.cs3.ocm.invite.v1beta1.GetRemoteUserResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.ocm.invite.v1beta1.GetRemoteUserRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.ocm.invite.v1beta1.GetRemoteUserResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.ocm.invite.v1beta1.GetRemoteUserResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.ocm.invite.v1beta1.InviteAPIClient.prototype.getRemoteUser =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.ocm.invite.v1beta1.InviteAPI/GetRemoteUser',
+      request,
+      metadata || {},
+      methodDescriptor_InviteAPI_GetRemoteUser,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.ocm.invite.v1beta1.GetRemoteUserRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.ocm.invite.v1beta1.GetRemoteUserResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.ocm.invite.v1beta1.InviteAPIPromiseClient.prototype.getRemoteUser =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.ocm.invite.v1beta1.InviteAPI/GetRemoteUser',
+      request,
+      metadata || {},
+      methodDescriptor_InviteAPI_GetRemoteUser);
+};
+
+
 module.exports = proto.cs3.ocm.invite.v1beta1;
 
