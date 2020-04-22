@@ -848,7 +848,8 @@ proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.prototype.toObject = fun
 proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     opaque: (f = msg.getOpaque()) && cs3_types_v1beta1_types_pb.Opaque.toObject(includeInstance, f),
-    ref: (f = msg.getRef()) && cs3_sharing_link_v1beta1_resources_pb.PublicShareReference.toObject(includeInstance, f)
+    ref: (f = msg.getRef()) && cs3_sharing_link_v1beta1_resources_pb.PublicShareReference.toObject(includeInstance, f),
+    update: (f = msg.getUpdate()) && proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.Update.toObject(includeInstance, f)
   };
 
   if (includeInstance) {
@@ -895,6 +896,11 @@ proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.deserializeBinaryFromRea
       reader.readMessage(value,cs3_sharing_link_v1beta1_resources_pb.PublicShareReference.deserializeBinaryFromReader);
       msg.setRef(value);
       break;
+    case 3:
+      var value = new proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.Update;
+      reader.readMessage(value,proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.Update.deserializeBinaryFromReader);
+      msg.setUpdate(value);
+      break;
     default:
       reader.skipField();
       break;
@@ -940,6 +946,14 @@ proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.serializeBinaryToWriter 
       cs3_sharing_link_v1beta1_resources_pb.PublicShareReference.serializeBinaryToWriter
     );
   }
+  f = message.getUpdate();
+  if (f != null) {
+    writer.writeMessage(
+      3,
+      f,
+      proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.Update.serializeBinaryToWriter
+    );
+  }
 };
 
 
@@ -976,7 +990,8 @@ proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.Update.prototype.toObjec
 proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.Update.toObject = function(includeInstance, msg) {
   var f, obj = {
     type: jspb.Message.getFieldWithDefault(msg, 3, 0),
-    grant: (f = msg.getGrant()) && cs3_sharing_link_v1beta1_resources_pb.Grant.toObject(includeInstance, f)
+    grant: (f = msg.getGrant()) && cs3_sharing_link_v1beta1_resources_pb.Grant.toObject(includeInstance, f),
+    displayName: jspb.Message.getFieldWithDefault(msg, 5, "")
   };
 
   if (includeInstance) {
@@ -1022,6 +1037,10 @@ proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.Update.deserializeBinary
       reader.readMessage(value,cs3_sharing_link_v1beta1_resources_pb.Grant.deserializeBinaryFromReader);
       msg.setGrant(value);
       break;
+    case 5:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setDisplayName(value);
+      break;
     default:
       reader.skipField();
       break;
@@ -1066,6 +1085,13 @@ proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.Update.serializeBinaryTo
       cs3_sharing_link_v1beta1_resources_pb.Grant.serializeBinaryToWriter
     );
   }
+  f = message.getDisplayName();
+  if (f.length > 0) {
+    writer.writeString(
+      5,
+      f
+    );
+  }
 };
 
 
@@ -1076,7 +1102,8 @@ proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.Update.Type = {
   TYPE_INVALID: 0,
   TYPE_PERMISSIONS: 1,
   TYPE_PASSWORD: 2,
-  TYPE_EXPIRATION: 3
+  TYPE_EXPIRATION: 3,
+  TYPE_DISPLAYNAME: 4
 };
 
 /**
@@ -1124,6 +1151,21 @@ proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.Update.prototype.clearGr
  */
 proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.Update.prototype.hasGrant = function() {
   return jspb.Message.getField(this, 4) != null;
+};
+
+
+/**
+ * optional string display_name = 5;
+ * @return {string}
+ */
+proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.Update.prototype.getDisplayName = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 5, ""));
+};
+
+
+/** @param {string} value */
+proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.Update.prototype.setDisplayName = function(value) {
+  jspb.Message.setProto3StringField(this, 5, value);
 };
 
 
@@ -1190,6 +1232,39 @@ proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.prototype.clearRef = fun
  */
 proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.prototype.hasRef = function() {
   return jspb.Message.getField(this, 2) != null;
+};
+
+
+/**
+ * optional Update update = 3;
+ * @return {?proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.Update}
+ */
+proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.prototype.getUpdate = function() {
+  return /** @type{?proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.Update} */ (
+    jspb.Message.getWrapperField(this, proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.Update, 3));
+};
+
+
+/** @param {?proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.Update|undefined} value */
+proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.prototype.setUpdate = function(value) {
+  jspb.Message.setWrapperField(this, 3, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.prototype.clearUpdate = function() {
+  this.setUpdate(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.prototype.hasUpdate = function() {
+  return jspb.Message.getField(this, 3) != null;
 };
 
 
