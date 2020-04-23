@@ -14,6 +14,8 @@ var global = Function('return this')();
 
 var cs3_identity_user_v1beta1_resources_pb = require('../../../../cs3/identity/user/v1beta1/resources_pb.js');
 goog.object.extend(proto, cs3_identity_user_v1beta1_resources_pb);
+var cs3_ocm_provider_v1beta1_resources_pb = require('../../../../cs3/ocm/provider/v1beta1/resources_pb.js');
+goog.object.extend(proto, cs3_ocm_provider_v1beta1_resources_pb);
 var cs3_rpc_v1beta1_status_pb = require('../../../../cs3/rpc/v1beta1/status_pb.js');
 goog.object.extend(proto, cs3_rpc_v1beta1_status_pb);
 var cs3_sharing_ocm_v1beta1_resources_pb = require('../../../../cs3/sharing/ocm/v1beta1/resources_pb.js');
@@ -478,7 +480,8 @@ proto.cs3.sharing.ocm.v1beta1.CreateOCMShareRequest.toObject = function(includeI
   var f, obj = {
     opaque: (f = msg.getOpaque()) && cs3_types_v1beta1_types_pb.Opaque.toObject(includeInstance, f),
     resourceId: (f = msg.getResourceId()) && cs3_storage_provider_v1beta1_resources_pb.ResourceId.toObject(includeInstance, f),
-    grant: (f = msg.getGrant()) && cs3_sharing_ocm_v1beta1_resources_pb.ShareGrant.toObject(includeInstance, f)
+    grant: (f = msg.getGrant()) && cs3_sharing_ocm_v1beta1_resources_pb.ShareGrant.toObject(includeInstance, f),
+    recipientMeshProvider: (f = msg.getRecipientMeshProvider()) && cs3_ocm_provider_v1beta1_resources_pb.ProviderInfo.toObject(includeInstance, f)
   };
 
   if (includeInstance) {
@@ -529,6 +532,11 @@ proto.cs3.sharing.ocm.v1beta1.CreateOCMShareRequest.deserializeBinaryFromReader 
       var value = new cs3_sharing_ocm_v1beta1_resources_pb.ShareGrant;
       reader.readMessage(value,cs3_sharing_ocm_v1beta1_resources_pb.ShareGrant.deserializeBinaryFromReader);
       msg.setGrant(value);
+      break;
+    case 4:
+      var value = new cs3_ocm_provider_v1beta1_resources_pb.ProviderInfo;
+      reader.readMessage(value,cs3_ocm_provider_v1beta1_resources_pb.ProviderInfo.deserializeBinaryFromReader);
+      msg.setRecipientMeshProvider(value);
       break;
     default:
       reader.skipField();
@@ -581,6 +589,14 @@ proto.cs3.sharing.ocm.v1beta1.CreateOCMShareRequest.serializeBinaryToWriter = fu
       3,
       f,
       cs3_sharing_ocm_v1beta1_resources_pb.ShareGrant.serializeBinaryToWriter
+    );
+  }
+  f = message.getRecipientMeshProvider();
+  if (f != null) {
+    writer.writeMessage(
+      4,
+      f,
+      cs3_ocm_provider_v1beta1_resources_pb.ProviderInfo.serializeBinaryToWriter
     );
   }
 };
@@ -682,6 +698,39 @@ proto.cs3.sharing.ocm.v1beta1.CreateOCMShareRequest.prototype.clearGrant = funct
  */
 proto.cs3.sharing.ocm.v1beta1.CreateOCMShareRequest.prototype.hasGrant = function() {
   return jspb.Message.getField(this, 3) != null;
+};
+
+
+/**
+ * optional cs3.ocm.provider.v1beta1.ProviderInfo recipient_mesh_provider = 4;
+ * @return {?proto.cs3.ocm.provider.v1beta1.ProviderInfo}
+ */
+proto.cs3.sharing.ocm.v1beta1.CreateOCMShareRequest.prototype.getRecipientMeshProvider = function() {
+  return /** @type{?proto.cs3.ocm.provider.v1beta1.ProviderInfo} */ (
+    jspb.Message.getWrapperField(this, cs3_ocm_provider_v1beta1_resources_pb.ProviderInfo, 4));
+};
+
+
+/** @param {?proto.cs3.ocm.provider.v1beta1.ProviderInfo|undefined} value */
+proto.cs3.sharing.ocm.v1beta1.CreateOCMShareRequest.prototype.setRecipientMeshProvider = function(value) {
+  jspb.Message.setWrapperField(this, 4, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.cs3.sharing.ocm.v1beta1.CreateOCMShareRequest.prototype.clearRecipientMeshProvider = function() {
+  this.setRecipientMeshProvider(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.cs3.sharing.ocm.v1beta1.CreateOCMShareRequest.prototype.hasRecipientMeshProvider = function() {
+  return jspb.Message.getField(this, 4) != null;
 };
 
 
