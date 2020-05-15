@@ -3123,7 +3123,8 @@ proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenRequest.prototype.toObject =
 proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     opaque: (f = msg.getOpaque()) && cs3_types_v1beta1_types_pb.Opaque.toObject(includeInstance, f),
-    token: jspb.Message.getFieldWithDefault(msg, 2, "")
+    token: jspb.Message.getFieldWithDefault(msg, 2, ""),
+    password: jspb.Message.getFieldWithDefault(msg, 3, "")
   };
 
   if (includeInstance) {
@@ -3169,6 +3170,10 @@ proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenRequest.deserializeBinaryFro
       var value = /** @type {string} */ (reader.readString());
       msg.setToken(value);
       break;
+    case 3:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setPassword(value);
+      break;
     default:
       reader.skipField();
       break;
@@ -3210,6 +3215,13 @@ proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenRequest.serializeBinaryToWri
   if (f.length > 0) {
     writer.writeString(
       2,
+      f
+    );
+  }
+  f = message.getPassword();
+  if (f.length > 0) {
+    writer.writeString(
+      3,
       f
     );
   }
@@ -3261,6 +3273,21 @@ proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenRequest.prototype.getToken =
 /** @param {string} value */
 proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenRequest.prototype.setToken = function(value) {
   jspb.Message.setProto3StringField(this, 2, value);
+};
+
+
+/**
+ * optional string password = 3;
+ * @return {string}
+ */
+proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenRequest.prototype.getPassword = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
+};
+
+
+/** @param {string} value */
+proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenRequest.prototype.setPassword = function(value) {
+  jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
