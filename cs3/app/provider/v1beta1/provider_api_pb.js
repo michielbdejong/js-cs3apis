@@ -96,7 +96,7 @@ proto.cs3.app.provider.v1beta1.OpenRequest.prototype.toObject = function(opt_inc
 proto.cs3.app.provider.v1beta1.OpenRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     opaque: (f = msg.getOpaque()) && cs3_types_v1beta1_types_pb.Opaque.toObject(includeInstance, f),
-    ref: (f = msg.getRef()) && cs3_storage_provider_v1beta1_resources_pb.Reference.toObject(includeInstance, f),
+    resourceInfo: (f = msg.getResourceInfo()) && cs3_storage_provider_v1beta1_resources_pb.ResourceInfo.toObject(includeInstance, f),
     accessToken: jspb.Message.getFieldWithDefault(msg, 3, ""),
     viewMode: jspb.Message.getFieldWithDefault(msg, 4, 0)
   };
@@ -141,9 +141,9 @@ proto.cs3.app.provider.v1beta1.OpenRequest.deserializeBinaryFromReader = functio
       msg.setOpaque(value);
       break;
     case 2:
-      var value = new cs3_storage_provider_v1beta1_resources_pb.Reference;
-      reader.readMessage(value,cs3_storage_provider_v1beta1_resources_pb.Reference.deserializeBinaryFromReader);
-      msg.setRef(value);
+      var value = new cs3_storage_provider_v1beta1_resources_pb.ResourceInfo;
+      reader.readMessage(value,cs3_storage_provider_v1beta1_resources_pb.ResourceInfo.deserializeBinaryFromReader);
+      msg.setResourceInfo(value);
       break;
     case 3:
       var value = /** @type {string} */ (reader.readString());
@@ -190,12 +190,12 @@ proto.cs3.app.provider.v1beta1.OpenRequest.serializeBinaryToWriter = function(me
       cs3_types_v1beta1_types_pb.Opaque.serializeBinaryToWriter
     );
   }
-  f = message.getRef();
+  f = message.getResourceInfo();
   if (f != null) {
     writer.writeMessage(
       2,
       f,
-      cs3_storage_provider_v1beta1_resources_pb.Reference.serializeBinaryToWriter
+      cs3_storage_provider_v1beta1_resources_pb.ResourceInfo.serializeBinaryToWriter
     );
   }
   f = message.getAccessToken();
@@ -259,17 +259,17 @@ proto.cs3.app.provider.v1beta1.OpenRequest.prototype.hasOpaque = function() {
 
 
 /**
- * optional cs3.storage.provider.v1beta1.Reference ref = 2;
- * @return {?proto.cs3.storage.provider.v1beta1.Reference}
+ * optional cs3.storage.provider.v1beta1.ResourceInfo resource_info = 2;
+ * @return {?proto.cs3.storage.provider.v1beta1.ResourceInfo}
  */
-proto.cs3.app.provider.v1beta1.OpenRequest.prototype.getRef = function() {
-  return /** @type{?proto.cs3.storage.provider.v1beta1.Reference} */ (
-    jspb.Message.getWrapperField(this, cs3_storage_provider_v1beta1_resources_pb.Reference, 2));
+proto.cs3.app.provider.v1beta1.OpenRequest.prototype.getResourceInfo = function() {
+  return /** @type{?proto.cs3.storage.provider.v1beta1.ResourceInfo} */ (
+    jspb.Message.getWrapperField(this, cs3_storage_provider_v1beta1_resources_pb.ResourceInfo, 2));
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value */
-proto.cs3.app.provider.v1beta1.OpenRequest.prototype.setRef = function(value) {
+/** @param {?proto.cs3.storage.provider.v1beta1.ResourceInfo|undefined} value */
+proto.cs3.app.provider.v1beta1.OpenRequest.prototype.setResourceInfo = function(value) {
   jspb.Message.setWrapperField(this, 2, value);
 };
 
@@ -277,8 +277,8 @@ proto.cs3.app.provider.v1beta1.OpenRequest.prototype.setRef = function(value) {
 /**
  * Clears the message field making it undefined.
  */
-proto.cs3.app.provider.v1beta1.OpenRequest.prototype.clearRef = function() {
-  this.setRef(undefined);
+proto.cs3.app.provider.v1beta1.OpenRequest.prototype.clearResourceInfo = function() {
+  this.setResourceInfo(undefined);
 };
 
 
@@ -286,7 +286,7 @@ proto.cs3.app.provider.v1beta1.OpenRequest.prototype.clearRef = function() {
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.cs3.app.provider.v1beta1.OpenRequest.prototype.hasRef = function() {
+proto.cs3.app.provider.v1beta1.OpenRequest.prototype.hasResourceInfo = function() {
   return jspb.Message.getField(this, 2) != null;
 };
 
