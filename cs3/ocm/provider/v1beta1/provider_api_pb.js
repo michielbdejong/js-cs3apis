@@ -12,8 +12,6 @@ var jspb = require('google-protobuf');
 var goog = jspb;
 var global = Function('return this')();
 
-var cs3_identity_user_v1beta1_resources_pb = require('../../../../cs3/identity/user/v1beta1/resources_pb.js');
-goog.object.extend(proto, cs3_identity_user_v1beta1_resources_pb);
 var cs3_ocm_provider_v1beta1_resources_pb = require('../../../../cs3/ocm/provider/v1beta1/resources_pb.js');
 goog.object.extend(proto, cs3_ocm_provider_v1beta1_resources_pb);
 var cs3_rpc_v1beta1_status_pb = require('../../../../cs3/rpc/v1beta1/status_pb.js');
@@ -185,7 +183,7 @@ proto.cs3.ocm.provider.v1beta1.IsProviderAllowedRequest.prototype.toObject = fun
 proto.cs3.ocm.provider.v1beta1.IsProviderAllowedRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     opaque: (f = msg.getOpaque()) && cs3_types_v1beta1_types_pb.Opaque.toObject(includeInstance, f),
-    user: (f = msg.getUser()) && cs3_identity_user_v1beta1_resources_pb.User.toObject(includeInstance, f)
+    provider: (f = msg.getProvider()) && cs3_ocm_provider_v1beta1_resources_pb.ProviderInfo.toObject(includeInstance, f)
   };
 
   if (includeInstance) {
@@ -228,9 +226,9 @@ proto.cs3.ocm.provider.v1beta1.IsProviderAllowedRequest.deserializeBinaryFromRea
       msg.setOpaque(value);
       break;
     case 2:
-      var value = new cs3_identity_user_v1beta1_resources_pb.User;
-      reader.readMessage(value,cs3_identity_user_v1beta1_resources_pb.User.deserializeBinaryFromReader);
-      msg.setUser(value);
+      var value = new cs3_ocm_provider_v1beta1_resources_pb.ProviderInfo;
+      reader.readMessage(value,cs3_ocm_provider_v1beta1_resources_pb.ProviderInfo.deserializeBinaryFromReader);
+      msg.setProvider(value);
       break;
     default:
       reader.skipField();
@@ -269,12 +267,12 @@ proto.cs3.ocm.provider.v1beta1.IsProviderAllowedRequest.serializeBinaryToWriter 
       cs3_types_v1beta1_types_pb.Opaque.serializeBinaryToWriter
     );
   }
-  f = message.getUser();
+  f = message.getProvider();
   if (f != null) {
     writer.writeMessage(
       2,
       f,
-      cs3_identity_user_v1beta1_resources_pb.User.serializeBinaryToWriter
+      cs3_ocm_provider_v1beta1_resources_pb.ProviderInfo.serializeBinaryToWriter
     );
   }
 };
@@ -314,17 +312,17 @@ proto.cs3.ocm.provider.v1beta1.IsProviderAllowedRequest.prototype.hasOpaque = fu
 
 
 /**
- * optional cs3.identity.user.v1beta1.User user = 2;
- * @return {?proto.cs3.identity.user.v1beta1.User}
+ * optional ProviderInfo provider = 2;
+ * @return {?proto.cs3.ocm.provider.v1beta1.ProviderInfo}
  */
-proto.cs3.ocm.provider.v1beta1.IsProviderAllowedRequest.prototype.getUser = function() {
-  return /** @type{?proto.cs3.identity.user.v1beta1.User} */ (
-    jspb.Message.getWrapperField(this, cs3_identity_user_v1beta1_resources_pb.User, 2));
+proto.cs3.ocm.provider.v1beta1.IsProviderAllowedRequest.prototype.getProvider = function() {
+  return /** @type{?proto.cs3.ocm.provider.v1beta1.ProviderInfo} */ (
+    jspb.Message.getWrapperField(this, cs3_ocm_provider_v1beta1_resources_pb.ProviderInfo, 2));
 };
 
 
-/** @param {?proto.cs3.identity.user.v1beta1.User|undefined} value */
-proto.cs3.ocm.provider.v1beta1.IsProviderAllowedRequest.prototype.setUser = function(value) {
+/** @param {?proto.cs3.ocm.provider.v1beta1.ProviderInfo|undefined} value */
+proto.cs3.ocm.provider.v1beta1.IsProviderAllowedRequest.prototype.setProvider = function(value) {
   jspb.Message.setWrapperField(this, 2, value);
 };
 
@@ -332,8 +330,8 @@ proto.cs3.ocm.provider.v1beta1.IsProviderAllowedRequest.prototype.setUser = func
 /**
  * Clears the message field making it undefined.
  */
-proto.cs3.ocm.provider.v1beta1.IsProviderAllowedRequest.prototype.clearUser = function() {
-  this.setUser(undefined);
+proto.cs3.ocm.provider.v1beta1.IsProviderAllowedRequest.prototype.clearProvider = function() {
+  this.setProvider(undefined);
 };
 
 
@@ -341,7 +339,7 @@ proto.cs3.ocm.provider.v1beta1.IsProviderAllowedRequest.prototype.clearUser = fu
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.cs3.ocm.provider.v1beta1.IsProviderAllowedRequest.prototype.hasUser = function() {
+proto.cs3.ocm.provider.v1beta1.IsProviderAllowedRequest.prototype.hasProvider = function() {
   return jspb.Message.getField(this, 2) != null;
 };
 
