@@ -12,6 +12,8 @@ const grpc = {};
 grpc.web = require('grpc-web');
 
 
+var cs3_app_provider_v1beta1_provider_api_pb = require('../../../cs3/app/provider/v1beta1/provider_api_pb.js')
+
 var cs3_app_registry_v1beta1_registry_api_pb = require('../../../cs3/app/registry/v1beta1/registry_api_pb.js')
 
 var cs3_auth_registry_v1beta1_registry_api_pb = require('../../../cs3/auth/registry/v1beta1/registry_api_pb.js')
@@ -1659,6 +1661,80 @@ proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.createHome =
       request,
       metadata || {},
       methodDescriptor_GatewayAPI_CreateHome);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.app.provider.v1beta1.OpenFileInAppProviderRequest,
+ *   !proto.cs3.app.provider.v1beta1.OpenFileInAppProviderResponse>}
+ */
+const methodDescriptor_GatewayAPI_OpenFileInAppProvider = new grpc.web.MethodDescriptor(
+  '/cs3.gateway.v1beta1.GatewayAPI/OpenFileInAppProvider',
+  grpc.web.MethodType.UNARY,
+  cs3_app_provider_v1beta1_provider_api_pb.OpenFileInAppProviderRequest,
+  cs3_app_provider_v1beta1_provider_api_pb.OpenFileInAppProviderResponse,
+  /** @param {!proto.cs3.app.provider.v1beta1.OpenFileInAppProviderRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_app_provider_v1beta1_provider_api_pb.OpenFileInAppProviderResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.app.provider.v1beta1.OpenFileInAppProviderRequest,
+ *   !proto.cs3.app.provider.v1beta1.OpenFileInAppProviderResponse>}
+ */
+const methodInfo_GatewayAPI_OpenFileInAppProvider = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_app_provider_v1beta1_provider_api_pb.OpenFileInAppProviderResponse,
+  /** @param {!proto.cs3.app.provider.v1beta1.OpenFileInAppProviderRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_app_provider_v1beta1_provider_api_pb.OpenFileInAppProviderResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.app.provider.v1beta1.OpenFileInAppProviderRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.app.provider.v1beta1.OpenFileInAppProviderResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.app.provider.v1beta1.OpenFileInAppProviderResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIClient.prototype.openFileInAppProvider =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/OpenFileInAppProvider',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_OpenFileInAppProvider,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.app.provider.v1beta1.OpenFileInAppProviderRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.app.provider.v1beta1.OpenFileInAppProviderResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.openFileInAppProvider =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/OpenFileInAppProvider',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_OpenFileInAppProvider);
 };
 
 

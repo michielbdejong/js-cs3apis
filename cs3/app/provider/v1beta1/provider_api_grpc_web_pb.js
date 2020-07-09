@@ -98,74 +98,74 @@ proto.cs3.app.provider.v1beta1.ProviderAPIPromiseClient =
 /**
  * @const
  * @type {!grpc.web.MethodDescriptor<
- *   !proto.cs3.app.provider.v1beta1.OpenRequest,
- *   !proto.cs3.app.provider.v1beta1.OpenResponse>}
+ *   !proto.cs3.app.provider.v1beta1.OpenFileInAppProviderRequest,
+ *   !proto.cs3.app.provider.v1beta1.OpenFileInAppProviderResponse>}
  */
-const methodDescriptor_ProviderAPI_Open = new grpc.web.MethodDescriptor(
-  '/cs3.app.provider.v1beta1.ProviderAPI/Open',
+const methodDescriptor_ProviderAPI_OpenFileInAppProvider = new grpc.web.MethodDescriptor(
+  '/cs3.app.provider.v1beta1.ProviderAPI/OpenFileInAppProvider',
   grpc.web.MethodType.UNARY,
-  proto.cs3.app.provider.v1beta1.OpenRequest,
-  proto.cs3.app.provider.v1beta1.OpenResponse,
-  /** @param {!proto.cs3.app.provider.v1beta1.OpenRequest} request */
+  proto.cs3.app.provider.v1beta1.OpenFileInAppProviderRequest,
+  proto.cs3.app.provider.v1beta1.OpenFileInAppProviderResponse,
+  /** @param {!proto.cs3.app.provider.v1beta1.OpenFileInAppProviderRequest} request */
   function(request) {
     return request.serializeBinary();
   },
-  proto.cs3.app.provider.v1beta1.OpenResponse.deserializeBinary
+  proto.cs3.app.provider.v1beta1.OpenFileInAppProviderResponse.deserializeBinary
 );
 
 
 /**
  * @const
  * @type {!grpc.web.AbstractClientBase.MethodInfo<
- *   !proto.cs3.app.provider.v1beta1.OpenRequest,
- *   !proto.cs3.app.provider.v1beta1.OpenResponse>}
+ *   !proto.cs3.app.provider.v1beta1.OpenFileInAppProviderRequest,
+ *   !proto.cs3.app.provider.v1beta1.OpenFileInAppProviderResponse>}
  */
-const methodInfo_ProviderAPI_Open = new grpc.web.AbstractClientBase.MethodInfo(
-  proto.cs3.app.provider.v1beta1.OpenResponse,
-  /** @param {!proto.cs3.app.provider.v1beta1.OpenRequest} request */
+const methodInfo_ProviderAPI_OpenFileInAppProvider = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.cs3.app.provider.v1beta1.OpenFileInAppProviderResponse,
+  /** @param {!proto.cs3.app.provider.v1beta1.OpenFileInAppProviderRequest} request */
   function(request) {
     return request.serializeBinary();
   },
-  proto.cs3.app.provider.v1beta1.OpenResponse.deserializeBinary
+  proto.cs3.app.provider.v1beta1.OpenFileInAppProviderResponse.deserializeBinary
 );
 
 
 /**
- * @param {!proto.cs3.app.provider.v1beta1.OpenRequest} request The
+ * @param {!proto.cs3.app.provider.v1beta1.OpenFileInAppProviderRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @param {function(?grpc.web.Error, ?proto.cs3.app.provider.v1beta1.OpenResponse)}
+ * @param {function(?grpc.web.Error, ?proto.cs3.app.provider.v1beta1.OpenFileInAppProviderResponse)}
  *     callback The callback function(error, response)
- * @return {!grpc.web.ClientReadableStream<!proto.cs3.app.provider.v1beta1.OpenResponse>|undefined}
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.app.provider.v1beta1.OpenFileInAppProviderResponse>|undefined}
  *     The XHR Node Readable Stream
  */
-proto.cs3.app.provider.v1beta1.ProviderAPIClient.prototype.open =
+proto.cs3.app.provider.v1beta1.ProviderAPIClient.prototype.openFileInAppProvider =
     function(request, metadata, callback) {
   return this.client_.rpcCall(this.hostname_ +
-      '/cs3.app.provider.v1beta1.ProviderAPI/Open',
+      '/cs3.app.provider.v1beta1.ProviderAPI/OpenFileInAppProvider',
       request,
       metadata || {},
-      methodDescriptor_ProviderAPI_Open,
+      methodDescriptor_ProviderAPI_OpenFileInAppProvider,
       callback);
 };
 
 
 /**
- * @param {!proto.cs3.app.provider.v1beta1.OpenRequest} request The
+ * @param {!proto.cs3.app.provider.v1beta1.OpenFileInAppProviderRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @return {!Promise<!proto.cs3.app.provider.v1beta1.OpenResponse>}
+ * @return {!Promise<!proto.cs3.app.provider.v1beta1.OpenFileInAppProviderResponse>}
  *     A native promise that resolves to the response
  */
-proto.cs3.app.provider.v1beta1.ProviderAPIPromiseClient.prototype.open =
+proto.cs3.app.provider.v1beta1.ProviderAPIPromiseClient.prototype.openFileInAppProvider =
     function(request, metadata) {
   return this.client_.unaryCall(this.hostname_ +
-      '/cs3.app.provider.v1beta1.ProviderAPI/Open',
+      '/cs3.app.provider.v1beta1.ProviderAPI/OpenFileInAppProvider',
       request,
       metadata || {},
-      methodDescriptor_ProviderAPI_Open);
+      methodDescriptor_ProviderAPI_OpenFileInAppProvider);
 };
 
 
