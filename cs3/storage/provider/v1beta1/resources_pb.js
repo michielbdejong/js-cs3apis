@@ -2693,7 +2693,8 @@ proto.cs3.storage.provider.v1beta1.Grantee.prototype.toObject = function(opt_inc
 proto.cs3.storage.provider.v1beta1.Grantee.toObject = function(includeInstance, msg) {
   var f, obj = {
     type: jspb.Message.getFieldWithDefault(msg, 1, 0),
-    id: (f = msg.getId()) && cs3_identity_user_v1beta1_resources_pb.UserId.toObject(includeInstance, f)
+    id: (f = msg.getId()) && cs3_identity_user_v1beta1_resources_pb.UserId.toObject(includeInstance, f),
+    opaque: (f = msg.getOpaque()) && cs3_types_v1beta1_types_pb.Opaque.toObject(includeInstance, f)
   };
 
   if (includeInstance) {
@@ -2739,6 +2740,11 @@ proto.cs3.storage.provider.v1beta1.Grantee.deserializeBinaryFromReader = functio
       reader.readMessage(value,cs3_identity_user_v1beta1_resources_pb.UserId.deserializeBinaryFromReader);
       msg.setId(value);
       break;
+    case 3:
+      var value = new cs3_types_v1beta1_types_pb.Opaque;
+      reader.readMessage(value,cs3_types_v1beta1_types_pb.Opaque.deserializeBinaryFromReader);
+      msg.setOpaque(value);
+      break;
     default:
       reader.skipField();
       break;
@@ -2781,6 +2787,14 @@ proto.cs3.storage.provider.v1beta1.Grantee.serializeBinaryToWriter = function(me
       2,
       f,
       cs3_identity_user_v1beta1_resources_pb.UserId.serializeBinaryToWriter
+    );
+  }
+  f = message.getOpaque();
+  if (f != null) {
+    writer.writeMessage(
+      3,
+      f,
+      cs3_types_v1beta1_types_pb.Opaque.serializeBinaryToWriter
     );
   }
 };
@@ -2831,6 +2845,39 @@ proto.cs3.storage.provider.v1beta1.Grantee.prototype.clearId = function() {
  */
 proto.cs3.storage.provider.v1beta1.Grantee.prototype.hasId = function() {
   return jspb.Message.getField(this, 2) != null;
+};
+
+
+/**
+ * optional cs3.types.v1beta1.Opaque opaque = 3;
+ * @return {?proto.cs3.types.v1beta1.Opaque}
+ */
+proto.cs3.storage.provider.v1beta1.Grantee.prototype.getOpaque = function() {
+  return /** @type{?proto.cs3.types.v1beta1.Opaque} */ (
+    jspb.Message.getWrapperField(this, cs3_types_v1beta1_types_pb.Opaque, 3));
+};
+
+
+/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+proto.cs3.storage.provider.v1beta1.Grantee.prototype.setOpaque = function(value) {
+  jspb.Message.setWrapperField(this, 3, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.cs3.storage.provider.v1beta1.Grantee.prototype.clearOpaque = function() {
+  this.setOpaque(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.cs3.storage.provider.v1beta1.Grantee.prototype.hasOpaque = function() {
+  return jspb.Message.getField(this, 3) != null;
 };
 
 
