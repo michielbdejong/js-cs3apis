@@ -3739,6 +3739,80 @@ proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.getUser =
 /**
  * @const
  * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.identity.user.v1beta1.GetUserByClaimRequest,
+ *   !proto.cs3.identity.user.v1beta1.GetUserByClaimResponse>}
+ */
+const methodDescriptor_GatewayAPI_GetUserByClaim = new grpc.web.MethodDescriptor(
+  '/cs3.gateway.v1beta1.GatewayAPI/GetUserByClaim',
+  grpc.web.MethodType.UNARY,
+  cs3_identity_user_v1beta1_user_api_pb.GetUserByClaimRequest,
+  cs3_identity_user_v1beta1_user_api_pb.GetUserByClaimResponse,
+  /** @param {!proto.cs3.identity.user.v1beta1.GetUserByClaimRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_identity_user_v1beta1_user_api_pb.GetUserByClaimResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.identity.user.v1beta1.GetUserByClaimRequest,
+ *   !proto.cs3.identity.user.v1beta1.GetUserByClaimResponse>}
+ */
+const methodInfo_GatewayAPI_GetUserByClaim = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_identity_user_v1beta1_user_api_pb.GetUserByClaimResponse,
+  /** @param {!proto.cs3.identity.user.v1beta1.GetUserByClaimRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_identity_user_v1beta1_user_api_pb.GetUserByClaimResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.identity.user.v1beta1.GetUserByClaimRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.identity.user.v1beta1.GetUserByClaimResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.identity.user.v1beta1.GetUserByClaimResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIClient.prototype.getUserByClaim =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/GetUserByClaim',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_GetUserByClaim,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.identity.user.v1beta1.GetUserByClaimRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.identity.user.v1beta1.GetUserByClaimResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.getUserByClaim =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/GetUserByClaim',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_GetUserByClaim);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
  *   !proto.cs3.identity.user.v1beta1.GetUserGroupsRequest,
  *   !proto.cs3.identity.user.v1beta1.GetUserGroupsResponse>}
  */
