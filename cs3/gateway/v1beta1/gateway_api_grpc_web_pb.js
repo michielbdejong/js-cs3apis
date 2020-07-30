@@ -1667,15 +1667,15 @@ proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.createHome =
 /**
  * @const
  * @type {!grpc.web.MethodDescriptor<
- *   !proto.cs3.app.provider.v1beta1.OpenFileInAppProviderRequest,
+ *   !proto.cs3.gateway.v1beta1.OpenFileInAppProviderRequest,
  *   !proto.cs3.app.provider.v1beta1.OpenFileInAppProviderResponse>}
  */
 const methodDescriptor_GatewayAPI_OpenFileInAppProvider = new grpc.web.MethodDescriptor(
   '/cs3.gateway.v1beta1.GatewayAPI/OpenFileInAppProvider',
   grpc.web.MethodType.UNARY,
-  cs3_app_provider_v1beta1_provider_api_pb.OpenFileInAppProviderRequest,
+  proto.cs3.gateway.v1beta1.OpenFileInAppProviderRequest,
   cs3_app_provider_v1beta1_provider_api_pb.OpenFileInAppProviderResponse,
-  /** @param {!proto.cs3.app.provider.v1beta1.OpenFileInAppProviderRequest} request */
+  /** @param {!proto.cs3.gateway.v1beta1.OpenFileInAppProviderRequest} request */
   function(request) {
     return request.serializeBinary();
   },
@@ -1686,12 +1686,12 @@ const methodDescriptor_GatewayAPI_OpenFileInAppProvider = new grpc.web.MethodDes
 /**
  * @const
  * @type {!grpc.web.AbstractClientBase.MethodInfo<
- *   !proto.cs3.app.provider.v1beta1.OpenFileInAppProviderRequest,
+ *   !proto.cs3.gateway.v1beta1.OpenFileInAppProviderRequest,
  *   !proto.cs3.app.provider.v1beta1.OpenFileInAppProviderResponse>}
  */
 const methodInfo_GatewayAPI_OpenFileInAppProvider = new grpc.web.AbstractClientBase.MethodInfo(
   cs3_app_provider_v1beta1_provider_api_pb.OpenFileInAppProviderResponse,
-  /** @param {!proto.cs3.app.provider.v1beta1.OpenFileInAppProviderRequest} request */
+  /** @param {!proto.cs3.gateway.v1beta1.OpenFileInAppProviderRequest} request */
   function(request) {
     return request.serializeBinary();
   },
@@ -1700,7 +1700,7 @@ const methodInfo_GatewayAPI_OpenFileInAppProvider = new grpc.web.AbstractClientB
 
 
 /**
- * @param {!proto.cs3.app.provider.v1beta1.OpenFileInAppProviderRequest} request The
+ * @param {!proto.cs3.gateway.v1beta1.OpenFileInAppProviderRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
@@ -1721,7 +1721,7 @@ proto.cs3.gateway.v1beta1.GatewayAPIClient.prototype.openFileInAppProvider =
 
 
 /**
- * @param {!proto.cs3.app.provider.v1beta1.OpenFileInAppProviderRequest} request The
+ * @param {!proto.cs3.gateway.v1beta1.OpenFileInAppProviderRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata

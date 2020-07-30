@@ -96,9 +96,9 @@ proto.cs3.app.provider.v1beta1.OpenFileInAppProviderRequest.prototype.toObject =
 proto.cs3.app.provider.v1beta1.OpenFileInAppProviderRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     opaque: (f = msg.getOpaque()) && cs3_types_v1beta1_types_pb.Opaque.toObject(includeInstance, f),
-    ref: (f = msg.getRef()) && cs3_storage_provider_v1beta1_resources_pb.Reference.toObject(includeInstance, f),
-    accessToken: jspb.Message.getFieldWithDefault(msg, 3, ""),
-    viewMode: jspb.Message.getFieldWithDefault(msg, 4, 0)
+    resourceInfo: (f = msg.getResourceInfo()) && cs3_storage_provider_v1beta1_resources_pb.ResourceInfo.toObject(includeInstance, f),
+    viewMode: jspb.Message.getFieldWithDefault(msg, 3, 0),
+    accessToken: jspb.Message.getFieldWithDefault(msg, 4, "")
   };
 
   if (includeInstance) {
@@ -141,17 +141,17 @@ proto.cs3.app.provider.v1beta1.OpenFileInAppProviderRequest.deserializeBinaryFro
       msg.setOpaque(value);
       break;
     case 2:
-      var value = new cs3_storage_provider_v1beta1_resources_pb.Reference;
-      reader.readMessage(value,cs3_storage_provider_v1beta1_resources_pb.Reference.deserializeBinaryFromReader);
-      msg.setRef(value);
+      var value = new cs3_storage_provider_v1beta1_resources_pb.ResourceInfo;
+      reader.readMessage(value,cs3_storage_provider_v1beta1_resources_pb.ResourceInfo.deserializeBinaryFromReader);
+      msg.setResourceInfo(value);
       break;
     case 3:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setAccessToken(value);
-      break;
-    case 4:
       var value = /** @type {!proto.cs3.app.provider.v1beta1.OpenFileInAppProviderRequest.ViewMode} */ (reader.readEnum());
       msg.setViewMode(value);
+      break;
+    case 4:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setAccessToken(value);
       break;
     default:
       reader.skipField();
@@ -190,24 +190,24 @@ proto.cs3.app.provider.v1beta1.OpenFileInAppProviderRequest.serializeBinaryToWri
       cs3_types_v1beta1_types_pb.Opaque.serializeBinaryToWriter
     );
   }
-  f = message.getRef();
+  f = message.getResourceInfo();
   if (f != null) {
     writer.writeMessage(
       2,
       f,
-      cs3_storage_provider_v1beta1_resources_pb.Reference.serializeBinaryToWriter
-    );
-  }
-  f = message.getAccessToken();
-  if (f.length > 0) {
-    writer.writeString(
-      3,
-      f
+      cs3_storage_provider_v1beta1_resources_pb.ResourceInfo.serializeBinaryToWriter
     );
   }
   f = message.getViewMode();
   if (f !== 0.0) {
     writer.writeEnum(
+      3,
+      f
+    );
+  }
+  f = message.getAccessToken();
+  if (f.length > 0) {
+    writer.writeString(
       4,
       f
     );
@@ -259,17 +259,17 @@ proto.cs3.app.provider.v1beta1.OpenFileInAppProviderRequest.prototype.hasOpaque 
 
 
 /**
- * optional cs3.storage.provider.v1beta1.Reference ref = 2;
- * @return {?proto.cs3.storage.provider.v1beta1.Reference}
+ * optional cs3.storage.provider.v1beta1.ResourceInfo resource_info = 2;
+ * @return {?proto.cs3.storage.provider.v1beta1.ResourceInfo}
  */
-proto.cs3.app.provider.v1beta1.OpenFileInAppProviderRequest.prototype.getRef = function() {
-  return /** @type{?proto.cs3.storage.provider.v1beta1.Reference} */ (
-    jspb.Message.getWrapperField(this, cs3_storage_provider_v1beta1_resources_pb.Reference, 2));
+proto.cs3.app.provider.v1beta1.OpenFileInAppProviderRequest.prototype.getResourceInfo = function() {
+  return /** @type{?proto.cs3.storage.provider.v1beta1.ResourceInfo} */ (
+    jspb.Message.getWrapperField(this, cs3_storage_provider_v1beta1_resources_pb.ResourceInfo, 2));
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value */
-proto.cs3.app.provider.v1beta1.OpenFileInAppProviderRequest.prototype.setRef = function(value) {
+/** @param {?proto.cs3.storage.provider.v1beta1.ResourceInfo|undefined} value */
+proto.cs3.app.provider.v1beta1.OpenFileInAppProviderRequest.prototype.setResourceInfo = function(value) {
   jspb.Message.setWrapperField(this, 2, value);
 };
 
@@ -277,8 +277,8 @@ proto.cs3.app.provider.v1beta1.OpenFileInAppProviderRequest.prototype.setRef = f
 /**
  * Clears the message field making it undefined.
  */
-proto.cs3.app.provider.v1beta1.OpenFileInAppProviderRequest.prototype.clearRef = function() {
-  this.setRef(undefined);
+proto.cs3.app.provider.v1beta1.OpenFileInAppProviderRequest.prototype.clearResourceInfo = function() {
+  this.setResourceInfo(undefined);
 };
 
 
@@ -286,38 +286,38 @@ proto.cs3.app.provider.v1beta1.OpenFileInAppProviderRequest.prototype.clearRef =
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.cs3.app.provider.v1beta1.OpenFileInAppProviderRequest.prototype.hasRef = function() {
+proto.cs3.app.provider.v1beta1.OpenFileInAppProviderRequest.prototype.hasResourceInfo = function() {
   return jspb.Message.getField(this, 2) != null;
 };
 
 
 /**
- * optional string access_token = 3;
- * @return {string}
- */
-proto.cs3.app.provider.v1beta1.OpenFileInAppProviderRequest.prototype.getAccessToken = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
-};
-
-
-/** @param {string} value */
-proto.cs3.app.provider.v1beta1.OpenFileInAppProviderRequest.prototype.setAccessToken = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
-};
-
-
-/**
- * optional ViewMode view_mode = 4;
+ * optional ViewMode view_mode = 3;
  * @return {!proto.cs3.app.provider.v1beta1.OpenFileInAppProviderRequest.ViewMode}
  */
 proto.cs3.app.provider.v1beta1.OpenFileInAppProviderRequest.prototype.getViewMode = function() {
-  return /** @type {!proto.cs3.app.provider.v1beta1.OpenFileInAppProviderRequest.ViewMode} */ (jspb.Message.getFieldWithDefault(this, 4, 0));
+  return /** @type {!proto.cs3.app.provider.v1beta1.OpenFileInAppProviderRequest.ViewMode} */ (jspb.Message.getFieldWithDefault(this, 3, 0));
 };
 
 
 /** @param {!proto.cs3.app.provider.v1beta1.OpenFileInAppProviderRequest.ViewMode} value */
 proto.cs3.app.provider.v1beta1.OpenFileInAppProviderRequest.prototype.setViewMode = function(value) {
-  jspb.Message.setProto3EnumField(this, 4, value);
+  jspb.Message.setProto3EnumField(this, 3, value);
+};
+
+
+/**
+ * optional string access_token = 4;
+ * @return {string}
+ */
+proto.cs3.app.provider.v1beta1.OpenFileInAppProviderRequest.prototype.getAccessToken = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 4, ""));
+};
+
+
+/** @param {string} value */
+proto.cs3.app.provider.v1beta1.OpenFileInAppProviderRequest.prototype.setAccessToken = function(value) {
+  jspb.Message.setProto3StringField(this, 4, value);
 };
 
 
