@@ -208,6 +208,7 @@ proto.cs3.sharing.ocm.v1beta1.Share.toObject = function(includeInstance, msg) {
   var f, obj = {
     id: (f = msg.getId()) && proto.cs3.sharing.ocm.v1beta1.ShareId.toObject(includeInstance, f),
     resourceId: (f = msg.getResourceId()) && cs3_storage_provider_v1beta1_resources_pb.ResourceId.toObject(includeInstance, f),
+    name: jspb.Message.getFieldWithDefault(msg, 3, ""),
     permissions: (f = msg.getPermissions()) && proto.cs3.sharing.ocm.v1beta1.SharePermissions.toObject(includeInstance, f),
     grantee: (f = msg.getGrantee()) && cs3_storage_provider_v1beta1_resources_pb.Grantee.toObject(includeInstance, f),
     owner: (f = msg.getOwner()) && cs3_identity_user_v1beta1_resources_pb.UserId.toObject(includeInstance, f),
@@ -261,31 +262,35 @@ proto.cs3.sharing.ocm.v1beta1.Share.deserializeBinaryFromReader = function(msg, 
       msg.setResourceId(value);
       break;
     case 3:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setName(value);
+      break;
+    case 4:
       var value = new proto.cs3.sharing.ocm.v1beta1.SharePermissions;
       reader.readMessage(value,proto.cs3.sharing.ocm.v1beta1.SharePermissions.deserializeBinaryFromReader);
       msg.setPermissions(value);
       break;
-    case 4:
+    case 5:
       var value = new cs3_storage_provider_v1beta1_resources_pb.Grantee;
       reader.readMessage(value,cs3_storage_provider_v1beta1_resources_pb.Grantee.deserializeBinaryFromReader);
       msg.setGrantee(value);
       break;
-    case 5:
+    case 6:
       var value = new cs3_identity_user_v1beta1_resources_pb.UserId;
       reader.readMessage(value,cs3_identity_user_v1beta1_resources_pb.UserId.deserializeBinaryFromReader);
       msg.setOwner(value);
       break;
-    case 6:
+    case 7:
       var value = new cs3_identity_user_v1beta1_resources_pb.UserId;
       reader.readMessage(value,cs3_identity_user_v1beta1_resources_pb.UserId.deserializeBinaryFromReader);
       msg.setCreator(value);
       break;
-    case 7:
+    case 8:
       var value = new cs3_types_v1beta1_types_pb.Timestamp;
       reader.readMessage(value,cs3_types_v1beta1_types_pb.Timestamp.deserializeBinaryFromReader);
       msg.setCtime(value);
       break;
-    case 8:
+    case 9:
       var value = new cs3_types_v1beta1_types_pb.Timestamp;
       reader.readMessage(value,cs3_types_v1beta1_types_pb.Timestamp.deserializeBinaryFromReader);
       msg.setMtime(value);
@@ -335,10 +340,17 @@ proto.cs3.sharing.ocm.v1beta1.Share.serializeBinaryToWriter = function(message, 
       cs3_storage_provider_v1beta1_resources_pb.ResourceId.serializeBinaryToWriter
     );
   }
+  f = message.getName();
+  if (f.length > 0) {
+    writer.writeString(
+      3,
+      f
+    );
+  }
   f = message.getPermissions();
   if (f != null) {
     writer.writeMessage(
-      3,
+      4,
       f,
       proto.cs3.sharing.ocm.v1beta1.SharePermissions.serializeBinaryToWriter
     );
@@ -346,7 +358,7 @@ proto.cs3.sharing.ocm.v1beta1.Share.serializeBinaryToWriter = function(message, 
   f = message.getGrantee();
   if (f != null) {
     writer.writeMessage(
-      4,
+      5,
       f,
       cs3_storage_provider_v1beta1_resources_pb.Grantee.serializeBinaryToWriter
     );
@@ -354,7 +366,7 @@ proto.cs3.sharing.ocm.v1beta1.Share.serializeBinaryToWriter = function(message, 
   f = message.getOwner();
   if (f != null) {
     writer.writeMessage(
-      5,
+      6,
       f,
       cs3_identity_user_v1beta1_resources_pb.UserId.serializeBinaryToWriter
     );
@@ -362,7 +374,7 @@ proto.cs3.sharing.ocm.v1beta1.Share.serializeBinaryToWriter = function(message, 
   f = message.getCreator();
   if (f != null) {
     writer.writeMessage(
-      6,
+      7,
       f,
       cs3_identity_user_v1beta1_resources_pb.UserId.serializeBinaryToWriter
     );
@@ -370,7 +382,7 @@ proto.cs3.sharing.ocm.v1beta1.Share.serializeBinaryToWriter = function(message, 
   f = message.getCtime();
   if (f != null) {
     writer.writeMessage(
-      7,
+      8,
       f,
       cs3_types_v1beta1_types_pb.Timestamp.serializeBinaryToWriter
     );
@@ -378,7 +390,7 @@ proto.cs3.sharing.ocm.v1beta1.Share.serializeBinaryToWriter = function(message, 
   f = message.getMtime();
   if (f != null) {
     writer.writeMessage(
-      8,
+      9,
       f,
       cs3_types_v1beta1_types_pb.Timestamp.serializeBinaryToWriter
     );
@@ -453,18 +465,33 @@ proto.cs3.sharing.ocm.v1beta1.Share.prototype.hasResourceId = function() {
 
 
 /**
- * optional SharePermissions permissions = 3;
+ * optional string name = 3;
+ * @return {string}
+ */
+proto.cs3.sharing.ocm.v1beta1.Share.prototype.getName = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
+};
+
+
+/** @param {string} value */
+proto.cs3.sharing.ocm.v1beta1.Share.prototype.setName = function(value) {
+  jspb.Message.setProto3StringField(this, 3, value);
+};
+
+
+/**
+ * optional SharePermissions permissions = 4;
  * @return {?proto.cs3.sharing.ocm.v1beta1.SharePermissions}
  */
 proto.cs3.sharing.ocm.v1beta1.Share.prototype.getPermissions = function() {
   return /** @type{?proto.cs3.sharing.ocm.v1beta1.SharePermissions} */ (
-    jspb.Message.getWrapperField(this, proto.cs3.sharing.ocm.v1beta1.SharePermissions, 3));
+    jspb.Message.getWrapperField(this, proto.cs3.sharing.ocm.v1beta1.SharePermissions, 4));
 };
 
 
 /** @param {?proto.cs3.sharing.ocm.v1beta1.SharePermissions|undefined} value */
 proto.cs3.sharing.ocm.v1beta1.Share.prototype.setPermissions = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  jspb.Message.setWrapperField(this, 4, value);
 };
 
 
@@ -481,23 +508,23 @@ proto.cs3.sharing.ocm.v1beta1.Share.prototype.clearPermissions = function() {
  * @return {boolean}
  */
 proto.cs3.sharing.ocm.v1beta1.Share.prototype.hasPermissions = function() {
-  return jspb.Message.getField(this, 3) != null;
+  return jspb.Message.getField(this, 4) != null;
 };
 
 
 /**
- * optional cs3.storage.provider.v1beta1.Grantee grantee = 4;
+ * optional cs3.storage.provider.v1beta1.Grantee grantee = 5;
  * @return {?proto.cs3.storage.provider.v1beta1.Grantee}
  */
 proto.cs3.sharing.ocm.v1beta1.Share.prototype.getGrantee = function() {
   return /** @type{?proto.cs3.storage.provider.v1beta1.Grantee} */ (
-    jspb.Message.getWrapperField(this, cs3_storage_provider_v1beta1_resources_pb.Grantee, 4));
+    jspb.Message.getWrapperField(this, cs3_storage_provider_v1beta1_resources_pb.Grantee, 5));
 };
 
 
 /** @param {?proto.cs3.storage.provider.v1beta1.Grantee|undefined} value */
 proto.cs3.sharing.ocm.v1beta1.Share.prototype.setGrantee = function(value) {
-  jspb.Message.setWrapperField(this, 4, value);
+  jspb.Message.setWrapperField(this, 5, value);
 };
 
 
@@ -514,23 +541,23 @@ proto.cs3.sharing.ocm.v1beta1.Share.prototype.clearGrantee = function() {
  * @return {boolean}
  */
 proto.cs3.sharing.ocm.v1beta1.Share.prototype.hasGrantee = function() {
-  return jspb.Message.getField(this, 4) != null;
+  return jspb.Message.getField(this, 5) != null;
 };
 
 
 /**
- * optional cs3.identity.user.v1beta1.UserId owner = 5;
+ * optional cs3.identity.user.v1beta1.UserId owner = 6;
  * @return {?proto.cs3.identity.user.v1beta1.UserId}
  */
 proto.cs3.sharing.ocm.v1beta1.Share.prototype.getOwner = function() {
   return /** @type{?proto.cs3.identity.user.v1beta1.UserId} */ (
-    jspb.Message.getWrapperField(this, cs3_identity_user_v1beta1_resources_pb.UserId, 5));
+    jspb.Message.getWrapperField(this, cs3_identity_user_v1beta1_resources_pb.UserId, 6));
 };
 
 
 /** @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value */
 proto.cs3.sharing.ocm.v1beta1.Share.prototype.setOwner = function(value) {
-  jspb.Message.setWrapperField(this, 5, value);
+  jspb.Message.setWrapperField(this, 6, value);
 };
 
 
@@ -547,23 +574,23 @@ proto.cs3.sharing.ocm.v1beta1.Share.prototype.clearOwner = function() {
  * @return {boolean}
  */
 proto.cs3.sharing.ocm.v1beta1.Share.prototype.hasOwner = function() {
-  return jspb.Message.getField(this, 5) != null;
+  return jspb.Message.getField(this, 6) != null;
 };
 
 
 /**
- * optional cs3.identity.user.v1beta1.UserId creator = 6;
+ * optional cs3.identity.user.v1beta1.UserId creator = 7;
  * @return {?proto.cs3.identity.user.v1beta1.UserId}
  */
 proto.cs3.sharing.ocm.v1beta1.Share.prototype.getCreator = function() {
   return /** @type{?proto.cs3.identity.user.v1beta1.UserId} */ (
-    jspb.Message.getWrapperField(this, cs3_identity_user_v1beta1_resources_pb.UserId, 6));
+    jspb.Message.getWrapperField(this, cs3_identity_user_v1beta1_resources_pb.UserId, 7));
 };
 
 
 /** @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value */
 proto.cs3.sharing.ocm.v1beta1.Share.prototype.setCreator = function(value) {
-  jspb.Message.setWrapperField(this, 6, value);
+  jspb.Message.setWrapperField(this, 7, value);
 };
 
 
@@ -580,23 +607,23 @@ proto.cs3.sharing.ocm.v1beta1.Share.prototype.clearCreator = function() {
  * @return {boolean}
  */
 proto.cs3.sharing.ocm.v1beta1.Share.prototype.hasCreator = function() {
-  return jspb.Message.getField(this, 6) != null;
+  return jspb.Message.getField(this, 7) != null;
 };
 
 
 /**
- * optional cs3.types.v1beta1.Timestamp ctime = 7;
+ * optional cs3.types.v1beta1.Timestamp ctime = 8;
  * @return {?proto.cs3.types.v1beta1.Timestamp}
  */
 proto.cs3.sharing.ocm.v1beta1.Share.prototype.getCtime = function() {
   return /** @type{?proto.cs3.types.v1beta1.Timestamp} */ (
-    jspb.Message.getWrapperField(this, cs3_types_v1beta1_types_pb.Timestamp, 7));
+    jspb.Message.getWrapperField(this, cs3_types_v1beta1_types_pb.Timestamp, 8));
 };
 
 
 /** @param {?proto.cs3.types.v1beta1.Timestamp|undefined} value */
 proto.cs3.sharing.ocm.v1beta1.Share.prototype.setCtime = function(value) {
-  jspb.Message.setWrapperField(this, 7, value);
+  jspb.Message.setWrapperField(this, 8, value);
 };
 
 
@@ -613,23 +640,23 @@ proto.cs3.sharing.ocm.v1beta1.Share.prototype.clearCtime = function() {
  * @return {boolean}
  */
 proto.cs3.sharing.ocm.v1beta1.Share.prototype.hasCtime = function() {
-  return jspb.Message.getField(this, 7) != null;
+  return jspb.Message.getField(this, 8) != null;
 };
 
 
 /**
- * optional cs3.types.v1beta1.Timestamp mtime = 8;
+ * optional cs3.types.v1beta1.Timestamp mtime = 9;
  * @return {?proto.cs3.types.v1beta1.Timestamp}
  */
 proto.cs3.sharing.ocm.v1beta1.Share.prototype.getMtime = function() {
   return /** @type{?proto.cs3.types.v1beta1.Timestamp} */ (
-    jspb.Message.getWrapperField(this, cs3_types_v1beta1_types_pb.Timestamp, 8));
+    jspb.Message.getWrapperField(this, cs3_types_v1beta1_types_pb.Timestamp, 9));
 };
 
 
 /** @param {?proto.cs3.types.v1beta1.Timestamp|undefined} value */
 proto.cs3.sharing.ocm.v1beta1.Share.prototype.setMtime = function(value) {
-  jspb.Message.setWrapperField(this, 8, value);
+  jspb.Message.setWrapperField(this, 9, value);
 };
 
 
@@ -646,7 +673,7 @@ proto.cs3.sharing.ocm.v1beta1.Share.prototype.clearMtime = function() {
  * @return {boolean}
  */
 proto.cs3.sharing.ocm.v1beta1.Share.prototype.hasMtime = function() {
-  return jspb.Message.getField(this, 8) != null;
+  return jspb.Message.getField(this, 9) != null;
 };
 
 
