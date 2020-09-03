@@ -1568,6 +1568,80 @@ proto.cs3.storage.provider.v1beta1.ProviderAPIPromiseClient.prototype.updateGran
 /**
  * @const
  * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.storage.provider.v1beta1.CreateSymlinkRequest,
+ *   !proto.cs3.storage.provider.v1beta1.CreateSymlinkResponse>}
+ */
+const methodDescriptor_ProviderAPI_CreateSymlink = new grpc.web.MethodDescriptor(
+  '/cs3.storage.provider.v1beta1.ProviderAPI/CreateSymlink',
+  grpc.web.MethodType.UNARY,
+  proto.cs3.storage.provider.v1beta1.CreateSymlinkRequest,
+  proto.cs3.storage.provider.v1beta1.CreateSymlinkResponse,
+  /** @param {!proto.cs3.storage.provider.v1beta1.CreateSymlinkRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.cs3.storage.provider.v1beta1.CreateSymlinkResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.storage.provider.v1beta1.CreateSymlinkRequest,
+ *   !proto.cs3.storage.provider.v1beta1.CreateSymlinkResponse>}
+ */
+const methodInfo_ProviderAPI_CreateSymlink = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.cs3.storage.provider.v1beta1.CreateSymlinkResponse,
+  /** @param {!proto.cs3.storage.provider.v1beta1.CreateSymlinkRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.cs3.storage.provider.v1beta1.CreateSymlinkResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.storage.provider.v1beta1.CreateSymlinkRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.storage.provider.v1beta1.CreateSymlinkResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.storage.provider.v1beta1.CreateSymlinkResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.storage.provider.v1beta1.ProviderAPIClient.prototype.createSymlink =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.storage.provider.v1beta1.ProviderAPI/CreateSymlink',
+      request,
+      metadata || {},
+      methodDescriptor_ProviderAPI_CreateSymlink,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.storage.provider.v1beta1.CreateSymlinkRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.storage.provider.v1beta1.CreateSymlinkResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.storage.provider.v1beta1.ProviderAPIPromiseClient.prototype.createSymlink =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.storage.provider.v1beta1.ProviderAPI/CreateSymlink',
+      request,
+      metadata || {},
+      methodDescriptor_ProviderAPI_CreateSymlink);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
  *   !proto.cs3.storage.provider.v1beta1.CreateReferenceRequest,
  *   !proto.cs3.storage.provider.v1beta1.CreateReferenceResponse>}
  */
