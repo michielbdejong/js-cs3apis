@@ -465,5 +465,79 @@ proto.cs3.identity.user.v1beta1.UserAPIPromiseClient.prototype.findUsers =
 };
 
 
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.identity.user.v1beta1.FindGroupsRequest,
+ *   !proto.cs3.identity.user.v1beta1.FindGroupsResponse>}
+ */
+const methodDescriptor_UserAPI_FindGroups = new grpc.web.MethodDescriptor(
+  '/cs3.identity.user.v1beta1.UserAPI/FindGroups',
+  grpc.web.MethodType.UNARY,
+  proto.cs3.identity.user.v1beta1.FindGroupsRequest,
+  proto.cs3.identity.user.v1beta1.FindGroupsResponse,
+  /** @param {!proto.cs3.identity.user.v1beta1.FindGroupsRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.cs3.identity.user.v1beta1.FindGroupsResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.identity.user.v1beta1.FindGroupsRequest,
+ *   !proto.cs3.identity.user.v1beta1.FindGroupsResponse>}
+ */
+const methodInfo_UserAPI_FindGroups = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.cs3.identity.user.v1beta1.FindGroupsResponse,
+  /** @param {!proto.cs3.identity.user.v1beta1.FindGroupsRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.cs3.identity.user.v1beta1.FindGroupsResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.identity.user.v1beta1.FindGroupsRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.identity.user.v1beta1.FindGroupsResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.identity.user.v1beta1.FindGroupsResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.identity.user.v1beta1.UserAPIClient.prototype.findGroups =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.identity.user.v1beta1.UserAPI/FindGroups',
+      request,
+      metadata || {},
+      methodDescriptor_UserAPI_FindGroups,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.identity.user.v1beta1.FindGroupsRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.identity.user.v1beta1.FindGroupsResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.identity.user.v1beta1.UserAPIPromiseClient.prototype.findGroups =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.identity.user.v1beta1.UserAPI/FindGroups',
+      request,
+      metadata || {},
+      methodDescriptor_UserAPI_FindGroups);
+};
+
+
 module.exports = proto.cs3.identity.user.v1beta1;
 

@@ -4111,6 +4111,80 @@ proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.findUsers =
 /**
  * @const
  * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.identity.user.v1beta1.FindGroupsRequest,
+ *   !proto.cs3.identity.user.v1beta1.FindGroupsResponse>}
+ */
+const methodDescriptor_GatewayAPI_FindGroups = new grpc.web.MethodDescriptor(
+  '/cs3.gateway.v1beta1.GatewayAPI/FindGroups',
+  grpc.web.MethodType.UNARY,
+  cs3_identity_user_v1beta1_user_api_pb.FindGroupsRequest,
+  cs3_identity_user_v1beta1_user_api_pb.FindGroupsResponse,
+  /** @param {!proto.cs3.identity.user.v1beta1.FindGroupsRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_identity_user_v1beta1_user_api_pb.FindGroupsResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.identity.user.v1beta1.FindGroupsRequest,
+ *   !proto.cs3.identity.user.v1beta1.FindGroupsResponse>}
+ */
+const methodInfo_GatewayAPI_FindGroups = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_identity_user_v1beta1_user_api_pb.FindGroupsResponse,
+  /** @param {!proto.cs3.identity.user.v1beta1.FindGroupsRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_identity_user_v1beta1_user_api_pb.FindGroupsResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.identity.user.v1beta1.FindGroupsRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.identity.user.v1beta1.FindGroupsResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.identity.user.v1beta1.FindGroupsResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIClient.prototype.findGroups =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/FindGroups',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_FindGroups,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.identity.user.v1beta1.FindGroupsRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.identity.user.v1beta1.FindGroupsResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.findGroups =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/FindGroups',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_FindGroups);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
  *   !proto.cs3.auth.registry.v1beta1.ListAuthProvidersRequest,
  *   !proto.cs3.gateway.v1beta1.ListAuthProvidersResponse>}
  */
