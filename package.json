@@ -1,0 +1,25 @@
+{
+  "name": "@cs3org/cs3apis",
+  "version": "0.0.1",
+  "description": "JavaScript bindings for the CS3APIs to connect Storage and Application Providers ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cs3org/js-cs3apis.git"
+  },
+  "keywords": [
+    "cs3-apis",
+    "iop",
+    "storage",
+    "synchronization"
+  ],
+  "author": "CS3 Organization",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/cs3org/js-cs3apis/issues"
+  },
+  "homepage": "https://github.com/cs3org/js-cs3apis#readme"
+}
