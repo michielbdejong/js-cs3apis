@@ -1,0 +1,46 @@
+kind: pipeline
+type: docker
+name: version_bump
+
+trigger:
+  branch:
+  - master
+  event:
+    exclude:
+    - pull_request
+    - tag
+    - promote
+    - rollback
+
+steps:
+- name: Update the package version
+  image: plugins/npm
+  commands:
+    - git config --global user.email "bot@cs3community.org"
+    - git config --global user.name "cs3org-bot"
+    - npm version patch
+- name: Push back the new version into the repo
+  image: appleboy/drone-git-push
+  settings:
+    remote_name: origin
+    ssh_key:
+      from_secret: ssh_key
+
+---
+kind: pipeline
+type: docker
+name: publish
+
+trigger:
+  event:
+    include:
+    - tag
+
+steps:
+- name: npm_publish
+  image: plugins/npm
+  settings:
+    username:
+      from_secret: npm_username
+    token:
+      from_secret: npm_token
