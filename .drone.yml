@@ -18,11 +18,13 @@ steps:
   commands:
     - git config --global user.email "bot@cs3community.org"
     - git config --global user.name "cs3org-bot"
-    - npm version patch
+    - npm version patch -m "[skip ci] Release %s to npm"
 - name: Push back the new version into the repo
   image: appleboy/drone-git-push
   settings:
-    remote_name: origin
+    remote_name: upstream
+    remote: git@github.com:cs3org/js-cs3apis.git
+    followtags: true
     ssh_key:
       from_secret: ssh_key
 
@@ -40,7 +42,10 @@ steps:
 - name: npm_publish
   image: plugins/npm
   settings:
+    access: public
     username:
       from_secret: npm_username
     token:
       from_secret: npm_token
+    email:
+      from_secret: npm_email
