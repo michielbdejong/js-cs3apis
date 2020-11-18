@@ -18,6 +18,8 @@ var cs3_app_registry_v1beta1_registry_api_pb = require('../../../cs3/app/registr
 goog.object.extend(proto, cs3_app_registry_v1beta1_registry_api_pb);
 var cs3_auth_registry_v1beta1_registry_api_pb = require('../../../cs3/auth/registry/v1beta1/registry_api_pb.js');
 goog.object.extend(proto, cs3_auth_registry_v1beta1_registry_api_pb);
+var cs3_gateway_v1beta1_resources_pb = require('../../../cs3/gateway/v1beta1/resources_pb.js');
+goog.object.extend(proto, cs3_gateway_v1beta1_resources_pb);
 var cs3_identity_user_v1beta1_resources_pb = require('../../../cs3/identity/user/v1beta1/resources_pb.js');
 goog.object.extend(proto, cs3_identity_user_v1beta1_resources_pb);
 var cs3_identity_user_v1beta1_user_api_pb = require('../../../cs3/identity/user/v1beta1/user_api_pb.js');
@@ -238,7 +240,7 @@ if (goog.DEBUG && !COMPILED) {
  * @constructor
  */
 proto.cs3.gateway.v1beta1.InitiateFileDownloadResponse = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.cs3.gateway.v1beta1.InitiateFileDownloadResponse.repeatedFields_, null);
 };
 goog.inherits(proto.cs3.gateway.v1beta1.InitiateFileDownloadResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
@@ -2187,6 +2189,13 @@ proto.cs3.gateway.v1beta1.PurgeRecycleRequest.prototype.hasRef = function() {
 
 
 
+/**
+ * List of repeated fields within this message type.
+ * @private {!Array<number>}
+ * @const
+ */
+proto.cs3.gateway.v1beta1.InitiateFileDownloadResponse.repeatedFields_ = [3];
+
 
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
@@ -2220,9 +2229,8 @@ proto.cs3.gateway.v1beta1.InitiateFileDownloadResponse.toObject = function(inclu
   var f, obj = {
     status: (f = msg.getStatus()) && cs3_rpc_v1beta1_status_pb.Status.toObject(includeInstance, f),
     opaque: (f = msg.getOpaque()) && cs3_types_v1beta1_types_pb.Opaque.toObject(includeInstance, f),
-    downloadEndpoint: jspb.Message.getFieldWithDefault(msg, 3, ""),
-    expose: jspb.Message.getBooleanFieldWithDefault(msg, 5, false),
-    token: jspb.Message.getFieldWithDefault(msg, 6, "")
+    protocolsList: jspb.Message.toObjectList(msg.getProtocolsList(),
+    cs3_gateway_v1beta1_resources_pb.FileDownloadProtocol.toObject, includeInstance)
   };
 
   if (includeInstance) {
@@ -2270,16 +2278,9 @@ proto.cs3.gateway.v1beta1.InitiateFileDownloadResponse.deserializeBinaryFromRead
       msg.setOpaque(value);
       break;
     case 3:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setDownloadEndpoint(value);
-      break;
-    case 5:
-      var value = /** @type {boolean} */ (reader.readBool());
-      msg.setExpose(value);
-      break;
-    case 6:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setToken(value);
+      var value = new cs3_gateway_v1beta1_resources_pb.FileDownloadProtocol;
+      reader.readMessage(value,cs3_gateway_v1beta1_resources_pb.FileDownloadProtocol.deserializeBinaryFromReader);
+      msg.addProtocols(value);
       break;
     default:
       reader.skipField();
@@ -2326,25 +2327,12 @@ proto.cs3.gateway.v1beta1.InitiateFileDownloadResponse.serializeBinaryToWriter =
       cs3_types_v1beta1_types_pb.Opaque.serializeBinaryToWriter
     );
   }
-  f = message.getDownloadEndpoint();
+  f = message.getProtocolsList();
   if (f.length > 0) {
-    writer.writeString(
+    writer.writeRepeatedMessage(
       3,
-      f
-    );
-  }
-  f = message.getExpose();
-  if (f) {
-    writer.writeBool(
-      5,
-      f
-    );
-  }
-  f = message.getToken();
-  if (f.length > 0) {
-    writer.writeString(
-      6,
-      f
+      f,
+      cs3_gateway_v1beta1_resources_pb.FileDownloadProtocol.serializeBinaryToWriter
     );
   }
 };
@@ -2417,47 +2405,36 @@ proto.cs3.gateway.v1beta1.InitiateFileDownloadResponse.prototype.hasOpaque = fun
 
 
 /**
- * optional string download_endpoint = 3;
- * @return {string}
+ * repeated FileDownloadProtocol protocols = 3;
+ * @return {!Array<!proto.cs3.gateway.v1beta1.FileDownloadProtocol>}
  */
-proto.cs3.gateway.v1beta1.InitiateFileDownloadResponse.prototype.getDownloadEndpoint = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
+proto.cs3.gateway.v1beta1.InitiateFileDownloadResponse.prototype.getProtocolsList = function() {
+  return /** @type{!Array<!proto.cs3.gateway.v1beta1.FileDownloadProtocol>} */ (
+    jspb.Message.getRepeatedWrapperField(this, cs3_gateway_v1beta1_resources_pb.FileDownloadProtocol, 3));
 };
 
 
-/** @param {string} value */
-proto.cs3.gateway.v1beta1.InitiateFileDownloadResponse.prototype.setDownloadEndpoint = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+/** @param {!Array<!proto.cs3.gateway.v1beta1.FileDownloadProtocol>} value */
+proto.cs3.gateway.v1beta1.InitiateFileDownloadResponse.prototype.setProtocolsList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 3, value);
 };
 
 
 /**
- * optional bool expose = 5;
- * @return {boolean}
+ * @param {!proto.cs3.gateway.v1beta1.FileDownloadProtocol=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.cs3.gateway.v1beta1.FileDownloadProtocol}
  */
-proto.cs3.gateway.v1beta1.InitiateFileDownloadResponse.prototype.getExpose = function() {
-  return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 5, false));
-};
-
-
-/** @param {boolean} value */
-proto.cs3.gateway.v1beta1.InitiateFileDownloadResponse.prototype.setExpose = function(value) {
-  jspb.Message.setProto3BooleanField(this, 5, value);
+proto.cs3.gateway.v1beta1.InitiateFileDownloadResponse.prototype.addProtocols = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 3, opt_value, proto.cs3.gateway.v1beta1.FileDownloadProtocol, opt_index);
 };
 
 
 /**
- * optional string token = 6;
- * @return {string}
+ * Clears the list making it empty but non-null.
  */
-proto.cs3.gateway.v1beta1.InitiateFileDownloadResponse.prototype.getToken = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 6, ""));
-};
-
-
-/** @param {string} value */
-proto.cs3.gateway.v1beta1.InitiateFileDownloadResponse.prototype.setToken = function(value) {
-  jspb.Message.setProto3StringField(this, 6, value);
+proto.cs3.gateway.v1beta1.InitiateFileDownloadResponse.prototype.clearProtocolsList = function() {
+  this.setProtocolsList([]);
 };
 
 
@@ -2467,7 +2444,7 @@ proto.cs3.gateway.v1beta1.InitiateFileDownloadResponse.prototype.setToken = func
  * @private {!Array<number>}
  * @const
  */
-proto.cs3.gateway.v1beta1.InitiateFileUploadResponse.repeatedFields_ = [4];
+proto.cs3.gateway.v1beta1.InitiateFileUploadResponse.repeatedFields_ = [3];
 
 
 
@@ -2502,10 +2479,8 @@ proto.cs3.gateway.v1beta1.InitiateFileUploadResponse.toObject = function(include
   var f, obj = {
     status: (f = msg.getStatus()) && cs3_rpc_v1beta1_status_pb.Status.toObject(includeInstance, f),
     opaque: (f = msg.getOpaque()) && cs3_types_v1beta1_types_pb.Opaque.toObject(includeInstance, f),
-    uploadEndpoint: jspb.Message.getFieldWithDefault(msg, 3, ""),
-    availableChecksumsList: jspb.Message.toObjectList(msg.getAvailableChecksumsList(),
-    cs3_storage_provider_v1beta1_resources_pb.ResourceChecksumPriority.toObject, includeInstance),
-    token: jspb.Message.getFieldWithDefault(msg, 5, "")
+    protocolsList: jspb.Message.toObjectList(msg.getProtocolsList(),
+    cs3_gateway_v1beta1_resources_pb.FileUploadProtocol.toObject, includeInstance)
   };
 
   if (includeInstance) {
@@ -2553,17 +2528,9 @@ proto.cs3.gateway.v1beta1.InitiateFileUploadResponse.deserializeBinaryFromReader
       msg.setOpaque(value);
       break;
     case 3:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setUploadEndpoint(value);
-      break;
-    case 4:
-      var value = new cs3_storage_provider_v1beta1_resources_pb.ResourceChecksumPriority;
-      reader.readMessage(value,cs3_storage_provider_v1beta1_resources_pb.ResourceChecksumPriority.deserializeBinaryFromReader);
-      msg.addAvailableChecksums(value);
-      break;
-    case 5:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setToken(value);
+      var value = new cs3_gateway_v1beta1_resources_pb.FileUploadProtocol;
+      reader.readMessage(value,cs3_gateway_v1beta1_resources_pb.FileUploadProtocol.deserializeBinaryFromReader);
+      msg.addProtocols(value);
       break;
     default:
       reader.skipField();
@@ -2610,26 +2577,12 @@ proto.cs3.gateway.v1beta1.InitiateFileUploadResponse.serializeBinaryToWriter = f
       cs3_types_v1beta1_types_pb.Opaque.serializeBinaryToWriter
     );
   }
-  f = message.getUploadEndpoint();
-  if (f.length > 0) {
-    writer.writeString(
-      3,
-      f
-    );
-  }
-  f = message.getAvailableChecksumsList();
+  f = message.getProtocolsList();
   if (f.length > 0) {
     writer.writeRepeatedMessage(
-      4,
+      3,
       f,
-      cs3_storage_provider_v1beta1_resources_pb.ResourceChecksumPriority.serializeBinaryToWriter
-    );
-  }
-  f = message.getToken();
-  if (f.length > 0) {
-    writer.writeString(
-      5,
-      f
+      cs3_gateway_v1beta1_resources_pb.FileUploadProtocol.serializeBinaryToWriter
     );
   }
 };
@@ -2702,66 +2655,36 @@ proto.cs3.gateway.v1beta1.InitiateFileUploadResponse.prototype.hasOpaque = funct
 
 
 /**
- * optional string upload_endpoint = 3;
- * @return {string}
+ * repeated FileUploadProtocol protocols = 3;
+ * @return {!Array<!proto.cs3.gateway.v1beta1.FileUploadProtocol>}
  */
-proto.cs3.gateway.v1beta1.InitiateFileUploadResponse.prototype.getUploadEndpoint = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
+proto.cs3.gateway.v1beta1.InitiateFileUploadResponse.prototype.getProtocolsList = function() {
+  return /** @type{!Array<!proto.cs3.gateway.v1beta1.FileUploadProtocol>} */ (
+    jspb.Message.getRepeatedWrapperField(this, cs3_gateway_v1beta1_resources_pb.FileUploadProtocol, 3));
 };
 
 
-/** @param {string} value */
-proto.cs3.gateway.v1beta1.InitiateFileUploadResponse.prototype.setUploadEndpoint = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+/** @param {!Array<!proto.cs3.gateway.v1beta1.FileUploadProtocol>} value */
+proto.cs3.gateway.v1beta1.InitiateFileUploadResponse.prototype.setProtocolsList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 3, value);
 };
 
 
 /**
- * repeated cs3.storage.provider.v1beta1.ResourceChecksumPriority available_checksums = 4;
- * @return {!Array<!proto.cs3.storage.provider.v1beta1.ResourceChecksumPriority>}
- */
-proto.cs3.gateway.v1beta1.InitiateFileUploadResponse.prototype.getAvailableChecksumsList = function() {
-  return /** @type{!Array<!proto.cs3.storage.provider.v1beta1.ResourceChecksumPriority>} */ (
-    jspb.Message.getRepeatedWrapperField(this, cs3_storage_provider_v1beta1_resources_pb.ResourceChecksumPriority, 4));
-};
-
-
-/** @param {!Array<!proto.cs3.storage.provider.v1beta1.ResourceChecksumPriority>} value */
-proto.cs3.gateway.v1beta1.InitiateFileUploadResponse.prototype.setAvailableChecksumsList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 4, value);
-};
-
-
-/**
- * @param {!proto.cs3.storage.provider.v1beta1.ResourceChecksumPriority=} opt_value
+ * @param {!proto.cs3.gateway.v1beta1.FileUploadProtocol=} opt_value
  * @param {number=} opt_index
- * @return {!proto.cs3.storage.provider.v1beta1.ResourceChecksumPriority}
+ * @return {!proto.cs3.gateway.v1beta1.FileUploadProtocol}
  */
-proto.cs3.gateway.v1beta1.InitiateFileUploadResponse.prototype.addAvailableChecksums = function(opt_value, opt_index) {
-  return jspb.Message.addToRepeatedWrapperField(this, 4, opt_value, proto.cs3.storage.provider.v1beta1.ResourceChecksumPriority, opt_index);
+proto.cs3.gateway.v1beta1.InitiateFileUploadResponse.prototype.addProtocols = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 3, opt_value, proto.cs3.gateway.v1beta1.FileUploadProtocol, opt_index);
 };
 
 
 /**
  * Clears the list making it empty but non-null.
  */
-proto.cs3.gateway.v1beta1.InitiateFileUploadResponse.prototype.clearAvailableChecksumsList = function() {
-  this.setAvailableChecksumsList([]);
-};
-
-
-/**
- * optional string token = 5;
- * @return {string}
- */
-proto.cs3.gateway.v1beta1.InitiateFileUploadResponse.prototype.getToken = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 5, ""));
-};
-
-
-/** @param {string} value */
-proto.cs3.gateway.v1beta1.InitiateFileUploadResponse.prototype.setToken = function(value) {
-  jspb.Message.setProto3StringField(this, 5, value);
+proto.cs3.gateway.v1beta1.InitiateFileUploadResponse.prototype.clearProtocolsList = function() {
+  this.setProtocolsList([]);
 };
 
 
