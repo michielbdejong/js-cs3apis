@@ -1,6 +1,6 @@
 {
   "name": "@cs3org/cs3apis",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "JavaScript bindings for the CS3APIs to connect Storage and Application Providers ",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
