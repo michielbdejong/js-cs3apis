@@ -20,6 +20,8 @@ var cs3_auth_registry_v1beta1_registry_api_pb = require('../../../cs3/auth/regis
 
 var cs3_gateway_v1beta1_resources_pb = require('../../../cs3/gateway/v1beta1/resources_pb.js')
 
+var cs3_identity_group_v1beta1_group_api_pb = require('../../../cs3/identity/group/v1beta1/group_api_pb.js')
+
 var cs3_identity_user_v1beta1_resources_pb = require('../../../cs3/identity/user/v1beta1/resources_pb.js')
 
 var cs3_identity_user_v1beta1_user_api_pb = require('../../../cs3/identity/user/v1beta1/user_api_pb.js')
@@ -4113,46 +4115,342 @@ proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.findUsers =
 /**
  * @const
  * @type {!grpc.web.MethodDescriptor<
- *   !proto.cs3.identity.user.v1beta1.FindGroupsRequest,
- *   !proto.cs3.identity.user.v1beta1.FindGroupsResponse>}
+ *   !proto.cs3.identity.group.v1beta1.GetGroupRequest,
+ *   !proto.cs3.identity.group.v1beta1.GetGroupResponse>}
  */
-const methodDescriptor_GatewayAPI_FindGroups = new grpc.web.MethodDescriptor(
-  '/cs3.gateway.v1beta1.GatewayAPI/FindGroups',
+const methodDescriptor_GatewayAPI_GetGroup = new grpc.web.MethodDescriptor(
+  '/cs3.gateway.v1beta1.GatewayAPI/GetGroup',
   grpc.web.MethodType.UNARY,
-  cs3_identity_user_v1beta1_user_api_pb.FindGroupsRequest,
-  cs3_identity_user_v1beta1_user_api_pb.FindGroupsResponse,
-  /** @param {!proto.cs3.identity.user.v1beta1.FindGroupsRequest} request */
+  cs3_identity_group_v1beta1_group_api_pb.GetGroupRequest,
+  cs3_identity_group_v1beta1_group_api_pb.GetGroupResponse,
+  /** @param {!proto.cs3.identity.group.v1beta1.GetGroupRequest} request */
   function(request) {
     return request.serializeBinary();
   },
-  cs3_identity_user_v1beta1_user_api_pb.FindGroupsResponse.deserializeBinary
+  cs3_identity_group_v1beta1_group_api_pb.GetGroupResponse.deserializeBinary
 );
 
 
 /**
  * @const
  * @type {!grpc.web.AbstractClientBase.MethodInfo<
- *   !proto.cs3.identity.user.v1beta1.FindGroupsRequest,
- *   !proto.cs3.identity.user.v1beta1.FindGroupsResponse>}
+ *   !proto.cs3.identity.group.v1beta1.GetGroupRequest,
+ *   !proto.cs3.identity.group.v1beta1.GetGroupResponse>}
  */
-const methodInfo_GatewayAPI_FindGroups = new grpc.web.AbstractClientBase.MethodInfo(
-  cs3_identity_user_v1beta1_user_api_pb.FindGroupsResponse,
-  /** @param {!proto.cs3.identity.user.v1beta1.FindGroupsRequest} request */
+const methodInfo_GatewayAPI_GetGroup = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_identity_group_v1beta1_group_api_pb.GetGroupResponse,
+  /** @param {!proto.cs3.identity.group.v1beta1.GetGroupRequest} request */
   function(request) {
     return request.serializeBinary();
   },
-  cs3_identity_user_v1beta1_user_api_pb.FindGroupsResponse.deserializeBinary
+  cs3_identity_group_v1beta1_group_api_pb.GetGroupResponse.deserializeBinary
 );
 
 
 /**
- * @param {!proto.cs3.identity.user.v1beta1.FindGroupsRequest} request The
+ * @param {!proto.cs3.identity.group.v1beta1.GetGroupRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @param {function(?grpc.web.Error, ?proto.cs3.identity.user.v1beta1.FindGroupsResponse)}
+ * @param {function(?grpc.web.Error, ?proto.cs3.identity.group.v1beta1.GetGroupResponse)}
  *     callback The callback function(error, response)
- * @return {!grpc.web.ClientReadableStream<!proto.cs3.identity.user.v1beta1.FindGroupsResponse>|undefined}
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.identity.group.v1beta1.GetGroupResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIClient.prototype.getGroup =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/GetGroup',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_GetGroup,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.identity.group.v1beta1.GetGroupRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.identity.group.v1beta1.GetGroupResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.getGroup =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/GetGroup',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_GetGroup);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.identity.group.v1beta1.GetGroupByClaimRequest,
+ *   !proto.cs3.identity.group.v1beta1.GetGroupByClaimResponse>}
+ */
+const methodDescriptor_GatewayAPI_GetGroupByClaim = new grpc.web.MethodDescriptor(
+  '/cs3.gateway.v1beta1.GatewayAPI/GetGroupByClaim',
+  grpc.web.MethodType.UNARY,
+  cs3_identity_group_v1beta1_group_api_pb.GetGroupByClaimRequest,
+  cs3_identity_group_v1beta1_group_api_pb.GetGroupByClaimResponse,
+  /** @param {!proto.cs3.identity.group.v1beta1.GetGroupByClaimRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_identity_group_v1beta1_group_api_pb.GetGroupByClaimResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.identity.group.v1beta1.GetGroupByClaimRequest,
+ *   !proto.cs3.identity.group.v1beta1.GetGroupByClaimResponse>}
+ */
+const methodInfo_GatewayAPI_GetGroupByClaim = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_identity_group_v1beta1_group_api_pb.GetGroupByClaimResponse,
+  /** @param {!proto.cs3.identity.group.v1beta1.GetGroupByClaimRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_identity_group_v1beta1_group_api_pb.GetGroupByClaimResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.identity.group.v1beta1.GetGroupByClaimRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.identity.group.v1beta1.GetGroupByClaimResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.identity.group.v1beta1.GetGroupByClaimResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIClient.prototype.getGroupByClaim =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/GetGroupByClaim',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_GetGroupByClaim,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.identity.group.v1beta1.GetGroupByClaimRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.identity.group.v1beta1.GetGroupByClaimResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.getGroupByClaim =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/GetGroupByClaim',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_GetGroupByClaim);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.identity.group.v1beta1.GetMembersRequest,
+ *   !proto.cs3.identity.group.v1beta1.GetMembersResponse>}
+ */
+const methodDescriptor_GatewayAPI_GetMembers = new grpc.web.MethodDescriptor(
+  '/cs3.gateway.v1beta1.GatewayAPI/GetMembers',
+  grpc.web.MethodType.UNARY,
+  cs3_identity_group_v1beta1_group_api_pb.GetMembersRequest,
+  cs3_identity_group_v1beta1_group_api_pb.GetMembersResponse,
+  /** @param {!proto.cs3.identity.group.v1beta1.GetMembersRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_identity_group_v1beta1_group_api_pb.GetMembersResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.identity.group.v1beta1.GetMembersRequest,
+ *   !proto.cs3.identity.group.v1beta1.GetMembersResponse>}
+ */
+const methodInfo_GatewayAPI_GetMembers = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_identity_group_v1beta1_group_api_pb.GetMembersResponse,
+  /** @param {!proto.cs3.identity.group.v1beta1.GetMembersRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_identity_group_v1beta1_group_api_pb.GetMembersResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.identity.group.v1beta1.GetMembersRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.identity.group.v1beta1.GetMembersResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.identity.group.v1beta1.GetMembersResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIClient.prototype.getMembers =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/GetMembers',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_GetMembers,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.identity.group.v1beta1.GetMembersRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.identity.group.v1beta1.GetMembersResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.getMembers =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/GetMembers',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_GetMembers);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.identity.group.v1beta1.HasMemberRequest,
+ *   !proto.cs3.identity.group.v1beta1.HasMemberResponse>}
+ */
+const methodDescriptor_GatewayAPI_HasMember = new grpc.web.MethodDescriptor(
+  '/cs3.gateway.v1beta1.GatewayAPI/HasMember',
+  grpc.web.MethodType.UNARY,
+  cs3_identity_group_v1beta1_group_api_pb.HasMemberRequest,
+  cs3_identity_group_v1beta1_group_api_pb.HasMemberResponse,
+  /** @param {!proto.cs3.identity.group.v1beta1.HasMemberRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_identity_group_v1beta1_group_api_pb.HasMemberResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.identity.group.v1beta1.HasMemberRequest,
+ *   !proto.cs3.identity.group.v1beta1.HasMemberResponse>}
+ */
+const methodInfo_GatewayAPI_HasMember = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_identity_group_v1beta1_group_api_pb.HasMemberResponse,
+  /** @param {!proto.cs3.identity.group.v1beta1.HasMemberRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_identity_group_v1beta1_group_api_pb.HasMemberResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.identity.group.v1beta1.HasMemberRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.identity.group.v1beta1.HasMemberResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.identity.group.v1beta1.HasMemberResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIClient.prototype.hasMember =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/HasMember',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_HasMember,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.identity.group.v1beta1.HasMemberRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.identity.group.v1beta1.HasMemberResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.hasMember =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/HasMember',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_HasMember);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.identity.group.v1beta1.FindGroupsRequest,
+ *   !proto.cs3.identity.group.v1beta1.FindGroupsResponse>}
+ */
+const methodDescriptor_GatewayAPI_FindGroups = new grpc.web.MethodDescriptor(
+  '/cs3.gateway.v1beta1.GatewayAPI/FindGroups',
+  grpc.web.MethodType.UNARY,
+  cs3_identity_group_v1beta1_group_api_pb.FindGroupsRequest,
+  cs3_identity_group_v1beta1_group_api_pb.FindGroupsResponse,
+  /** @param {!proto.cs3.identity.group.v1beta1.FindGroupsRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_identity_group_v1beta1_group_api_pb.FindGroupsResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.identity.group.v1beta1.FindGroupsRequest,
+ *   !proto.cs3.identity.group.v1beta1.FindGroupsResponse>}
+ */
+const methodInfo_GatewayAPI_FindGroups = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_identity_group_v1beta1_group_api_pb.FindGroupsResponse,
+  /** @param {!proto.cs3.identity.group.v1beta1.FindGroupsRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_identity_group_v1beta1_group_api_pb.FindGroupsResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.identity.group.v1beta1.FindGroupsRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.identity.group.v1beta1.FindGroupsResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.identity.group.v1beta1.FindGroupsResponse>|undefined}
  *     The XHR Node Readable Stream
  */
 proto.cs3.gateway.v1beta1.GatewayAPIClient.prototype.findGroups =
@@ -4167,11 +4465,11 @@ proto.cs3.gateway.v1beta1.GatewayAPIClient.prototype.findGroups =
 
 
 /**
- * @param {!proto.cs3.identity.user.v1beta1.FindGroupsRequest} request The
+ * @param {!proto.cs3.identity.group.v1beta1.FindGroupsRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @return {!Promise<!proto.cs3.identity.user.v1beta1.FindGroupsResponse>}
+ * @return {!Promise<!proto.cs3.identity.group.v1beta1.FindGroupsResponse>}
  *     A native promise that resolves to the response
  */
 proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.findGroups =

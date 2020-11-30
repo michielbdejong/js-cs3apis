@@ -20,6 +20,8 @@ var cs3_auth_registry_v1beta1_registry_api_pb = require('../../../cs3/auth/regis
 goog.object.extend(proto, cs3_auth_registry_v1beta1_registry_api_pb);
 var cs3_gateway_v1beta1_resources_pb = require('../../../cs3/gateway/v1beta1/resources_pb.js');
 goog.object.extend(proto, cs3_gateway_v1beta1_resources_pb);
+var cs3_identity_group_v1beta1_group_api_pb = require('../../../cs3/identity/group/v1beta1/group_api_pb.js');
+goog.object.extend(proto, cs3_identity_group_v1beta1_group_api_pb);
 var cs3_identity_user_v1beta1_resources_pb = require('../../../cs3/identity/user/v1beta1/resources_pb.js');
 goog.object.extend(proto, cs3_identity_user_v1beta1_resources_pb);
 var cs3_identity_user_v1beta1_user_api_pb = require('../../../cs3/identity/user/v1beta1/user_api_pb.js');
