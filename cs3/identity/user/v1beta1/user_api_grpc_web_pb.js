@@ -12,8 +12,6 @@ const grpc = {};
 grpc.web = require('grpc-web');
 
 
-var cs3_identity_group_v1beta1_resources_pb = require('../../../../cs3/identity/group/v1beta1/resources_pb.js')
-
 var cs3_identity_user_v1beta1_resources_pb = require('../../../../cs3/identity/user/v1beta1/resources_pb.js')
 
 var cs3_rpc_v1beta1_status_pb = require('../../../../cs3/rpc/v1beta1/status_pb.js')
@@ -316,80 +314,6 @@ proto.cs3.identity.user.v1beta1.UserAPIPromiseClient.prototype.getUserGroups =
       request,
       metadata || {},
       methodDescriptor_UserAPI_GetUserGroups);
-};
-
-
-/**
- * @const
- * @type {!grpc.web.MethodDescriptor<
- *   !proto.cs3.identity.user.v1beta1.IsInGroupRequest,
- *   !proto.cs3.identity.user.v1beta1.IsInGroupResponse>}
- */
-const methodDescriptor_UserAPI_IsInGroup = new grpc.web.MethodDescriptor(
-  '/cs3.identity.user.v1beta1.UserAPI/IsInGroup',
-  grpc.web.MethodType.UNARY,
-  proto.cs3.identity.user.v1beta1.IsInGroupRequest,
-  proto.cs3.identity.user.v1beta1.IsInGroupResponse,
-  /** @param {!proto.cs3.identity.user.v1beta1.IsInGroupRequest} request */
-  function(request) {
-    return request.serializeBinary();
-  },
-  proto.cs3.identity.user.v1beta1.IsInGroupResponse.deserializeBinary
-);
-
-
-/**
- * @const
- * @type {!grpc.web.AbstractClientBase.MethodInfo<
- *   !proto.cs3.identity.user.v1beta1.IsInGroupRequest,
- *   !proto.cs3.identity.user.v1beta1.IsInGroupResponse>}
- */
-const methodInfo_UserAPI_IsInGroup = new grpc.web.AbstractClientBase.MethodInfo(
-  proto.cs3.identity.user.v1beta1.IsInGroupResponse,
-  /** @param {!proto.cs3.identity.user.v1beta1.IsInGroupRequest} request */
-  function(request) {
-    return request.serializeBinary();
-  },
-  proto.cs3.identity.user.v1beta1.IsInGroupResponse.deserializeBinary
-);
-
-
-/**
- * @param {!proto.cs3.identity.user.v1beta1.IsInGroupRequest} request The
- *     request proto
- * @param {?Object<string, string>} metadata User defined
- *     call metadata
- * @param {function(?grpc.web.Error, ?proto.cs3.identity.user.v1beta1.IsInGroupResponse)}
- *     callback The callback function(error, response)
- * @return {!grpc.web.ClientReadableStream<!proto.cs3.identity.user.v1beta1.IsInGroupResponse>|undefined}
- *     The XHR Node Readable Stream
- */
-proto.cs3.identity.user.v1beta1.UserAPIClient.prototype.isInGroup =
-    function(request, metadata, callback) {
-  return this.client_.rpcCall(this.hostname_ +
-      '/cs3.identity.user.v1beta1.UserAPI/IsInGroup',
-      request,
-      metadata || {},
-      methodDescriptor_UserAPI_IsInGroup,
-      callback);
-};
-
-
-/**
- * @param {!proto.cs3.identity.user.v1beta1.IsInGroupRequest} request The
- *     request proto
- * @param {?Object<string, string>} metadata User defined
- *     call metadata
- * @return {!Promise<!proto.cs3.identity.user.v1beta1.IsInGroupResponse>}
- *     A native promise that resolves to the response
- */
-proto.cs3.identity.user.v1beta1.UserAPIPromiseClient.prototype.isInGroup =
-    function(request, metadata) {
-  return this.client_.unaryCall(this.hostname_ +
-      '/cs3.identity.user.v1beta1.UserAPI/IsInGroup',
-      request,
-      metadata || {},
-      methodDescriptor_UserAPI_IsInGroup);
 };
 
 
