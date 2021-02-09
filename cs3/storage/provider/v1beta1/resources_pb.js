@@ -12,6 +12,8 @@ var jspb = require('google-protobuf');
 var goog = jspb;
 var global = Function('return this')();
 
+var cs3_identity_group_v1beta1_resources_pb = require('../../../../cs3/identity/group/v1beta1/resources_pb.js');
+goog.object.extend(proto, cs3_identity_group_v1beta1_resources_pb);
 var cs3_identity_user_v1beta1_resources_pb = require('../../../../cs3/identity/user/v1beta1/resources_pb.js');
 goog.object.extend(proto, cs3_identity_user_v1beta1_resources_pb);
 var cs3_types_v1beta1_types_pb = require('../../../../cs3/types/v1beta1/types_pb.js');
@@ -23,6 +25,7 @@ goog.exportSymbol('proto.cs3.storage.provider.v1beta1.FileUploadProtocol', null,
 goog.exportSymbol('proto.cs3.storage.provider.v1beta1.FileVersion', null, global);
 goog.exportSymbol('proto.cs3.storage.provider.v1beta1.Grant', null, global);
 goog.exportSymbol('proto.cs3.storage.provider.v1beta1.Grantee', null, global);
+goog.exportSymbol('proto.cs3.storage.provider.v1beta1.Grantee.IdCase', null, global);
 goog.exportSymbol('proto.cs3.storage.provider.v1beta1.GranteeType', null, global);
 goog.exportSymbol('proto.cs3.storage.provider.v1beta1.RecycleItem', null, global);
 goog.exportSymbol('proto.cs3.storage.provider.v1beta1.Reference', null, global);
@@ -234,7 +237,7 @@ if (goog.DEBUG && !COMPILED) {
  * @constructor
  */
 proto.cs3.storage.provider.v1beta1.Grantee = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.cs3.storage.provider.v1beta1.Grantee.oneofGroups_);
 };
 goog.inherits(proto.cs3.storage.provider.v1beta1.Grantee, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
@@ -2705,6 +2708,32 @@ proto.cs3.storage.provider.v1beta1.Grant.prototype.hasPermissions = function() {
 
 
 
+/**
+ * Oneof group definitions for this message. Each group defines the field
+ * numbers belonging to that group. When of these fields' value is set, all
+ * other fields in the group are cleared. During deserialization, if multiple
+ * fields are encountered for a group, only the last value seen will be kept.
+ * @private {!Array<!Array<number>>}
+ * @const
+ */
+proto.cs3.storage.provider.v1beta1.Grantee.oneofGroups_ = [[3,4]];
+
+/**
+ * @enum {number}
+ */
+proto.cs3.storage.provider.v1beta1.Grantee.IdCase = {
+  ID_NOT_SET: 0,
+  USER_ID: 3,
+  GROUP_ID: 4
+};
+
+/**
+ * @return {proto.cs3.storage.provider.v1beta1.Grantee.IdCase}
+ */
+proto.cs3.storage.provider.v1beta1.Grantee.prototype.getIdCase = function() {
+  return /** @type {proto.cs3.storage.provider.v1beta1.Grantee.IdCase} */(jspb.Message.computeOneofCase(this, proto.cs3.storage.provider.v1beta1.Grantee.oneofGroups_[0]));
+};
+
 
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
@@ -2737,7 +2766,8 @@ proto.cs3.storage.provider.v1beta1.Grantee.prototype.toObject = function(opt_inc
 proto.cs3.storage.provider.v1beta1.Grantee.toObject = function(includeInstance, msg) {
   var f, obj = {
     type: jspb.Message.getFieldWithDefault(msg, 1, 0),
-    id: (f = msg.getId()) && cs3_identity_user_v1beta1_resources_pb.UserId.toObject(includeInstance, f),
+    userId: (f = msg.getUserId()) && cs3_identity_user_v1beta1_resources_pb.UserId.toObject(includeInstance, f),
+    groupId: (f = msg.getGroupId()) && cs3_identity_group_v1beta1_resources_pb.GroupId.toObject(includeInstance, f),
     opaque: (f = msg.getOpaque()) && cs3_types_v1beta1_types_pb.Opaque.toObject(includeInstance, f)
   };
 
@@ -2779,12 +2809,17 @@ proto.cs3.storage.provider.v1beta1.Grantee.deserializeBinaryFromReader = functio
       var value = /** @type {!proto.cs3.storage.provider.v1beta1.GranteeType} */ (reader.readEnum());
       msg.setType(value);
       break;
-    case 2:
+    case 3:
       var value = new cs3_identity_user_v1beta1_resources_pb.UserId;
       reader.readMessage(value,cs3_identity_user_v1beta1_resources_pb.UserId.deserializeBinaryFromReader);
-      msg.setId(value);
+      msg.setUserId(value);
       break;
-    case 3:
+    case 4:
+      var value = new cs3_identity_group_v1beta1_resources_pb.GroupId;
+      reader.readMessage(value,cs3_identity_group_v1beta1_resources_pb.GroupId.deserializeBinaryFromReader);
+      msg.setGroupId(value);
+      break;
+    case 5:
       var value = new cs3_types_v1beta1_types_pb.Opaque;
       reader.readMessage(value,cs3_types_v1beta1_types_pb.Opaque.deserializeBinaryFromReader);
       msg.setOpaque(value);
@@ -2825,18 +2860,26 @@ proto.cs3.storage.provider.v1beta1.Grantee.serializeBinaryToWriter = function(me
       f
     );
   }
-  f = message.getId();
+  f = message.getUserId();
   if (f != null) {
     writer.writeMessage(
-      2,
+      3,
       f,
       cs3_identity_user_v1beta1_resources_pb.UserId.serializeBinaryToWriter
+    );
+  }
+  f = message.getGroupId();
+  if (f != null) {
+    writer.writeMessage(
+      4,
+      f,
+      cs3_identity_group_v1beta1_resources_pb.GroupId.serializeBinaryToWriter
     );
   }
   f = message.getOpaque();
   if (f != null) {
     writer.writeMessage(
-      3,
+      5,
       f,
       cs3_types_v1beta1_types_pb.Opaque.serializeBinaryToWriter
     );
@@ -2860,26 +2903,26 @@ proto.cs3.storage.provider.v1beta1.Grantee.prototype.setType = function(value) {
 
 
 /**
- * optional cs3.identity.user.v1beta1.UserId id = 2;
+ * optional cs3.identity.user.v1beta1.UserId user_id = 3;
  * @return {?proto.cs3.identity.user.v1beta1.UserId}
  */
-proto.cs3.storage.provider.v1beta1.Grantee.prototype.getId = function() {
+proto.cs3.storage.provider.v1beta1.Grantee.prototype.getUserId = function() {
   return /** @type{?proto.cs3.identity.user.v1beta1.UserId} */ (
-    jspb.Message.getWrapperField(this, cs3_identity_user_v1beta1_resources_pb.UserId, 2));
+    jspb.Message.getWrapperField(this, cs3_identity_user_v1beta1_resources_pb.UserId, 3));
 };
 
 
 /** @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value */
-proto.cs3.storage.provider.v1beta1.Grantee.prototype.setId = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+proto.cs3.storage.provider.v1beta1.Grantee.prototype.setUserId = function(value) {
+  jspb.Message.setOneofWrapperField(this, 3, proto.cs3.storage.provider.v1beta1.Grantee.oneofGroups_[0], value);
 };
 
 
 /**
  * Clears the message field making it undefined.
  */
-proto.cs3.storage.provider.v1beta1.Grantee.prototype.clearId = function() {
-  this.setId(undefined);
+proto.cs3.storage.provider.v1beta1.Grantee.prototype.clearUserId = function() {
+  this.setUserId(undefined);
 };
 
 
@@ -2887,24 +2930,57 @@ proto.cs3.storage.provider.v1beta1.Grantee.prototype.clearId = function() {
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.cs3.storage.provider.v1beta1.Grantee.prototype.hasId = function() {
-  return jspb.Message.getField(this, 2) != null;
+proto.cs3.storage.provider.v1beta1.Grantee.prototype.hasUserId = function() {
+  return jspb.Message.getField(this, 3) != null;
 };
 
 
 /**
- * optional cs3.types.v1beta1.Opaque opaque = 3;
+ * optional cs3.identity.group.v1beta1.GroupId group_id = 4;
+ * @return {?proto.cs3.identity.group.v1beta1.GroupId}
+ */
+proto.cs3.storage.provider.v1beta1.Grantee.prototype.getGroupId = function() {
+  return /** @type{?proto.cs3.identity.group.v1beta1.GroupId} */ (
+    jspb.Message.getWrapperField(this, cs3_identity_group_v1beta1_resources_pb.GroupId, 4));
+};
+
+
+/** @param {?proto.cs3.identity.group.v1beta1.GroupId|undefined} value */
+proto.cs3.storage.provider.v1beta1.Grantee.prototype.setGroupId = function(value) {
+  jspb.Message.setOneofWrapperField(this, 4, proto.cs3.storage.provider.v1beta1.Grantee.oneofGroups_[0], value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.cs3.storage.provider.v1beta1.Grantee.prototype.clearGroupId = function() {
+  this.setGroupId(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.cs3.storage.provider.v1beta1.Grantee.prototype.hasGroupId = function() {
+  return jspb.Message.getField(this, 4) != null;
+};
+
+
+/**
+ * optional cs3.types.v1beta1.Opaque opaque = 5;
  * @return {?proto.cs3.types.v1beta1.Opaque}
  */
 proto.cs3.storage.provider.v1beta1.Grantee.prototype.getOpaque = function() {
   return /** @type{?proto.cs3.types.v1beta1.Opaque} */ (
-    jspb.Message.getWrapperField(this, cs3_types_v1beta1_types_pb.Opaque, 3));
+    jspb.Message.getWrapperField(this, cs3_types_v1beta1_types_pb.Opaque, 5));
 };
 
 
 /** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
 proto.cs3.storage.provider.v1beta1.Grantee.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  jspb.Message.setWrapperField(this, 5, value);
 };
 
 
@@ -2921,7 +2997,7 @@ proto.cs3.storage.provider.v1beta1.Grantee.prototype.clearOpaque = function() {
  * @return {boolean}
  */
 proto.cs3.storage.provider.v1beta1.Grantee.prototype.hasOpaque = function() {
-  return jspb.Message.getField(this, 3) != null;
+  return jspb.Message.getField(this, 5) != null;
 };
 
 
