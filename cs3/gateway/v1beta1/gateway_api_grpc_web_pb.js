@@ -1747,6 +1747,302 @@ proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.createHome =
 /**
  * @const
  * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.storage.provider.v1beta1.CreateStorageSpaceRequest,
+ *   !proto.cs3.storage.provider.v1beta1.CreateStorageSpaceResponse>}
+ */
+const methodDescriptor_GatewayAPI_CreateStorageSpace = new grpc.web.MethodDescriptor(
+  '/cs3.gateway.v1beta1.GatewayAPI/CreateStorageSpace',
+  grpc.web.MethodType.UNARY,
+  cs3_storage_provider_v1beta1_provider_api_pb.CreateStorageSpaceRequest,
+  cs3_storage_provider_v1beta1_provider_api_pb.CreateStorageSpaceResponse,
+  /** @param {!proto.cs3.storage.provider.v1beta1.CreateStorageSpaceRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_storage_provider_v1beta1_provider_api_pb.CreateStorageSpaceResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.storage.provider.v1beta1.CreateStorageSpaceRequest,
+ *   !proto.cs3.storage.provider.v1beta1.CreateStorageSpaceResponse>}
+ */
+const methodInfo_GatewayAPI_CreateStorageSpace = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_storage_provider_v1beta1_provider_api_pb.CreateStorageSpaceResponse,
+  /** @param {!proto.cs3.storage.provider.v1beta1.CreateStorageSpaceRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_storage_provider_v1beta1_provider_api_pb.CreateStorageSpaceResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.storage.provider.v1beta1.CreateStorageSpaceRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.storage.provider.v1beta1.CreateStorageSpaceResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.storage.provider.v1beta1.CreateStorageSpaceResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIClient.prototype.createStorageSpace =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/CreateStorageSpace',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_CreateStorageSpace,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.storage.provider.v1beta1.CreateStorageSpaceRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.storage.provider.v1beta1.CreateStorageSpaceResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.createStorageSpace =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/CreateStorageSpace',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_CreateStorageSpace);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.storage.provider.v1beta1.ListStorageSpacesRequest,
+ *   !proto.cs3.storage.provider.v1beta1.ListStorageSpacesResponse>}
+ */
+const methodDescriptor_GatewayAPI_ListStorageSpaces = new grpc.web.MethodDescriptor(
+  '/cs3.gateway.v1beta1.GatewayAPI/ListStorageSpaces',
+  grpc.web.MethodType.UNARY,
+  cs3_storage_provider_v1beta1_provider_api_pb.ListStorageSpacesRequest,
+  cs3_storage_provider_v1beta1_provider_api_pb.ListStorageSpacesResponse,
+  /** @param {!proto.cs3.storage.provider.v1beta1.ListStorageSpacesRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_storage_provider_v1beta1_provider_api_pb.ListStorageSpacesResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.storage.provider.v1beta1.ListStorageSpacesRequest,
+ *   !proto.cs3.storage.provider.v1beta1.ListStorageSpacesResponse>}
+ */
+const methodInfo_GatewayAPI_ListStorageSpaces = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_storage_provider_v1beta1_provider_api_pb.ListStorageSpacesResponse,
+  /** @param {!proto.cs3.storage.provider.v1beta1.ListStorageSpacesRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_storage_provider_v1beta1_provider_api_pb.ListStorageSpacesResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.storage.provider.v1beta1.ListStorageSpacesRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.storage.provider.v1beta1.ListStorageSpacesResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.storage.provider.v1beta1.ListStorageSpacesResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIClient.prototype.listStorageSpaces =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/ListStorageSpaces',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_ListStorageSpaces,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.storage.provider.v1beta1.ListStorageSpacesRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.storage.provider.v1beta1.ListStorageSpacesResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.listStorageSpaces =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/ListStorageSpaces',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_ListStorageSpaces);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.storage.provider.v1beta1.UpdateStorageSpaceRequest,
+ *   !proto.cs3.storage.provider.v1beta1.UpdateStorageSpaceResponse>}
+ */
+const methodDescriptor_GatewayAPI_UpdateStorageSpace = new grpc.web.MethodDescriptor(
+  '/cs3.gateway.v1beta1.GatewayAPI/UpdateStorageSpace',
+  grpc.web.MethodType.UNARY,
+  cs3_storage_provider_v1beta1_provider_api_pb.UpdateStorageSpaceRequest,
+  cs3_storage_provider_v1beta1_provider_api_pb.UpdateStorageSpaceResponse,
+  /** @param {!proto.cs3.storage.provider.v1beta1.UpdateStorageSpaceRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_storage_provider_v1beta1_provider_api_pb.UpdateStorageSpaceResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.storage.provider.v1beta1.UpdateStorageSpaceRequest,
+ *   !proto.cs3.storage.provider.v1beta1.UpdateStorageSpaceResponse>}
+ */
+const methodInfo_GatewayAPI_UpdateStorageSpace = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_storage_provider_v1beta1_provider_api_pb.UpdateStorageSpaceResponse,
+  /** @param {!proto.cs3.storage.provider.v1beta1.UpdateStorageSpaceRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_storage_provider_v1beta1_provider_api_pb.UpdateStorageSpaceResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.storage.provider.v1beta1.UpdateStorageSpaceRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.storage.provider.v1beta1.UpdateStorageSpaceResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.storage.provider.v1beta1.UpdateStorageSpaceResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIClient.prototype.updateStorageSpace =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/UpdateStorageSpace',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_UpdateStorageSpace,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.storage.provider.v1beta1.UpdateStorageSpaceRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.storage.provider.v1beta1.UpdateStorageSpaceResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.updateStorageSpace =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/UpdateStorageSpace',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_UpdateStorageSpace);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.storage.provider.v1beta1.DeleteStorageSpaceRequest,
+ *   !proto.cs3.storage.provider.v1beta1.DeleteStorageSpaceResponse>}
+ */
+const methodDescriptor_GatewayAPI_DeleteStorageSpace = new grpc.web.MethodDescriptor(
+  '/cs3.gateway.v1beta1.GatewayAPI/DeleteStorageSpace',
+  grpc.web.MethodType.UNARY,
+  cs3_storage_provider_v1beta1_provider_api_pb.DeleteStorageSpaceRequest,
+  cs3_storage_provider_v1beta1_provider_api_pb.DeleteStorageSpaceResponse,
+  /** @param {!proto.cs3.storage.provider.v1beta1.DeleteStorageSpaceRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_storage_provider_v1beta1_provider_api_pb.DeleteStorageSpaceResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.storage.provider.v1beta1.DeleteStorageSpaceRequest,
+ *   !proto.cs3.storage.provider.v1beta1.DeleteStorageSpaceResponse>}
+ */
+const methodInfo_GatewayAPI_DeleteStorageSpace = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_storage_provider_v1beta1_provider_api_pb.DeleteStorageSpaceResponse,
+  /** @param {!proto.cs3.storage.provider.v1beta1.DeleteStorageSpaceRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_storage_provider_v1beta1_provider_api_pb.DeleteStorageSpaceResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.storage.provider.v1beta1.DeleteStorageSpaceRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.storage.provider.v1beta1.DeleteStorageSpaceResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.storage.provider.v1beta1.DeleteStorageSpaceResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIClient.prototype.deleteStorageSpace =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/DeleteStorageSpace',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_DeleteStorageSpace,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.storage.provider.v1beta1.DeleteStorageSpaceRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.storage.provider.v1beta1.DeleteStorageSpaceResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.deleteStorageSpace =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/DeleteStorageSpace',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_DeleteStorageSpace);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
  *   !proto.cs3.gateway.v1beta1.OpenFileInAppProviderRequest,
  *   !proto.cs3.app.provider.v1beta1.OpenFileInAppProviderResponse>}
  */
