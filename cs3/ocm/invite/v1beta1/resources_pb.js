@@ -74,7 +74,8 @@ proto.cs3.ocm.invite.v1beta1.InviteToken.toObject = function(includeInstance, ms
   var f, obj = {
     token: jspb.Message.getFieldWithDefault(msg, 1, ""),
     userId: (f = msg.getUserId()) && cs3_identity_user_v1beta1_resources_pb.UserId.toObject(includeInstance, f),
-    expiration: (f = msg.getExpiration()) && cs3_types_v1beta1_types_pb.Timestamp.toObject(includeInstance, f)
+    expiration: (f = msg.getExpiration()) && cs3_types_v1beta1_types_pb.Timestamp.toObject(includeInstance, f),
+    name: jspb.Message.getFieldWithDefault(msg, 4, "")
   };
 
   if (includeInstance) {
@@ -124,6 +125,10 @@ proto.cs3.ocm.invite.v1beta1.InviteToken.deserializeBinaryFromReader = function(
       var value = new cs3_types_v1beta1_types_pb.Timestamp;
       reader.readMessage(value,cs3_types_v1beta1_types_pb.Timestamp.deserializeBinaryFromReader);
       msg.setExpiration(value);
+      break;
+    case 4:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setName(value);
       break;
     default:
       reader.skipField();
@@ -175,6 +180,13 @@ proto.cs3.ocm.invite.v1beta1.InviteToken.serializeBinaryToWriter = function(mess
       3,
       f,
       cs3_types_v1beta1_types_pb.Timestamp.serializeBinaryToWriter
+    );
+  }
+  f = message.getName();
+  if (f.length > 0) {
+    writer.writeString(
+      4,
+      f
     );
   }
 };
@@ -258,6 +270,21 @@ proto.cs3.ocm.invite.v1beta1.InviteToken.prototype.clearExpiration = function() 
  */
 proto.cs3.ocm.invite.v1beta1.InviteToken.prototype.hasExpiration = function() {
   return jspb.Message.getField(this, 3) != null;
+};
+
+
+/**
+ * optional string name = 4;
+ * @return {string}
+ */
+proto.cs3.ocm.invite.v1beta1.InviteToken.prototype.getName = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 4, ""));
+};
+
+
+/** @param {string} value */
+proto.cs3.ocm.invite.v1beta1.InviteToken.prototype.setName = function(value) {
+  jspb.Message.setProto3StringField(this, 4, value);
 };
 
 

@@ -20,6 +20,7 @@ var cs3_types_v1beta1_types_pb = require('../../../../cs3/types/v1beta1/types_pb
 goog.object.extend(proto, cs3_types_v1beta1_types_pb);
 goog.exportSymbol('proto.cs3.sharing.ocm.v1beta1.ReceivedShare', null, global);
 goog.exportSymbol('proto.cs3.sharing.ocm.v1beta1.Share', null, global);
+goog.exportSymbol('proto.cs3.sharing.ocm.v1beta1.Share.ShareType', null, global);
 goog.exportSymbol('proto.cs3.sharing.ocm.v1beta1.ShareGrant', null, global);
 goog.exportSymbol('proto.cs3.sharing.ocm.v1beta1.ShareId', null, global);
 goog.exportSymbol('proto.cs3.sharing.ocm.v1beta1.ShareKey', null, global);
@@ -214,7 +215,8 @@ proto.cs3.sharing.ocm.v1beta1.Share.toObject = function(includeInstance, msg) {
     owner: (f = msg.getOwner()) && cs3_identity_user_v1beta1_resources_pb.UserId.toObject(includeInstance, f),
     creator: (f = msg.getCreator()) && cs3_identity_user_v1beta1_resources_pb.UserId.toObject(includeInstance, f),
     ctime: (f = msg.getCtime()) && cs3_types_v1beta1_types_pb.Timestamp.toObject(includeInstance, f),
-    mtime: (f = msg.getMtime()) && cs3_types_v1beta1_types_pb.Timestamp.toObject(includeInstance, f)
+    mtime: (f = msg.getMtime()) && cs3_types_v1beta1_types_pb.Timestamp.toObject(includeInstance, f),
+    shareType: jspb.Message.getFieldWithDefault(msg, 10, 0)
   };
 
   if (includeInstance) {
@@ -294,6 +296,10 @@ proto.cs3.sharing.ocm.v1beta1.Share.deserializeBinaryFromReader = function(msg, 
       var value = new cs3_types_v1beta1_types_pb.Timestamp;
       reader.readMessage(value,cs3_types_v1beta1_types_pb.Timestamp.deserializeBinaryFromReader);
       msg.setMtime(value);
+      break;
+    case 10:
+      var value = /** @type {!proto.cs3.sharing.ocm.v1beta1.Share.ShareType} */ (reader.readEnum());
+      msg.setShareType(value);
       break;
     default:
       reader.skipField();
@@ -395,8 +401,24 @@ proto.cs3.sharing.ocm.v1beta1.Share.serializeBinaryToWriter = function(message, 
       cs3_types_v1beta1_types_pb.Timestamp.serializeBinaryToWriter
     );
   }
+  f = message.getShareType();
+  if (f !== 0.0) {
+    writer.writeEnum(
+      10,
+      f
+    );
+  }
 };
 
+
+/**
+ * @enum {number}
+ */
+proto.cs3.sharing.ocm.v1beta1.Share.ShareType = {
+  SHARE_TYPE_INVALID: 0,
+  SHARE_TYPE_REGULAR: 1,
+  SHARE_TYPE_TRANSFER: 2
+};
 
 /**
  * optional ShareId id = 1;
@@ -674,6 +696,21 @@ proto.cs3.sharing.ocm.v1beta1.Share.prototype.clearMtime = function() {
  */
 proto.cs3.sharing.ocm.v1beta1.Share.prototype.hasMtime = function() {
   return jspb.Message.getField(this, 9) != null;
+};
+
+
+/**
+ * optional ShareType share_type = 10;
+ * @return {!proto.cs3.sharing.ocm.v1beta1.Share.ShareType}
+ */
+proto.cs3.sharing.ocm.v1beta1.Share.prototype.getShareType = function() {
+  return /** @type {!proto.cs3.sharing.ocm.v1beta1.Share.ShareType} */ (jspb.Message.getFieldWithDefault(this, 10, 0));
+};
+
+
+/** @param {!proto.cs3.sharing.ocm.v1beta1.Share.ShareType} value */
+proto.cs3.sharing.ocm.v1beta1.Share.prototype.setShareType = function(value) {
+  jspb.Message.setProto3EnumField(this, 10, value);
 };
 
 
