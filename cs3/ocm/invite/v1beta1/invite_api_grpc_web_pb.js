@@ -324,148 +324,148 @@ proto.cs3.ocm.invite.v1beta1.InviteAPIPromiseClient.prototype.acceptInvite =
 /**
  * @const
  * @type {!grpc.web.MethodDescriptor<
- *   !proto.cs3.ocm.invite.v1beta1.GetRemoteUserRequest,
- *   !proto.cs3.ocm.invite.v1beta1.GetRemoteUserResponse>}
+ *   !proto.cs3.ocm.invite.v1beta1.GetAcceptedUserRequest,
+ *   !proto.cs3.ocm.invite.v1beta1.GetAcceptedUserResponse>}
  */
-const methodDescriptor_InviteAPI_GetRemoteUser = new grpc.web.MethodDescriptor(
-  '/cs3.ocm.invite.v1beta1.InviteAPI/GetRemoteUser',
+const methodDescriptor_InviteAPI_GetAcceptedUser = new grpc.web.MethodDescriptor(
+  '/cs3.ocm.invite.v1beta1.InviteAPI/GetAcceptedUser',
   grpc.web.MethodType.UNARY,
-  proto.cs3.ocm.invite.v1beta1.GetRemoteUserRequest,
-  proto.cs3.ocm.invite.v1beta1.GetRemoteUserResponse,
-  /** @param {!proto.cs3.ocm.invite.v1beta1.GetRemoteUserRequest} request */
+  proto.cs3.ocm.invite.v1beta1.GetAcceptedUserRequest,
+  proto.cs3.ocm.invite.v1beta1.GetAcceptedUserResponse,
+  /** @param {!proto.cs3.ocm.invite.v1beta1.GetAcceptedUserRequest} request */
   function(request) {
     return request.serializeBinary();
   },
-  proto.cs3.ocm.invite.v1beta1.GetRemoteUserResponse.deserializeBinary
+  proto.cs3.ocm.invite.v1beta1.GetAcceptedUserResponse.deserializeBinary
 );
 
 
 /**
  * @const
  * @type {!grpc.web.AbstractClientBase.MethodInfo<
- *   !proto.cs3.ocm.invite.v1beta1.GetRemoteUserRequest,
- *   !proto.cs3.ocm.invite.v1beta1.GetRemoteUserResponse>}
+ *   !proto.cs3.ocm.invite.v1beta1.GetAcceptedUserRequest,
+ *   !proto.cs3.ocm.invite.v1beta1.GetAcceptedUserResponse>}
  */
-const methodInfo_InviteAPI_GetRemoteUser = new grpc.web.AbstractClientBase.MethodInfo(
-  proto.cs3.ocm.invite.v1beta1.GetRemoteUserResponse,
-  /** @param {!proto.cs3.ocm.invite.v1beta1.GetRemoteUserRequest} request */
+const methodInfo_InviteAPI_GetAcceptedUser = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.cs3.ocm.invite.v1beta1.GetAcceptedUserResponse,
+  /** @param {!proto.cs3.ocm.invite.v1beta1.GetAcceptedUserRequest} request */
   function(request) {
     return request.serializeBinary();
   },
-  proto.cs3.ocm.invite.v1beta1.GetRemoteUserResponse.deserializeBinary
+  proto.cs3.ocm.invite.v1beta1.GetAcceptedUserResponse.deserializeBinary
 );
 
 
 /**
- * @param {!proto.cs3.ocm.invite.v1beta1.GetRemoteUserRequest} request The
+ * @param {!proto.cs3.ocm.invite.v1beta1.GetAcceptedUserRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @param {function(?grpc.web.Error, ?proto.cs3.ocm.invite.v1beta1.GetRemoteUserResponse)}
+ * @param {function(?grpc.web.Error, ?proto.cs3.ocm.invite.v1beta1.GetAcceptedUserResponse)}
  *     callback The callback function(error, response)
- * @return {!grpc.web.ClientReadableStream<!proto.cs3.ocm.invite.v1beta1.GetRemoteUserResponse>|undefined}
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.ocm.invite.v1beta1.GetAcceptedUserResponse>|undefined}
  *     The XHR Node Readable Stream
  */
-proto.cs3.ocm.invite.v1beta1.InviteAPIClient.prototype.getRemoteUser =
+proto.cs3.ocm.invite.v1beta1.InviteAPIClient.prototype.getAcceptedUser =
     function(request, metadata, callback) {
   return this.client_.rpcCall(this.hostname_ +
-      '/cs3.ocm.invite.v1beta1.InviteAPI/GetRemoteUser',
+      '/cs3.ocm.invite.v1beta1.InviteAPI/GetAcceptedUser',
       request,
       metadata || {},
-      methodDescriptor_InviteAPI_GetRemoteUser,
+      methodDescriptor_InviteAPI_GetAcceptedUser,
       callback);
 };
 
 
 /**
- * @param {!proto.cs3.ocm.invite.v1beta1.GetRemoteUserRequest} request The
+ * @param {!proto.cs3.ocm.invite.v1beta1.GetAcceptedUserRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @return {!Promise<!proto.cs3.ocm.invite.v1beta1.GetRemoteUserResponse>}
+ * @return {!Promise<!proto.cs3.ocm.invite.v1beta1.GetAcceptedUserResponse>}
  *     A native promise that resolves to the response
  */
-proto.cs3.ocm.invite.v1beta1.InviteAPIPromiseClient.prototype.getRemoteUser =
+proto.cs3.ocm.invite.v1beta1.InviteAPIPromiseClient.prototype.getAcceptedUser =
     function(request, metadata) {
   return this.client_.unaryCall(this.hostname_ +
-      '/cs3.ocm.invite.v1beta1.InviteAPI/GetRemoteUser',
+      '/cs3.ocm.invite.v1beta1.InviteAPI/GetAcceptedUser',
       request,
       metadata || {},
-      methodDescriptor_InviteAPI_GetRemoteUser);
+      methodDescriptor_InviteAPI_GetAcceptedUser);
 };
 
 
 /**
  * @const
  * @type {!grpc.web.MethodDescriptor<
- *   !proto.cs3.ocm.invite.v1beta1.GetAcceptedUsersRequest,
- *   !proto.cs3.ocm.invite.v1beta1.GetAcceptedUsersResponse>}
+ *   !proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersRequest,
+ *   !proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersResponse>}
  */
-const methodDescriptor_InviteAPI_GetAcceptedUsers = new grpc.web.MethodDescriptor(
-  '/cs3.ocm.invite.v1beta1.InviteAPI/GetAcceptedUsers',
+const methodDescriptor_InviteAPI_FindAcceptedUsers = new grpc.web.MethodDescriptor(
+  '/cs3.ocm.invite.v1beta1.InviteAPI/FindAcceptedUsers',
   grpc.web.MethodType.UNARY,
-  proto.cs3.ocm.invite.v1beta1.GetAcceptedUsersRequest,
-  proto.cs3.ocm.invite.v1beta1.GetAcceptedUsersResponse,
-  /** @param {!proto.cs3.ocm.invite.v1beta1.GetAcceptedUsersRequest} request */
+  proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersRequest,
+  proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersResponse,
+  /** @param {!proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersRequest} request */
   function(request) {
     return request.serializeBinary();
   },
-  proto.cs3.ocm.invite.v1beta1.GetAcceptedUsersResponse.deserializeBinary
+  proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersResponse.deserializeBinary
 );
 
 
 /**
  * @const
  * @type {!grpc.web.AbstractClientBase.MethodInfo<
- *   !proto.cs3.ocm.invite.v1beta1.GetAcceptedUsersRequest,
- *   !proto.cs3.ocm.invite.v1beta1.GetAcceptedUsersResponse>}
+ *   !proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersRequest,
+ *   !proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersResponse>}
  */
-const methodInfo_InviteAPI_GetAcceptedUsers = new grpc.web.AbstractClientBase.MethodInfo(
-  proto.cs3.ocm.invite.v1beta1.GetAcceptedUsersResponse,
-  /** @param {!proto.cs3.ocm.invite.v1beta1.GetAcceptedUsersRequest} request */
+const methodInfo_InviteAPI_FindAcceptedUsers = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersResponse,
+  /** @param {!proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersRequest} request */
   function(request) {
     return request.serializeBinary();
   },
-  proto.cs3.ocm.invite.v1beta1.GetAcceptedUsersResponse.deserializeBinary
+  proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersResponse.deserializeBinary
 );
 
 
 /**
- * @param {!proto.cs3.ocm.invite.v1beta1.GetAcceptedUsersRequest} request The
+ * @param {!proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @param {function(?grpc.web.Error, ?proto.cs3.ocm.invite.v1beta1.GetAcceptedUsersResponse)}
+ * @param {function(?grpc.web.Error, ?proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersResponse)}
  *     callback The callback function(error, response)
- * @return {!grpc.web.ClientReadableStream<!proto.cs3.ocm.invite.v1beta1.GetAcceptedUsersResponse>|undefined}
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersResponse>|undefined}
  *     The XHR Node Readable Stream
  */
-proto.cs3.ocm.invite.v1beta1.InviteAPIClient.prototype.getAcceptedUsers =
+proto.cs3.ocm.invite.v1beta1.InviteAPIClient.prototype.findAcceptedUsers =
     function(request, metadata, callback) {
   return this.client_.rpcCall(this.hostname_ +
-      '/cs3.ocm.invite.v1beta1.InviteAPI/GetAcceptedUsers',
+      '/cs3.ocm.invite.v1beta1.InviteAPI/FindAcceptedUsers',
       request,
       metadata || {},
-      methodDescriptor_InviteAPI_GetAcceptedUsers,
+      methodDescriptor_InviteAPI_FindAcceptedUsers,
       callback);
 };
 
 
 /**
- * @param {!proto.cs3.ocm.invite.v1beta1.GetAcceptedUsersRequest} request The
+ * @param {!proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @return {!Promise<!proto.cs3.ocm.invite.v1beta1.GetAcceptedUsersResponse>}
+ * @return {!Promise<!proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersResponse>}
  *     A native promise that resolves to the response
  */
-proto.cs3.ocm.invite.v1beta1.InviteAPIPromiseClient.prototype.getAcceptedUsers =
+proto.cs3.ocm.invite.v1beta1.InviteAPIPromiseClient.prototype.findAcceptedUsers =
     function(request, metadata) {
   return this.client_.unaryCall(this.hostname_ +
-      '/cs3.ocm.invite.v1beta1.InviteAPI/GetAcceptedUsers',
+      '/cs3.ocm.invite.v1beta1.InviteAPI/FindAcceptedUsers',
       request,
       metadata || {},
-      methodDescriptor_InviteAPI_GetAcceptedUsers);
+      methodDescriptor_InviteAPI_FindAcceptedUsers);
 };
 
 

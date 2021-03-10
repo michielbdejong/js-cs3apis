@@ -5077,74 +5077,148 @@ proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.acceptInvite =
 /**
  * @const
  * @type {!grpc.web.MethodDescriptor<
- *   !proto.cs3.ocm.invite.v1beta1.GetRemoteUserRequest,
- *   !proto.cs3.ocm.invite.v1beta1.GetRemoteUserResponse>}
+ *   !proto.cs3.ocm.invite.v1beta1.GetAcceptedUserRequest,
+ *   !proto.cs3.ocm.invite.v1beta1.GetAcceptedUserResponse>}
  */
-const methodDescriptor_GatewayAPI_GetRemoteUser = new grpc.web.MethodDescriptor(
-  '/cs3.gateway.v1beta1.GatewayAPI/GetRemoteUser',
+const methodDescriptor_GatewayAPI_GetAcceptedUser = new grpc.web.MethodDescriptor(
+  '/cs3.gateway.v1beta1.GatewayAPI/GetAcceptedUser',
   grpc.web.MethodType.UNARY,
-  cs3_ocm_invite_v1beta1_invite_api_pb.GetRemoteUserRequest,
-  cs3_ocm_invite_v1beta1_invite_api_pb.GetRemoteUserResponse,
-  /** @param {!proto.cs3.ocm.invite.v1beta1.GetRemoteUserRequest} request */
+  cs3_ocm_invite_v1beta1_invite_api_pb.GetAcceptedUserRequest,
+  cs3_ocm_invite_v1beta1_invite_api_pb.GetAcceptedUserResponse,
+  /** @param {!proto.cs3.ocm.invite.v1beta1.GetAcceptedUserRequest} request */
   function(request) {
     return request.serializeBinary();
   },
-  cs3_ocm_invite_v1beta1_invite_api_pb.GetRemoteUserResponse.deserializeBinary
+  cs3_ocm_invite_v1beta1_invite_api_pb.GetAcceptedUserResponse.deserializeBinary
 );
 
 
 /**
  * @const
  * @type {!grpc.web.AbstractClientBase.MethodInfo<
- *   !proto.cs3.ocm.invite.v1beta1.GetRemoteUserRequest,
- *   !proto.cs3.ocm.invite.v1beta1.GetRemoteUserResponse>}
+ *   !proto.cs3.ocm.invite.v1beta1.GetAcceptedUserRequest,
+ *   !proto.cs3.ocm.invite.v1beta1.GetAcceptedUserResponse>}
  */
-const methodInfo_GatewayAPI_GetRemoteUser = new grpc.web.AbstractClientBase.MethodInfo(
-  cs3_ocm_invite_v1beta1_invite_api_pb.GetRemoteUserResponse,
-  /** @param {!proto.cs3.ocm.invite.v1beta1.GetRemoteUserRequest} request */
+const methodInfo_GatewayAPI_GetAcceptedUser = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_ocm_invite_v1beta1_invite_api_pb.GetAcceptedUserResponse,
+  /** @param {!proto.cs3.ocm.invite.v1beta1.GetAcceptedUserRequest} request */
   function(request) {
     return request.serializeBinary();
   },
-  cs3_ocm_invite_v1beta1_invite_api_pb.GetRemoteUserResponse.deserializeBinary
+  cs3_ocm_invite_v1beta1_invite_api_pb.GetAcceptedUserResponse.deserializeBinary
 );
 
 
 /**
- * @param {!proto.cs3.ocm.invite.v1beta1.GetRemoteUserRequest} request The
+ * @param {!proto.cs3.ocm.invite.v1beta1.GetAcceptedUserRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @param {function(?grpc.web.Error, ?proto.cs3.ocm.invite.v1beta1.GetRemoteUserResponse)}
+ * @param {function(?grpc.web.Error, ?proto.cs3.ocm.invite.v1beta1.GetAcceptedUserResponse)}
  *     callback The callback function(error, response)
- * @return {!grpc.web.ClientReadableStream<!proto.cs3.ocm.invite.v1beta1.GetRemoteUserResponse>|undefined}
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.ocm.invite.v1beta1.GetAcceptedUserResponse>|undefined}
  *     The XHR Node Readable Stream
  */
-proto.cs3.gateway.v1beta1.GatewayAPIClient.prototype.getRemoteUser =
+proto.cs3.gateway.v1beta1.GatewayAPIClient.prototype.getAcceptedUser =
     function(request, metadata, callback) {
   return this.client_.rpcCall(this.hostname_ +
-      '/cs3.gateway.v1beta1.GatewayAPI/GetRemoteUser',
+      '/cs3.gateway.v1beta1.GatewayAPI/GetAcceptedUser',
       request,
       metadata || {},
-      methodDescriptor_GatewayAPI_GetRemoteUser,
+      methodDescriptor_GatewayAPI_GetAcceptedUser,
       callback);
 };
 
 
 /**
- * @param {!proto.cs3.ocm.invite.v1beta1.GetRemoteUserRequest} request The
+ * @param {!proto.cs3.ocm.invite.v1beta1.GetAcceptedUserRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @return {!Promise<!proto.cs3.ocm.invite.v1beta1.GetRemoteUserResponse>}
+ * @return {!Promise<!proto.cs3.ocm.invite.v1beta1.GetAcceptedUserResponse>}
  *     A native promise that resolves to the response
  */
-proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.getRemoteUser =
+proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.getAcceptedUser =
     function(request, metadata) {
   return this.client_.unaryCall(this.hostname_ +
-      '/cs3.gateway.v1beta1.GatewayAPI/GetRemoteUser',
+      '/cs3.gateway.v1beta1.GatewayAPI/GetAcceptedUser',
       request,
       metadata || {},
-      methodDescriptor_GatewayAPI_GetRemoteUser);
+      methodDescriptor_GatewayAPI_GetAcceptedUser);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersRequest,
+ *   !proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersResponse>}
+ */
+const methodDescriptor_GatewayAPI_FindAcceptedUsers = new grpc.web.MethodDescriptor(
+  '/cs3.gateway.v1beta1.GatewayAPI/FindAcceptedUsers',
+  grpc.web.MethodType.UNARY,
+  cs3_ocm_invite_v1beta1_invite_api_pb.FindAcceptedUsersRequest,
+  cs3_ocm_invite_v1beta1_invite_api_pb.FindAcceptedUsersResponse,
+  /** @param {!proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_ocm_invite_v1beta1_invite_api_pb.FindAcceptedUsersResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersRequest,
+ *   !proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersResponse>}
+ */
+const methodInfo_GatewayAPI_FindAcceptedUsers = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_ocm_invite_v1beta1_invite_api_pb.FindAcceptedUsersResponse,
+  /** @param {!proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_ocm_invite_v1beta1_invite_api_pb.FindAcceptedUsersResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIClient.prototype.findAcceptedUsers =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/FindAcceptedUsers',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_FindAcceptedUsers,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.findAcceptedUsers =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/FindAcceptedUsers',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_FindAcceptedUsers);
 };
 
 

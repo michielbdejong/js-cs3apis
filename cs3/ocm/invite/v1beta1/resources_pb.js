@@ -75,7 +75,7 @@ proto.cs3.ocm.invite.v1beta1.InviteToken.toObject = function(includeInstance, ms
     token: jspb.Message.getFieldWithDefault(msg, 1, ""),
     userId: (f = msg.getUserId()) && cs3_identity_user_v1beta1_resources_pb.UserId.toObject(includeInstance, f),
     expiration: (f = msg.getExpiration()) && cs3_types_v1beta1_types_pb.Timestamp.toObject(includeInstance, f),
-    name: jspb.Message.getFieldWithDefault(msg, 4, "")
+    description: jspb.Message.getFieldWithDefault(msg, 4, "")
   };
 
   if (includeInstance) {
@@ -128,7 +128,7 @@ proto.cs3.ocm.invite.v1beta1.InviteToken.deserializeBinaryFromReader = function(
       break;
     case 4:
       var value = /** @type {string} */ (reader.readString());
-      msg.setName(value);
+      msg.setDescription(value);
       break;
     default:
       reader.skipField();
@@ -182,7 +182,7 @@ proto.cs3.ocm.invite.v1beta1.InviteToken.serializeBinaryToWriter = function(mess
       cs3_types_v1beta1_types_pb.Timestamp.serializeBinaryToWriter
     );
   }
-  f = message.getName();
+  f = message.getDescription();
   if (f.length > 0) {
     writer.writeString(
       4,
@@ -274,16 +274,16 @@ proto.cs3.ocm.invite.v1beta1.InviteToken.prototype.hasExpiration = function() {
 
 
 /**
- * optional string name = 4;
+ * optional string description = 4;
  * @return {string}
  */
-proto.cs3.ocm.invite.v1beta1.InviteToken.prototype.getName = function() {
+proto.cs3.ocm.invite.v1beta1.InviteToken.prototype.getDescription = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 4, ""));
 };
 
 
 /** @param {string} value */
-proto.cs3.ocm.invite.v1beta1.InviteToken.prototype.setName = function(value) {
+proto.cs3.ocm.invite.v1beta1.InviteToken.prototype.setDescription = function(value) {
   jspb.Message.setProto3StringField(this, 4, value);
 };
 
