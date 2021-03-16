@@ -3102,7 +3102,8 @@ proto.cs3.storage.provider.v1beta1.FileVersion.toObject = function(includeInstan
     opaque: (f = msg.getOpaque()) && cs3_types_v1beta1_types_pb.Opaque.toObject(includeInstance, f),
     key: jspb.Message.getFieldWithDefault(msg, 3, ""),
     size: jspb.Message.getFieldWithDefault(msg, 4, 0),
-    mtime: jspb.Message.getFieldWithDefault(msg, 5, 0)
+    mtime: jspb.Message.getFieldWithDefault(msg, 5, 0),
+    etag: jspb.Message.getFieldWithDefault(msg, 6, "")
   };
 
   if (includeInstance) {
@@ -3155,6 +3156,10 @@ proto.cs3.storage.provider.v1beta1.FileVersion.deserializeBinaryFromReader = fun
     case 5:
       var value = /** @type {number} */ (reader.readUint64());
       msg.setMtime(value);
+      break;
+    case 6:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setEtag(value);
       break;
     default:
       reader.skipField();
@@ -3211,6 +3216,13 @@ proto.cs3.storage.provider.v1beta1.FileVersion.serializeBinaryToWriter = functio
   if (f !== 0) {
     writer.writeUint64(
       5,
+      f
+    );
+  }
+  f = message.getEtag();
+  if (f.length > 0) {
+    writer.writeString(
+      6,
       f
     );
   }
@@ -3292,6 +3304,21 @@ proto.cs3.storage.provider.v1beta1.FileVersion.prototype.getMtime = function() {
 /** @param {number} value */
 proto.cs3.storage.provider.v1beta1.FileVersion.prototype.setMtime = function(value) {
   jspb.Message.setProto3IntField(this, 5, value);
+};
+
+
+/**
+ * optional string etag = 6;
+ * @return {string}
+ */
+proto.cs3.storage.provider.v1beta1.FileVersion.prototype.getEtag = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 6, ""));
+};
+
+
+/** @param {string} value */
+proto.cs3.storage.provider.v1beta1.FileVersion.prototype.setEtag = function(value) {
+  jspb.Message.setProto3StringField(this, 6, value);
 };
 
 
