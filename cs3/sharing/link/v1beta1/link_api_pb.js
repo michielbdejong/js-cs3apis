@@ -2883,7 +2883,8 @@ proto.cs3.sharing.link.v1beta1.GetPublicShareResponse.toObject = function(includ
   var f, obj = {
     status: (f = msg.getStatus()) && cs3_rpc_v1beta1_status_pb.Status.toObject(includeInstance, f),
     opaque: (f = msg.getOpaque()) && cs3_types_v1beta1_types_pb.Opaque.toObject(includeInstance, f),
-    share: (f = msg.getShare()) && cs3_sharing_link_v1beta1_resources_pb.PublicShare.toObject(includeInstance, f)
+    share: (f = msg.getShare()) && cs3_sharing_link_v1beta1_resources_pb.PublicShare.toObject(includeInstance, f),
+    passwordHash: jspb.Message.getFieldWithDefault(msg, 4, "")
   };
 
   if (includeInstance) {
@@ -2934,6 +2935,10 @@ proto.cs3.sharing.link.v1beta1.GetPublicShareResponse.deserializeBinaryFromReade
       var value = new cs3_sharing_link_v1beta1_resources_pb.PublicShare;
       reader.readMessage(value,cs3_sharing_link_v1beta1_resources_pb.PublicShare.deserializeBinaryFromReader);
       msg.setShare(value);
+      break;
+    case 4:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setPasswordHash(value);
       break;
     default:
       reader.skipField();
@@ -2986,6 +2991,13 @@ proto.cs3.sharing.link.v1beta1.GetPublicShareResponse.serializeBinaryToWriter = 
       3,
       f,
       cs3_sharing_link_v1beta1_resources_pb.PublicShare.serializeBinaryToWriter
+    );
+  }
+  f = message.getPasswordHash();
+  if (f.length > 0) {
+    writer.writeString(
+      4,
+      f
     );
   }
 };
@@ -3087,6 +3099,21 @@ proto.cs3.sharing.link.v1beta1.GetPublicShareResponse.prototype.clearShare = fun
  */
 proto.cs3.sharing.link.v1beta1.GetPublicShareResponse.prototype.hasShare = function() {
   return jspb.Message.getField(this, 3) != null;
+};
+
+
+/**
+ * optional string password_hash = 4;
+ * @return {string}
+ */
+proto.cs3.sharing.link.v1beta1.GetPublicShareResponse.prototype.getPasswordHash = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 4, ""));
+};
+
+
+/** @param {string} value */
+proto.cs3.sharing.link.v1beta1.GetPublicShareResponse.prototype.setPasswordHash = function(value) {
+  jspb.Message.setProto3StringField(this, 4, value);
 };
 
 
@@ -3325,7 +3352,8 @@ proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenResponse.toObject = function
   var f, obj = {
     status: (f = msg.getStatus()) && cs3_rpc_v1beta1_status_pb.Status.toObject(includeInstance, f),
     opaque: (f = msg.getOpaque()) && cs3_types_v1beta1_types_pb.Opaque.toObject(includeInstance, f),
-    share: (f = msg.getShare()) && cs3_sharing_link_v1beta1_resources_pb.PublicShare.toObject(includeInstance, f)
+    share: (f = msg.getShare()) && cs3_sharing_link_v1beta1_resources_pb.PublicShare.toObject(includeInstance, f),
+    passwordHash: jspb.Message.getFieldWithDefault(msg, 4, "")
   };
 
   if (includeInstance) {
@@ -3376,6 +3404,10 @@ proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenResponse.deserializeBinaryFr
       var value = new cs3_sharing_link_v1beta1_resources_pb.PublicShare;
       reader.readMessage(value,cs3_sharing_link_v1beta1_resources_pb.PublicShare.deserializeBinaryFromReader);
       msg.setShare(value);
+      break;
+    case 4:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setPasswordHash(value);
       break;
     default:
       reader.skipField();
@@ -3428,6 +3460,13 @@ proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenResponse.serializeBinaryToWr
       3,
       f,
       cs3_sharing_link_v1beta1_resources_pb.PublicShare.serializeBinaryToWriter
+    );
+  }
+  f = message.getPasswordHash();
+  if (f.length > 0) {
+    writer.writeString(
+      4,
+      f
     );
   }
 };
@@ -3529,6 +3568,21 @@ proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenResponse.prototype.clearShar
  */
 proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenResponse.prototype.hasShare = function() {
   return jspb.Message.getField(this, 3) != null;
+};
+
+
+/**
+ * optional string password_hash = 4;
+ * @return {string}
+ */
+proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenResponse.prototype.getPasswordHash = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 4, ""));
+};
+
+
+/** @param {string} value */
+proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenResponse.prototype.setPasswordHash = function(value) {
+  jspb.Message.setProto3StringField(this, 4, value);
 };
 
 
