@@ -12,8 +12,6 @@ var jspb = require('google-protobuf');
 var goog = jspb;
 var global = Function('return this')();
 
-var cs3_rpc_v1beta1_status_pb = require('../../../cs3/rpc/v1beta1/status_pb.js');
-goog.object.extend(proto, cs3_rpc_v1beta1_status_pb);
 var cs3_storage_provider_v1beta1_resources_pb = require('../../../cs3/storage/provider/v1beta1/resources_pb.js');
 goog.object.extend(proto, cs3_storage_provider_v1beta1_resources_pb);
 var cs3_types_v1beta1_types_pb = require('../../../cs3/types/v1beta1/types_pb.js');

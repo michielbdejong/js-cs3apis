@@ -14,8 +14,6 @@ var global = Function('return this')();
 
 var cs3_identity_user_v1beta1_resources_pb = require('../../../../cs3/identity/user/v1beta1/resources_pb.js');
 goog.object.extend(proto, cs3_identity_user_v1beta1_resources_pb);
-var cs3_storage_provider_v1beta1_resources_pb = require('../../../../cs3/storage/provider/v1beta1/resources_pb.js');
-goog.object.extend(proto, cs3_storage_provider_v1beta1_resources_pb);
 var cs3_types_v1beta1_types_pb = require('../../../../cs3/types/v1beta1/types_pb.js');
 goog.object.extend(proto, cs3_types_v1beta1_types_pb);
 goog.exportSymbol('proto.cs3.ocm.invite.v1beta1.InviteToken', null, global);
