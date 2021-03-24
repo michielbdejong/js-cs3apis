@@ -35,7 +35,8 @@ proto.cs3.rpc.v1beta1.Code = {
   CODE_INTERNAL: 15,
   CODE_UNAVAILABLE: 16,
   CODE_DATA_LOSS: 17,
-  CODE_REDIRECTION: 18
+  CODE_REDIRECTION: 18,
+  CODE_INSUFFICIENT_STORAGE: 19
 };
 
 goog.object.extend(exports, proto.cs3.rpc.v1beta1);
