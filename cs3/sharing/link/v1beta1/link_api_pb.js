@@ -1550,7 +1550,8 @@ proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.toObject = function(inclu
   var f, obj = {
     opaque: (f = msg.getOpaque()) && cs3_types_v1beta1_types_pb.Opaque.toObject(includeInstance, f),
     filtersList: jspb.Message.toObjectList(msg.getFiltersList(),
-    proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.Filter.toObject, includeInstance)
+    proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.Filter.toObject, includeInstance),
+    sign: jspb.Message.getBooleanFieldWithDefault(msg, 3, false)
   };
 
   if (includeInstance) {
@@ -1597,6 +1598,10 @@ proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.deserializeBinaryFromRead
       reader.readMessage(value,proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.Filter.deserializeBinaryFromReader);
       msg.addFilters(value);
       break;
+    case 3:
+      var value = /** @type {boolean} */ (reader.readBool());
+      msg.setSign(value);
+      break;
     default:
       reader.skipField();
       break;
@@ -1640,6 +1645,13 @@ proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.serializeBinaryToWriter =
       2,
       f,
       proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.Filter.serializeBinaryToWriter
+    );
+  }
+  f = message.getSign();
+  if (f) {
+    writer.writeBool(
+      3,
+      f
     );
   }
 };
@@ -2014,6 +2026,21 @@ proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.prototype.addFilters = fu
  */
 proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.prototype.clearFiltersList = function() {
   this.setFiltersList([]);
+};
+
+
+/**
+ * optional bool sign = 3;
+ * @return {boolean}
+ */
+proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.prototype.getSign = function() {
+  return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 3, false));
+};
+
+
+/** @param {boolean} value */
+proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.prototype.setSign = function(value) {
+  jspb.Message.setProto3BooleanField(this, 3, value);
 };
 
 
@@ -2688,7 +2715,8 @@ proto.cs3.sharing.link.v1beta1.GetPublicShareRequest.prototype.toObject = functi
 proto.cs3.sharing.link.v1beta1.GetPublicShareRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     opaque: (f = msg.getOpaque()) && cs3_types_v1beta1_types_pb.Opaque.toObject(includeInstance, f),
-    ref: (f = msg.getRef()) && cs3_sharing_link_v1beta1_resources_pb.PublicShareReference.toObject(includeInstance, f)
+    ref: (f = msg.getRef()) && cs3_sharing_link_v1beta1_resources_pb.PublicShareReference.toObject(includeInstance, f),
+    sign: jspb.Message.getBooleanFieldWithDefault(msg, 3, false)
   };
 
   if (includeInstance) {
@@ -2735,6 +2763,10 @@ proto.cs3.sharing.link.v1beta1.GetPublicShareRequest.deserializeBinaryFromReader
       reader.readMessage(value,cs3_sharing_link_v1beta1_resources_pb.PublicShareReference.deserializeBinaryFromReader);
       msg.setRef(value);
       break;
+    case 3:
+      var value = /** @type {boolean} */ (reader.readBool());
+      msg.setSign(value);
+      break;
     default:
       reader.skipField();
       break;
@@ -2778,6 +2810,13 @@ proto.cs3.sharing.link.v1beta1.GetPublicShareRequest.serializeBinaryToWriter = f
       2,
       f,
       cs3_sharing_link_v1beta1_resources_pb.PublicShareReference.serializeBinaryToWriter
+    );
+  }
+  f = message.getSign();
+  if (f) {
+    writer.writeBool(
+      3,
+      f
     );
   }
 };
@@ -2849,6 +2888,21 @@ proto.cs3.sharing.link.v1beta1.GetPublicShareRequest.prototype.hasRef = function
 };
 
 
+/**
+ * optional bool sign = 3;
+ * @return {boolean}
+ */
+proto.cs3.sharing.link.v1beta1.GetPublicShareRequest.prototype.getSign = function() {
+  return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 3, false));
+};
+
+
+/** @param {boolean} value */
+proto.cs3.sharing.link.v1beta1.GetPublicShareRequest.prototype.setSign = function(value) {
+  jspb.Message.setProto3BooleanField(this, 3, value);
+};
+
+
 
 
 
@@ -2883,8 +2937,7 @@ proto.cs3.sharing.link.v1beta1.GetPublicShareResponse.toObject = function(includ
   var f, obj = {
     status: (f = msg.getStatus()) && cs3_rpc_v1beta1_status_pb.Status.toObject(includeInstance, f),
     opaque: (f = msg.getOpaque()) && cs3_types_v1beta1_types_pb.Opaque.toObject(includeInstance, f),
-    share: (f = msg.getShare()) && cs3_sharing_link_v1beta1_resources_pb.PublicShare.toObject(includeInstance, f),
-    passwordHash: jspb.Message.getFieldWithDefault(msg, 4, "")
+    share: (f = msg.getShare()) && cs3_sharing_link_v1beta1_resources_pb.PublicShare.toObject(includeInstance, f)
   };
 
   if (includeInstance) {
@@ -2935,10 +2988,6 @@ proto.cs3.sharing.link.v1beta1.GetPublicShareResponse.deserializeBinaryFromReade
       var value = new cs3_sharing_link_v1beta1_resources_pb.PublicShare;
       reader.readMessage(value,cs3_sharing_link_v1beta1_resources_pb.PublicShare.deserializeBinaryFromReader);
       msg.setShare(value);
-      break;
-    case 4:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setPasswordHash(value);
       break;
     default:
       reader.skipField();
@@ -2991,13 +3040,6 @@ proto.cs3.sharing.link.v1beta1.GetPublicShareResponse.serializeBinaryToWriter = 
       3,
       f,
       cs3_sharing_link_v1beta1_resources_pb.PublicShare.serializeBinaryToWriter
-    );
-  }
-  f = message.getPasswordHash();
-  if (f.length > 0) {
-    writer.writeString(
-      4,
-      f
     );
   }
 };
@@ -3102,21 +3144,6 @@ proto.cs3.sharing.link.v1beta1.GetPublicShareResponse.prototype.hasShare = funct
 };
 
 
-/**
- * optional string password_hash = 4;
- * @return {string}
- */
-proto.cs3.sharing.link.v1beta1.GetPublicShareResponse.prototype.getPasswordHash = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 4, ""));
-};
-
-
-/** @param {string} value */
-proto.cs3.sharing.link.v1beta1.GetPublicShareResponse.prototype.setPasswordHash = function(value) {
-  jspb.Message.setProto3StringField(this, 4, value);
-};
-
-
 
 
 
@@ -3151,7 +3178,8 @@ proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenRequest.toObject = function(
   var f, obj = {
     opaque: (f = msg.getOpaque()) && cs3_types_v1beta1_types_pb.Opaque.toObject(includeInstance, f),
     token: jspb.Message.getFieldWithDefault(msg, 2, ""),
-    password: jspb.Message.getFieldWithDefault(msg, 3, "")
+    authentication: (f = msg.getAuthentication()) && cs3_sharing_link_v1beta1_resources_pb.PublicShareAuthentication.toObject(includeInstance, f),
+    sign: jspb.Message.getBooleanFieldWithDefault(msg, 4, false)
   };
 
   if (includeInstance) {
@@ -3198,8 +3226,13 @@ proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenRequest.deserializeBinaryFro
       msg.setToken(value);
       break;
     case 3:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setPassword(value);
+      var value = new cs3_sharing_link_v1beta1_resources_pb.PublicShareAuthentication;
+      reader.readMessage(value,cs3_sharing_link_v1beta1_resources_pb.PublicShareAuthentication.deserializeBinaryFromReader);
+      msg.setAuthentication(value);
+      break;
+    case 4:
+      var value = /** @type {boolean} */ (reader.readBool());
+      msg.setSign(value);
       break;
     default:
       reader.skipField();
@@ -3245,10 +3278,18 @@ proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenRequest.serializeBinaryToWri
       f
     );
   }
-  f = message.getPassword();
-  if (f.length > 0) {
-    writer.writeString(
+  f = message.getAuthentication();
+  if (f != null) {
+    writer.writeMessage(
       3,
+      f,
+      cs3_sharing_link_v1beta1_resources_pb.PublicShareAuthentication.serializeBinaryToWriter
+    );
+  }
+  f = message.getSign();
+  if (f) {
+    writer.writeBool(
+      4,
       f
     );
   }
@@ -3304,17 +3345,50 @@ proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenRequest.prototype.setToken =
 
 
 /**
- * optional string password = 3;
- * @return {string}
+ * optional PublicShareAuthentication authentication = 3;
+ * @return {?proto.cs3.sharing.link.v1beta1.PublicShareAuthentication}
  */
-proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenRequest.prototype.getPassword = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
+proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenRequest.prototype.getAuthentication = function() {
+  return /** @type{?proto.cs3.sharing.link.v1beta1.PublicShareAuthentication} */ (
+    jspb.Message.getWrapperField(this, cs3_sharing_link_v1beta1_resources_pb.PublicShareAuthentication, 3));
 };
 
 
-/** @param {string} value */
-proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenRequest.prototype.setPassword = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+/** @param {?proto.cs3.sharing.link.v1beta1.PublicShareAuthentication|undefined} value */
+proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenRequest.prototype.setAuthentication = function(value) {
+  jspb.Message.setWrapperField(this, 3, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenRequest.prototype.clearAuthentication = function() {
+  this.setAuthentication(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenRequest.prototype.hasAuthentication = function() {
+  return jspb.Message.getField(this, 3) != null;
+};
+
+
+/**
+ * optional bool sign = 4;
+ * @return {boolean}
+ */
+proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenRequest.prototype.getSign = function() {
+  return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 4, false));
+};
+
+
+/** @param {boolean} value */
+proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenRequest.prototype.setSign = function(value) {
+  jspb.Message.setProto3BooleanField(this, 4, value);
 };
 
 
