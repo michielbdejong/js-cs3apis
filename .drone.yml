@@ -4,7 +4,7 @@ name: version_bump
 
 trigger:
   branch:
-  - master
+  - main
   event:
     exclude:
     - pull_request
@@ -23,6 +23,7 @@ steps:
   image: appleboy/drone-git-push
   settings:
     remote_name: upstream
+    branch: main
     remote: git@github.com:cs3org/js-cs3apis.git
     followtags: true
     ssh_key:
