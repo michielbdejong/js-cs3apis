@@ -12,6 +12,8 @@ const grpc = {};
 grpc.web = require('grpc-web');
 
 
+var cs3_auth_provider_v1beta1_resources_pb = require('../../../../cs3/auth/provider/v1beta1/resources_pb.js')
+
 var cs3_identity_user_v1beta1_resources_pb = require('../../../../cs3/identity/user/v1beta1/resources_pb.js')
 
 var cs3_rpc_v1beta1_status_pb = require('../../../../cs3/rpc/v1beta1/status_pb.js')

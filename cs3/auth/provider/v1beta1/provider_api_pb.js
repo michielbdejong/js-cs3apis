@@ -12,6 +12,8 @@ var jspb = require('google-protobuf');
 var goog = jspb;
 var global = Function('return this')();
 
+var cs3_auth_provider_v1beta1_resources_pb = require('../../../../cs3/auth/provider/v1beta1/resources_pb.js');
+goog.object.extend(proto, cs3_auth_provider_v1beta1_resources_pb);
 var cs3_identity_user_v1beta1_resources_pb = require('../../../../cs3/identity/user/v1beta1/resources_pb.js');
 goog.object.extend(proto, cs3_identity_user_v1beta1_resources_pb);
 var cs3_rpc_v1beta1_status_pb = require('../../../../cs3/rpc/v1beta1/status_pb.js');
@@ -296,7 +298,8 @@ proto.cs3.auth.provider.v1beta1.AuthenticateResponse.prototype.toObject = functi
 proto.cs3.auth.provider.v1beta1.AuthenticateResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
     status: (f = msg.getStatus()) && cs3_rpc_v1beta1_status_pb.Status.toObject(includeInstance, f),
-    user: (f = msg.getUser()) && cs3_identity_user_v1beta1_resources_pb.User.toObject(includeInstance, f)
+    user: (f = msg.getUser()) && cs3_identity_user_v1beta1_resources_pb.User.toObject(includeInstance, f),
+    tokenScopeMap: (f = msg.getTokenScopeMap()) ? f.toObject(includeInstance, proto.cs3.auth.provider.v1beta1.Scope.toObject) : []
   };
 
   if (includeInstance) {
@@ -343,6 +346,12 @@ proto.cs3.auth.provider.v1beta1.AuthenticateResponse.deserializeBinaryFromReader
       reader.readMessage(value,cs3_identity_user_v1beta1_resources_pb.User.deserializeBinaryFromReader);
       msg.setUser(value);
       break;
+    case 3:
+      var value = msg.getTokenScopeMap();
+      reader.readMessage(value, function(message, reader) {
+        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readString, jspb.BinaryReader.prototype.readMessage, proto.cs3.auth.provider.v1beta1.Scope.deserializeBinaryFromReader, "");
+         });
+      break;
     default:
       reader.skipField();
       break;
@@ -387,6 +396,10 @@ proto.cs3.auth.provider.v1beta1.AuthenticateResponse.serializeBinaryToWriter = f
       f,
       cs3_identity_user_v1beta1_resources_pb.User.serializeBinaryToWriter
     );
+  }
+  f = message.getTokenScopeMap(true);
+  if (f && f.getLength() > 0) {
+    f.serializeBinary(3, writer, jspb.BinaryWriter.prototype.writeString, jspb.BinaryWriter.prototype.writeMessage, proto.cs3.auth.provider.v1beta1.Scope.serializeBinaryToWriter);
   }
 };
 
@@ -454,6 +467,27 @@ proto.cs3.auth.provider.v1beta1.AuthenticateResponse.prototype.clearUser = funct
  */
 proto.cs3.auth.provider.v1beta1.AuthenticateResponse.prototype.hasUser = function() {
   return jspb.Message.getField(this, 2) != null;
+};
+
+
+/**
+ * map<string, Scope> token_scope = 3;
+ * @param {boolean=} opt_noLazyCreate Do not create the map if
+ * empty, instead returning `undefined`
+ * @return {!jspb.Map<string,!proto.cs3.auth.provider.v1beta1.Scope>}
+ */
+proto.cs3.auth.provider.v1beta1.AuthenticateResponse.prototype.getTokenScopeMap = function(opt_noLazyCreate) {
+  return /** @type {!jspb.Map<string,!proto.cs3.auth.provider.v1beta1.Scope>} */ (
+      jspb.Message.getMapField(this, 3, opt_noLazyCreate,
+      proto.cs3.auth.provider.v1beta1.Scope));
+};
+
+
+/**
+ * Clears values from the map. The map will be non-null.
+ */
+proto.cs3.auth.provider.v1beta1.AuthenticateResponse.prototype.clearTokenScopeMap = function() {
+  this.getTokenScopeMap().clear();
 };
 
 
