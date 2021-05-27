@@ -16,6 +16,8 @@ var cs3_app_provider_v1beta1_provider_api_pb = require('../../../cs3/app/provide
 
 var cs3_app_registry_v1beta1_registry_api_pb = require('../../../cs3/app/registry/v1beta1/registry_api_pb.js')
 
+var cs3_auth_applications_v1beta1_applications_api_pb = require('../../../cs3/auth/applications/v1beta1/applications_api_pb.js')
+
 var cs3_auth_registry_v1beta1_registry_api_pb = require('../../../cs3/auth/registry/v1beta1/registry_api_pb.js')
 
 var cs3_gateway_v1beta1_resources_pb = require('../../../cs3/gateway/v1beta1/resources_pb.js')
@@ -271,6 +273,302 @@ proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.whoAmI =
       request,
       metadata || {},
       methodDescriptor_GatewayAPI_WhoAmI);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.auth.applications.v1beta1.GenerateAppPasswordRequest,
+ *   !proto.cs3.auth.applications.v1beta1.GenerateAppPasswordResponse>}
+ */
+const methodDescriptor_GatewayAPI_GenerateAppPassword = new grpc.web.MethodDescriptor(
+  '/cs3.gateway.v1beta1.GatewayAPI/GenerateAppPassword',
+  grpc.web.MethodType.UNARY,
+  cs3_auth_applications_v1beta1_applications_api_pb.GenerateAppPasswordRequest,
+  cs3_auth_applications_v1beta1_applications_api_pb.GenerateAppPasswordResponse,
+  /** @param {!proto.cs3.auth.applications.v1beta1.GenerateAppPasswordRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_auth_applications_v1beta1_applications_api_pb.GenerateAppPasswordResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.auth.applications.v1beta1.GenerateAppPasswordRequest,
+ *   !proto.cs3.auth.applications.v1beta1.GenerateAppPasswordResponse>}
+ */
+const methodInfo_GatewayAPI_GenerateAppPassword = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_auth_applications_v1beta1_applications_api_pb.GenerateAppPasswordResponse,
+  /** @param {!proto.cs3.auth.applications.v1beta1.GenerateAppPasswordRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_auth_applications_v1beta1_applications_api_pb.GenerateAppPasswordResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.auth.applications.v1beta1.GenerateAppPasswordRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.auth.applications.v1beta1.GenerateAppPasswordResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.auth.applications.v1beta1.GenerateAppPasswordResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIClient.prototype.generateAppPassword =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/GenerateAppPassword',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_GenerateAppPassword,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.auth.applications.v1beta1.GenerateAppPasswordRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.auth.applications.v1beta1.GenerateAppPasswordResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.generateAppPassword =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/GenerateAppPassword',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_GenerateAppPassword);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.auth.applications.v1beta1.ListAppPasswordsRequest,
+ *   !proto.cs3.auth.applications.v1beta1.ListAppPasswordsResponse>}
+ */
+const methodDescriptor_GatewayAPI_ListAppPasswords = new grpc.web.MethodDescriptor(
+  '/cs3.gateway.v1beta1.GatewayAPI/ListAppPasswords',
+  grpc.web.MethodType.UNARY,
+  cs3_auth_applications_v1beta1_applications_api_pb.ListAppPasswordsRequest,
+  cs3_auth_applications_v1beta1_applications_api_pb.ListAppPasswordsResponse,
+  /** @param {!proto.cs3.auth.applications.v1beta1.ListAppPasswordsRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_auth_applications_v1beta1_applications_api_pb.ListAppPasswordsResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.auth.applications.v1beta1.ListAppPasswordsRequest,
+ *   !proto.cs3.auth.applications.v1beta1.ListAppPasswordsResponse>}
+ */
+const methodInfo_GatewayAPI_ListAppPasswords = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_auth_applications_v1beta1_applications_api_pb.ListAppPasswordsResponse,
+  /** @param {!proto.cs3.auth.applications.v1beta1.ListAppPasswordsRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_auth_applications_v1beta1_applications_api_pb.ListAppPasswordsResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.auth.applications.v1beta1.ListAppPasswordsRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.auth.applications.v1beta1.ListAppPasswordsResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.auth.applications.v1beta1.ListAppPasswordsResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIClient.prototype.listAppPasswords =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/ListAppPasswords',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_ListAppPasswords,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.auth.applications.v1beta1.ListAppPasswordsRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.auth.applications.v1beta1.ListAppPasswordsResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.listAppPasswords =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/ListAppPasswords',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_ListAppPasswords);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.auth.applications.v1beta1.InvalidateAppPasswordRequest,
+ *   !proto.cs3.auth.applications.v1beta1.InvalidateAppPasswordResponse>}
+ */
+const methodDescriptor_GatewayAPI_InvalidateAppPassword = new grpc.web.MethodDescriptor(
+  '/cs3.gateway.v1beta1.GatewayAPI/InvalidateAppPassword',
+  grpc.web.MethodType.UNARY,
+  cs3_auth_applications_v1beta1_applications_api_pb.InvalidateAppPasswordRequest,
+  cs3_auth_applications_v1beta1_applications_api_pb.InvalidateAppPasswordResponse,
+  /** @param {!proto.cs3.auth.applications.v1beta1.InvalidateAppPasswordRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_auth_applications_v1beta1_applications_api_pb.InvalidateAppPasswordResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.auth.applications.v1beta1.InvalidateAppPasswordRequest,
+ *   !proto.cs3.auth.applications.v1beta1.InvalidateAppPasswordResponse>}
+ */
+const methodInfo_GatewayAPI_InvalidateAppPassword = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_auth_applications_v1beta1_applications_api_pb.InvalidateAppPasswordResponse,
+  /** @param {!proto.cs3.auth.applications.v1beta1.InvalidateAppPasswordRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_auth_applications_v1beta1_applications_api_pb.InvalidateAppPasswordResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.auth.applications.v1beta1.InvalidateAppPasswordRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.auth.applications.v1beta1.InvalidateAppPasswordResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.auth.applications.v1beta1.InvalidateAppPasswordResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIClient.prototype.invalidateAppPassword =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/InvalidateAppPassword',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_InvalidateAppPassword,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.auth.applications.v1beta1.InvalidateAppPasswordRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.auth.applications.v1beta1.InvalidateAppPasswordResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.invalidateAppPassword =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/InvalidateAppPassword',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_InvalidateAppPassword);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.auth.applications.v1beta1.GetAppPasswordRequest,
+ *   !proto.cs3.auth.applications.v1beta1.GetAppPasswordResponse>}
+ */
+const methodDescriptor_GatewayAPI_GetAppPassword = new grpc.web.MethodDescriptor(
+  '/cs3.gateway.v1beta1.GatewayAPI/GetAppPassword',
+  grpc.web.MethodType.UNARY,
+  cs3_auth_applications_v1beta1_applications_api_pb.GetAppPasswordRequest,
+  cs3_auth_applications_v1beta1_applications_api_pb.GetAppPasswordResponse,
+  /** @param {!proto.cs3.auth.applications.v1beta1.GetAppPasswordRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_auth_applications_v1beta1_applications_api_pb.GetAppPasswordResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.auth.applications.v1beta1.GetAppPasswordRequest,
+ *   !proto.cs3.auth.applications.v1beta1.GetAppPasswordResponse>}
+ */
+const methodInfo_GatewayAPI_GetAppPassword = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_auth_applications_v1beta1_applications_api_pb.GetAppPasswordResponse,
+  /** @param {!proto.cs3.auth.applications.v1beta1.GetAppPasswordRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_auth_applications_v1beta1_applications_api_pb.GetAppPasswordResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.auth.applications.v1beta1.GetAppPasswordRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.auth.applications.v1beta1.GetAppPasswordResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.auth.applications.v1beta1.GetAppPasswordResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIClient.prototype.getAppPassword =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/GetAppPassword',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_GetAppPassword,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.auth.applications.v1beta1.GetAppPasswordRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.auth.applications.v1beta1.GetAppPasswordResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.getAppPassword =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/GetAppPassword',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_GetAppPassword);
 };
 
 
