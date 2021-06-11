@@ -45,6 +45,7 @@ goog.exportSymbol('proto.cs3.storage.provider.v1beta1.GetQuotaResponse', null, g
 goog.exportSymbol('proto.cs3.storage.provider.v1beta1.InitiateFileDownloadRequest', null, global);
 goog.exportSymbol('proto.cs3.storage.provider.v1beta1.InitiateFileDownloadResponse', null, global);
 goog.exportSymbol('proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest', null, global);
+goog.exportSymbol('proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest.OptionsCase', null, global);
 goog.exportSymbol('proto.cs3.storage.provider.v1beta1.InitiateFileUploadResponse', null, global);
 goog.exportSymbol('proto.cs3.storage.provider.v1beta1.ListContainerRequest', null, global);
 goog.exportSymbol('proto.cs3.storage.provider.v1beta1.ListContainerResponse', null, global);
@@ -346,7 +347,7 @@ if (goog.DEBUG && !COMPILED) {
  * @constructor
  */
 proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest.oneofGroups_);
 };
 goog.inherits(proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
@@ -3754,6 +3755,32 @@ proto.cs3.storage.provider.v1beta1.GetQuotaResponse.prototype.setUsedBytes = fun
 
 
 
+/**
+ * Oneof group definitions for this message. Each group defines the field
+ * numbers belonging to that group. When of these fields' value is set, all
+ * other fields in the group are cleared. During deserialization, if multiple
+ * fields are encountered for a group, only the last value seen will be kept.
+ * @private {!Array<!Array<number>>}
+ * @const
+ */
+proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest.oneofGroups_ = [[3,4]];
+
+/**
+ * @enum {number}
+ */
+proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest.OptionsCase = {
+  OPTIONS_NOT_SET: 0,
+  IF_NOT_EXIST: 3,
+  IF_MATCH: 4
+};
+
+/**
+ * @return {proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest.OptionsCase}
+ */
+proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest.prototype.getOptionsCase = function() {
+  return /** @type {proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest.OptionsCase} */(jspb.Message.computeOneofCase(this, proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest.oneofGroups_[0]));
+};
+
 
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
@@ -3786,7 +3813,9 @@ proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest.prototype.toObject 
 proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     opaque: (f = msg.getOpaque()) && cs3_types_v1beta1_types_pb.Opaque.toObject(includeInstance, f),
-    ref: (f = msg.getRef()) && cs3_storage_provider_v1beta1_resources_pb.Reference.toObject(includeInstance, f)
+    ref: (f = msg.getRef()) && cs3_storage_provider_v1beta1_resources_pb.Reference.toObject(includeInstance, f),
+    ifNotExist: jspb.Message.getBooleanFieldWithDefault(msg, 3, false),
+    ifMatch: jspb.Message.getFieldWithDefault(msg, 4, "")
   };
 
   if (includeInstance) {
@@ -3833,6 +3862,14 @@ proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest.deserializeBinaryFr
       reader.readMessage(value,cs3_storage_provider_v1beta1_resources_pb.Reference.deserializeBinaryFromReader);
       msg.setRef(value);
       break;
+    case 3:
+      var value = /** @type {boolean} */ (reader.readBool());
+      msg.setIfNotExist(value);
+      break;
+    case 4:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setIfMatch(value);
+      break;
     default:
       reader.skipField();
       break;
@@ -3876,6 +3913,20 @@ proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest.serializeBinaryToWr
       2,
       f,
       cs3_storage_provider_v1beta1_resources_pb.Reference.serializeBinaryToWriter
+    );
+  }
+  f = /** @type {boolean} */ (jspb.Message.getField(message, 3));
+  if (f != null) {
+    writer.writeBool(
+      3,
+      f
+    );
+  }
+  f = /** @type {string} */ (jspb.Message.getField(message, 4));
+  if (f != null) {
+    writer.writeString(
+      4,
+      f
     );
   }
 };
@@ -3944,6 +3995,70 @@ proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest.prototype.clearRef 
  */
 proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest.prototype.hasRef = function() {
   return jspb.Message.getField(this, 2) != null;
+};
+
+
+/**
+ * optional bool if_not_exist = 3;
+ * @return {boolean}
+ */
+proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest.prototype.getIfNotExist = function() {
+  return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 3, false));
+};
+
+
+/** @param {boolean} value */
+proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest.prototype.setIfNotExist = function(value) {
+  jspb.Message.setOneofField(this, 3, proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest.oneofGroups_[0], value);
+};
+
+
+/**
+ * Clears the field making it undefined.
+ */
+proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest.prototype.clearIfNotExist = function() {
+  jspb.Message.setOneofField(this, 3, proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest.oneofGroups_[0], undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest.prototype.hasIfNotExist = function() {
+  return jspb.Message.getField(this, 3) != null;
+};
+
+
+/**
+ * optional string if_match = 4;
+ * @return {string}
+ */
+proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest.prototype.getIfMatch = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 4, ""));
+};
+
+
+/** @param {string} value */
+proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest.prototype.setIfMatch = function(value) {
+  jspb.Message.setOneofField(this, 4, proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest.oneofGroups_[0], value);
+};
+
+
+/**
+ * Clears the field making it undefined.
+ */
+proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest.prototype.clearIfMatch = function() {
+  jspb.Message.setOneofField(this, 4, proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest.oneofGroups_[0], undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest.prototype.hasIfMatch = function() {
+  return jspb.Message.getField(this, 4) != null;
 };
 
 
