@@ -30,7 +30,6 @@ goog.exportSymbol('proto.cs3.storage.provider.v1beta1.GranteeType', null, global
 goog.exportSymbol('proto.cs3.storage.provider.v1beta1.Quota', null, global);
 goog.exportSymbol('proto.cs3.storage.provider.v1beta1.RecycleItem', null, global);
 goog.exportSymbol('proto.cs3.storage.provider.v1beta1.Reference', null, global);
-goog.exportSymbol('proto.cs3.storage.provider.v1beta1.Reference.SpecCase', null, global);
 goog.exportSymbol('proto.cs3.storage.provider.v1beta1.ResourceChecksum', null, global);
 goog.exportSymbol('proto.cs3.storage.provider.v1beta1.ResourceChecksumPriority', null, global);
 goog.exportSymbol('proto.cs3.storage.provider.v1beta1.ResourceChecksumType', null, global);
@@ -156,7 +155,7 @@ if (goog.DEBUG && !COMPILED) {
  * @constructor
  */
 proto.cs3.storage.provider.v1beta1.Reference = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.cs3.storage.provider.v1beta1.Reference.oneofGroups_);
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.cs3.storage.provider.v1beta1.Reference, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
@@ -1623,32 +1622,6 @@ proto.cs3.storage.provider.v1beta1.ResourceChecksumPriority.prototype.setPriorit
 
 
 
-/**
- * Oneof group definitions for this message. Each group defines the field
- * numbers belonging to that group. When of these fields' value is set, all
- * other fields in the group are cleared. During deserialization, if multiple
- * fields are encountered for a group, only the last value seen will be kept.
- * @private {!Array<!Array<number>>}
- * @const
- */
-proto.cs3.storage.provider.v1beta1.Reference.oneofGroups_ = [[1,2]];
-
-/**
- * @enum {number}
- */
-proto.cs3.storage.provider.v1beta1.Reference.SpecCase = {
-  SPEC_NOT_SET: 0,
-  PATH: 1,
-  ID: 2
-};
-
-/**
- * @return {proto.cs3.storage.provider.v1beta1.Reference.SpecCase}
- */
-proto.cs3.storage.provider.v1beta1.Reference.prototype.getSpecCase = function() {
-  return /** @type {proto.cs3.storage.provider.v1beta1.Reference.SpecCase} */(jspb.Message.computeOneofCase(this, proto.cs3.storage.provider.v1beta1.Reference.oneofGroups_[0]));
-};
-
 
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
@@ -1680,8 +1653,8 @@ proto.cs3.storage.provider.v1beta1.Reference.prototype.toObject = function(opt_i
  */
 proto.cs3.storage.provider.v1beta1.Reference.toObject = function(includeInstance, msg) {
   var f, obj = {
-    path: jspb.Message.getFieldWithDefault(msg, 1, ""),
-    id: (f = msg.getId()) && proto.cs3.storage.provider.v1beta1.ResourceId.toObject(includeInstance, f)
+    resourceId: (f = msg.getResourceId()) && proto.cs3.storage.provider.v1beta1.ResourceId.toObject(includeInstance, f),
+    path: jspb.Message.getFieldWithDefault(msg, 2, "")
   };
 
   if (includeInstance) {
@@ -1719,13 +1692,13 @@ proto.cs3.storage.provider.v1beta1.Reference.deserializeBinaryFromReader = funct
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setPath(value);
-      break;
-    case 2:
       var value = new proto.cs3.storage.provider.v1beta1.ResourceId;
       reader.readMessage(value,proto.cs3.storage.provider.v1beta1.ResourceId.deserializeBinaryFromReader);
-      msg.setId(value);
+      msg.setResourceId(value);
+      break;
+    case 2:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setPath(value);
       break;
     default:
       reader.skipField();
@@ -1756,77 +1729,45 @@ proto.cs3.storage.provider.v1beta1.Reference.prototype.serializeBinary = functio
  */
 proto.cs3.storage.provider.v1beta1.Reference.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
-  f = /** @type {string} */ (jspb.Message.getField(message, 1));
-  if (f != null) {
-    writer.writeString(
-      1,
-      f
-    );
-  }
-  f = message.getId();
+  f = message.getResourceId();
   if (f != null) {
     writer.writeMessage(
-      2,
+      1,
       f,
       proto.cs3.storage.provider.v1beta1.ResourceId.serializeBinaryToWriter
     );
   }
+  f = message.getPath();
+  if (f.length > 0) {
+    writer.writeString(
+      2,
+      f
+    );
+  }
 };
 
 
 /**
- * optional string path = 1;
- * @return {string}
- */
-proto.cs3.storage.provider.v1beta1.Reference.prototype.getPath = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
-};
-
-
-/** @param {string} value */
-proto.cs3.storage.provider.v1beta1.Reference.prototype.setPath = function(value) {
-  jspb.Message.setOneofField(this, 1, proto.cs3.storage.provider.v1beta1.Reference.oneofGroups_[0], value);
-};
-
-
-/**
- * Clears the field making it undefined.
- */
-proto.cs3.storage.provider.v1beta1.Reference.prototype.clearPath = function() {
-  jspb.Message.setOneofField(this, 1, proto.cs3.storage.provider.v1beta1.Reference.oneofGroups_[0], undefined);
-};
-
-
-/**
- * Returns whether this field is set.
- * @return {boolean}
- */
-proto.cs3.storage.provider.v1beta1.Reference.prototype.hasPath = function() {
-  return jspb.Message.getField(this, 1) != null;
-};
-
-
-/**
- * optional ResourceId id = 2;
+ * optional ResourceId resource_id = 1;
  * @return {?proto.cs3.storage.provider.v1beta1.ResourceId}
  */
-proto.cs3.storage.provider.v1beta1.Reference.prototype.getId = function() {
+proto.cs3.storage.provider.v1beta1.Reference.prototype.getResourceId = function() {
   return /** @type{?proto.cs3.storage.provider.v1beta1.ResourceId} */ (
-    jspb.Message.getWrapperField(this, proto.cs3.storage.provider.v1beta1.ResourceId, 2));
+    jspb.Message.getWrapperField(this, proto.cs3.storage.provider.v1beta1.ResourceId, 1));
 };
 
 
 /** @param {?proto.cs3.storage.provider.v1beta1.ResourceId|undefined} value */
-proto.cs3.storage.provider.v1beta1.Reference.prototype.setId = function(value) {
-  jspb.Message.setOneofWrapperField(this, 2, proto.cs3.storage.provider.v1beta1.Reference.oneofGroups_[0], value);
+proto.cs3.storage.provider.v1beta1.Reference.prototype.setResourceId = function(value) {
+  jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
  */
-proto.cs3.storage.provider.v1beta1.Reference.prototype.clearId = function() {
-  this.setId(undefined);
+proto.cs3.storage.provider.v1beta1.Reference.prototype.clearResourceId = function() {
+  this.setResourceId(undefined);
 };
 
 
@@ -1834,8 +1775,23 @@ proto.cs3.storage.provider.v1beta1.Reference.prototype.clearId = function() {
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.cs3.storage.provider.v1beta1.Reference.prototype.hasId = function() {
-  return jspb.Message.getField(this, 2) != null;
+proto.cs3.storage.provider.v1beta1.Reference.prototype.hasResourceId = function() {
+  return jspb.Message.getField(this, 1) != null;
+};
+
+
+/**
+ * optional string path = 2;
+ * @return {string}
+ */
+proto.cs3.storage.provider.v1beta1.Reference.prototype.getPath = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
+};
+
+
+/** @param {string} value */
+proto.cs3.storage.provider.v1beta1.Reference.prototype.setPath = function(value) {
+  jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -3357,7 +3313,7 @@ proto.cs3.storage.provider.v1beta1.RecycleItem.toObject = function(includeInstan
     opaque: (f = msg.getOpaque()) && cs3_types_v1beta1_types_pb.Opaque.toObject(includeInstance, f),
     type: jspb.Message.getFieldWithDefault(msg, 2, 0),
     key: jspb.Message.getFieldWithDefault(msg, 3, ""),
-    path: jspb.Message.getFieldWithDefault(msg, 4, ""),
+    ref: (f = msg.getRef()) && proto.cs3.storage.provider.v1beta1.Reference.toObject(includeInstance, f),
     size: jspb.Message.getFieldWithDefault(msg, 5, 0),
     deletionTime: (f = msg.getDeletionTime()) && cs3_types_v1beta1_types_pb.Timestamp.toObject(includeInstance, f)
   };
@@ -3410,8 +3366,9 @@ proto.cs3.storage.provider.v1beta1.RecycleItem.deserializeBinaryFromReader = fun
       msg.setKey(value);
       break;
     case 4:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setPath(value);
+      var value = new proto.cs3.storage.provider.v1beta1.Reference;
+      reader.readMessage(value,proto.cs3.storage.provider.v1beta1.Reference.deserializeBinaryFromReader);
+      msg.setRef(value);
       break;
     case 5:
       var value = /** @type {number} */ (reader.readUint64());
@@ -3473,11 +3430,12 @@ proto.cs3.storage.provider.v1beta1.RecycleItem.serializeBinaryToWriter = functio
       f
     );
   }
-  f = message.getPath();
-  if (f.length > 0) {
-    writer.writeString(
+  f = message.getRef();
+  if (f != null) {
+    writer.writeMessage(
       4,
-      f
+      f,
+      proto.cs3.storage.provider.v1beta1.Reference.serializeBinaryToWriter
     );
   }
   f = message.getSize();
@@ -3562,17 +3520,35 @@ proto.cs3.storage.provider.v1beta1.RecycleItem.prototype.setKey = function(value
 
 
 /**
- * optional string path = 4;
- * @return {string}
+ * optional Reference ref = 4;
+ * @return {?proto.cs3.storage.provider.v1beta1.Reference}
  */
-proto.cs3.storage.provider.v1beta1.RecycleItem.prototype.getPath = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 4, ""));
+proto.cs3.storage.provider.v1beta1.RecycleItem.prototype.getRef = function() {
+  return /** @type{?proto.cs3.storage.provider.v1beta1.Reference} */ (
+    jspb.Message.getWrapperField(this, proto.cs3.storage.provider.v1beta1.Reference, 4));
 };
 
 
-/** @param {string} value */
-proto.cs3.storage.provider.v1beta1.RecycleItem.prototype.setPath = function(value) {
-  jspb.Message.setProto3StringField(this, 4, value);
+/** @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value */
+proto.cs3.storage.provider.v1beta1.RecycleItem.prototype.setRef = function(value) {
+  jspb.Message.setWrapperField(this, 4, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.cs3.storage.provider.v1beta1.RecycleItem.prototype.clearRef = function() {
+  this.setRef(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.cs3.storage.provider.v1beta1.RecycleItem.prototype.hasRef = function() {
+  return jspb.Message.getField(this, 4) != null;
 };
 
 
