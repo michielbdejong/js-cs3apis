@@ -174,6 +174,80 @@ proto.cs3.app.registry.v1beta1.RegistryAPIPromiseClient.prototype.getAppProvider
 /**
  * @const
  * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.app.registry.v1beta1.AddAppProviderRequest,
+ *   !proto.cs3.app.registry.v1beta1.AddAppProviderResponse>}
+ */
+const methodDescriptor_RegistryAPI_AddAppProvider = new grpc.web.MethodDescriptor(
+  '/cs3.app.registry.v1beta1.RegistryAPI/AddAppProvider',
+  grpc.web.MethodType.UNARY,
+  proto.cs3.app.registry.v1beta1.AddAppProviderRequest,
+  proto.cs3.app.registry.v1beta1.AddAppProviderResponse,
+  /** @param {!proto.cs3.app.registry.v1beta1.AddAppProviderRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.cs3.app.registry.v1beta1.AddAppProviderResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.app.registry.v1beta1.AddAppProviderRequest,
+ *   !proto.cs3.app.registry.v1beta1.AddAppProviderResponse>}
+ */
+const methodInfo_RegistryAPI_AddAppProvider = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.cs3.app.registry.v1beta1.AddAppProviderResponse,
+  /** @param {!proto.cs3.app.registry.v1beta1.AddAppProviderRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.cs3.app.registry.v1beta1.AddAppProviderResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.app.registry.v1beta1.AddAppProviderRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.app.registry.v1beta1.AddAppProviderResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.app.registry.v1beta1.AddAppProviderResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.app.registry.v1beta1.RegistryAPIClient.prototype.addAppProvider =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.app.registry.v1beta1.RegistryAPI/AddAppProvider',
+      request,
+      metadata || {},
+      methodDescriptor_RegistryAPI_AddAppProvider,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.app.registry.v1beta1.AddAppProviderRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.app.registry.v1beta1.AddAppProviderResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.app.registry.v1beta1.RegistryAPIPromiseClient.prototype.addAppProvider =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.app.registry.v1beta1.RegistryAPI/AddAppProvider',
+      request,
+      metadata || {},
+      methodDescriptor_RegistryAPI_AddAppProvider);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
  *   !proto.cs3.app.registry.v1beta1.ListAppProvidersRequest,
  *   !proto.cs3.app.registry.v1beta1.ListAppProvidersResponse>}
  */
@@ -242,6 +316,154 @@ proto.cs3.app.registry.v1beta1.RegistryAPIPromiseClient.prototype.listAppProvide
       request,
       metadata || {},
       methodDescriptor_RegistryAPI_ListAppProviders);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.app.registry.v1beta1.GetDefaultAppProviderForMimeTypeRequest,
+ *   !proto.cs3.app.registry.v1beta1.GetDefaultAppProviderForMimeTypeResponse>}
+ */
+const methodDescriptor_RegistryAPI_GetDefaultAppProviderForMimeType = new grpc.web.MethodDescriptor(
+  '/cs3.app.registry.v1beta1.RegistryAPI/GetDefaultAppProviderForMimeType',
+  grpc.web.MethodType.UNARY,
+  proto.cs3.app.registry.v1beta1.GetDefaultAppProviderForMimeTypeRequest,
+  proto.cs3.app.registry.v1beta1.GetDefaultAppProviderForMimeTypeResponse,
+  /** @param {!proto.cs3.app.registry.v1beta1.GetDefaultAppProviderForMimeTypeRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.cs3.app.registry.v1beta1.GetDefaultAppProviderForMimeTypeResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.app.registry.v1beta1.GetDefaultAppProviderForMimeTypeRequest,
+ *   !proto.cs3.app.registry.v1beta1.GetDefaultAppProviderForMimeTypeResponse>}
+ */
+const methodInfo_RegistryAPI_GetDefaultAppProviderForMimeType = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.cs3.app.registry.v1beta1.GetDefaultAppProviderForMimeTypeResponse,
+  /** @param {!proto.cs3.app.registry.v1beta1.GetDefaultAppProviderForMimeTypeRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.cs3.app.registry.v1beta1.GetDefaultAppProviderForMimeTypeResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.app.registry.v1beta1.GetDefaultAppProviderForMimeTypeRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.app.registry.v1beta1.GetDefaultAppProviderForMimeTypeResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.app.registry.v1beta1.GetDefaultAppProviderForMimeTypeResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.app.registry.v1beta1.RegistryAPIClient.prototype.getDefaultAppProviderForMimeType =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.app.registry.v1beta1.RegistryAPI/GetDefaultAppProviderForMimeType',
+      request,
+      metadata || {},
+      methodDescriptor_RegistryAPI_GetDefaultAppProviderForMimeType,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.app.registry.v1beta1.GetDefaultAppProviderForMimeTypeRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.app.registry.v1beta1.GetDefaultAppProviderForMimeTypeResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.app.registry.v1beta1.RegistryAPIPromiseClient.prototype.getDefaultAppProviderForMimeType =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.app.registry.v1beta1.RegistryAPI/GetDefaultAppProviderForMimeType',
+      request,
+      metadata || {},
+      methodDescriptor_RegistryAPI_GetDefaultAppProviderForMimeType);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.app.registry.v1beta1.SetDefaultAppProviderForMimeTypeRequest,
+ *   !proto.cs3.app.registry.v1beta1.SetDefaultAppProviderForMimeTypeResponse>}
+ */
+const methodDescriptor_RegistryAPI_SetDefaultAppProviderForMimeType = new grpc.web.MethodDescriptor(
+  '/cs3.app.registry.v1beta1.RegistryAPI/SetDefaultAppProviderForMimeType',
+  grpc.web.MethodType.UNARY,
+  proto.cs3.app.registry.v1beta1.SetDefaultAppProviderForMimeTypeRequest,
+  proto.cs3.app.registry.v1beta1.SetDefaultAppProviderForMimeTypeResponse,
+  /** @param {!proto.cs3.app.registry.v1beta1.SetDefaultAppProviderForMimeTypeRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.cs3.app.registry.v1beta1.SetDefaultAppProviderForMimeTypeResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.app.registry.v1beta1.SetDefaultAppProviderForMimeTypeRequest,
+ *   !proto.cs3.app.registry.v1beta1.SetDefaultAppProviderForMimeTypeResponse>}
+ */
+const methodInfo_RegistryAPI_SetDefaultAppProviderForMimeType = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.cs3.app.registry.v1beta1.SetDefaultAppProviderForMimeTypeResponse,
+  /** @param {!proto.cs3.app.registry.v1beta1.SetDefaultAppProviderForMimeTypeRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.cs3.app.registry.v1beta1.SetDefaultAppProviderForMimeTypeResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.app.registry.v1beta1.SetDefaultAppProviderForMimeTypeRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.app.registry.v1beta1.SetDefaultAppProviderForMimeTypeResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.app.registry.v1beta1.SetDefaultAppProviderForMimeTypeResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.app.registry.v1beta1.RegistryAPIClient.prototype.setDefaultAppProviderForMimeType =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.app.registry.v1beta1.RegistryAPI/SetDefaultAppProviderForMimeType',
+      request,
+      metadata || {},
+      methodDescriptor_RegistryAPI_SetDefaultAppProviderForMimeType,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.app.registry.v1beta1.SetDefaultAppProviderForMimeTypeRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.app.registry.v1beta1.SetDefaultAppProviderForMimeTypeResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.app.registry.v1beta1.RegistryAPIPromiseClient.prototype.setDefaultAppProviderForMimeType =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.app.registry.v1beta1.RegistryAPI/SetDefaultAppProviderForMimeType',
+      request,
+      metadata || {},
+      methodDescriptor_RegistryAPI_SetDefaultAppProviderForMimeType);
 };
 
 
