@@ -322,6 +322,80 @@ proto.cs3.storage.provider.v1beta1.ProviderAPIPromiseClient.prototype.delete =
 /**
  * @const
  * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.storage.provider.v1beta1.DenyGrantRequest,
+ *   !proto.cs3.storage.provider.v1beta1.DenyGrantResponse>}
+ */
+const methodDescriptor_ProviderAPI_DenyGrant = new grpc.web.MethodDescriptor(
+  '/cs3.storage.provider.v1beta1.ProviderAPI/DenyGrant',
+  grpc.web.MethodType.UNARY,
+  proto.cs3.storage.provider.v1beta1.DenyGrantRequest,
+  proto.cs3.storage.provider.v1beta1.DenyGrantResponse,
+  /** @param {!proto.cs3.storage.provider.v1beta1.DenyGrantRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.cs3.storage.provider.v1beta1.DenyGrantResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.storage.provider.v1beta1.DenyGrantRequest,
+ *   !proto.cs3.storage.provider.v1beta1.DenyGrantResponse>}
+ */
+const methodInfo_ProviderAPI_DenyGrant = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.cs3.storage.provider.v1beta1.DenyGrantResponse,
+  /** @param {!proto.cs3.storage.provider.v1beta1.DenyGrantRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.cs3.storage.provider.v1beta1.DenyGrantResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.storage.provider.v1beta1.DenyGrantRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.storage.provider.v1beta1.DenyGrantResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.storage.provider.v1beta1.DenyGrantResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.storage.provider.v1beta1.ProviderAPIClient.prototype.denyGrant =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.storage.provider.v1beta1.ProviderAPI/DenyGrant',
+      request,
+      metadata || {},
+      methodDescriptor_ProviderAPI_DenyGrant,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.storage.provider.v1beta1.DenyGrantRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.storage.provider.v1beta1.DenyGrantResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.storage.provider.v1beta1.ProviderAPIPromiseClient.prototype.denyGrant =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.storage.provider.v1beta1.ProviderAPI/DenyGrant',
+      request,
+      metadata || {},
+      methodDescriptor_ProviderAPI_DenyGrant);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
  *   !proto.cs3.storage.provider.v1beta1.GetPathRequest,
  *   !proto.cs3.storage.provider.v1beta1.GetPathResponse>}
  */

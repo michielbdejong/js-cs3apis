@@ -1998,7 +1998,8 @@ proto.cs3.storage.provider.v1beta1.ResourcePermissions.toObject = function(inclu
     restoreFileVersion: jspb.Message.getBooleanFieldWithDefault(msg, 16, false),
     restoreRecycleItem: jspb.Message.getBooleanFieldWithDefault(msg, 17, false),
     stat: jspb.Message.getBooleanFieldWithDefault(msg, 18, false),
-    updateGrant: jspb.Message.getBooleanFieldWithDefault(msg, 19, false)
+    updateGrant: jspb.Message.getBooleanFieldWithDefault(msg, 19, false),
+    denyGrant: jspb.Message.getBooleanFieldWithDefault(msg, 20, false)
   };
 
   if (includeInstance) {
@@ -2106,6 +2107,10 @@ proto.cs3.storage.provider.v1beta1.ResourcePermissions.deserializeBinaryFromRead
     case 19:
       var value = /** @type {boolean} */ (reader.readBool());
       msg.setUpdateGrant(value);
+      break;
+    case 20:
+      var value = /** @type {boolean} */ (reader.readBool());
+      msg.setDenyGrant(value);
       break;
     default:
       reader.skipField();
@@ -2259,6 +2264,13 @@ proto.cs3.storage.provider.v1beta1.ResourcePermissions.serializeBinaryToWriter =
   if (f) {
     writer.writeBool(
       19,
+      f
+    );
+  }
+  f = message.getDenyGrant();
+  if (f) {
+    writer.writeBool(
+      20,
       f
     );
   }
@@ -2532,6 +2544,21 @@ proto.cs3.storage.provider.v1beta1.ResourcePermissions.prototype.getUpdateGrant 
 /** @param {boolean} value */
 proto.cs3.storage.provider.v1beta1.ResourcePermissions.prototype.setUpdateGrant = function(value) {
   jspb.Message.setProto3BooleanField(this, 19, value);
+};
+
+
+/**
+ * optional bool deny_grant = 20;
+ * @return {boolean}
+ */
+proto.cs3.storage.provider.v1beta1.ResourcePermissions.prototype.getDenyGrant = function() {
+  return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 20, false));
+};
+
+
+/** @param {boolean} value */
+proto.cs3.storage.provider.v1beta1.ResourcePermissions.prototype.setDenyGrant = function(value) {
+  jspb.Message.setProto3BooleanField(this, 20, value);
 };
 
 
