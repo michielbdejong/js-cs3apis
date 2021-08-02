@@ -2415,80 +2415,6 @@ proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.openInApp =
 /**
  * @const
  * @type {!grpc.web.MethodDescriptor<
- *   !proto.cs3.gateway.v1beta1.OpenFileInAppProviderRequest,
- *   !proto.cs3.app.provider.v1beta1.OpenFileInAppProviderResponse>}
- */
-const methodDescriptor_GatewayAPI_OpenFileInAppProvider = new grpc.web.MethodDescriptor(
-  '/cs3.gateway.v1beta1.GatewayAPI/OpenFileInAppProvider',
-  grpc.web.MethodType.UNARY,
-  proto.cs3.gateway.v1beta1.OpenFileInAppProviderRequest,
-  cs3_app_provider_v1beta1_provider_api_pb.OpenFileInAppProviderResponse,
-  /** @param {!proto.cs3.gateway.v1beta1.OpenFileInAppProviderRequest} request */
-  function(request) {
-    return request.serializeBinary();
-  },
-  cs3_app_provider_v1beta1_provider_api_pb.OpenFileInAppProviderResponse.deserializeBinary
-);
-
-
-/**
- * @const
- * @type {!grpc.web.AbstractClientBase.MethodInfo<
- *   !proto.cs3.gateway.v1beta1.OpenFileInAppProviderRequest,
- *   !proto.cs3.app.provider.v1beta1.OpenFileInAppProviderResponse>}
- */
-const methodInfo_GatewayAPI_OpenFileInAppProvider = new grpc.web.AbstractClientBase.MethodInfo(
-  cs3_app_provider_v1beta1_provider_api_pb.OpenFileInAppProviderResponse,
-  /** @param {!proto.cs3.gateway.v1beta1.OpenFileInAppProviderRequest} request */
-  function(request) {
-    return request.serializeBinary();
-  },
-  cs3_app_provider_v1beta1_provider_api_pb.OpenFileInAppProviderResponse.deserializeBinary
-);
-
-
-/**
- * @param {!proto.cs3.gateway.v1beta1.OpenFileInAppProviderRequest} request The
- *     request proto
- * @param {?Object<string, string>} metadata User defined
- *     call metadata
- * @param {function(?grpc.web.Error, ?proto.cs3.app.provider.v1beta1.OpenFileInAppProviderResponse)}
- *     callback The callback function(error, response)
- * @return {!grpc.web.ClientReadableStream<!proto.cs3.app.provider.v1beta1.OpenFileInAppProviderResponse>|undefined}
- *     The XHR Node Readable Stream
- */
-proto.cs3.gateway.v1beta1.GatewayAPIClient.prototype.openFileInAppProvider =
-    function(request, metadata, callback) {
-  return this.client_.rpcCall(this.hostname_ +
-      '/cs3.gateway.v1beta1.GatewayAPI/OpenFileInAppProvider',
-      request,
-      metadata || {},
-      methodDescriptor_GatewayAPI_OpenFileInAppProvider,
-      callback);
-};
-
-
-/**
- * @param {!proto.cs3.gateway.v1beta1.OpenFileInAppProviderRequest} request The
- *     request proto
- * @param {?Object<string, string>} metadata User defined
- *     call metadata
- * @return {!Promise<!proto.cs3.app.provider.v1beta1.OpenFileInAppProviderResponse>}
- *     A native promise that resolves to the response
- */
-proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.openFileInAppProvider =
-    function(request, metadata) {
-  return this.client_.unaryCall(this.hostname_ +
-      '/cs3.gateway.v1beta1.GatewayAPI/OpenFileInAppProvider',
-      request,
-      metadata || {},
-      methodDescriptor_GatewayAPI_OpenFileInAppProvider);
-};
-
-
-/**
- * @const
- * @type {!grpc.web.MethodDescriptor<
  *   !proto.cs3.sharing.collaboration.v1beta1.CreateShareRequest,
  *   !proto.cs3.sharing.collaboration.v1beta1.CreateShareResponse>}
  */
@@ -4481,6 +4407,80 @@ proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.listAppProviders =
       request,
       metadata || {},
       methodDescriptor_GatewayAPI_ListAppProviders);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesRequest,
+ *   !proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse>}
+ */
+const methodDescriptor_GatewayAPI_ListSupportedMimeTypes = new grpc.web.MethodDescriptor(
+  '/cs3.gateway.v1beta1.GatewayAPI/ListSupportedMimeTypes',
+  grpc.web.MethodType.UNARY,
+  cs3_app_registry_v1beta1_registry_api_pb.ListSupportedMimeTypesRequest,
+  cs3_app_registry_v1beta1_registry_api_pb.ListSupportedMimeTypesResponse,
+  /** @param {!proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_app_registry_v1beta1_registry_api_pb.ListSupportedMimeTypesResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesRequest,
+ *   !proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse>}
+ */
+const methodInfo_GatewayAPI_ListSupportedMimeTypes = new grpc.web.AbstractClientBase.MethodInfo(
+  cs3_app_registry_v1beta1_registry_api_pb.ListSupportedMimeTypesResponse,
+  /** @param {!proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  cs3_app_registry_v1beta1_registry_api_pb.ListSupportedMimeTypesResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIClient.prototype.listSupportedMimeTypes =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/ListSupportedMimeTypes',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_ListSupportedMimeTypes,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.listSupportedMimeTypes =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.gateway.v1beta1.GatewayAPI/ListSupportedMimeTypes',
+      request,
+      metadata || {},
+      methodDescriptor_GatewayAPI_ListSupportedMimeTypes);
 };
 
 

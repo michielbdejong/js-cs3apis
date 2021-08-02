@@ -322,6 +322,80 @@ proto.cs3.app.registry.v1beta1.RegistryAPIPromiseClient.prototype.listAppProvide
 /**
  * @const
  * @type {!grpc.web.MethodDescriptor<
+ *   !proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesRequest,
+ *   !proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse>}
+ */
+const methodDescriptor_RegistryAPI_ListSupportedMimeTypes = new grpc.web.MethodDescriptor(
+  '/cs3.app.registry.v1beta1.RegistryAPI/ListSupportedMimeTypes',
+  grpc.web.MethodType.UNARY,
+  proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesRequest,
+  proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse,
+  /** @param {!proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesRequest,
+ *   !proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse>}
+ */
+const methodInfo_RegistryAPI_ListSupportedMimeTypes = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse,
+  /** @param {!proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesRequest} request */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.cs3.app.registry.v1beta1.RegistryAPIClient.prototype.listSupportedMimeTypes =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/cs3.app.registry.v1beta1.RegistryAPI/ListSupportedMimeTypes',
+      request,
+      metadata || {},
+      methodDescriptor_RegistryAPI_ListSupportedMimeTypes,
+      callback);
+};
+
+
+/**
+ * @param {!proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse>}
+ *     A native promise that resolves to the response
+ */
+proto.cs3.app.registry.v1beta1.RegistryAPIPromiseClient.prototype.listSupportedMimeTypes =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/cs3.app.registry.v1beta1.RegistryAPI/ListSupportedMimeTypes',
+      request,
+      metadata || {},
+      methodDescriptor_RegistryAPI_ListSupportedMimeTypes);
+};
+
+
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
  *   !proto.cs3.app.registry.v1beta1.GetDefaultAppProviderForMimeTypeRequest,
  *   !proto.cs3.app.registry.v1beta1.GetDefaultAppProviderForMimeTypeResponse>}
  */
