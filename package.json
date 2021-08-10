@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/cs3org/js-cs3apis#readme",
   "dependencies": {
-    "google-protobuf": "^3.13.0",
+    "google-protobuf": "^3.17.3",
     "grpc-web": "^1.2.1"
   }
 }
