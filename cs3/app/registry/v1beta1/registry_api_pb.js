@@ -1694,7 +1694,7 @@ proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse.toObject = functio
   var f, obj = {
     status: (f = msg.getStatus()) && cs3_rpc_v1beta1_status_pb.Status.toObject(includeInstance, f),
     opaque: (f = msg.getOpaque()) && cs3_types_v1beta1_types_pb.Opaque.toObject(includeInstance, f),
-    mimeTypesMap: (f = msg.getMimeTypesMap()) ? f.toObject(includeInstance, proto.cs3.app.registry.v1beta1.AppProviderNameList.toObject) : []
+    mimeTypesMap: (f = msg.getMimeTypesMap()) ? f.toObject(includeInstance, proto.cs3.app.registry.v1beta1.AppProviderList.toObject) : []
   };
 
   if (includeInstance) {
@@ -1744,7 +1744,7 @@ proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse.deserializeBinaryF
     case 3:
       var value = msg.getMimeTypesMap();
       reader.readMessage(value, function(message, reader) {
-        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readString, jspb.BinaryReader.prototype.readMessage, proto.cs3.app.registry.v1beta1.AppProviderNameList.deserializeBinaryFromReader, "");
+        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readString, jspb.BinaryReader.prototype.readMessage, proto.cs3.app.registry.v1beta1.AppProviderList.deserializeBinaryFromReader, "");
          });
       break;
     default:
@@ -1794,7 +1794,7 @@ proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse.serializeBinaryToW
   }
   f = message.getMimeTypesMap(true);
   if (f && f.getLength() > 0) {
-    f.serializeBinary(3, writer, jspb.BinaryWriter.prototype.writeString, jspb.BinaryWriter.prototype.writeMessage, proto.cs3.app.registry.v1beta1.AppProviderNameList.serializeBinaryToWriter);
+    f.serializeBinary(3, writer, jspb.BinaryWriter.prototype.writeString, jspb.BinaryWriter.prototype.writeMessage, proto.cs3.app.registry.v1beta1.AppProviderList.serializeBinaryToWriter);
   }
 };
 
@@ -1866,15 +1866,15 @@ proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse.prototype.hasOpaqu
 
 
 /**
- * map<string, AppProviderNameList> mime_types = 3;
+ * map<string, AppProviderList> mime_types = 3;
  * @param {boolean=} opt_noLazyCreate Do not create the map if
  * empty, instead returning `undefined`
- * @return {!jspb.Map<string,!proto.cs3.app.registry.v1beta1.AppProviderNameList>}
+ * @return {!jspb.Map<string,!proto.cs3.app.registry.v1beta1.AppProviderList>}
  */
 proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse.prototype.getMimeTypesMap = function(opt_noLazyCreate) {
-  return /** @type {!jspb.Map<string,!proto.cs3.app.registry.v1beta1.AppProviderNameList>} */ (
+  return /** @type {!jspb.Map<string,!proto.cs3.app.registry.v1beta1.AppProviderList>} */ (
       jspb.Message.getMapField(this, 3, opt_noLazyCreate,
-      proto.cs3.app.registry.v1beta1.AppProviderNameList));
+      proto.cs3.app.registry.v1beta1.AppProviderList));
 };
 
 

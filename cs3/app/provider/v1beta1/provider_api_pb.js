@@ -12,6 +12,8 @@ var jspb = require('google-protobuf');
 var goog = jspb;
 var global = Function('return this')();
 
+var cs3_app_provider_v1beta1_resources_pb = require('../../../../cs3/app/provider/v1beta1/resources_pb.js');
+goog.object.extend(proto, cs3_app_provider_v1beta1_resources_pb);
 var cs3_rpc_v1beta1_status_pb = require('../../../../cs3/rpc/v1beta1/status_pb.js');
 goog.object.extend(proto, cs3_rpc_v1beta1_status_pb);
 var cs3_storage_provider_v1beta1_resources_pb = require('../../../../cs3/storage/provider/v1beta1/resources_pb.js');
@@ -355,7 +357,7 @@ proto.cs3.app.provider.v1beta1.OpenInAppResponse.toObject = function(includeInst
   var f, obj = {
     status: (f = msg.getStatus()) && cs3_rpc_v1beta1_status_pb.Status.toObject(includeInstance, f),
     opaque: (f = msg.getOpaque()) && cs3_types_v1beta1_types_pb.Opaque.toObject(includeInstance, f),
-    appUrl: jspb.Message.getFieldWithDefault(msg, 3, "")
+    appUrl: (f = msg.getAppUrl()) && cs3_app_provider_v1beta1_resources_pb.OpenInAppURL.toObject(includeInstance, f)
   };
 
   if (includeInstance) {
@@ -403,7 +405,8 @@ proto.cs3.app.provider.v1beta1.OpenInAppResponse.deserializeBinaryFromReader = f
       msg.setOpaque(value);
       break;
     case 3:
-      var value = /** @type {string} */ (reader.readString());
+      var value = new cs3_app_provider_v1beta1_resources_pb.OpenInAppURL;
+      reader.readMessage(value,cs3_app_provider_v1beta1_resources_pb.OpenInAppURL.deserializeBinaryFromReader);
       msg.setAppUrl(value);
       break;
     default:
@@ -452,10 +455,11 @@ proto.cs3.app.provider.v1beta1.OpenInAppResponse.serializeBinaryToWriter = funct
     );
   }
   f = message.getAppUrl();
-  if (f.length > 0) {
-    writer.writeString(
+  if (f != null) {
+    writer.writeMessage(
       3,
-      f
+      f,
+      cs3_app_provider_v1beta1_resources_pb.OpenInAppURL.serializeBinaryToWriter
     );
   }
 };
@@ -528,17 +532,35 @@ proto.cs3.app.provider.v1beta1.OpenInAppResponse.prototype.hasOpaque = function(
 
 
 /**
- * optional string app_url = 3;
- * @return {string}
+ * optional OpenInAppURL app_url = 3;
+ * @return {?proto.cs3.app.provider.v1beta1.OpenInAppURL}
  */
 proto.cs3.app.provider.v1beta1.OpenInAppResponse.prototype.getAppUrl = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
+  return /** @type{?proto.cs3.app.provider.v1beta1.OpenInAppURL} */ (
+    jspb.Message.getWrapperField(this, cs3_app_provider_v1beta1_resources_pb.OpenInAppURL, 3));
 };
 
 
-/** @param {string} value */
+/** @param {?proto.cs3.app.provider.v1beta1.OpenInAppURL|undefined} value */
 proto.cs3.app.provider.v1beta1.OpenInAppResponse.prototype.setAppUrl = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  jspb.Message.setWrapperField(this, 3, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.cs3.app.provider.v1beta1.OpenInAppResponse.prototype.clearAppUrl = function() {
+  this.setAppUrl(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.cs3.app.provider.v1beta1.OpenInAppResponse.prototype.hasAppUrl = function() {
+  return jspb.Message.getField(this, 3) != null;
 };
 
 
