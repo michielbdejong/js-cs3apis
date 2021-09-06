@@ -12,8 +12,6 @@ const grpc = {};
 grpc.web = require('grpc-web');
 
 
-var cs3_identity_user_v1beta1_resources_pb = require('../../../../cs3/identity/user/v1beta1/resources_pb.js')
-
 var cs3_rpc_v1beta1_status_pb = require('../../../../cs3/rpc/v1beta1/status_pb.js')
 
 var cs3_sharing_collaboration_v1beta1_resources_pb = require('../../../../cs3/sharing/collaboration/v1beta1/resources_pb.js')
