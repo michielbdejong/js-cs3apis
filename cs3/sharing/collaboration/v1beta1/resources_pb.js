@@ -1980,7 +1980,8 @@ proto.cs3.sharing.collaboration.v1beta1.Filter.Type = {
   TYPE_RESOURCE_ID: 2,
   TYPE_OWNER: 3,
   TYPE_CREATOR: 4,
-  TYPE_GRANTEE_TYPE: 5
+  TYPE_GRANTEE_TYPE: 5,
+  TYPE_EXCLUDE_DENIALS: 6
 };
 
 /**
