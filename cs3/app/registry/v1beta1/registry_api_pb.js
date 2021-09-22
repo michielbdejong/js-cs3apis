@@ -190,7 +190,7 @@ if (goog.DEBUG && !COMPILED) {
  * @constructor
  */
 proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse.repeatedFields_, null);
 };
 goog.inherits(proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
@@ -1661,6 +1661,13 @@ proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesRequest.prototype.hasOpaque
 
 
 
+/**
+ * List of repeated fields within this message type.
+ * @private {!Array<number>}
+ * @const
+ */
+proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse.repeatedFields_ = [3];
+
 
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
@@ -1694,7 +1701,8 @@ proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse.toObject = functio
   var f, obj = {
     status: (f = msg.getStatus()) && cs3_rpc_v1beta1_status_pb.Status.toObject(includeInstance, f),
     opaque: (f = msg.getOpaque()) && cs3_types_v1beta1_types_pb.Opaque.toObject(includeInstance, f),
-    mimeTypesMap: (f = msg.getMimeTypesMap()) ? f.toObject(includeInstance, proto.cs3.app.registry.v1beta1.AppProviderList.toObject) : []
+    mimeTypesList: jspb.Message.toObjectList(msg.getMimeTypesList(),
+    cs3_app_registry_v1beta1_resources_pb.MimeTypeInfo.toObject, includeInstance)
   };
 
   if (includeInstance) {
@@ -1742,10 +1750,9 @@ proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse.deserializeBinaryF
       msg.setOpaque(value);
       break;
     case 3:
-      var value = msg.getMimeTypesMap();
-      reader.readMessage(value, function(message, reader) {
-        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readString, jspb.BinaryReader.prototype.readMessage, proto.cs3.app.registry.v1beta1.AppProviderList.deserializeBinaryFromReader, "");
-         });
+      var value = new cs3_app_registry_v1beta1_resources_pb.MimeTypeInfo;
+      reader.readMessage(value,cs3_app_registry_v1beta1_resources_pb.MimeTypeInfo.deserializeBinaryFromReader);
+      msg.addMimeTypes(value);
       break;
     default:
       reader.skipField();
@@ -1792,9 +1799,13 @@ proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse.serializeBinaryToW
       cs3_types_v1beta1_types_pb.Opaque.serializeBinaryToWriter
     );
   }
-  f = message.getMimeTypesMap(true);
-  if (f && f.getLength() > 0) {
-    f.serializeBinary(3, writer, jspb.BinaryWriter.prototype.writeString, jspb.BinaryWriter.prototype.writeMessage, proto.cs3.app.registry.v1beta1.AppProviderList.serializeBinaryToWriter);
+  f = message.getMimeTypesList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      3,
+      f,
+      cs3_app_registry_v1beta1_resources_pb.MimeTypeInfo.serializeBinaryToWriter
+    );
   }
 };
 
@@ -1866,23 +1877,36 @@ proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse.prototype.hasOpaqu
 
 
 /**
- * map<string, AppProviderList> mime_types = 3;
- * @param {boolean=} opt_noLazyCreate Do not create the map if
- * empty, instead returning `undefined`
- * @return {!jspb.Map<string,!proto.cs3.app.registry.v1beta1.AppProviderList>}
+ * repeated MimeTypeInfo mime_types = 3;
+ * @return {!Array<!proto.cs3.app.registry.v1beta1.MimeTypeInfo>}
  */
-proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse.prototype.getMimeTypesMap = function(opt_noLazyCreate) {
-  return /** @type {!jspb.Map<string,!proto.cs3.app.registry.v1beta1.AppProviderList>} */ (
-      jspb.Message.getMapField(this, 3, opt_noLazyCreate,
-      proto.cs3.app.registry.v1beta1.AppProviderList));
+proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse.prototype.getMimeTypesList = function() {
+  return /** @type{!Array<!proto.cs3.app.registry.v1beta1.MimeTypeInfo>} */ (
+    jspb.Message.getRepeatedWrapperField(this, cs3_app_registry_v1beta1_resources_pb.MimeTypeInfo, 3));
+};
+
+
+/** @param {!Array<!proto.cs3.app.registry.v1beta1.MimeTypeInfo>} value */
+proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse.prototype.setMimeTypesList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 3, value);
 };
 
 
 /**
- * Clears values from the map. The map will be non-null.
+ * @param {!proto.cs3.app.registry.v1beta1.MimeTypeInfo=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.cs3.app.registry.v1beta1.MimeTypeInfo}
  */
-proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse.prototype.clearMimeTypesMap = function() {
-  this.getMimeTypesMap().clear();
+proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse.prototype.addMimeTypes = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 3, opt_value, proto.cs3.app.registry.v1beta1.MimeTypeInfo, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse.prototype.clearMimeTypesList = function() {
+  this.setMimeTypesList([]);
 };
 
 
