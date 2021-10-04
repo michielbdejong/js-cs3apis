@@ -23,6 +23,8 @@ var cs3_sharing_ocm_v1beta1_resources_pb = require('../../../../cs3/sharing/ocm/
 var cs3_storage_provider_v1beta1_resources_pb = require('../../../../cs3/storage/provider/v1beta1/resources_pb.js')
 
 var cs3_types_v1beta1_types_pb = require('../../../../cs3/types/v1beta1/types_pb.js')
+
+var google_protobuf_field_mask_pb = require('google-protobuf/google/protobuf/field_mask_pb.js')
 const proto = {};
 proto.cs3 = {};
 proto.cs3.sharing = {};

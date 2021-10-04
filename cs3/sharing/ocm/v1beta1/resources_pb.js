@@ -921,7 +921,8 @@ proto.cs3.sharing.ocm.v1beta1.ReceivedShare.prototype.toObject = function(opt_in
 proto.cs3.sharing.ocm.v1beta1.ReceivedShare.toObject = function(includeInstance, msg) {
   var f, obj = {
     share: (f = msg.getShare()) && proto.cs3.sharing.ocm.v1beta1.Share.toObject(includeInstance, f),
-    state: jspb.Message.getFieldWithDefault(msg, 2, 0)
+    state: jspb.Message.getFieldWithDefault(msg, 2, 0),
+    mountPoint: (f = msg.getMountPoint()) && cs3_storage_provider_v1beta1_resources_pb.Reference.toObject(includeInstance, f)
   };
 
   if (includeInstance) {
@@ -967,6 +968,11 @@ proto.cs3.sharing.ocm.v1beta1.ReceivedShare.deserializeBinaryFromReader = functi
       var value = /** @type {!proto.cs3.sharing.ocm.v1beta1.ShareState} */ (reader.readEnum());
       msg.setState(value);
       break;
+    case 3:
+      var value = new cs3_storage_provider_v1beta1_resources_pb.Reference;
+      reader.readMessage(value,cs3_storage_provider_v1beta1_resources_pb.Reference.deserializeBinaryFromReader);
+      msg.setMountPoint(value);
+      break;
     default:
       reader.skipField();
       break;
@@ -1009,6 +1015,14 @@ proto.cs3.sharing.ocm.v1beta1.ReceivedShare.serializeBinaryToWriter = function(m
     writer.writeEnum(
       2,
       f
+    );
+  }
+  f = message.getMountPoint();
+  if (f != null) {
+    writer.writeMessage(
+      3,
+      f,
+      cs3_storage_provider_v1beta1_resources_pb.Reference.serializeBinaryToWriter
     );
   }
 };
@@ -1059,6 +1073,39 @@ proto.cs3.sharing.ocm.v1beta1.ReceivedShare.prototype.getState = function() {
 /** @param {!proto.cs3.sharing.ocm.v1beta1.ShareState} value */
 proto.cs3.sharing.ocm.v1beta1.ReceivedShare.prototype.setState = function(value) {
   jspb.Message.setProto3EnumField(this, 2, value);
+};
+
+
+/**
+ * optional cs3.storage.provider.v1beta1.Reference mount_point = 3;
+ * @return {?proto.cs3.storage.provider.v1beta1.Reference}
+ */
+proto.cs3.sharing.ocm.v1beta1.ReceivedShare.prototype.getMountPoint = function() {
+  return /** @type{?proto.cs3.storage.provider.v1beta1.Reference} */ (
+    jspb.Message.getWrapperField(this, cs3_storage_provider_v1beta1_resources_pb.Reference, 3));
+};
+
+
+/** @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value */
+proto.cs3.sharing.ocm.v1beta1.ReceivedShare.prototype.setMountPoint = function(value) {
+  jspb.Message.setWrapperField(this, 3, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.cs3.sharing.ocm.v1beta1.ReceivedShare.prototype.clearMountPoint = function() {
+  this.setMountPoint(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.cs3.sharing.ocm.v1beta1.ReceivedShare.prototype.hasMountPoint = function() {
+  return jspb.Message.getField(this, 3) != null;
 };
 
 
