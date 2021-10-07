@@ -474,7 +474,8 @@ proto.cs3.app.registry.v1beta1.MimeTypeInfo.toObject = function(includeInstance,
     proto.cs3.app.registry.v1beta1.ProviderInfo.toObject, includeInstance),
     name: jspb.Message.getFieldWithDefault(msg, 5, ""),
     description: jspb.Message.getFieldWithDefault(msg, 6, ""),
-    icon: jspb.Message.getFieldWithDefault(msg, 7, "")
+    icon: jspb.Message.getFieldWithDefault(msg, 7, ""),
+    allowCreation: jspb.Message.getBooleanFieldWithDefault(msg, 8, false)
   };
 
   if (includeInstance) {
@@ -540,6 +541,10 @@ proto.cs3.app.registry.v1beta1.MimeTypeInfo.deserializeBinaryFromReader = functi
     case 7:
       var value = /** @type {string} */ (reader.readString());
       msg.setIcon(value);
+      break;
+    case 8:
+      var value = /** @type {boolean} */ (reader.readBool());
+      msg.setAllowCreation(value);
       break;
     default:
       reader.skipField();
@@ -618,6 +623,13 @@ proto.cs3.app.registry.v1beta1.MimeTypeInfo.serializeBinaryToWriter = function(m
   if (f.length > 0) {
     writer.writeString(
       7,
+      f
+    );
+  }
+  f = message.getAllowCreation();
+  if (f) {
+    writer.writeBool(
+      8,
       f
     );
   }
@@ -763,6 +775,21 @@ proto.cs3.app.registry.v1beta1.MimeTypeInfo.prototype.getIcon = function() {
 /** @param {string} value */
 proto.cs3.app.registry.v1beta1.MimeTypeInfo.prototype.setIcon = function(value) {
   jspb.Message.setProto3StringField(this, 7, value);
+};
+
+
+/**
+ * optional bool allow_creation = 8;
+ * @return {boolean}
+ */
+proto.cs3.app.registry.v1beta1.MimeTypeInfo.prototype.getAllowCreation = function() {
+  return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 8, false));
+};
+
+
+/** @param {boolean} value */
+proto.cs3.app.registry.v1beta1.MimeTypeInfo.prototype.setAllowCreation = function(value) {
+  jspb.Message.setProto3BooleanField(this, 8, value);
 };
 
 
