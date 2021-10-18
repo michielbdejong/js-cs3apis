@@ -7186,7 +7186,8 @@ proto.cs3.storage.provider.v1beta1.ListRecycleRequest.toObject = function(includ
     opaque: (f = msg.getOpaque()) && cs3_types_v1beta1_types_pb.Opaque.toObject(includeInstance, f),
     fromTs: (f = msg.getFromTs()) && cs3_types_v1beta1_types_pb.Timestamp.toObject(includeInstance, f),
     toTs: (f = msg.getToTs()) && cs3_types_v1beta1_types_pb.Timestamp.toObject(includeInstance, f),
-    ref: (f = msg.getRef()) && cs3_storage_provider_v1beta1_resources_pb.Reference.toObject(includeInstance, f)
+    ref: (f = msg.getRef()) && cs3_storage_provider_v1beta1_resources_pb.Reference.toObject(includeInstance, f),
+    key: jspb.Message.getFieldWithDefault(msg, 5, "")
   };
 
   if (includeInstance) {
@@ -7242,6 +7243,10 @@ proto.cs3.storage.provider.v1beta1.ListRecycleRequest.deserializeBinaryFromReade
       var value = new cs3_storage_provider_v1beta1_resources_pb.Reference;
       reader.readMessage(value,cs3_storage_provider_v1beta1_resources_pb.Reference.deserializeBinaryFromReader);
       msg.setRef(value);
+      break;
+    case 5:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setKey(value);
       break;
     default:
       reader.skipField();
@@ -7302,6 +7307,13 @@ proto.cs3.storage.provider.v1beta1.ListRecycleRequest.serializeBinaryToWriter = 
       4,
       f,
       cs3_storage_provider_v1beta1_resources_pb.Reference.serializeBinaryToWriter
+    );
+  }
+  f = message.getKey();
+  if (f.length > 0) {
+    writer.writeString(
+      5,
+      f
     );
   }
 };
@@ -7436,6 +7448,21 @@ proto.cs3.storage.provider.v1beta1.ListRecycleRequest.prototype.clearRef = funct
  */
 proto.cs3.storage.provider.v1beta1.ListRecycleRequest.prototype.hasRef = function() {
   return jspb.Message.getField(this, 4) != null;
+};
+
+
+/**
+ * optional string key = 5;
+ * @return {string}
+ */
+proto.cs3.storage.provider.v1beta1.ListRecycleRequest.prototype.getKey = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 5, ""));
+};
+
+
+/** @param {string} value */
+proto.cs3.storage.provider.v1beta1.ListRecycleRequest.prototype.setKey = function(value) {
+  jspb.Message.setProto3StringField(this, 5, value);
 };
 
 
@@ -7724,7 +7751,8 @@ proto.cs3.storage.provider.v1beta1.ListRecycleStreamRequest.toObject = function(
     opaque: (f = msg.getOpaque()) && cs3_types_v1beta1_types_pb.Opaque.toObject(includeInstance, f),
     fromTs: (f = msg.getFromTs()) && cs3_types_v1beta1_types_pb.Timestamp.toObject(includeInstance, f),
     toTs: (f = msg.getToTs()) && cs3_types_v1beta1_types_pb.Timestamp.toObject(includeInstance, f),
-    ref: (f = msg.getRef()) && cs3_storage_provider_v1beta1_resources_pb.Reference.toObject(includeInstance, f)
+    ref: (f = msg.getRef()) && cs3_storage_provider_v1beta1_resources_pb.Reference.toObject(includeInstance, f),
+    key: jspb.Message.getFieldWithDefault(msg, 5, "")
   };
 
   if (includeInstance) {
@@ -7780,6 +7808,10 @@ proto.cs3.storage.provider.v1beta1.ListRecycleStreamRequest.deserializeBinaryFro
       var value = new cs3_storage_provider_v1beta1_resources_pb.Reference;
       reader.readMessage(value,cs3_storage_provider_v1beta1_resources_pb.Reference.deserializeBinaryFromReader);
       msg.setRef(value);
+      break;
+    case 5:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setKey(value);
       break;
     default:
       reader.skipField();
@@ -7840,6 +7872,13 @@ proto.cs3.storage.provider.v1beta1.ListRecycleStreamRequest.serializeBinaryToWri
       4,
       f,
       cs3_storage_provider_v1beta1_resources_pb.Reference.serializeBinaryToWriter
+    );
+  }
+  f = message.getKey();
+  if (f.length > 0) {
+    writer.writeString(
+      5,
+      f
     );
   }
 };
@@ -7974,6 +8013,21 @@ proto.cs3.storage.provider.v1beta1.ListRecycleStreamRequest.prototype.clearRef =
  */
 proto.cs3.storage.provider.v1beta1.ListRecycleStreamRequest.prototype.hasRef = function() {
   return jspb.Message.getField(this, 4) != null;
+};
+
+
+/**
+ * optional string key = 5;
+ * @return {string}
+ */
+proto.cs3.storage.provider.v1beta1.ListRecycleStreamRequest.prototype.getKey = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 5, ""));
+};
+
+
+/** @param {string} value */
+proto.cs3.storage.provider.v1beta1.ListRecycleStreamRequest.prototype.setKey = function(value) {
+  jspb.Message.setProto3StringField(this, 5, value);
 };
 
 
@@ -8686,7 +8740,8 @@ proto.cs3.storage.provider.v1beta1.PurgeRecycleRequest.prototype.toObject = func
 proto.cs3.storage.provider.v1beta1.PurgeRecycleRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     opaque: (f = msg.getOpaque()) && cs3_types_v1beta1_types_pb.Opaque.toObject(includeInstance, f),
-    ref: (f = msg.getRef()) && cs3_storage_provider_v1beta1_resources_pb.Reference.toObject(includeInstance, f)
+    ref: (f = msg.getRef()) && cs3_storage_provider_v1beta1_resources_pb.Reference.toObject(includeInstance, f),
+    key: jspb.Message.getFieldWithDefault(msg, 3, "")
   };
 
   if (includeInstance) {
@@ -8733,6 +8788,10 @@ proto.cs3.storage.provider.v1beta1.PurgeRecycleRequest.deserializeBinaryFromRead
       reader.readMessage(value,cs3_storage_provider_v1beta1_resources_pb.Reference.deserializeBinaryFromReader);
       msg.setRef(value);
       break;
+    case 3:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setKey(value);
+      break;
     default:
       reader.skipField();
       break;
@@ -8776,6 +8835,13 @@ proto.cs3.storage.provider.v1beta1.PurgeRecycleRequest.serializeBinaryToWriter =
       2,
       f,
       cs3_storage_provider_v1beta1_resources_pb.Reference.serializeBinaryToWriter
+    );
+  }
+  f = message.getKey();
+  if (f.length > 0) {
+    writer.writeString(
+      3,
+      f
     );
   }
 };
@@ -8844,6 +8910,21 @@ proto.cs3.storage.provider.v1beta1.PurgeRecycleRequest.prototype.clearRef = func
  */
 proto.cs3.storage.provider.v1beta1.PurgeRecycleRequest.prototype.hasRef = function() {
   return jspb.Message.getField(this, 2) != null;
+};
+
+
+/**
+ * optional string key = 3;
+ * @return {string}
+ */
+proto.cs3.storage.provider.v1beta1.PurgeRecycleRequest.prototype.getKey = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
+};
+
+
+/** @param {string} value */
+proto.cs3.storage.provider.v1beta1.PurgeRecycleRequest.prototype.setKey = function(value) {
+  jspb.Message.setProto3StringField(this, 3, value);
 };
 
 

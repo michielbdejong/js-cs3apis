@@ -1236,15 +1236,15 @@ proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.listFileVersions =
 /**
  * @const
  * @type {!grpc.web.MethodDescriptor<
- *   !proto.cs3.gateway.v1beta1.ListRecycleStreamRequest,
+ *   !proto.cs3.storage.provider.v1beta1.ListRecycleStreamRequest,
  *   !proto.cs3.storage.provider.v1beta1.ListRecycleStreamResponse>}
  */
 const methodDescriptor_GatewayAPI_ListRecycleStream = new grpc.web.MethodDescriptor(
   '/cs3.gateway.v1beta1.GatewayAPI/ListRecycleStream',
   grpc.web.MethodType.SERVER_STREAMING,
-  proto.cs3.gateway.v1beta1.ListRecycleStreamRequest,
+  cs3_storage_provider_v1beta1_provider_api_pb.ListRecycleStreamRequest,
   cs3_storage_provider_v1beta1_provider_api_pb.ListRecycleStreamResponse,
-  /** @param {!proto.cs3.gateway.v1beta1.ListRecycleStreamRequest} request */
+  /** @param {!proto.cs3.storage.provider.v1beta1.ListRecycleStreamRequest} request */
   function(request) {
     return request.serializeBinary();
   },
@@ -1255,12 +1255,12 @@ const methodDescriptor_GatewayAPI_ListRecycleStream = new grpc.web.MethodDescrip
 /**
  * @const
  * @type {!grpc.web.AbstractClientBase.MethodInfo<
- *   !proto.cs3.gateway.v1beta1.ListRecycleStreamRequest,
+ *   !proto.cs3.storage.provider.v1beta1.ListRecycleStreamRequest,
  *   !proto.cs3.storage.provider.v1beta1.ListRecycleStreamResponse>}
  */
 const methodInfo_GatewayAPI_ListRecycleStream = new grpc.web.AbstractClientBase.MethodInfo(
   cs3_storage_provider_v1beta1_provider_api_pb.ListRecycleStreamResponse,
-  /** @param {!proto.cs3.gateway.v1beta1.ListRecycleStreamRequest} request */
+  /** @param {!proto.cs3.storage.provider.v1beta1.ListRecycleStreamRequest} request */
   function(request) {
     return request.serializeBinary();
   },
@@ -1269,7 +1269,7 @@ const methodInfo_GatewayAPI_ListRecycleStream = new grpc.web.AbstractClientBase.
 
 
 /**
- * @param {!proto.cs3.gateway.v1beta1.ListRecycleStreamRequest} request The request proto
+ * @param {!proto.cs3.storage.provider.v1beta1.ListRecycleStreamRequest} request The request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
  * @return {!grpc.web.ClientReadableStream<!proto.cs3.storage.provider.v1beta1.ListRecycleStreamResponse>}
@@ -1286,7 +1286,7 @@ proto.cs3.gateway.v1beta1.GatewayAPIClient.prototype.listRecycleStream =
 
 
 /**
- * @param {!proto.cs3.gateway.v1beta1.ListRecycleStreamRequest} request The request proto
+ * @param {!proto.cs3.storage.provider.v1beta1.ListRecycleStreamRequest} request The request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
  * @return {!grpc.web.ClientReadableStream<!proto.cs3.storage.provider.v1beta1.ListRecycleStreamResponse>}
@@ -1305,15 +1305,15 @@ proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.listRecycleStream =
 /**
  * @const
  * @type {!grpc.web.MethodDescriptor<
- *   !proto.cs3.gateway.v1beta1.ListRecycleRequest,
+ *   !proto.cs3.storage.provider.v1beta1.ListRecycleRequest,
  *   !proto.cs3.storage.provider.v1beta1.ListRecycleResponse>}
  */
 const methodDescriptor_GatewayAPI_ListRecycle = new grpc.web.MethodDescriptor(
   '/cs3.gateway.v1beta1.GatewayAPI/ListRecycle',
   grpc.web.MethodType.UNARY,
-  proto.cs3.gateway.v1beta1.ListRecycleRequest,
+  cs3_storage_provider_v1beta1_provider_api_pb.ListRecycleRequest,
   cs3_storage_provider_v1beta1_provider_api_pb.ListRecycleResponse,
-  /** @param {!proto.cs3.gateway.v1beta1.ListRecycleRequest} request */
+  /** @param {!proto.cs3.storage.provider.v1beta1.ListRecycleRequest} request */
   function(request) {
     return request.serializeBinary();
   },
@@ -1324,12 +1324,12 @@ const methodDescriptor_GatewayAPI_ListRecycle = new grpc.web.MethodDescriptor(
 /**
  * @const
  * @type {!grpc.web.AbstractClientBase.MethodInfo<
- *   !proto.cs3.gateway.v1beta1.ListRecycleRequest,
+ *   !proto.cs3.storage.provider.v1beta1.ListRecycleRequest,
  *   !proto.cs3.storage.provider.v1beta1.ListRecycleResponse>}
  */
 const methodInfo_GatewayAPI_ListRecycle = new grpc.web.AbstractClientBase.MethodInfo(
   cs3_storage_provider_v1beta1_provider_api_pb.ListRecycleResponse,
-  /** @param {!proto.cs3.gateway.v1beta1.ListRecycleRequest} request */
+  /** @param {!proto.cs3.storage.provider.v1beta1.ListRecycleRequest} request */
   function(request) {
     return request.serializeBinary();
   },
@@ -1338,7 +1338,7 @@ const methodInfo_GatewayAPI_ListRecycle = new grpc.web.AbstractClientBase.Method
 
 
 /**
- * @param {!proto.cs3.gateway.v1beta1.ListRecycleRequest} request The
+ * @param {!proto.cs3.storage.provider.v1beta1.ListRecycleRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
@@ -1359,7 +1359,7 @@ proto.cs3.gateway.v1beta1.GatewayAPIClient.prototype.listRecycle =
 
 
 /**
- * @param {!proto.cs3.gateway.v1beta1.ListRecycleRequest} request The
+ * @param {!proto.cs3.storage.provider.v1beta1.ListRecycleRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
@@ -1453,15 +1453,15 @@ proto.cs3.gateway.v1beta1.GatewayAPIPromiseClient.prototype.move =
 /**
  * @const
  * @type {!grpc.web.MethodDescriptor<
- *   !proto.cs3.gateway.v1beta1.PurgeRecycleRequest,
+ *   !proto.cs3.storage.provider.v1beta1.PurgeRecycleRequest,
  *   !proto.cs3.storage.provider.v1beta1.PurgeRecycleResponse>}
  */
 const methodDescriptor_GatewayAPI_PurgeRecycle = new grpc.web.MethodDescriptor(
   '/cs3.gateway.v1beta1.GatewayAPI/PurgeRecycle',
   grpc.web.MethodType.UNARY,
-  proto.cs3.gateway.v1beta1.PurgeRecycleRequest,
+  cs3_storage_provider_v1beta1_provider_api_pb.PurgeRecycleRequest,
   cs3_storage_provider_v1beta1_provider_api_pb.PurgeRecycleResponse,
-  /** @param {!proto.cs3.gateway.v1beta1.PurgeRecycleRequest} request */
+  /** @param {!proto.cs3.storage.provider.v1beta1.PurgeRecycleRequest} request */
   function(request) {
     return request.serializeBinary();
   },
@@ -1472,12 +1472,12 @@ const methodDescriptor_GatewayAPI_PurgeRecycle = new grpc.web.MethodDescriptor(
 /**
  * @const
  * @type {!grpc.web.AbstractClientBase.MethodInfo<
- *   !proto.cs3.gateway.v1beta1.PurgeRecycleRequest,
+ *   !proto.cs3.storage.provider.v1beta1.PurgeRecycleRequest,
  *   !proto.cs3.storage.provider.v1beta1.PurgeRecycleResponse>}
  */
 const methodInfo_GatewayAPI_PurgeRecycle = new grpc.web.AbstractClientBase.MethodInfo(
   cs3_storage_provider_v1beta1_provider_api_pb.PurgeRecycleResponse,
-  /** @param {!proto.cs3.gateway.v1beta1.PurgeRecycleRequest} request */
+  /** @param {!proto.cs3.storage.provider.v1beta1.PurgeRecycleRequest} request */
   function(request) {
     return request.serializeBinary();
   },
@@ -1486,7 +1486,7 @@ const methodInfo_GatewayAPI_PurgeRecycle = new grpc.web.AbstractClientBase.Metho
 
 
 /**
- * @param {!proto.cs3.gateway.v1beta1.PurgeRecycleRequest} request The
+ * @param {!proto.cs3.storage.provider.v1beta1.PurgeRecycleRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
@@ -1507,7 +1507,7 @@ proto.cs3.gateway.v1beta1.GatewayAPIClient.prototype.purgeRecycle =
 
 
 /**
- * @param {!proto.cs3.gateway.v1beta1.PurgeRecycleRequest} request The
+ * @param {!proto.cs3.storage.provider.v1beta1.PurgeRecycleRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
