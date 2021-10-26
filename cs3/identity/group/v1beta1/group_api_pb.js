@@ -273,7 +273,8 @@ proto.cs3.identity.group.v1beta1.GetGroupRequest.prototype.toObject = function(o
 proto.cs3.identity.group.v1beta1.GetGroupRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     opaque: (f = msg.getOpaque()) && cs3_types_v1beta1_types_pb.Opaque.toObject(includeInstance, f),
-    groupId: (f = msg.getGroupId()) && cs3_identity_group_v1beta1_resources_pb.GroupId.toObject(includeInstance, f)
+    groupId: (f = msg.getGroupId()) && cs3_identity_group_v1beta1_resources_pb.GroupId.toObject(includeInstance, f),
+    skipFetchingMembers: jspb.Message.getBooleanFieldWithDefault(msg, 3, false)
   };
 
   if (includeInstance) {
@@ -320,6 +321,10 @@ proto.cs3.identity.group.v1beta1.GetGroupRequest.deserializeBinaryFromReader = f
       reader.readMessage(value,cs3_identity_group_v1beta1_resources_pb.GroupId.deserializeBinaryFromReader);
       msg.setGroupId(value);
       break;
+    case 3:
+      var value = /** @type {boolean} */ (reader.readBool());
+      msg.setSkipFetchingMembers(value);
+      break;
     default:
       reader.skipField();
       break;
@@ -363,6 +368,13 @@ proto.cs3.identity.group.v1beta1.GetGroupRequest.serializeBinaryToWriter = funct
       2,
       f,
       cs3_identity_group_v1beta1_resources_pb.GroupId.serializeBinaryToWriter
+    );
+  }
+  f = message.getSkipFetchingMembers();
+  if (f) {
+    writer.writeBool(
+      3,
+      f
     );
   }
 };
@@ -431,6 +443,21 @@ proto.cs3.identity.group.v1beta1.GetGroupRequest.prototype.clearGroupId = functi
  */
 proto.cs3.identity.group.v1beta1.GetGroupRequest.prototype.hasGroupId = function() {
   return jspb.Message.getField(this, 2) != null;
+};
+
+
+/**
+ * optional bool skip_fetching_members = 3;
+ * @return {boolean}
+ */
+proto.cs3.identity.group.v1beta1.GetGroupRequest.prototype.getSkipFetchingMembers = function() {
+  return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 3, false));
+};
+
+
+/** @param {boolean} value */
+proto.cs3.identity.group.v1beta1.GetGroupRequest.prototype.setSkipFetchingMembers = function(value) {
+  jspb.Message.setProto3BooleanField(this, 3, value);
 };
 
 
@@ -709,7 +736,8 @@ proto.cs3.identity.group.v1beta1.GetGroupByClaimRequest.toObject = function(incl
   var f, obj = {
     opaque: (f = msg.getOpaque()) && cs3_types_v1beta1_types_pb.Opaque.toObject(includeInstance, f),
     claim: jspb.Message.getFieldWithDefault(msg, 2, ""),
-    value: jspb.Message.getFieldWithDefault(msg, 3, "")
+    value: jspb.Message.getFieldWithDefault(msg, 3, ""),
+    skipFetchingMembers: jspb.Message.getBooleanFieldWithDefault(msg, 4, false)
   };
 
   if (includeInstance) {
@@ -759,6 +787,10 @@ proto.cs3.identity.group.v1beta1.GetGroupByClaimRequest.deserializeBinaryFromRea
       var value = /** @type {string} */ (reader.readString());
       msg.setValue(value);
       break;
+    case 4:
+      var value = /** @type {boolean} */ (reader.readBool());
+      msg.setSkipFetchingMembers(value);
+      break;
     default:
       reader.skipField();
       break;
@@ -807,6 +839,13 @@ proto.cs3.identity.group.v1beta1.GetGroupByClaimRequest.serializeBinaryToWriter 
   if (f.length > 0) {
     writer.writeString(
       3,
+      f
+    );
+  }
+  f = message.getSkipFetchingMembers();
+  if (f) {
+    writer.writeBool(
+      4,
       f
     );
   }
@@ -873,6 +912,21 @@ proto.cs3.identity.group.v1beta1.GetGroupByClaimRequest.prototype.getValue = fun
 /** @param {string} value */
 proto.cs3.identity.group.v1beta1.GetGroupByClaimRequest.prototype.setValue = function(value) {
   jspb.Message.setProto3StringField(this, 3, value);
+};
+
+
+/**
+ * optional bool skip_fetching_members = 4;
+ * @return {boolean}
+ */
+proto.cs3.identity.group.v1beta1.GetGroupByClaimRequest.prototype.getSkipFetchingMembers = function() {
+  return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 4, false));
+};
+
+
+/** @param {boolean} value */
+proto.cs3.identity.group.v1beta1.GetGroupByClaimRequest.prototype.setSkipFetchingMembers = function(value) {
+  jspb.Message.setProto3BooleanField(this, 4, value);
 };
 
 
@@ -2056,7 +2110,8 @@ proto.cs3.identity.group.v1beta1.FindGroupsRequest.prototype.toObject = function
 proto.cs3.identity.group.v1beta1.FindGroupsRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     opaque: (f = msg.getOpaque()) && cs3_types_v1beta1_types_pb.Opaque.toObject(includeInstance, f),
-    filter: jspb.Message.getFieldWithDefault(msg, 2, "")
+    filter: jspb.Message.getFieldWithDefault(msg, 2, ""),
+    skipFetchingMembers: jspb.Message.getBooleanFieldWithDefault(msg, 3, false)
   };
 
   if (includeInstance) {
@@ -2102,6 +2157,10 @@ proto.cs3.identity.group.v1beta1.FindGroupsRequest.deserializeBinaryFromReader =
       var value = /** @type {string} */ (reader.readString());
       msg.setFilter(value);
       break;
+    case 3:
+      var value = /** @type {boolean} */ (reader.readBool());
+      msg.setSkipFetchingMembers(value);
+      break;
     default:
       reader.skipField();
       break;
@@ -2143,6 +2202,13 @@ proto.cs3.identity.group.v1beta1.FindGroupsRequest.serializeBinaryToWriter = fun
   if (f.length > 0) {
     writer.writeString(
       2,
+      f
+    );
+  }
+  f = message.getSkipFetchingMembers();
+  if (f) {
+    writer.writeBool(
+      3,
       f
     );
   }
@@ -2194,6 +2260,21 @@ proto.cs3.identity.group.v1beta1.FindGroupsRequest.prototype.getFilter = functio
 /** @param {string} value */
 proto.cs3.identity.group.v1beta1.FindGroupsRequest.prototype.setFilter = function(value) {
   jspb.Message.setProto3StringField(this, 2, value);
+};
+
+
+/**
+ * optional bool skip_fetching_members = 3;
+ * @return {boolean}
+ */
+proto.cs3.identity.group.v1beta1.FindGroupsRequest.prototype.getSkipFetchingMembers = function() {
+  return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 3, false));
+};
+
+
+/** @param {boolean} value */
+proto.cs3.identity.group.v1beta1.FindGroupsRequest.prototype.setSkipFetchingMembers = function(value) {
+  jspb.Message.setProto3BooleanField(this, 3, value);
 };
 
 
