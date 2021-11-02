@@ -2,11 +2,14 @@
 /**
  * @fileoverview
  * @enhanceable
+ * @suppress {missingRequire} reports error on implicit type usages.
  * @suppress {messageConventions} JS Compiler reports an error if a variable or
  *     field starts with 'MSG_' and isn't a translatable message.
  * @public
  */
 // GENERATED CODE -- DO NOT EDIT!
+/* eslint-disable */
+// @ts-nocheck
 
 var jspb = require('google-protobuf');
 var goog = jspb;
@@ -184,9 +187,12 @@ proto.cs3.tx.v1beta1.TxId.prototype.getOpaqueId = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.tx.v1beta1.TxId} returns this
+ */
 proto.cs3.tx.v1beta1.TxId.prototype.setOpaqueId = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -411,17 +417,21 @@ proto.cs3.tx.v1beta1.TxInfo.prototype.getId = function() {
 };
 
 
-/** @param {?proto.cs3.tx.v1beta1.TxId|undefined} value */
+/**
+ * @param {?proto.cs3.tx.v1beta1.TxId|undefined} value
+ * @return {!proto.cs3.tx.v1beta1.TxInfo} returns this
+*/
 proto.cs3.tx.v1beta1.TxInfo.prototype.setId = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.tx.v1beta1.TxInfo} returns this
  */
 proto.cs3.tx.v1beta1.TxInfo.prototype.clearId = function() {
-  this.setId(undefined);
+  return this.setId(undefined);
 };
 
 
@@ -444,17 +454,21 @@ proto.cs3.tx.v1beta1.TxInfo.prototype.getRef = function() {
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value
+ * @return {!proto.cs3.tx.v1beta1.TxInfo} returns this
+*/
 proto.cs3.tx.v1beta1.TxInfo.prototype.setRef = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.tx.v1beta1.TxInfo} returns this
  */
 proto.cs3.tx.v1beta1.TxInfo.prototype.clearRef = function() {
-  this.setRef(undefined);
+  return this.setRef(undefined);
 };
 
 
@@ -476,9 +490,12 @@ proto.cs3.tx.v1beta1.TxInfo.prototype.getStatus = function() {
 };
 
 
-/** @param {!proto.cs3.tx.v1beta1.TxInfo.Status} value */
+/**
+ * @param {!proto.cs3.tx.v1beta1.TxInfo.Status} value
+ * @return {!proto.cs3.tx.v1beta1.TxInfo} returns this
+ */
 proto.cs3.tx.v1beta1.TxInfo.prototype.setStatus = function(value) {
-  jspb.Message.setProto3EnumField(this, 3, value);
+  return jspb.Message.setProto3EnumField(this, 3, value);
 };
 
 
@@ -492,17 +509,21 @@ proto.cs3.tx.v1beta1.TxInfo.prototype.getGrantee = function() {
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.Grantee|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.Grantee|undefined} value
+ * @return {!proto.cs3.tx.v1beta1.TxInfo} returns this
+*/
 proto.cs3.tx.v1beta1.TxInfo.prototype.setGrantee = function(value) {
-  jspb.Message.setWrapperField(this, 4, value);
+  return jspb.Message.setWrapperField(this, 4, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.tx.v1beta1.TxInfo} returns this
  */
 proto.cs3.tx.v1beta1.TxInfo.prototype.clearGrantee = function() {
-  this.setGrantee(undefined);
+  return this.setGrantee(undefined);
 };
 
 
@@ -525,17 +546,21 @@ proto.cs3.tx.v1beta1.TxInfo.prototype.getCreator = function() {
 };
 
 
-/** @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value */
+/**
+ * @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value
+ * @return {!proto.cs3.tx.v1beta1.TxInfo} returns this
+*/
 proto.cs3.tx.v1beta1.TxInfo.prototype.setCreator = function(value) {
-  jspb.Message.setWrapperField(this, 5, value);
+  return jspb.Message.setWrapperField(this, 5, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.tx.v1beta1.TxInfo} returns this
  */
 proto.cs3.tx.v1beta1.TxInfo.prototype.clearCreator = function() {
-  this.setCreator(undefined);
+  return this.setCreator(undefined);
 };
 
 
@@ -558,17 +583,21 @@ proto.cs3.tx.v1beta1.TxInfo.prototype.getCtime = function() {
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Timestamp|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Timestamp|undefined} value
+ * @return {!proto.cs3.tx.v1beta1.TxInfo} returns this
+*/
 proto.cs3.tx.v1beta1.TxInfo.prototype.setCtime = function(value) {
-  jspb.Message.setWrapperField(this, 6, value);
+  return jspb.Message.setWrapperField(this, 6, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.tx.v1beta1.TxInfo} returns this
  */
 proto.cs3.tx.v1beta1.TxInfo.prototype.clearCtime = function() {
-  this.setCtime(undefined);
+  return this.setCtime(undefined);
 };
 
 
@@ -590,9 +619,12 @@ proto.cs3.tx.v1beta1.TxInfo.prototype.getDescription = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.tx.v1beta1.TxInfo} returns this
+ */
 proto.cs3.tx.v1beta1.TxInfo.prototype.setDescription = function(value) {
-  jspb.Message.setProto3StringField(this, 7, value);
+  return jspb.Message.setProto3StringField(this, 7, value);
 };
 
 

@@ -2,11 +2,14 @@
 /**
  * @fileoverview
  * @enhanceable
+ * @suppress {missingRequire} reports error on implicit type usages.
  * @suppress {messageConventions} JS Compiler reports an error if a variable or
  *     field starts with 'MSG_' and isn't a translatable message.
  * @public
  */
 // GENERATED CODE -- DO NOT EDIT!
+/* eslint-disable */
+// @ts-nocheck
 
 var jspb = require('google-protobuf');
 var goog = jspb;
@@ -117,13 +120,13 @@ proto.cs3.app.provider.v1beta1.OpenInAppURL.deserializeBinaryFromReader = functi
     case 3:
       var value = msg.getFormParametersMap();
       reader.readMessage(value, function(message, reader) {
-        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readString, jspb.BinaryReader.prototype.readString, null, "");
+        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readString, jspb.BinaryReader.prototype.readString, null, "", "");
          });
       break;
     case 4:
       var value = msg.getHeadersMap();
       reader.readMessage(value, function(message, reader) {
-        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readString, jspb.BinaryReader.prototype.readString, null, "");
+        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readString, jspb.BinaryReader.prototype.readString, null, "", "");
          });
       break;
     default:
@@ -189,9 +192,12 @@ proto.cs3.app.provider.v1beta1.OpenInAppURL.prototype.getAppUrl = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.app.provider.v1beta1.OpenInAppURL} returns this
+ */
 proto.cs3.app.provider.v1beta1.OpenInAppURL.prototype.setAppUrl = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -204,9 +210,12 @@ proto.cs3.app.provider.v1beta1.OpenInAppURL.prototype.getMethod = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.app.provider.v1beta1.OpenInAppURL} returns this
+ */
 proto.cs3.app.provider.v1beta1.OpenInAppURL.prototype.setMethod = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -225,10 +234,11 @@ proto.cs3.app.provider.v1beta1.OpenInAppURL.prototype.getFormParametersMap = fun
 
 /**
  * Clears values from the map. The map will be non-null.
+ * @return {!proto.cs3.app.provider.v1beta1.OpenInAppURL} returns this
  */
 proto.cs3.app.provider.v1beta1.OpenInAppURL.prototype.clearFormParametersMap = function() {
   this.getFormParametersMap().clear();
-};
+  return this;};
 
 
 /**
@@ -246,10 +256,11 @@ proto.cs3.app.provider.v1beta1.OpenInAppURL.prototype.getHeadersMap = function(o
 
 /**
  * Clears values from the map. The map will be non-null.
+ * @return {!proto.cs3.app.provider.v1beta1.OpenInAppURL} returns this
  */
 proto.cs3.app.provider.v1beta1.OpenInAppURL.prototype.clearHeadersMap = function() {
   this.getHeadersMap().clear();
-};
+  return this;};
 
 
 goog.object.extend(exports, proto.cs3.app.provider.v1beta1);

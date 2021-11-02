@@ -2,11 +2,14 @@
 /**
  * @fileoverview
  * @enhanceable
+ * @suppress {missingRequire} reports error on implicit type usages.
  * @suppress {messageConventions} JS Compiler reports an error if a variable or
  *     field starts with 'MSG_' and isn't a translatable message.
  * @public
  */
 // GENERATED CODE -- DO NOT EDIT!
+/* eslint-disable */
+// @ts-nocheck
 
 var jspb = require('google-protobuf');
 var goog = jspb;
@@ -237,17 +240,21 @@ proto.cs3.app.provider.v1beta1.OpenInAppRequest.prototype.getOpaque = function()
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.app.provider.v1beta1.OpenInAppRequest} returns this
+*/
 proto.cs3.app.provider.v1beta1.OpenInAppRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.app.provider.v1beta1.OpenInAppRequest} returns this
  */
 proto.cs3.app.provider.v1beta1.OpenInAppRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -270,17 +277,21 @@ proto.cs3.app.provider.v1beta1.OpenInAppRequest.prototype.getResourceInfo = func
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.ResourceInfo|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.ResourceInfo|undefined} value
+ * @return {!proto.cs3.app.provider.v1beta1.OpenInAppRequest} returns this
+*/
 proto.cs3.app.provider.v1beta1.OpenInAppRequest.prototype.setResourceInfo = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.app.provider.v1beta1.OpenInAppRequest} returns this
  */
 proto.cs3.app.provider.v1beta1.OpenInAppRequest.prototype.clearResourceInfo = function() {
-  this.setResourceInfo(undefined);
+  return this.setResourceInfo(undefined);
 };
 
 
@@ -302,9 +313,12 @@ proto.cs3.app.provider.v1beta1.OpenInAppRequest.prototype.getViewMode = function
 };
 
 
-/** @param {!proto.cs3.app.provider.v1beta1.OpenInAppRequest.ViewMode} value */
+/**
+ * @param {!proto.cs3.app.provider.v1beta1.OpenInAppRequest.ViewMode} value
+ * @return {!proto.cs3.app.provider.v1beta1.OpenInAppRequest} returns this
+ */
 proto.cs3.app.provider.v1beta1.OpenInAppRequest.prototype.setViewMode = function(value) {
-  jspb.Message.setProto3EnumField(this, 3, value);
+  return jspb.Message.setProto3EnumField(this, 3, value);
 };
 
 
@@ -317,9 +331,12 @@ proto.cs3.app.provider.v1beta1.OpenInAppRequest.prototype.getAccessToken = funct
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.app.provider.v1beta1.OpenInAppRequest} returns this
+ */
 proto.cs3.app.provider.v1beta1.OpenInAppRequest.prototype.setAccessToken = function(value) {
-  jspb.Message.setProto3StringField(this, 4, value);
+  return jspb.Message.setProto3StringField(this, 4, value);
 };
 
 
@@ -475,17 +492,21 @@ proto.cs3.app.provider.v1beta1.OpenInAppResponse.prototype.getStatus = function(
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.app.provider.v1beta1.OpenInAppResponse} returns this
+*/
 proto.cs3.app.provider.v1beta1.OpenInAppResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.app.provider.v1beta1.OpenInAppResponse} returns this
  */
 proto.cs3.app.provider.v1beta1.OpenInAppResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -508,17 +529,21 @@ proto.cs3.app.provider.v1beta1.OpenInAppResponse.prototype.getOpaque = function(
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.app.provider.v1beta1.OpenInAppResponse} returns this
+*/
 proto.cs3.app.provider.v1beta1.OpenInAppResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.app.provider.v1beta1.OpenInAppResponse} returns this
  */
 proto.cs3.app.provider.v1beta1.OpenInAppResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -541,17 +566,21 @@ proto.cs3.app.provider.v1beta1.OpenInAppResponse.prototype.getAppUrl = function(
 };
 
 
-/** @param {?proto.cs3.app.provider.v1beta1.OpenInAppURL|undefined} value */
+/**
+ * @param {?proto.cs3.app.provider.v1beta1.OpenInAppURL|undefined} value
+ * @return {!proto.cs3.app.provider.v1beta1.OpenInAppResponse} returns this
+*/
 proto.cs3.app.provider.v1beta1.OpenInAppResponse.prototype.setAppUrl = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.app.provider.v1beta1.OpenInAppResponse} returns this
  */
 proto.cs3.app.provider.v1beta1.OpenInAppResponse.prototype.clearAppUrl = function() {
-  this.setAppUrl(undefined);
+  return this.setAppUrl(undefined);
 };
 
 

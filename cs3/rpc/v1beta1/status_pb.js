@@ -2,11 +2,14 @@
 /**
  * @fileoverview
  * @enhanceable
+ * @suppress {missingRequire} reports error on implicit type usages.
  * @suppress {messageConventions} JS Compiler reports an error if a variable or
  *     field starts with 'MSG_' and isn't a translatable message.
  * @public
  */
 // GENERATED CODE -- DO NOT EDIT!
+/* eslint-disable */
+// @ts-nocheck
 
 var jspb = require('google-protobuf');
 var goog = jspb;
@@ -193,9 +196,12 @@ proto.cs3.rpc.v1beta1.Status.prototype.getCode = function() {
 };
 
 
-/** @param {!proto.cs3.rpc.v1beta1.Code} value */
+/**
+ * @param {!proto.cs3.rpc.v1beta1.Code} value
+ * @return {!proto.cs3.rpc.v1beta1.Status} returns this
+ */
 proto.cs3.rpc.v1beta1.Status.prototype.setCode = function(value) {
-  jspb.Message.setProto3EnumField(this, 1, value);
+  return jspb.Message.setProto3EnumField(this, 1, value);
 };
 
 
@@ -208,9 +214,12 @@ proto.cs3.rpc.v1beta1.Status.prototype.getMessage = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.rpc.v1beta1.Status} returns this
+ */
 proto.cs3.rpc.v1beta1.Status.prototype.setMessage = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -223,9 +232,12 @@ proto.cs3.rpc.v1beta1.Status.prototype.getTrace = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.rpc.v1beta1.Status} returns this
+ */
 proto.cs3.rpc.v1beta1.Status.prototype.setTrace = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -238,9 +250,12 @@ proto.cs3.rpc.v1beta1.Status.prototype.getTargetUri = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.rpc.v1beta1.Status} returns this
+ */
 proto.cs3.rpc.v1beta1.Status.prototype.setTargetUri = function(value) {
-  jspb.Message.setProto3StringField(this, 4, value);
+  return jspb.Message.setProto3StringField(this, 4, value);
 };
 
 

@@ -2,11 +2,14 @@
 /**
  * @fileoverview
  * @enhanceable
+ * @suppress {missingRequire} reports error on implicit type usages.
  * @suppress {messageConventions} JS Compiler reports an error if a variable or
  *     field starts with 'MSG_' and isn't a translatable message.
  * @public
  */
 // GENERATED CODE -- DO NOT EDIT!
+/* eslint-disable */
+// @ts-nocheck
 
 var jspb = require('google-protobuf');
 var goog = jspb;
@@ -235,9 +238,12 @@ proto.cs3.preferences.v1beta1.SetKeyRequest.prototype.getKey = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.preferences.v1beta1.SetKeyRequest} returns this
+ */
 proto.cs3.preferences.v1beta1.SetKeyRequest.prototype.setKey = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -250,9 +256,12 @@ proto.cs3.preferences.v1beta1.SetKeyRequest.prototype.getVal = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.preferences.v1beta1.SetKeyRequest} returns this
+ */
 proto.cs3.preferences.v1beta1.SetKeyRequest.prototype.setVal = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -380,17 +389,21 @@ proto.cs3.preferences.v1beta1.SetKeyResponse.prototype.getStatus = function() {
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.preferences.v1beta1.SetKeyResponse} returns this
+*/
 proto.cs3.preferences.v1beta1.SetKeyResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.preferences.v1beta1.SetKeyResponse} returns this
  */
 proto.cs3.preferences.v1beta1.SetKeyResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -524,9 +537,12 @@ proto.cs3.preferences.v1beta1.GetKeyRequest.prototype.getKey = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.preferences.v1beta1.GetKeyRequest} returns this
+ */
 proto.cs3.preferences.v1beta1.GetKeyRequest.prototype.setKey = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -666,17 +682,21 @@ proto.cs3.preferences.v1beta1.GetKeyResponse.prototype.getStatus = function() {
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.preferences.v1beta1.GetKeyResponse} returns this
+*/
 proto.cs3.preferences.v1beta1.GetKeyResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.preferences.v1beta1.GetKeyResponse} returns this
  */
 proto.cs3.preferences.v1beta1.GetKeyResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -698,9 +718,12 @@ proto.cs3.preferences.v1beta1.GetKeyResponse.prototype.getVal = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.preferences.v1beta1.GetKeyResponse} returns this
+ */
 proto.cs3.preferences.v1beta1.GetKeyResponse.prototype.setVal = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 

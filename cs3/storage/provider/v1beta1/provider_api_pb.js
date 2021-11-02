@@ -2,11 +2,14 @@
 /**
  * @fileoverview
  * @enhanceable
+ * @suppress {missingRequire} reports error on implicit type usages.
  * @suppress {messageConventions} JS Compiler reports an error if a variable or
  *     field starts with 'MSG_' and isn't a translatable message.
  * @public
  */
 // GENERATED CODE -- DO NOT EDIT!
+/* eslint-disable */
+// @ts-nocheck
 
 var jspb = require('google-protobuf');
 var goog = jspb;
@@ -1533,17 +1536,21 @@ proto.cs3.storage.provider.v1beta1.GetHomeRequest.prototype.getOpaque = function
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.GetHomeRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.GetHomeRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.GetHomeRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.GetHomeRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -1706,17 +1713,21 @@ proto.cs3.storage.provider.v1beta1.GetHomeResponse.prototype.getStatus = functio
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.GetHomeResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.GetHomeResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.GetHomeResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.GetHomeResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -1739,17 +1750,21 @@ proto.cs3.storage.provider.v1beta1.GetHomeResponse.prototype.getOpaque = functio
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.GetHomeResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.GetHomeResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.GetHomeResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.GetHomeResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -1771,9 +1786,12 @@ proto.cs3.storage.provider.v1beta1.GetHomeResponse.prototype.getPath = function(
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.storage.provider.v1beta1.GetHomeResponse} returns this
+ */
 proto.cs3.storage.provider.v1beta1.GetHomeResponse.prototype.setPath = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -1929,17 +1947,21 @@ proto.cs3.storage.provider.v1beta1.AddGrantRequest.prototype.getOpaque = functio
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.AddGrantRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.AddGrantRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.AddGrantRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.AddGrantRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -1962,17 +1984,21 @@ proto.cs3.storage.provider.v1beta1.AddGrantRequest.prototype.getRef = function()
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.AddGrantRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.AddGrantRequest.prototype.setRef = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.AddGrantRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.AddGrantRequest.prototype.clearRef = function() {
-  this.setRef(undefined);
+  return this.setRef(undefined);
 };
 
 
@@ -1995,17 +2021,21 @@ proto.cs3.storage.provider.v1beta1.AddGrantRequest.prototype.getGrant = function
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.Grant|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.Grant|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.AddGrantRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.AddGrantRequest.prototype.setGrant = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.AddGrantRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.AddGrantRequest.prototype.clearGrant = function() {
-  this.setGrant(undefined);
+  return this.setGrant(undefined);
 };
 
 
@@ -2156,17 +2186,21 @@ proto.cs3.storage.provider.v1beta1.AddGrantResponse.prototype.getStatus = functi
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.AddGrantResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.AddGrantResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.AddGrantResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.AddGrantResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -2189,17 +2223,21 @@ proto.cs3.storage.provider.v1beta1.AddGrantResponse.prototype.getOpaque = functi
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.AddGrantResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.AddGrantResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.AddGrantResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.AddGrantResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -2364,17 +2402,21 @@ proto.cs3.storage.provider.v1beta1.DenyGrantRequest.prototype.getOpaque = functi
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.DenyGrantRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.DenyGrantRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.DenyGrantRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.DenyGrantRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -2397,17 +2439,21 @@ proto.cs3.storage.provider.v1beta1.DenyGrantRequest.prototype.getRef = function(
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.DenyGrantRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.DenyGrantRequest.prototype.setRef = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.DenyGrantRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.DenyGrantRequest.prototype.clearRef = function() {
-  this.setRef(undefined);
+  return this.setRef(undefined);
 };
 
 
@@ -2430,17 +2476,21 @@ proto.cs3.storage.provider.v1beta1.DenyGrantRequest.prototype.getGrantee = funct
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.Grantee|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.Grantee|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.DenyGrantRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.DenyGrantRequest.prototype.setGrantee = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.DenyGrantRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.DenyGrantRequest.prototype.clearGrantee = function() {
-  this.setGrantee(undefined);
+  return this.setGrantee(undefined);
 };
 
 
@@ -2591,17 +2641,21 @@ proto.cs3.storage.provider.v1beta1.DenyGrantResponse.prototype.getStatus = funct
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.DenyGrantResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.DenyGrantResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.DenyGrantResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.DenyGrantResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -2624,17 +2678,21 @@ proto.cs3.storage.provider.v1beta1.DenyGrantResponse.prototype.getOpaque = funct
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.DenyGrantResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.DenyGrantResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.DenyGrantResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.DenyGrantResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -2785,17 +2843,21 @@ proto.cs3.storage.provider.v1beta1.CreateContainerRequest.prototype.getOpaque = 
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.CreateContainerRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.CreateContainerRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.CreateContainerRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.CreateContainerRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -2818,17 +2880,21 @@ proto.cs3.storage.provider.v1beta1.CreateContainerRequest.prototype.getRef = fun
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.CreateContainerRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.CreateContainerRequest.prototype.setRef = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.CreateContainerRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.CreateContainerRequest.prototype.clearRef = function() {
-  this.setRef(undefined);
+  return this.setRef(undefined);
 };
 
 
@@ -2979,17 +3045,21 @@ proto.cs3.storage.provider.v1beta1.CreateContainerResponse.prototype.getStatus =
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.CreateContainerResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.CreateContainerResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.CreateContainerResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.CreateContainerResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -3012,17 +3082,21 @@ proto.cs3.storage.provider.v1beta1.CreateContainerResponse.prototype.getOpaque =
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.CreateContainerResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.CreateContainerResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.CreateContainerResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.CreateContainerResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -3173,17 +3247,21 @@ proto.cs3.storage.provider.v1beta1.DeleteRequest.prototype.getOpaque = function(
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.DeleteRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.DeleteRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.DeleteRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.DeleteRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -3206,17 +3284,21 @@ proto.cs3.storage.provider.v1beta1.DeleteRequest.prototype.getRef = function() {
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.DeleteRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.DeleteRequest.prototype.setRef = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.DeleteRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.DeleteRequest.prototype.clearRef = function() {
-  this.setRef(undefined);
+  return this.setRef(undefined);
 };
 
 
@@ -3367,17 +3449,21 @@ proto.cs3.storage.provider.v1beta1.DeleteResponse.prototype.getStatus = function
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.DeleteResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.DeleteResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.DeleteResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.DeleteResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -3400,17 +3486,21 @@ proto.cs3.storage.provider.v1beta1.DeleteResponse.prototype.getOpaque = function
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.DeleteResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.DeleteResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.DeleteResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.DeleteResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -3561,17 +3651,21 @@ proto.cs3.storage.provider.v1beta1.GetPathRequest.prototype.getOpaque = function
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.GetPathRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.GetPathRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.GetPathRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.GetPathRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -3594,17 +3688,21 @@ proto.cs3.storage.provider.v1beta1.GetPathRequest.prototype.getResourceId = func
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.ResourceId|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.ResourceId|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.GetPathRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.GetPathRequest.prototype.setResourceId = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.GetPathRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.GetPathRequest.prototype.clearResourceId = function() {
-  this.setResourceId(undefined);
+  return this.setResourceId(undefined);
 };
 
 
@@ -3767,17 +3865,21 @@ proto.cs3.storage.provider.v1beta1.GetPathResponse.prototype.getStatus = functio
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.GetPathResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.GetPathResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.GetPathResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.GetPathResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -3800,17 +3902,21 @@ proto.cs3.storage.provider.v1beta1.GetPathResponse.prototype.getOpaque = functio
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.GetPathResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.GetPathResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.GetPathResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.GetPathResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -3832,9 +3938,12 @@ proto.cs3.storage.provider.v1beta1.GetPathResponse.prototype.getPath = function(
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.storage.provider.v1beta1.GetPathResponse} returns this
+ */
 proto.cs3.storage.provider.v1beta1.GetPathResponse.prototype.setPath = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -3976,17 +4085,21 @@ proto.cs3.storage.provider.v1beta1.GetQuotaRequest.prototype.getOpaque = functio
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.GetQuotaRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.GetQuotaRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.GetQuotaRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.GetQuotaRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -4009,17 +4122,21 @@ proto.cs3.storage.provider.v1beta1.GetQuotaRequest.prototype.getRef = function()
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.GetQuotaRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.GetQuotaRequest.prototype.setRef = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.GetQuotaRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.GetQuotaRequest.prototype.clearRef = function() {
-  this.setRef(undefined);
+  return this.setRef(undefined);
 };
 
 
@@ -4194,17 +4311,21 @@ proto.cs3.storage.provider.v1beta1.GetQuotaResponse.prototype.getStatus = functi
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.GetQuotaResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.GetQuotaResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.GetQuotaResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.GetQuotaResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -4227,17 +4348,21 @@ proto.cs3.storage.provider.v1beta1.GetQuotaResponse.prototype.getOpaque = functi
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.GetQuotaResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.GetQuotaResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.GetQuotaResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.GetQuotaResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -4259,9 +4384,12 @@ proto.cs3.storage.provider.v1beta1.GetQuotaResponse.prototype.getTotalBytes = fu
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.cs3.storage.provider.v1beta1.GetQuotaResponse} returns this
+ */
 proto.cs3.storage.provider.v1beta1.GetQuotaResponse.prototype.setTotalBytes = function(value) {
-  jspb.Message.setProto3IntField(this, 3, value);
+  return jspb.Message.setProto3IntField(this, 3, value);
 };
 
 
@@ -4274,9 +4402,12 @@ proto.cs3.storage.provider.v1beta1.GetQuotaResponse.prototype.getUsedBytes = fun
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.cs3.storage.provider.v1beta1.GetQuotaResponse} returns this
+ */
 proto.cs3.storage.provider.v1beta1.GetQuotaResponse.prototype.setUsedBytes = function(value) {
-  jspb.Message.setProto3IntField(this, 4, value);
+  return jspb.Message.setProto3IntField(this, 4, value);
 };
 
 
@@ -4468,17 +4599,21 @@ proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest.prototype.getOpaque
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -4501,17 +4636,21 @@ proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest.prototype.getRef = 
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest.prototype.setRef = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest.prototype.clearRef = function() {
-  this.setRef(undefined);
+  return this.setRef(undefined);
 };
 
 
@@ -4533,17 +4672,21 @@ proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest.prototype.getIfNotE
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest} returns this
+ */
 proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest.prototype.setIfNotExist = function(value) {
-  jspb.Message.setOneofField(this, 3, proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest.oneofGroups_[0], value);
+  return jspb.Message.setOneofField(this, 3, proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest.oneofGroups_[0], value);
 };
 
 
 /**
  * Clears the field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest.prototype.clearIfNotExist = function() {
-  jspb.Message.setOneofField(this, 3, proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest.oneofGroups_[0], undefined);
+  return jspb.Message.setOneofField(this, 3, proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest.oneofGroups_[0], undefined);
 };
 
 
@@ -4565,17 +4708,21 @@ proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest.prototype.getIfMatc
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest} returns this
+ */
 proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest.prototype.setIfMatch = function(value) {
-  jspb.Message.setOneofField(this, 4, proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest.oneofGroups_[0], value);
+  return jspb.Message.setOneofField(this, 4, proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest.oneofGroups_[0], value);
 };
 
 
 /**
  * Clears the field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest.prototype.clearIfMatch = function() {
-  jspb.Message.setOneofField(this, 4, proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest.oneofGroups_[0], undefined);
+  return jspb.Message.setOneofField(this, 4, proto.cs3.storage.provider.v1beta1.InitiateFileUploadRequest.oneofGroups_[0], undefined);
 };
 
 
@@ -4748,17 +4895,21 @@ proto.cs3.storage.provider.v1beta1.InitiateFileUploadResponse.prototype.getStatu
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.InitiateFileUploadResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.InitiateFileUploadResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.InitiateFileUploadResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.InitiateFileUploadResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -4781,17 +4932,21 @@ proto.cs3.storage.provider.v1beta1.InitiateFileUploadResponse.prototype.getOpaqu
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.InitiateFileUploadResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.InitiateFileUploadResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.InitiateFileUploadResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.InitiateFileUploadResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -4814,9 +4969,12 @@ proto.cs3.storage.provider.v1beta1.InitiateFileUploadResponse.prototype.getProto
 };
 
 
-/** @param {!Array<!proto.cs3.storage.provider.v1beta1.FileUploadProtocol>} value */
+/**
+ * @param {!Array<!proto.cs3.storage.provider.v1beta1.FileUploadProtocol>} value
+ * @return {!proto.cs3.storage.provider.v1beta1.InitiateFileUploadResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.InitiateFileUploadResponse.prototype.setProtocolsList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 3, value);
+  return jspb.Message.setRepeatedWrapperField(this, 3, value);
 };
 
 
@@ -4832,9 +4990,10 @@ proto.cs3.storage.provider.v1beta1.InitiateFileUploadResponse.prototype.addProto
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.cs3.storage.provider.v1beta1.InitiateFileUploadResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.InitiateFileUploadResponse.prototype.clearProtocolsList = function() {
-  this.setProtocolsList([]);
+  return this.setProtocolsList([]);
 };
 
 
@@ -4976,17 +5135,21 @@ proto.cs3.storage.provider.v1beta1.InitiateFileDownloadRequest.prototype.getOpaq
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.InitiateFileDownloadRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.InitiateFileDownloadRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.InitiateFileDownloadRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.InitiateFileDownloadRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -5009,17 +5172,21 @@ proto.cs3.storage.provider.v1beta1.InitiateFileDownloadRequest.prototype.getRef 
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.InitiateFileDownloadRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.InitiateFileDownloadRequest.prototype.setRef = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.InitiateFileDownloadRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.InitiateFileDownloadRequest.prototype.clearRef = function() {
-  this.setRef(undefined);
+  return this.setRef(undefined);
 };
 
 
@@ -5192,17 +5359,21 @@ proto.cs3.storage.provider.v1beta1.InitiateFileDownloadResponse.prototype.getSta
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.InitiateFileDownloadResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.InitiateFileDownloadResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.InitiateFileDownloadResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.InitiateFileDownloadResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -5225,17 +5396,21 @@ proto.cs3.storage.provider.v1beta1.InitiateFileDownloadResponse.prototype.getOpa
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.InitiateFileDownloadResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.InitiateFileDownloadResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.InitiateFileDownloadResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.InitiateFileDownloadResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -5258,9 +5433,12 @@ proto.cs3.storage.provider.v1beta1.InitiateFileDownloadResponse.prototype.getPro
 };
 
 
-/** @param {!Array<!proto.cs3.storage.provider.v1beta1.FileDownloadProtocol>} value */
+/**
+ * @param {!Array<!proto.cs3.storage.provider.v1beta1.FileDownloadProtocol>} value
+ * @return {!proto.cs3.storage.provider.v1beta1.InitiateFileDownloadResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.InitiateFileDownloadResponse.prototype.setProtocolsList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 3, value);
+  return jspb.Message.setRepeatedWrapperField(this, 3, value);
 };
 
 
@@ -5276,9 +5454,10 @@ proto.cs3.storage.provider.v1beta1.InitiateFileDownloadResponse.prototype.addPro
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.cs3.storage.provider.v1beta1.InitiateFileDownloadResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.InitiateFileDownloadResponse.prototype.clearProtocolsList = function() {
-  this.setProtocolsList([]);
+  return this.setProtocolsList([]);
 };
 
 
@@ -5420,17 +5599,21 @@ proto.cs3.storage.provider.v1beta1.ListGrantsRequest.prototype.getOpaque = funct
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ListGrantsRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ListGrantsRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.ListGrantsRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.ListGrantsRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -5453,17 +5636,21 @@ proto.cs3.storage.provider.v1beta1.ListGrantsRequest.prototype.getRef = function
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ListGrantsRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ListGrantsRequest.prototype.setRef = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.ListGrantsRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.ListGrantsRequest.prototype.clearRef = function() {
-  this.setRef(undefined);
+  return this.setRef(undefined);
 };
 
 
@@ -5636,17 +5823,21 @@ proto.cs3.storage.provider.v1beta1.ListGrantsResponse.prototype.getStatus = func
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ListGrantsResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ListGrantsResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.ListGrantsResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.ListGrantsResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -5669,17 +5860,21 @@ proto.cs3.storage.provider.v1beta1.ListGrantsResponse.prototype.getOpaque = func
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ListGrantsResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ListGrantsResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.ListGrantsResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.ListGrantsResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -5702,9 +5897,12 @@ proto.cs3.storage.provider.v1beta1.ListGrantsResponse.prototype.getGrantsList = 
 };
 
 
-/** @param {!Array<!proto.cs3.storage.provider.v1beta1.Grant>} value */
+/**
+ * @param {!Array<!proto.cs3.storage.provider.v1beta1.Grant>} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ListGrantsResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ListGrantsResponse.prototype.setGrantsList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 3, value);
+  return jspb.Message.setRepeatedWrapperField(this, 3, value);
 };
 
 
@@ -5720,9 +5918,10 @@ proto.cs3.storage.provider.v1beta1.ListGrantsResponse.prototype.addGrants = func
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.cs3.storage.provider.v1beta1.ListGrantsResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.ListGrantsResponse.prototype.clearGrantsList = function() {
-  this.setGrantsList([]);
+  return this.setGrantsList([]);
 };
 
 
@@ -5883,17 +6082,21 @@ proto.cs3.storage.provider.v1beta1.ListContainerStreamRequest.prototype.getOpaqu
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ListContainerStreamRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ListContainerStreamRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.ListContainerStreamRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.ListContainerStreamRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -5916,17 +6119,21 @@ proto.cs3.storage.provider.v1beta1.ListContainerStreamRequest.prototype.getRef =
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ListContainerStreamRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ListContainerStreamRequest.prototype.setRef = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.ListContainerStreamRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.ListContainerStreamRequest.prototype.clearRef = function() {
-  this.setRef(undefined);
+  return this.setRef(undefined);
 };
 
 
@@ -5948,26 +6155,31 @@ proto.cs3.storage.provider.v1beta1.ListContainerStreamRequest.prototype.getArbit
 };
 
 
-/** @param {!Array<string>} value */
+/**
+ * @param {!Array<string>} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ListContainerStreamRequest} returns this
+ */
 proto.cs3.storage.provider.v1beta1.ListContainerStreamRequest.prototype.setArbitraryMetadataKeysList = function(value) {
-  jspb.Message.setField(this, 3, value || []);
+  return jspb.Message.setField(this, 3, value || []);
 };
 
 
 /**
  * @param {string} value
  * @param {number=} opt_index
+ * @return {!proto.cs3.storage.provider.v1beta1.ListContainerStreamRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.ListContainerStreamRequest.prototype.addArbitraryMetadataKeys = function(value, opt_index) {
-  jspb.Message.addToRepeatedField(this, 3, value, opt_index);
+  return jspb.Message.addToRepeatedField(this, 3, value, opt_index);
 };
 
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.cs3.storage.provider.v1beta1.ListContainerStreamRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.ListContainerStreamRequest.prototype.clearArbitraryMetadataKeysList = function() {
-  this.setArbitraryMetadataKeysList([]);
+  return this.setArbitraryMetadataKeysList([]);
 };
 
 
@@ -6123,17 +6335,21 @@ proto.cs3.storage.provider.v1beta1.ListContainerStreamResponse.prototype.getStat
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ListContainerStreamResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ListContainerStreamResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.ListContainerStreamResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.ListContainerStreamResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -6156,17 +6372,21 @@ proto.cs3.storage.provider.v1beta1.ListContainerStreamResponse.prototype.getOpaq
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ListContainerStreamResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ListContainerStreamResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.ListContainerStreamResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.ListContainerStreamResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -6189,17 +6409,21 @@ proto.cs3.storage.provider.v1beta1.ListContainerStreamResponse.prototype.getInfo
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.ResourceInfo|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.ResourceInfo|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ListContainerStreamResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ListContainerStreamResponse.prototype.setInfo = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.ListContainerStreamResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.ListContainerStreamResponse.prototype.clearInfo = function() {
-  this.setInfo(undefined);
+  return this.setInfo(undefined);
 };
 
 
@@ -6369,17 +6593,21 @@ proto.cs3.storage.provider.v1beta1.ListContainerRequest.prototype.getOpaque = fu
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ListContainerRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ListContainerRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.ListContainerRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.ListContainerRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -6402,17 +6630,21 @@ proto.cs3.storage.provider.v1beta1.ListContainerRequest.prototype.getRef = funct
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ListContainerRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ListContainerRequest.prototype.setRef = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.ListContainerRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.ListContainerRequest.prototype.clearRef = function() {
-  this.setRef(undefined);
+  return this.setRef(undefined);
 };
 
 
@@ -6434,26 +6666,31 @@ proto.cs3.storage.provider.v1beta1.ListContainerRequest.prototype.getArbitraryMe
 };
 
 
-/** @param {!Array<string>} value */
+/**
+ * @param {!Array<string>} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ListContainerRequest} returns this
+ */
 proto.cs3.storage.provider.v1beta1.ListContainerRequest.prototype.setArbitraryMetadataKeysList = function(value) {
-  jspb.Message.setField(this, 3, value || []);
+  return jspb.Message.setField(this, 3, value || []);
 };
 
 
 /**
  * @param {string} value
  * @param {number=} opt_index
+ * @return {!proto.cs3.storage.provider.v1beta1.ListContainerRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.ListContainerRequest.prototype.addArbitraryMetadataKeys = function(value, opt_index) {
-  jspb.Message.addToRepeatedField(this, 3, value, opt_index);
+  return jspb.Message.addToRepeatedField(this, 3, value, opt_index);
 };
 
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.cs3.storage.provider.v1beta1.ListContainerRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.ListContainerRequest.prototype.clearArbitraryMetadataKeysList = function() {
-  this.setArbitraryMetadataKeysList([]);
+  return this.setArbitraryMetadataKeysList([]);
 };
 
 
@@ -6617,17 +6854,21 @@ proto.cs3.storage.provider.v1beta1.ListContainerResponse.prototype.getStatus = f
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ListContainerResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ListContainerResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.ListContainerResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.ListContainerResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -6650,17 +6891,21 @@ proto.cs3.storage.provider.v1beta1.ListContainerResponse.prototype.getOpaque = f
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ListContainerResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ListContainerResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.ListContainerResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.ListContainerResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -6683,9 +6928,12 @@ proto.cs3.storage.provider.v1beta1.ListContainerResponse.prototype.getInfosList 
 };
 
 
-/** @param {!Array<!proto.cs3.storage.provider.v1beta1.ResourceInfo>} value */
+/**
+ * @param {!Array<!proto.cs3.storage.provider.v1beta1.ResourceInfo>} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ListContainerResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ListContainerResponse.prototype.setInfosList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 3, value);
+  return jspb.Message.setRepeatedWrapperField(this, 3, value);
 };
 
 
@@ -6701,9 +6949,10 @@ proto.cs3.storage.provider.v1beta1.ListContainerResponse.prototype.addInfos = fu
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.cs3.storage.provider.v1beta1.ListContainerResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.ListContainerResponse.prototype.clearInfosList = function() {
-  this.setInfosList([]);
+  return this.setInfosList([]);
 };
 
 
@@ -6845,17 +7094,21 @@ proto.cs3.storage.provider.v1beta1.ListFileVersionsRequest.prototype.getOpaque =
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ListFileVersionsRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ListFileVersionsRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.ListFileVersionsRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.ListFileVersionsRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -6878,17 +7131,21 @@ proto.cs3.storage.provider.v1beta1.ListFileVersionsRequest.prototype.getRef = fu
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ListFileVersionsRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ListFileVersionsRequest.prototype.setRef = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.ListFileVersionsRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.ListFileVersionsRequest.prototype.clearRef = function() {
-  this.setRef(undefined);
+  return this.setRef(undefined);
 };
 
 
@@ -7061,17 +7318,21 @@ proto.cs3.storage.provider.v1beta1.ListFileVersionsResponse.prototype.getStatus 
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ListFileVersionsResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ListFileVersionsResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.ListFileVersionsResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.ListFileVersionsResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -7094,17 +7355,21 @@ proto.cs3.storage.provider.v1beta1.ListFileVersionsResponse.prototype.getOpaque 
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ListFileVersionsResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ListFileVersionsResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.ListFileVersionsResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.ListFileVersionsResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -7127,9 +7392,12 @@ proto.cs3.storage.provider.v1beta1.ListFileVersionsResponse.prototype.getVersion
 };
 
 
-/** @param {!Array<!proto.cs3.storage.provider.v1beta1.FileVersion>} value */
+/**
+ * @param {!Array<!proto.cs3.storage.provider.v1beta1.FileVersion>} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ListFileVersionsResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ListFileVersionsResponse.prototype.setVersionsList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 3, value);
+  return jspb.Message.setRepeatedWrapperField(this, 3, value);
 };
 
 
@@ -7145,9 +7413,10 @@ proto.cs3.storage.provider.v1beta1.ListFileVersionsResponse.prototype.addVersion
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.cs3.storage.provider.v1beta1.ListFileVersionsResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.ListFileVersionsResponse.prototype.clearVersionsList = function() {
-  this.setVersionsList([]);
+  return this.setVersionsList([]);
 };
 
 
@@ -7186,8 +7455,7 @@ proto.cs3.storage.provider.v1beta1.ListRecycleRequest.toObject = function(includ
     opaque: (f = msg.getOpaque()) && cs3_types_v1beta1_types_pb.Opaque.toObject(includeInstance, f),
     fromTs: (f = msg.getFromTs()) && cs3_types_v1beta1_types_pb.Timestamp.toObject(includeInstance, f),
     toTs: (f = msg.getToTs()) && cs3_types_v1beta1_types_pb.Timestamp.toObject(includeInstance, f),
-    ref: (f = msg.getRef()) && cs3_storage_provider_v1beta1_resources_pb.Reference.toObject(includeInstance, f),
-    key: jspb.Message.getFieldWithDefault(msg, 5, "")
+    ref: (f = msg.getRef()) && cs3_storage_provider_v1beta1_resources_pb.Reference.toObject(includeInstance, f)
   };
 
   if (includeInstance) {
@@ -7243,10 +7511,6 @@ proto.cs3.storage.provider.v1beta1.ListRecycleRequest.deserializeBinaryFromReade
       var value = new cs3_storage_provider_v1beta1_resources_pb.Reference;
       reader.readMessage(value,cs3_storage_provider_v1beta1_resources_pb.Reference.deserializeBinaryFromReader);
       msg.setRef(value);
-      break;
-    case 5:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setKey(value);
       break;
     default:
       reader.skipField();
@@ -7309,13 +7573,6 @@ proto.cs3.storage.provider.v1beta1.ListRecycleRequest.serializeBinaryToWriter = 
       cs3_storage_provider_v1beta1_resources_pb.Reference.serializeBinaryToWriter
     );
   }
-  f = message.getKey();
-  if (f.length > 0) {
-    writer.writeString(
-      5,
-      f
-    );
-  }
 };
 
 
@@ -7329,17 +7586,21 @@ proto.cs3.storage.provider.v1beta1.ListRecycleRequest.prototype.getOpaque = func
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ListRecycleRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ListRecycleRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.ListRecycleRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.ListRecycleRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -7362,17 +7623,21 @@ proto.cs3.storage.provider.v1beta1.ListRecycleRequest.prototype.getFromTs = func
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Timestamp|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Timestamp|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ListRecycleRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ListRecycleRequest.prototype.setFromTs = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.ListRecycleRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.ListRecycleRequest.prototype.clearFromTs = function() {
-  this.setFromTs(undefined);
+  return this.setFromTs(undefined);
 };
 
 
@@ -7395,17 +7660,21 @@ proto.cs3.storage.provider.v1beta1.ListRecycleRequest.prototype.getToTs = functi
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Timestamp|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Timestamp|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ListRecycleRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ListRecycleRequest.prototype.setToTs = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.ListRecycleRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.ListRecycleRequest.prototype.clearToTs = function() {
-  this.setToTs(undefined);
+  return this.setToTs(undefined);
 };
 
 
@@ -7428,17 +7697,21 @@ proto.cs3.storage.provider.v1beta1.ListRecycleRequest.prototype.getRef = functio
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ListRecycleRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ListRecycleRequest.prototype.setRef = function(value) {
-  jspb.Message.setWrapperField(this, 4, value);
+  return jspb.Message.setWrapperField(this, 4, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.ListRecycleRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.ListRecycleRequest.prototype.clearRef = function() {
-  this.setRef(undefined);
+  return this.setRef(undefined);
 };
 
 
@@ -7448,21 +7721,6 @@ proto.cs3.storage.provider.v1beta1.ListRecycleRequest.prototype.clearRef = funct
  */
 proto.cs3.storage.provider.v1beta1.ListRecycleRequest.prototype.hasRef = function() {
   return jspb.Message.getField(this, 4) != null;
-};
-
-
-/**
- * optional string key = 5;
- * @return {string}
- */
-proto.cs3.storage.provider.v1beta1.ListRecycleRequest.prototype.getKey = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 5, ""));
-};
-
-
-/** @param {string} value */
-proto.cs3.storage.provider.v1beta1.ListRecycleRequest.prototype.setKey = function(value) {
-  jspb.Message.setProto3StringField(this, 5, value);
 };
 
 
@@ -7626,17 +7884,21 @@ proto.cs3.storage.provider.v1beta1.ListRecycleResponse.prototype.getStatus = fun
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ListRecycleResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ListRecycleResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.ListRecycleResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.ListRecycleResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -7659,17 +7921,21 @@ proto.cs3.storage.provider.v1beta1.ListRecycleResponse.prototype.getOpaque = fun
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ListRecycleResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ListRecycleResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.ListRecycleResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.ListRecycleResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -7692,9 +7958,12 @@ proto.cs3.storage.provider.v1beta1.ListRecycleResponse.prototype.getRecycleItems
 };
 
 
-/** @param {!Array<!proto.cs3.storage.provider.v1beta1.RecycleItem>} value */
+/**
+ * @param {!Array<!proto.cs3.storage.provider.v1beta1.RecycleItem>} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ListRecycleResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ListRecycleResponse.prototype.setRecycleItemsList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 3, value);
+  return jspb.Message.setRepeatedWrapperField(this, 3, value);
 };
 
 
@@ -7710,9 +7979,10 @@ proto.cs3.storage.provider.v1beta1.ListRecycleResponse.prototype.addRecycleItems
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.cs3.storage.provider.v1beta1.ListRecycleResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.ListRecycleResponse.prototype.clearRecycleItemsList = function() {
-  this.setRecycleItemsList([]);
+  return this.setRecycleItemsList([]);
 };
 
 
@@ -7751,8 +8021,7 @@ proto.cs3.storage.provider.v1beta1.ListRecycleStreamRequest.toObject = function(
     opaque: (f = msg.getOpaque()) && cs3_types_v1beta1_types_pb.Opaque.toObject(includeInstance, f),
     fromTs: (f = msg.getFromTs()) && cs3_types_v1beta1_types_pb.Timestamp.toObject(includeInstance, f),
     toTs: (f = msg.getToTs()) && cs3_types_v1beta1_types_pb.Timestamp.toObject(includeInstance, f),
-    ref: (f = msg.getRef()) && cs3_storage_provider_v1beta1_resources_pb.Reference.toObject(includeInstance, f),
-    key: jspb.Message.getFieldWithDefault(msg, 5, "")
+    ref: (f = msg.getRef()) && cs3_storage_provider_v1beta1_resources_pb.Reference.toObject(includeInstance, f)
   };
 
   if (includeInstance) {
@@ -7808,10 +8077,6 @@ proto.cs3.storage.provider.v1beta1.ListRecycleStreamRequest.deserializeBinaryFro
       var value = new cs3_storage_provider_v1beta1_resources_pb.Reference;
       reader.readMessage(value,cs3_storage_provider_v1beta1_resources_pb.Reference.deserializeBinaryFromReader);
       msg.setRef(value);
-      break;
-    case 5:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setKey(value);
       break;
     default:
       reader.skipField();
@@ -7874,13 +8139,6 @@ proto.cs3.storage.provider.v1beta1.ListRecycleStreamRequest.serializeBinaryToWri
       cs3_storage_provider_v1beta1_resources_pb.Reference.serializeBinaryToWriter
     );
   }
-  f = message.getKey();
-  if (f.length > 0) {
-    writer.writeString(
-      5,
-      f
-    );
-  }
 };
 
 
@@ -7894,17 +8152,21 @@ proto.cs3.storage.provider.v1beta1.ListRecycleStreamRequest.prototype.getOpaque 
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ListRecycleStreamRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ListRecycleStreamRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.ListRecycleStreamRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.ListRecycleStreamRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -7927,17 +8189,21 @@ proto.cs3.storage.provider.v1beta1.ListRecycleStreamRequest.prototype.getFromTs 
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Timestamp|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Timestamp|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ListRecycleStreamRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ListRecycleStreamRequest.prototype.setFromTs = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.ListRecycleStreamRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.ListRecycleStreamRequest.prototype.clearFromTs = function() {
-  this.setFromTs(undefined);
+  return this.setFromTs(undefined);
 };
 
 
@@ -7960,17 +8226,21 @@ proto.cs3.storage.provider.v1beta1.ListRecycleStreamRequest.prototype.getToTs = 
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Timestamp|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Timestamp|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ListRecycleStreamRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ListRecycleStreamRequest.prototype.setToTs = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.ListRecycleStreamRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.ListRecycleStreamRequest.prototype.clearToTs = function() {
-  this.setToTs(undefined);
+  return this.setToTs(undefined);
 };
 
 
@@ -7993,17 +8263,21 @@ proto.cs3.storage.provider.v1beta1.ListRecycleStreamRequest.prototype.getRef = f
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ListRecycleStreamRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ListRecycleStreamRequest.prototype.setRef = function(value) {
-  jspb.Message.setWrapperField(this, 4, value);
+  return jspb.Message.setWrapperField(this, 4, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.ListRecycleStreamRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.ListRecycleStreamRequest.prototype.clearRef = function() {
-  this.setRef(undefined);
+  return this.setRef(undefined);
 };
 
 
@@ -8013,21 +8287,6 @@ proto.cs3.storage.provider.v1beta1.ListRecycleStreamRequest.prototype.clearRef =
  */
 proto.cs3.storage.provider.v1beta1.ListRecycleStreamRequest.prototype.hasRef = function() {
   return jspb.Message.getField(this, 4) != null;
-};
-
-
-/**
- * optional string key = 5;
- * @return {string}
- */
-proto.cs3.storage.provider.v1beta1.ListRecycleStreamRequest.prototype.getKey = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 5, ""));
-};
-
-
-/** @param {string} value */
-proto.cs3.storage.provider.v1beta1.ListRecycleStreamRequest.prototype.setKey = function(value) {
-  jspb.Message.setProto3StringField(this, 5, value);
 };
 
 
@@ -8183,17 +8442,21 @@ proto.cs3.storage.provider.v1beta1.ListRecycleStreamResponse.prototype.getStatus
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ListRecycleStreamResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ListRecycleStreamResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.ListRecycleStreamResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.ListRecycleStreamResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -8216,17 +8479,21 @@ proto.cs3.storage.provider.v1beta1.ListRecycleStreamResponse.prototype.getOpaque
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ListRecycleStreamResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ListRecycleStreamResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.ListRecycleStreamResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.ListRecycleStreamResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -8249,17 +8516,21 @@ proto.cs3.storage.provider.v1beta1.ListRecycleStreamResponse.prototype.getRecycl
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.RecycleItem|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.RecycleItem|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ListRecycleStreamResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ListRecycleStreamResponse.prototype.setRecycleItem = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.ListRecycleStreamResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.ListRecycleStreamResponse.prototype.clearRecycleItem = function() {
-  this.setRecycleItem(undefined);
+  return this.setRecycleItem(undefined);
 };
 
 
@@ -8424,17 +8695,21 @@ proto.cs3.storage.provider.v1beta1.MoveRequest.prototype.getOpaque = function() 
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.MoveRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.MoveRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.MoveRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.MoveRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -8457,17 +8732,21 @@ proto.cs3.storage.provider.v1beta1.MoveRequest.prototype.getSource = function() 
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.MoveRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.MoveRequest.prototype.setSource = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.MoveRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.MoveRequest.prototype.clearSource = function() {
-  this.setSource(undefined);
+  return this.setSource(undefined);
 };
 
 
@@ -8490,17 +8769,21 @@ proto.cs3.storage.provider.v1beta1.MoveRequest.prototype.getDestination = functi
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.MoveRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.MoveRequest.prototype.setDestination = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.MoveRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.MoveRequest.prototype.clearDestination = function() {
-  this.setDestination(undefined);
+  return this.setDestination(undefined);
 };
 
 
@@ -8651,17 +8934,21 @@ proto.cs3.storage.provider.v1beta1.MoveResponse.prototype.getStatus = function()
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.MoveResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.MoveResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.MoveResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.MoveResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -8684,17 +8971,21 @@ proto.cs3.storage.provider.v1beta1.MoveResponse.prototype.getOpaque = function()
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.MoveResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.MoveResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.MoveResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.MoveResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -8740,8 +9031,7 @@ proto.cs3.storage.provider.v1beta1.PurgeRecycleRequest.prototype.toObject = func
 proto.cs3.storage.provider.v1beta1.PurgeRecycleRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     opaque: (f = msg.getOpaque()) && cs3_types_v1beta1_types_pb.Opaque.toObject(includeInstance, f),
-    ref: (f = msg.getRef()) && cs3_storage_provider_v1beta1_resources_pb.Reference.toObject(includeInstance, f),
-    key: jspb.Message.getFieldWithDefault(msg, 3, "")
+    ref: (f = msg.getRef()) && cs3_storage_provider_v1beta1_resources_pb.Reference.toObject(includeInstance, f)
   };
 
   if (includeInstance) {
@@ -8788,10 +9078,6 @@ proto.cs3.storage.provider.v1beta1.PurgeRecycleRequest.deserializeBinaryFromRead
       reader.readMessage(value,cs3_storage_provider_v1beta1_resources_pb.Reference.deserializeBinaryFromReader);
       msg.setRef(value);
       break;
-    case 3:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setKey(value);
-      break;
     default:
       reader.skipField();
       break;
@@ -8837,13 +9123,6 @@ proto.cs3.storage.provider.v1beta1.PurgeRecycleRequest.serializeBinaryToWriter =
       cs3_storage_provider_v1beta1_resources_pb.Reference.serializeBinaryToWriter
     );
   }
-  f = message.getKey();
-  if (f.length > 0) {
-    writer.writeString(
-      3,
-      f
-    );
-  }
 };
 
 
@@ -8857,17 +9136,21 @@ proto.cs3.storage.provider.v1beta1.PurgeRecycleRequest.prototype.getOpaque = fun
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.PurgeRecycleRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.PurgeRecycleRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.PurgeRecycleRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.PurgeRecycleRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -8890,17 +9173,21 @@ proto.cs3.storage.provider.v1beta1.PurgeRecycleRequest.prototype.getRef = functi
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.PurgeRecycleRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.PurgeRecycleRequest.prototype.setRef = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.PurgeRecycleRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.PurgeRecycleRequest.prototype.clearRef = function() {
-  this.setRef(undefined);
+  return this.setRef(undefined);
 };
 
 
@@ -8910,21 +9197,6 @@ proto.cs3.storage.provider.v1beta1.PurgeRecycleRequest.prototype.clearRef = func
  */
 proto.cs3.storage.provider.v1beta1.PurgeRecycleRequest.prototype.hasRef = function() {
   return jspb.Message.getField(this, 2) != null;
-};
-
-
-/**
- * optional string key = 3;
- * @return {string}
- */
-proto.cs3.storage.provider.v1beta1.PurgeRecycleRequest.prototype.getKey = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
-};
-
-
-/** @param {string} value */
-proto.cs3.storage.provider.v1beta1.PurgeRecycleRequest.prototype.setKey = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -9066,17 +9338,21 @@ proto.cs3.storage.provider.v1beta1.PurgeRecycleResponse.prototype.getStatus = fu
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.PurgeRecycleResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.PurgeRecycleResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.PurgeRecycleResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.PurgeRecycleResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -9099,17 +9375,21 @@ proto.cs3.storage.provider.v1beta1.PurgeRecycleResponse.prototype.getOpaque = fu
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.PurgeRecycleResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.PurgeRecycleResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.PurgeRecycleResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.PurgeRecycleResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -9272,17 +9552,21 @@ proto.cs3.storage.provider.v1beta1.RestoreFileVersionRequest.prototype.getOpaque
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.RestoreFileVersionRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.RestoreFileVersionRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.RestoreFileVersionRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.RestoreFileVersionRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -9305,17 +9589,21 @@ proto.cs3.storage.provider.v1beta1.RestoreFileVersionRequest.prototype.getRef = 
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.RestoreFileVersionRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.RestoreFileVersionRequest.prototype.setRef = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.RestoreFileVersionRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.RestoreFileVersionRequest.prototype.clearRef = function() {
-  this.setRef(undefined);
+  return this.setRef(undefined);
 };
 
 
@@ -9337,9 +9625,12 @@ proto.cs3.storage.provider.v1beta1.RestoreFileVersionRequest.prototype.getKey = 
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.storage.provider.v1beta1.RestoreFileVersionRequest} returns this
+ */
 proto.cs3.storage.provider.v1beta1.RestoreFileVersionRequest.prototype.setKey = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -9481,17 +9772,21 @@ proto.cs3.storage.provider.v1beta1.RestoreFileVersionResponse.prototype.getStatu
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.RestoreFileVersionResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.RestoreFileVersionResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.RestoreFileVersionResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.RestoreFileVersionResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -9514,17 +9809,21 @@ proto.cs3.storage.provider.v1beta1.RestoreFileVersionResponse.prototype.getOpaqu
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.RestoreFileVersionResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.RestoreFileVersionResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.RestoreFileVersionResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.RestoreFileVersionResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -9701,17 +10000,21 @@ proto.cs3.storage.provider.v1beta1.RestoreRecycleItemRequest.prototype.getOpaque
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.RestoreRecycleItemRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.RestoreRecycleItemRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.RestoreRecycleItemRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.RestoreRecycleItemRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -9734,17 +10037,21 @@ proto.cs3.storage.provider.v1beta1.RestoreRecycleItemRequest.prototype.getRef = 
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.RestoreRecycleItemRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.RestoreRecycleItemRequest.prototype.setRef = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.RestoreRecycleItemRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.RestoreRecycleItemRequest.prototype.clearRef = function() {
-  this.setRef(undefined);
+  return this.setRef(undefined);
 };
 
 
@@ -9766,9 +10073,12 @@ proto.cs3.storage.provider.v1beta1.RestoreRecycleItemRequest.prototype.getKey = 
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.storage.provider.v1beta1.RestoreRecycleItemRequest} returns this
+ */
 proto.cs3.storage.provider.v1beta1.RestoreRecycleItemRequest.prototype.setKey = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -9782,17 +10092,21 @@ proto.cs3.storage.provider.v1beta1.RestoreRecycleItemRequest.prototype.getRestor
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.RestoreRecycleItemRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.RestoreRecycleItemRequest.prototype.setRestoreRef = function(value) {
-  jspb.Message.setWrapperField(this, 4, value);
+  return jspb.Message.setWrapperField(this, 4, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.RestoreRecycleItemRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.RestoreRecycleItemRequest.prototype.clearRestoreRef = function() {
-  this.setRestoreRef(undefined);
+  return this.setRestoreRef(undefined);
 };
 
 
@@ -9943,17 +10257,21 @@ proto.cs3.storage.provider.v1beta1.RestoreRecycleItemResponse.prototype.getStatu
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.RestoreRecycleItemResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.RestoreRecycleItemResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.RestoreRecycleItemResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.RestoreRecycleItemResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -9976,17 +10294,21 @@ proto.cs3.storage.provider.v1beta1.RestoreRecycleItemResponse.prototype.getOpaqu
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.RestoreRecycleItemResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.RestoreRecycleItemResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.RestoreRecycleItemResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.RestoreRecycleItemResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -10151,17 +10473,21 @@ proto.cs3.storage.provider.v1beta1.RemoveGrantRequest.prototype.getOpaque = func
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.RemoveGrantRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.RemoveGrantRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.RemoveGrantRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.RemoveGrantRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -10184,17 +10510,21 @@ proto.cs3.storage.provider.v1beta1.RemoveGrantRequest.prototype.getRef = functio
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.RemoveGrantRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.RemoveGrantRequest.prototype.setRef = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.RemoveGrantRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.RemoveGrantRequest.prototype.clearRef = function() {
-  this.setRef(undefined);
+  return this.setRef(undefined);
 };
 
 
@@ -10217,17 +10547,21 @@ proto.cs3.storage.provider.v1beta1.RemoveGrantRequest.prototype.getGrant = funct
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.Grant|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.Grant|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.RemoveGrantRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.RemoveGrantRequest.prototype.setGrant = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.RemoveGrantRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.RemoveGrantRequest.prototype.clearGrant = function() {
-  this.setGrant(undefined);
+  return this.setGrant(undefined);
 };
 
 
@@ -10378,17 +10712,21 @@ proto.cs3.storage.provider.v1beta1.RemoveGrantResponse.prototype.getStatus = fun
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.RemoveGrantResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.RemoveGrantResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.RemoveGrantResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.RemoveGrantResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -10411,17 +10749,21 @@ proto.cs3.storage.provider.v1beta1.RemoveGrantResponse.prototype.getOpaque = fun
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.RemoveGrantResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.RemoveGrantResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.RemoveGrantResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.RemoveGrantResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -10591,17 +10933,21 @@ proto.cs3.storage.provider.v1beta1.StatRequest.prototype.getOpaque = function() 
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.StatRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.StatRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.StatRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.StatRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -10624,17 +10970,21 @@ proto.cs3.storage.provider.v1beta1.StatRequest.prototype.getRef = function() {
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.StatRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.StatRequest.prototype.setRef = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.StatRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.StatRequest.prototype.clearRef = function() {
-  this.setRef(undefined);
+  return this.setRef(undefined);
 };
 
 
@@ -10656,26 +11006,31 @@ proto.cs3.storage.provider.v1beta1.StatRequest.prototype.getArbitraryMetadataKey
 };
 
 
-/** @param {!Array<string>} value */
+/**
+ * @param {!Array<string>} value
+ * @return {!proto.cs3.storage.provider.v1beta1.StatRequest} returns this
+ */
 proto.cs3.storage.provider.v1beta1.StatRequest.prototype.setArbitraryMetadataKeysList = function(value) {
-  jspb.Message.setField(this, 3, value || []);
+  return jspb.Message.setField(this, 3, value || []);
 };
 
 
 /**
  * @param {string} value
  * @param {number=} opt_index
+ * @return {!proto.cs3.storage.provider.v1beta1.StatRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.StatRequest.prototype.addArbitraryMetadataKeys = function(value, opt_index) {
-  jspb.Message.addToRepeatedField(this, 3, value, opt_index);
+  return jspb.Message.addToRepeatedField(this, 3, value, opt_index);
 };
 
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.cs3.storage.provider.v1beta1.StatRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.StatRequest.prototype.clearArbitraryMetadataKeysList = function() {
-  this.setArbitraryMetadataKeysList([]);
+  return this.setArbitraryMetadataKeysList([]);
 };
 
 
@@ -10831,17 +11186,21 @@ proto.cs3.storage.provider.v1beta1.StatResponse.prototype.getStatus = function()
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.StatResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.StatResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.StatResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.StatResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -10864,17 +11223,21 @@ proto.cs3.storage.provider.v1beta1.StatResponse.prototype.getOpaque = function()
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.StatResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.StatResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.StatResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.StatResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -10897,17 +11260,21 @@ proto.cs3.storage.provider.v1beta1.StatResponse.prototype.getInfo = function() {
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.ResourceInfo|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.ResourceInfo|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.StatResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.StatResponse.prototype.setInfo = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.StatResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.StatResponse.prototype.clearInfo = function() {
-  this.setInfo(undefined);
+  return this.setInfo(undefined);
 };
 
 
@@ -11072,17 +11439,21 @@ proto.cs3.storage.provider.v1beta1.UpdateGrantRequest.prototype.getOpaque = func
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.UpdateGrantRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.UpdateGrantRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.UpdateGrantRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.UpdateGrantRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -11105,17 +11476,21 @@ proto.cs3.storage.provider.v1beta1.UpdateGrantRequest.prototype.getRef = functio
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.UpdateGrantRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.UpdateGrantRequest.prototype.setRef = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.UpdateGrantRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.UpdateGrantRequest.prototype.clearRef = function() {
-  this.setRef(undefined);
+  return this.setRef(undefined);
 };
 
 
@@ -11138,17 +11513,21 @@ proto.cs3.storage.provider.v1beta1.UpdateGrantRequest.prototype.getGrant = funct
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.Grant|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.Grant|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.UpdateGrantRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.UpdateGrantRequest.prototype.setGrant = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.UpdateGrantRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.UpdateGrantRequest.prototype.clearGrant = function() {
-  this.setGrant(undefined);
+  return this.setGrant(undefined);
 };
 
 
@@ -11299,17 +11678,21 @@ proto.cs3.storage.provider.v1beta1.UpdateGrantResponse.prototype.getStatus = fun
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.UpdateGrantResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.UpdateGrantResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.UpdateGrantResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.UpdateGrantResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -11332,17 +11715,21 @@ proto.cs3.storage.provider.v1beta1.UpdateGrantResponse.prototype.getOpaque = fun
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.UpdateGrantResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.UpdateGrantResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.UpdateGrantResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.UpdateGrantResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -11505,17 +11892,21 @@ proto.cs3.storage.provider.v1beta1.CreateSymlinkRequest.prototype.getOpaque = fu
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.CreateSymlinkRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.CreateSymlinkRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.CreateSymlinkRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.CreateSymlinkRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -11538,17 +11929,21 @@ proto.cs3.storage.provider.v1beta1.CreateSymlinkRequest.prototype.getRef = funct
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.CreateSymlinkRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.CreateSymlinkRequest.prototype.setRef = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.CreateSymlinkRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.CreateSymlinkRequest.prototype.clearRef = function() {
-  this.setRef(undefined);
+  return this.setRef(undefined);
 };
 
 
@@ -11570,9 +11965,12 @@ proto.cs3.storage.provider.v1beta1.CreateSymlinkRequest.prototype.getTarget = fu
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.storage.provider.v1beta1.CreateSymlinkRequest} returns this
+ */
 proto.cs3.storage.provider.v1beta1.CreateSymlinkRequest.prototype.setTarget = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -11714,17 +12112,21 @@ proto.cs3.storage.provider.v1beta1.CreateSymlinkResponse.prototype.getStatus = f
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.CreateSymlinkResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.CreateSymlinkResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.CreateSymlinkResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.CreateSymlinkResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -11747,17 +12149,21 @@ proto.cs3.storage.provider.v1beta1.CreateSymlinkResponse.prototype.getOpaque = f
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.CreateSymlinkResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.CreateSymlinkResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.CreateSymlinkResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.CreateSymlinkResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -11920,17 +12326,21 @@ proto.cs3.storage.provider.v1beta1.CreateReferenceRequest.prototype.getOpaque = 
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.CreateReferenceRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.CreateReferenceRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.CreateReferenceRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.CreateReferenceRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -11953,17 +12363,21 @@ proto.cs3.storage.provider.v1beta1.CreateReferenceRequest.prototype.getRef = fun
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.CreateReferenceRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.CreateReferenceRequest.prototype.setRef = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.CreateReferenceRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.CreateReferenceRequest.prototype.clearRef = function() {
-  this.setRef(undefined);
+  return this.setRef(undefined);
 };
 
 
@@ -11985,9 +12399,12 @@ proto.cs3.storage.provider.v1beta1.CreateReferenceRequest.prototype.getTargetUri
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.storage.provider.v1beta1.CreateReferenceRequest} returns this
+ */
 proto.cs3.storage.provider.v1beta1.CreateReferenceRequest.prototype.setTargetUri = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -12129,17 +12546,21 @@ proto.cs3.storage.provider.v1beta1.CreateReferenceResponse.prototype.getStatus =
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.CreateReferenceResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.CreateReferenceResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.CreateReferenceResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.CreateReferenceResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -12162,17 +12583,21 @@ proto.cs3.storage.provider.v1beta1.CreateReferenceResponse.prototype.getOpaque =
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.CreateReferenceResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.CreateReferenceResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.CreateReferenceResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.CreateReferenceResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -12337,17 +12762,21 @@ proto.cs3.storage.provider.v1beta1.SetArbitraryMetadataRequest.prototype.getOpaq
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.SetArbitraryMetadataRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.SetArbitraryMetadataRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.SetArbitraryMetadataRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.SetArbitraryMetadataRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -12370,17 +12799,21 @@ proto.cs3.storage.provider.v1beta1.SetArbitraryMetadataRequest.prototype.getRef 
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.SetArbitraryMetadataRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.SetArbitraryMetadataRequest.prototype.setRef = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.SetArbitraryMetadataRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.SetArbitraryMetadataRequest.prototype.clearRef = function() {
-  this.setRef(undefined);
+  return this.setRef(undefined);
 };
 
 
@@ -12403,17 +12836,21 @@ proto.cs3.storage.provider.v1beta1.SetArbitraryMetadataRequest.prototype.getArbi
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.ArbitraryMetadata|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.ArbitraryMetadata|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.SetArbitraryMetadataRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.SetArbitraryMetadataRequest.prototype.setArbitraryMetadata = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.SetArbitraryMetadataRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.SetArbitraryMetadataRequest.prototype.clearArbitraryMetadata = function() {
-  this.setArbitraryMetadata(undefined);
+  return this.setArbitraryMetadata(undefined);
 };
 
 
@@ -12564,17 +13001,21 @@ proto.cs3.storage.provider.v1beta1.SetArbitraryMetadataResponse.prototype.getSta
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.SetArbitraryMetadataResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.SetArbitraryMetadataResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.SetArbitraryMetadataResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.SetArbitraryMetadataResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -12597,17 +13038,21 @@ proto.cs3.storage.provider.v1beta1.SetArbitraryMetadataResponse.prototype.getOpa
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.SetArbitraryMetadataResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.SetArbitraryMetadataResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.SetArbitraryMetadataResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.SetArbitraryMetadataResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -12777,17 +13222,21 @@ proto.cs3.storage.provider.v1beta1.UnsetArbitraryMetadataRequest.prototype.getOp
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.UnsetArbitraryMetadataRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.UnsetArbitraryMetadataRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.UnsetArbitraryMetadataRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.UnsetArbitraryMetadataRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -12810,17 +13259,21 @@ proto.cs3.storage.provider.v1beta1.UnsetArbitraryMetadataRequest.prototype.getRe
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.UnsetArbitraryMetadataRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.UnsetArbitraryMetadataRequest.prototype.setRef = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.UnsetArbitraryMetadataRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.UnsetArbitraryMetadataRequest.prototype.clearRef = function() {
-  this.setRef(undefined);
+  return this.setRef(undefined);
 };
 
 
@@ -12842,26 +13295,31 @@ proto.cs3.storage.provider.v1beta1.UnsetArbitraryMetadataRequest.prototype.getAr
 };
 
 
-/** @param {!Array<string>} value */
+/**
+ * @param {!Array<string>} value
+ * @return {!proto.cs3.storage.provider.v1beta1.UnsetArbitraryMetadataRequest} returns this
+ */
 proto.cs3.storage.provider.v1beta1.UnsetArbitraryMetadataRequest.prototype.setArbitraryMetadataKeysList = function(value) {
-  jspb.Message.setField(this, 3, value || []);
+  return jspb.Message.setField(this, 3, value || []);
 };
 
 
 /**
  * @param {string} value
  * @param {number=} opt_index
+ * @return {!proto.cs3.storage.provider.v1beta1.UnsetArbitraryMetadataRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.UnsetArbitraryMetadataRequest.prototype.addArbitraryMetadataKeys = function(value, opt_index) {
-  jspb.Message.addToRepeatedField(this, 3, value, opt_index);
+  return jspb.Message.addToRepeatedField(this, 3, value, opt_index);
 };
 
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.cs3.storage.provider.v1beta1.UnsetArbitraryMetadataRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.UnsetArbitraryMetadataRequest.prototype.clearArbitraryMetadataKeysList = function() {
-  this.setArbitraryMetadataKeysList([]);
+  return this.setArbitraryMetadataKeysList([]);
 };
 
 
@@ -13003,17 +13461,21 @@ proto.cs3.storage.provider.v1beta1.UnsetArbitraryMetadataResponse.prototype.getS
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.UnsetArbitraryMetadataResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.UnsetArbitraryMetadataResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.UnsetArbitraryMetadataResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.UnsetArbitraryMetadataResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -13036,17 +13498,21 @@ proto.cs3.storage.provider.v1beta1.UnsetArbitraryMetadataResponse.prototype.getO
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.UnsetArbitraryMetadataResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.UnsetArbitraryMetadataResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.UnsetArbitraryMetadataResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.UnsetArbitraryMetadataResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -13183,17 +13649,21 @@ proto.cs3.storage.provider.v1beta1.CreateHomeRequest.prototype.getOpaque = funct
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.CreateHomeRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.CreateHomeRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.CreateHomeRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.CreateHomeRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -13344,17 +13814,21 @@ proto.cs3.storage.provider.v1beta1.CreateHomeResponse.prototype.getStatus = func
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.CreateHomeResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.CreateHomeResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.CreateHomeResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.CreateHomeResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -13377,17 +13851,21 @@ proto.cs3.storage.provider.v1beta1.CreateHomeResponse.prototype.getOpaque = func
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.CreateHomeResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.CreateHomeResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.CreateHomeResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.CreateHomeResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -13576,17 +14054,21 @@ proto.cs3.storage.provider.v1beta1.CreateStorageSpaceRequest.prototype.getOpaque
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.CreateStorageSpaceRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.CreateStorageSpaceRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.CreateStorageSpaceRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.CreateStorageSpaceRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -13609,17 +14091,21 @@ proto.cs3.storage.provider.v1beta1.CreateStorageSpaceRequest.prototype.getOwner 
 };
 
 
-/** @param {?proto.cs3.identity.user.v1beta1.User|undefined} value */
+/**
+ * @param {?proto.cs3.identity.user.v1beta1.User|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.CreateStorageSpaceRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.CreateStorageSpaceRequest.prototype.setOwner = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.CreateStorageSpaceRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.CreateStorageSpaceRequest.prototype.clearOwner = function() {
-  this.setOwner(undefined);
+  return this.setOwner(undefined);
 };
 
 
@@ -13641,9 +14127,12 @@ proto.cs3.storage.provider.v1beta1.CreateStorageSpaceRequest.prototype.getType =
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.storage.provider.v1beta1.CreateStorageSpaceRequest} returns this
+ */
 proto.cs3.storage.provider.v1beta1.CreateStorageSpaceRequest.prototype.setType = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -13656,9 +14145,12 @@ proto.cs3.storage.provider.v1beta1.CreateStorageSpaceRequest.prototype.getName =
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.storage.provider.v1beta1.CreateStorageSpaceRequest} returns this
+ */
 proto.cs3.storage.provider.v1beta1.CreateStorageSpaceRequest.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 4, value);
+  return jspb.Message.setProto3StringField(this, 4, value);
 };
 
 
@@ -13672,17 +14164,21 @@ proto.cs3.storage.provider.v1beta1.CreateStorageSpaceRequest.prototype.getQuota 
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.Quota|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.Quota|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.CreateStorageSpaceRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.CreateStorageSpaceRequest.prototype.setQuota = function(value) {
-  jspb.Message.setWrapperField(this, 5, value);
+  return jspb.Message.setWrapperField(this, 5, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.CreateStorageSpaceRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.CreateStorageSpaceRequest.prototype.clearQuota = function() {
-  this.setQuota(undefined);
+  return this.setQuota(undefined);
 };
 
 
@@ -13847,17 +14343,21 @@ proto.cs3.storage.provider.v1beta1.CreateStorageSpaceResponse.prototype.getOpaqu
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.CreateStorageSpaceResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.CreateStorageSpaceResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.CreateStorageSpaceResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.CreateStorageSpaceResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -13880,17 +14380,21 @@ proto.cs3.storage.provider.v1beta1.CreateStorageSpaceResponse.prototype.getStatu
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.CreateStorageSpaceResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.CreateStorageSpaceResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.CreateStorageSpaceResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.CreateStorageSpaceResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -13913,17 +14417,21 @@ proto.cs3.storage.provider.v1beta1.CreateStorageSpaceResponse.prototype.getStora
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.StorageSpace|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.StorageSpace|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.CreateStorageSpaceResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.CreateStorageSpaceResponse.prototype.setStorageSpace = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.CreateStorageSpaceResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.CreateStorageSpaceResponse.prototype.clearStorageSpace = function() {
-  this.setStorageSpace(undefined);
+  return this.setStorageSpace(undefined);
 };
 
 
@@ -14271,9 +14779,12 @@ proto.cs3.storage.provider.v1beta1.ListStorageSpacesRequest.Filter.prototype.get
 };
 
 
-/** @param {!proto.cs3.storage.provider.v1beta1.ListStorageSpacesRequest.Filter.Type} value */
+/**
+ * @param {!proto.cs3.storage.provider.v1beta1.ListStorageSpacesRequest.Filter.Type} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ListStorageSpacesRequest.Filter} returns this
+ */
 proto.cs3.storage.provider.v1beta1.ListStorageSpacesRequest.Filter.prototype.setType = function(value) {
-  jspb.Message.setProto3EnumField(this, 1, value);
+  return jspb.Message.setProto3EnumField(this, 1, value);
 };
 
 
@@ -14287,17 +14798,21 @@ proto.cs3.storage.provider.v1beta1.ListStorageSpacesRequest.Filter.prototype.get
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.StorageSpaceId|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.StorageSpaceId|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ListStorageSpacesRequest.Filter} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ListStorageSpacesRequest.Filter.prototype.setId = function(value) {
-  jspb.Message.setOneofWrapperField(this, 2, proto.cs3.storage.provider.v1beta1.ListStorageSpacesRequest.Filter.oneofGroups_[0], value);
+  return jspb.Message.setOneofWrapperField(this, 2, proto.cs3.storage.provider.v1beta1.ListStorageSpacesRequest.Filter.oneofGroups_[0], value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.ListStorageSpacesRequest.Filter} returns this
  */
 proto.cs3.storage.provider.v1beta1.ListStorageSpacesRequest.Filter.prototype.clearId = function() {
-  this.setId(undefined);
+  return this.setId(undefined);
 };
 
 
@@ -14320,17 +14835,21 @@ proto.cs3.storage.provider.v1beta1.ListStorageSpacesRequest.Filter.prototype.get
 };
 
 
-/** @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value */
+/**
+ * @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ListStorageSpacesRequest.Filter} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ListStorageSpacesRequest.Filter.prototype.setOwner = function(value) {
-  jspb.Message.setOneofWrapperField(this, 3, proto.cs3.storage.provider.v1beta1.ListStorageSpacesRequest.Filter.oneofGroups_[0], value);
+  return jspb.Message.setOneofWrapperField(this, 3, proto.cs3.storage.provider.v1beta1.ListStorageSpacesRequest.Filter.oneofGroups_[0], value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.ListStorageSpacesRequest.Filter} returns this
  */
 proto.cs3.storage.provider.v1beta1.ListStorageSpacesRequest.Filter.prototype.clearOwner = function() {
-  this.setOwner(undefined);
+  return this.setOwner(undefined);
 };
 
 
@@ -14352,17 +14871,21 @@ proto.cs3.storage.provider.v1beta1.ListStorageSpacesRequest.Filter.prototype.get
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ListStorageSpacesRequest.Filter} returns this
+ */
 proto.cs3.storage.provider.v1beta1.ListStorageSpacesRequest.Filter.prototype.setSpaceType = function(value) {
-  jspb.Message.setOneofField(this, 4, proto.cs3.storage.provider.v1beta1.ListStorageSpacesRequest.Filter.oneofGroups_[0], value);
+  return jspb.Message.setOneofField(this, 4, proto.cs3.storage.provider.v1beta1.ListStorageSpacesRequest.Filter.oneofGroups_[0], value);
 };
 
 
 /**
  * Clears the field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.ListStorageSpacesRequest.Filter} returns this
  */
 proto.cs3.storage.provider.v1beta1.ListStorageSpacesRequest.Filter.prototype.clearSpaceType = function() {
-  jspb.Message.setOneofField(this, 4, proto.cs3.storage.provider.v1beta1.ListStorageSpacesRequest.Filter.oneofGroups_[0], undefined);
+  return jspb.Message.setOneofField(this, 4, proto.cs3.storage.provider.v1beta1.ListStorageSpacesRequest.Filter.oneofGroups_[0], undefined);
 };
 
 
@@ -14385,17 +14908,21 @@ proto.cs3.storage.provider.v1beta1.ListStorageSpacesRequest.prototype.getOpaque 
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ListStorageSpacesRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ListStorageSpacesRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.ListStorageSpacesRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.ListStorageSpacesRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -14418,9 +14945,12 @@ proto.cs3.storage.provider.v1beta1.ListStorageSpacesRequest.prototype.getFilters
 };
 
 
-/** @param {!Array<!proto.cs3.storage.provider.v1beta1.ListStorageSpacesRequest.Filter>} value */
+/**
+ * @param {!Array<!proto.cs3.storage.provider.v1beta1.ListStorageSpacesRequest.Filter>} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ListStorageSpacesRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ListStorageSpacesRequest.prototype.setFiltersList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 2, value);
+  return jspb.Message.setRepeatedWrapperField(this, 2, value);
 };
 
 
@@ -14436,9 +14966,10 @@ proto.cs3.storage.provider.v1beta1.ListStorageSpacesRequest.prototype.addFilters
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.cs3.storage.provider.v1beta1.ListStorageSpacesRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.ListStorageSpacesRequest.prototype.clearFiltersList = function() {
-  this.setFiltersList([]);
+  return this.setFiltersList([]);
 };
 
 
@@ -14602,17 +15133,21 @@ proto.cs3.storage.provider.v1beta1.ListStorageSpacesResponse.prototype.getOpaque
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ListStorageSpacesResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ListStorageSpacesResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.ListStorageSpacesResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.ListStorageSpacesResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -14635,17 +15170,21 @@ proto.cs3.storage.provider.v1beta1.ListStorageSpacesResponse.prototype.getStatus
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ListStorageSpacesResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ListStorageSpacesResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.ListStorageSpacesResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.ListStorageSpacesResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -14668,9 +15207,12 @@ proto.cs3.storage.provider.v1beta1.ListStorageSpacesResponse.prototype.getStorag
 };
 
 
-/** @param {!Array<!proto.cs3.storage.provider.v1beta1.StorageSpace>} value */
+/**
+ * @param {!Array<!proto.cs3.storage.provider.v1beta1.StorageSpace>} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ListStorageSpacesResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ListStorageSpacesResponse.prototype.setStorageSpacesList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 3, value);
+  return jspb.Message.setRepeatedWrapperField(this, 3, value);
 };
 
 
@@ -14686,9 +15228,10 @@ proto.cs3.storage.provider.v1beta1.ListStorageSpacesResponse.prototype.addStorag
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.cs3.storage.provider.v1beta1.ListStorageSpacesResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.ListStorageSpacesResponse.prototype.clearStorageSpacesList = function() {
-  this.setStorageSpacesList([]);
+  return this.setStorageSpacesList([]);
 };
 
 
@@ -14830,17 +15373,21 @@ proto.cs3.storage.provider.v1beta1.UpdateStorageSpaceRequest.prototype.getOpaque
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.UpdateStorageSpaceRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.UpdateStorageSpaceRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.UpdateStorageSpaceRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.UpdateStorageSpaceRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -14863,17 +15410,21 @@ proto.cs3.storage.provider.v1beta1.UpdateStorageSpaceRequest.prototype.getStorag
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.StorageSpace|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.StorageSpace|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.UpdateStorageSpaceRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.UpdateStorageSpaceRequest.prototype.setStorageSpace = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.UpdateStorageSpaceRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.UpdateStorageSpaceRequest.prototype.clearStorageSpace = function() {
-  this.setStorageSpace(undefined);
+  return this.setStorageSpace(undefined);
 };
 
 
@@ -15038,17 +15589,21 @@ proto.cs3.storage.provider.v1beta1.UpdateStorageSpaceResponse.prototype.getOpaqu
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.UpdateStorageSpaceResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.UpdateStorageSpaceResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.UpdateStorageSpaceResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.UpdateStorageSpaceResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -15071,17 +15626,21 @@ proto.cs3.storage.provider.v1beta1.UpdateStorageSpaceResponse.prototype.getStatu
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.UpdateStorageSpaceResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.UpdateStorageSpaceResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.UpdateStorageSpaceResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.UpdateStorageSpaceResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -15104,17 +15663,21 @@ proto.cs3.storage.provider.v1beta1.UpdateStorageSpaceResponse.prototype.getStora
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.StorageSpace|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.StorageSpace|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.UpdateStorageSpaceResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.UpdateStorageSpaceResponse.prototype.setStorageSpace = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.UpdateStorageSpaceResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.UpdateStorageSpaceResponse.prototype.clearStorageSpace = function() {
-  this.setStorageSpace(undefined);
+  return this.setStorageSpace(undefined);
 };
 
 
@@ -15265,17 +15828,21 @@ proto.cs3.storage.provider.v1beta1.DeleteStorageSpaceRequest.prototype.getOpaque
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.DeleteStorageSpaceRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.DeleteStorageSpaceRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.DeleteStorageSpaceRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.DeleteStorageSpaceRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -15298,17 +15865,21 @@ proto.cs3.storage.provider.v1beta1.DeleteStorageSpaceRequest.prototype.getId = f
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.StorageSpaceId|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.StorageSpaceId|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.DeleteStorageSpaceRequest} returns this
+*/
 proto.cs3.storage.provider.v1beta1.DeleteStorageSpaceRequest.prototype.setId = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.DeleteStorageSpaceRequest} returns this
  */
 proto.cs3.storage.provider.v1beta1.DeleteStorageSpaceRequest.prototype.clearId = function() {
-  this.setId(undefined);
+  return this.setId(undefined);
 };
 
 
@@ -15459,17 +16030,21 @@ proto.cs3.storage.provider.v1beta1.DeleteStorageSpaceResponse.prototype.getOpaqu
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.DeleteStorageSpaceResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.DeleteStorageSpaceResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.DeleteStorageSpaceResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.DeleteStorageSpaceResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -15492,17 +16067,21 @@ proto.cs3.storage.provider.v1beta1.DeleteStorageSpaceResponse.prototype.getStatu
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.DeleteStorageSpaceResponse} returns this
+*/
 proto.cs3.storage.provider.v1beta1.DeleteStorageSpaceResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.DeleteStorageSpaceResponse} returns this
  */
 proto.cs3.storage.provider.v1beta1.DeleteStorageSpaceResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 

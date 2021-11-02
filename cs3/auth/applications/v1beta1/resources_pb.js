@@ -2,11 +2,14 @@
 /**
  * @fileoverview
  * @enhanceable
+ * @suppress {missingRequire} reports error on implicit type usages.
  * @suppress {messageConventions} JS Compiler reports an error if a variable or
  *     field starts with 'MSG_' and isn't a translatable message.
  * @public
  */
 // GENERATED CODE -- DO NOT EDIT!
+/* eslint-disable */
+// @ts-nocheck
 
 var jspb = require('google-protobuf');
 var goog = jspb;
@@ -122,7 +125,7 @@ proto.cs3.auth.applications.v1beta1.AppPassword.deserializeBinaryFromReader = fu
     case 2:
       var value = msg.getTokenScopeMap();
       reader.readMessage(value, function(message, reader) {
-        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readString, jspb.BinaryReader.prototype.readMessage, proto.cs3.auth.provider.v1beta1.Scope.deserializeBinaryFromReader, "");
+        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readString, jspb.BinaryReader.prototype.readMessage, proto.cs3.auth.provider.v1beta1.Scope.deserializeBinaryFromReader, "", new proto.cs3.auth.provider.v1beta1.Scope());
          });
       break;
     case 3:
@@ -240,9 +243,12 @@ proto.cs3.auth.applications.v1beta1.AppPassword.prototype.getPassword = function
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.auth.applications.v1beta1.AppPassword} returns this
+ */
 proto.cs3.auth.applications.v1beta1.AppPassword.prototype.setPassword = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -261,10 +267,11 @@ proto.cs3.auth.applications.v1beta1.AppPassword.prototype.getTokenScopeMap = fun
 
 /**
  * Clears values from the map. The map will be non-null.
+ * @return {!proto.cs3.auth.applications.v1beta1.AppPassword} returns this
  */
 proto.cs3.auth.applications.v1beta1.AppPassword.prototype.clearTokenScopeMap = function() {
   this.getTokenScopeMap().clear();
-};
+  return this;};
 
 
 /**
@@ -276,9 +283,12 @@ proto.cs3.auth.applications.v1beta1.AppPassword.prototype.getLabel = function() 
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.auth.applications.v1beta1.AppPassword} returns this
+ */
 proto.cs3.auth.applications.v1beta1.AppPassword.prototype.setLabel = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -292,17 +302,21 @@ proto.cs3.auth.applications.v1beta1.AppPassword.prototype.getUser = function() {
 };
 
 
-/** @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value */
+/**
+ * @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value
+ * @return {!proto.cs3.auth.applications.v1beta1.AppPassword} returns this
+*/
 proto.cs3.auth.applications.v1beta1.AppPassword.prototype.setUser = function(value) {
-  jspb.Message.setWrapperField(this, 4, value);
+  return jspb.Message.setWrapperField(this, 4, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.auth.applications.v1beta1.AppPassword} returns this
  */
 proto.cs3.auth.applications.v1beta1.AppPassword.prototype.clearUser = function() {
-  this.setUser(undefined);
+  return this.setUser(undefined);
 };
 
 
@@ -325,17 +339,21 @@ proto.cs3.auth.applications.v1beta1.AppPassword.prototype.getExpiration = functi
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Timestamp|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Timestamp|undefined} value
+ * @return {!proto.cs3.auth.applications.v1beta1.AppPassword} returns this
+*/
 proto.cs3.auth.applications.v1beta1.AppPassword.prototype.setExpiration = function(value) {
-  jspb.Message.setWrapperField(this, 5, value);
+  return jspb.Message.setWrapperField(this, 5, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.auth.applications.v1beta1.AppPassword} returns this
  */
 proto.cs3.auth.applications.v1beta1.AppPassword.prototype.clearExpiration = function() {
-  this.setExpiration(undefined);
+  return this.setExpiration(undefined);
 };
 
 
@@ -358,17 +376,21 @@ proto.cs3.auth.applications.v1beta1.AppPassword.prototype.getCtime = function() 
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Timestamp|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Timestamp|undefined} value
+ * @return {!proto.cs3.auth.applications.v1beta1.AppPassword} returns this
+*/
 proto.cs3.auth.applications.v1beta1.AppPassword.prototype.setCtime = function(value) {
-  jspb.Message.setWrapperField(this, 6, value);
+  return jspb.Message.setWrapperField(this, 6, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.auth.applications.v1beta1.AppPassword} returns this
  */
 proto.cs3.auth.applications.v1beta1.AppPassword.prototype.clearCtime = function() {
-  this.setCtime(undefined);
+  return this.setCtime(undefined);
 };
 
 
@@ -391,17 +413,21 @@ proto.cs3.auth.applications.v1beta1.AppPassword.prototype.getUtime = function() 
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Timestamp|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Timestamp|undefined} value
+ * @return {!proto.cs3.auth.applications.v1beta1.AppPassword} returns this
+*/
 proto.cs3.auth.applications.v1beta1.AppPassword.prototype.setUtime = function(value) {
-  jspb.Message.setWrapperField(this, 7, value);
+  return jspb.Message.setWrapperField(this, 7, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.auth.applications.v1beta1.AppPassword} returns this
  */
 proto.cs3.auth.applications.v1beta1.AppPassword.prototype.clearUtime = function() {
-  this.setUtime(undefined);
+  return this.setUtime(undefined);
 };
 
 

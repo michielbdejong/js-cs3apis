@@ -2,11 +2,14 @@
 /**
  * @fileoverview
  * @enhanceable
+ * @suppress {missingRequire} reports error on implicit type usages.
  * @suppress {messageConventions} JS Compiler reports an error if a variable or
  *     field starts with 'MSG_' and isn't a translatable message.
  * @public
  */
 // GENERATED CODE -- DO NOT EDIT!
+/* eslint-disable */
+// @ts-nocheck
 
 var jspb = require('google-protobuf');
 var goog = jspb;
@@ -242,17 +245,21 @@ proto.cs3.auth.registry.v1beta1.GetAuthProviderRequest.prototype.getOpaque = fun
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.auth.registry.v1beta1.GetAuthProviderRequest} returns this
+*/
 proto.cs3.auth.registry.v1beta1.GetAuthProviderRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.auth.registry.v1beta1.GetAuthProviderRequest} returns this
  */
 proto.cs3.auth.registry.v1beta1.GetAuthProviderRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -274,9 +281,12 @@ proto.cs3.auth.registry.v1beta1.GetAuthProviderRequest.prototype.getType = funct
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.auth.registry.v1beta1.GetAuthProviderRequest} returns this
+ */
 proto.cs3.auth.registry.v1beta1.GetAuthProviderRequest.prototype.setType = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -432,17 +442,21 @@ proto.cs3.auth.registry.v1beta1.GetAuthProviderResponse.prototype.getStatus = fu
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.auth.registry.v1beta1.GetAuthProviderResponse} returns this
+*/
 proto.cs3.auth.registry.v1beta1.GetAuthProviderResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.auth.registry.v1beta1.GetAuthProviderResponse} returns this
  */
 proto.cs3.auth.registry.v1beta1.GetAuthProviderResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -465,17 +479,21 @@ proto.cs3.auth.registry.v1beta1.GetAuthProviderResponse.prototype.getOpaque = fu
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.auth.registry.v1beta1.GetAuthProviderResponse} returns this
+*/
 proto.cs3.auth.registry.v1beta1.GetAuthProviderResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.auth.registry.v1beta1.GetAuthProviderResponse} returns this
  */
 proto.cs3.auth.registry.v1beta1.GetAuthProviderResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -498,17 +516,21 @@ proto.cs3.auth.registry.v1beta1.GetAuthProviderResponse.prototype.getProvider = 
 };
 
 
-/** @param {?proto.cs3.auth.registry.v1beta1.ProviderInfo|undefined} value */
+/**
+ * @param {?proto.cs3.auth.registry.v1beta1.ProviderInfo|undefined} value
+ * @return {!proto.cs3.auth.registry.v1beta1.GetAuthProviderResponse} returns this
+*/
 proto.cs3.auth.registry.v1beta1.GetAuthProviderResponse.prototype.setProvider = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.auth.registry.v1beta1.GetAuthProviderResponse} returns this
  */
 proto.cs3.auth.registry.v1beta1.GetAuthProviderResponse.prototype.clearProvider = function() {
-  this.setProvider(undefined);
+  return this.setProvider(undefined);
 };
 
 
@@ -645,17 +667,21 @@ proto.cs3.auth.registry.v1beta1.ListAuthProvidersRequest.prototype.getOpaque = f
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.auth.registry.v1beta1.ListAuthProvidersRequest} returns this
+*/
 proto.cs3.auth.registry.v1beta1.ListAuthProvidersRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.auth.registry.v1beta1.ListAuthProvidersRequest} returns this
  */
 proto.cs3.auth.registry.v1beta1.ListAuthProvidersRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -828,17 +854,21 @@ proto.cs3.auth.registry.v1beta1.ListAuthProvidersResponse.prototype.getStatus = 
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.auth.registry.v1beta1.ListAuthProvidersResponse} returns this
+*/
 proto.cs3.auth.registry.v1beta1.ListAuthProvidersResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.auth.registry.v1beta1.ListAuthProvidersResponse} returns this
  */
 proto.cs3.auth.registry.v1beta1.ListAuthProvidersResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -861,17 +891,21 @@ proto.cs3.auth.registry.v1beta1.ListAuthProvidersResponse.prototype.getOpaque = 
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.auth.registry.v1beta1.ListAuthProvidersResponse} returns this
+*/
 proto.cs3.auth.registry.v1beta1.ListAuthProvidersResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.auth.registry.v1beta1.ListAuthProvidersResponse} returns this
  */
 proto.cs3.auth.registry.v1beta1.ListAuthProvidersResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -894,9 +928,12 @@ proto.cs3.auth.registry.v1beta1.ListAuthProvidersResponse.prototype.getProviders
 };
 
 
-/** @param {!Array<!proto.cs3.auth.registry.v1beta1.ProviderInfo>} value */
+/**
+ * @param {!Array<!proto.cs3.auth.registry.v1beta1.ProviderInfo>} value
+ * @return {!proto.cs3.auth.registry.v1beta1.ListAuthProvidersResponse} returns this
+*/
 proto.cs3.auth.registry.v1beta1.ListAuthProvidersResponse.prototype.setProvidersList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 3, value);
+  return jspb.Message.setRepeatedWrapperField(this, 3, value);
 };
 
 
@@ -912,9 +949,10 @@ proto.cs3.auth.registry.v1beta1.ListAuthProvidersResponse.prototype.addProviders
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.cs3.auth.registry.v1beta1.ListAuthProvidersResponse} returns this
  */
 proto.cs3.auth.registry.v1beta1.ListAuthProvidersResponse.prototype.clearProvidersList = function() {
-  this.setProvidersList([]);
+  return this.setProvidersList([]);
 };
 
 

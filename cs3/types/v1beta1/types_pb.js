@@ -2,11 +2,14 @@
 /**
  * @fileoverview
  * @enhanceable
+ * @suppress {missingRequire} reports error on implicit type usages.
  * @suppress {messageConventions} JS Compiler reports an error if a variable or
  *     field starts with 'MSG_' and isn't a translatable message.
  * @public
  */
 // GENERATED CODE -- DO NOT EDIT!
+/* eslint-disable */
+// @ts-nocheck
 
 var jspb = require('google-protobuf');
 var goog = jspb;
@@ -150,7 +153,7 @@ proto.cs3.types.v1beta1.Opaque.deserializeBinaryFromReader = function(msg, reade
     case 1:
       var value = msg.getMapMap();
       reader.readMessage(value, function(message, reader) {
-        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readString, jspb.BinaryReader.prototype.readMessage, proto.cs3.types.v1beta1.OpaqueEntry.deserializeBinaryFromReader, "");
+        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readString, jspb.BinaryReader.prototype.readMessage, proto.cs3.types.v1beta1.OpaqueEntry.deserializeBinaryFromReader, "", new proto.cs3.types.v1beta1.OpaqueEntry());
          });
       break;
     default:
@@ -204,10 +207,11 @@ proto.cs3.types.v1beta1.Opaque.prototype.getMapMap = function(opt_noLazyCreate) 
 
 /**
  * Clears values from the map. The map will be non-null.
+ * @return {!proto.cs3.types.v1beta1.Opaque} returns this
  */
 proto.cs3.types.v1beta1.Opaque.prototype.clearMapMap = function() {
   this.getMapMap().clear();
-};
+  return this;};
 
 
 
@@ -343,18 +347,21 @@ proto.cs3.types.v1beta1.OpaqueEntry.prototype.getDecoder = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.types.v1beta1.OpaqueEntry} returns this
+ */
 proto.cs3.types.v1beta1.OpaqueEntry.prototype.setDecoder = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
 /**
  * optional bytes value = 2;
- * @return {string}
+ * @return {!(string|Uint8Array)}
  */
 proto.cs3.types.v1beta1.OpaqueEntry.prototype.getValue = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
+  return /** @type {!(string|Uint8Array)} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
 
 
@@ -382,9 +389,12 @@ proto.cs3.types.v1beta1.OpaqueEntry.prototype.getValue_asU8 = function() {
 };
 
 
-/** @param {!(string|Uint8Array)} value */
+/**
+ * @param {!(string|Uint8Array)} value
+ * @return {!proto.cs3.types.v1beta1.OpaqueEntry} returns this
+ */
 proto.cs3.types.v1beta1.OpaqueEntry.prototype.setValue = function(value) {
-  jspb.Message.setProto3BytesField(this, 2, value);
+  return jspb.Message.setProto3BytesField(this, 2, value);
 };
 
 
@@ -521,9 +531,12 @@ proto.cs3.types.v1beta1.Timestamp.prototype.getSeconds = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.cs3.types.v1beta1.Timestamp} returns this
+ */
 proto.cs3.types.v1beta1.Timestamp.prototype.setSeconds = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -536,9 +549,12 @@ proto.cs3.types.v1beta1.Timestamp.prototype.getNanos = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.cs3.types.v1beta1.Timestamp} returns this
+ */
 proto.cs3.types.v1beta1.Timestamp.prototype.setNanos = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 

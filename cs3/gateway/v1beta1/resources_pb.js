@@ -2,11 +2,14 @@
 /**
  * @fileoverview
  * @enhanceable
+ * @suppress {missingRequire} reports error on implicit type usages.
  * @suppress {messageConventions} JS Compiler reports an error if a variable or
  *     field starts with 'MSG_' and isn't a translatable message.
  * @public
  */
 // GENERATED CODE -- DO NOT EDIT!
+/* eslint-disable */
+// @ts-nocheck
 
 var jspb = require('google-protobuf');
 var goog = jspb;
@@ -242,17 +245,21 @@ proto.cs3.gateway.v1beta1.FileUploadProtocol.prototype.getOpaque = function() {
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.gateway.v1beta1.FileUploadProtocol} returns this
+*/
 proto.cs3.gateway.v1beta1.FileUploadProtocol.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.gateway.v1beta1.FileUploadProtocol} returns this
  */
 proto.cs3.gateway.v1beta1.FileUploadProtocol.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -274,9 +281,12 @@ proto.cs3.gateway.v1beta1.FileUploadProtocol.prototype.getProtocol = function() 
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.gateway.v1beta1.FileUploadProtocol} returns this
+ */
 proto.cs3.gateway.v1beta1.FileUploadProtocol.prototype.setProtocol = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -289,9 +299,12 @@ proto.cs3.gateway.v1beta1.FileUploadProtocol.prototype.getUploadEndpoint = funct
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.gateway.v1beta1.FileUploadProtocol} returns this
+ */
 proto.cs3.gateway.v1beta1.FileUploadProtocol.prototype.setUploadEndpoint = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -305,9 +318,12 @@ proto.cs3.gateway.v1beta1.FileUploadProtocol.prototype.getAvailableChecksumsList
 };
 
 
-/** @param {!Array<!proto.cs3.storage.provider.v1beta1.ResourceChecksumPriority>} value */
+/**
+ * @param {!Array<!proto.cs3.storage.provider.v1beta1.ResourceChecksumPriority>} value
+ * @return {!proto.cs3.gateway.v1beta1.FileUploadProtocol} returns this
+*/
 proto.cs3.gateway.v1beta1.FileUploadProtocol.prototype.setAvailableChecksumsList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 4, value);
+  return jspb.Message.setRepeatedWrapperField(this, 4, value);
 };
 
 
@@ -323,9 +339,10 @@ proto.cs3.gateway.v1beta1.FileUploadProtocol.prototype.addAvailableChecksums = f
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.cs3.gateway.v1beta1.FileUploadProtocol} returns this
  */
 proto.cs3.gateway.v1beta1.FileUploadProtocol.prototype.clearAvailableChecksumsList = function() {
-  this.setAvailableChecksumsList([]);
+  return this.setAvailableChecksumsList([]);
 };
 
 
@@ -338,9 +355,12 @@ proto.cs3.gateway.v1beta1.FileUploadProtocol.prototype.getToken = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.gateway.v1beta1.FileUploadProtocol} returns this
+ */
 proto.cs3.gateway.v1beta1.FileUploadProtocol.prototype.setToken = function(value) {
-  jspb.Message.setProto3StringField(this, 5, value);
+  return jspb.Message.setProto3StringField(this, 5, value);
 };
 
 
@@ -504,17 +524,21 @@ proto.cs3.gateway.v1beta1.FileDownloadProtocol.prototype.getOpaque = function() 
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.gateway.v1beta1.FileDownloadProtocol} returns this
+*/
 proto.cs3.gateway.v1beta1.FileDownloadProtocol.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.gateway.v1beta1.FileDownloadProtocol} returns this
  */
 proto.cs3.gateway.v1beta1.FileDownloadProtocol.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -536,9 +560,12 @@ proto.cs3.gateway.v1beta1.FileDownloadProtocol.prototype.getProtocol = function(
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.gateway.v1beta1.FileDownloadProtocol} returns this
+ */
 proto.cs3.gateway.v1beta1.FileDownloadProtocol.prototype.setProtocol = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -551,9 +578,12 @@ proto.cs3.gateway.v1beta1.FileDownloadProtocol.prototype.getDownloadEndpoint = f
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.gateway.v1beta1.FileDownloadProtocol} returns this
+ */
 proto.cs3.gateway.v1beta1.FileDownloadProtocol.prototype.setDownloadEndpoint = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -566,9 +596,12 @@ proto.cs3.gateway.v1beta1.FileDownloadProtocol.prototype.getToken = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.gateway.v1beta1.FileDownloadProtocol} returns this
+ */
 proto.cs3.gateway.v1beta1.FileDownloadProtocol.prototype.setToken = function(value) {
-  jspb.Message.setProto3StringField(this, 4, value);
+  return jspb.Message.setProto3StringField(this, 4, value);
 };
 
 

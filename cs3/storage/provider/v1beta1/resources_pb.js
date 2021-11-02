@@ -2,11 +2,14 @@
 /**
  * @fileoverview
  * @enhanceable
+ * @suppress {missingRequire} reports error on implicit type usages.
  * @suppress {messageConventions} JS Compiler reports an error if a variable or
  *     field starts with 'MSG_' and isn't a translatable message.
  * @public
  */
 // GENERATED CODE -- DO NOT EDIT!
+/* eslint-disable */
+// @ts-nocheck
 
 var jspb = require('google-protobuf');
 var goog = jspb;
@@ -690,17 +693,21 @@ proto.cs3.storage.provider.v1beta1.ResourceInfo.prototype.getOpaque = function()
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ResourceInfo} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ResourceInfo.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.ResourceInfo} returns this
  */
 proto.cs3.storage.provider.v1beta1.ResourceInfo.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -722,9 +729,12 @@ proto.cs3.storage.provider.v1beta1.ResourceInfo.prototype.getType = function() {
 };
 
 
-/** @param {!proto.cs3.storage.provider.v1beta1.ResourceType} value */
+/**
+ * @param {!proto.cs3.storage.provider.v1beta1.ResourceType} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ResourceInfo} returns this
+ */
 proto.cs3.storage.provider.v1beta1.ResourceInfo.prototype.setType = function(value) {
-  jspb.Message.setProto3EnumField(this, 2, value);
+  return jspb.Message.setProto3EnumField(this, 2, value);
 };
 
 
@@ -738,17 +748,21 @@ proto.cs3.storage.provider.v1beta1.ResourceInfo.prototype.getId = function() {
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.ResourceId|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.ResourceId|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ResourceInfo} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ResourceInfo.prototype.setId = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.ResourceInfo} returns this
  */
 proto.cs3.storage.provider.v1beta1.ResourceInfo.prototype.clearId = function() {
-  this.setId(undefined);
+  return this.setId(undefined);
 };
 
 
@@ -771,17 +785,21 @@ proto.cs3.storage.provider.v1beta1.ResourceInfo.prototype.getChecksum = function
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.ResourceChecksum|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.ResourceChecksum|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ResourceInfo} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ResourceInfo.prototype.setChecksum = function(value) {
-  jspb.Message.setWrapperField(this, 4, value);
+  return jspb.Message.setWrapperField(this, 4, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.ResourceInfo} returns this
  */
 proto.cs3.storage.provider.v1beta1.ResourceInfo.prototype.clearChecksum = function() {
-  this.setChecksum(undefined);
+  return this.setChecksum(undefined);
 };
 
 
@@ -803,9 +821,12 @@ proto.cs3.storage.provider.v1beta1.ResourceInfo.prototype.getEtag = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ResourceInfo} returns this
+ */
 proto.cs3.storage.provider.v1beta1.ResourceInfo.prototype.setEtag = function(value) {
-  jspb.Message.setProto3StringField(this, 5, value);
+  return jspb.Message.setProto3StringField(this, 5, value);
 };
 
 
@@ -818,9 +839,12 @@ proto.cs3.storage.provider.v1beta1.ResourceInfo.prototype.getMimeType = function
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ResourceInfo} returns this
+ */
 proto.cs3.storage.provider.v1beta1.ResourceInfo.prototype.setMimeType = function(value) {
-  jspb.Message.setProto3StringField(this, 6, value);
+  return jspb.Message.setProto3StringField(this, 6, value);
 };
 
 
@@ -834,17 +858,21 @@ proto.cs3.storage.provider.v1beta1.ResourceInfo.prototype.getMtime = function() 
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Timestamp|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Timestamp|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ResourceInfo} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ResourceInfo.prototype.setMtime = function(value) {
-  jspb.Message.setWrapperField(this, 7, value);
+  return jspb.Message.setWrapperField(this, 7, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.ResourceInfo} returns this
  */
 proto.cs3.storage.provider.v1beta1.ResourceInfo.prototype.clearMtime = function() {
-  this.setMtime(undefined);
+  return this.setMtime(undefined);
 };
 
 
@@ -866,9 +894,12 @@ proto.cs3.storage.provider.v1beta1.ResourceInfo.prototype.getPath = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ResourceInfo} returns this
+ */
 proto.cs3.storage.provider.v1beta1.ResourceInfo.prototype.setPath = function(value) {
-  jspb.Message.setProto3StringField(this, 8, value);
+  return jspb.Message.setProto3StringField(this, 8, value);
 };
 
 
@@ -882,17 +913,21 @@ proto.cs3.storage.provider.v1beta1.ResourceInfo.prototype.getPermissionSet = fun
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.ResourcePermissions|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.ResourcePermissions|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ResourceInfo} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ResourceInfo.prototype.setPermissionSet = function(value) {
-  jspb.Message.setWrapperField(this, 9, value);
+  return jspb.Message.setWrapperField(this, 9, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.ResourceInfo} returns this
  */
 proto.cs3.storage.provider.v1beta1.ResourceInfo.prototype.clearPermissionSet = function() {
-  this.setPermissionSet(undefined);
+  return this.setPermissionSet(undefined);
 };
 
 
@@ -914,9 +949,12 @@ proto.cs3.storage.provider.v1beta1.ResourceInfo.prototype.getSize = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ResourceInfo} returns this
+ */
 proto.cs3.storage.provider.v1beta1.ResourceInfo.prototype.setSize = function(value) {
-  jspb.Message.setProto3IntField(this, 10, value);
+  return jspb.Message.setProto3IntField(this, 10, value);
 };
 
 
@@ -930,17 +968,21 @@ proto.cs3.storage.provider.v1beta1.ResourceInfo.prototype.getOwner = function() 
 };
 
 
-/** @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value */
+/**
+ * @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ResourceInfo} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ResourceInfo.prototype.setOwner = function(value) {
-  jspb.Message.setWrapperField(this, 11, value);
+  return jspb.Message.setWrapperField(this, 11, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.ResourceInfo} returns this
  */
 proto.cs3.storage.provider.v1beta1.ResourceInfo.prototype.clearOwner = function() {
-  this.setOwner(undefined);
+  return this.setOwner(undefined);
 };
 
 
@@ -962,9 +1004,12 @@ proto.cs3.storage.provider.v1beta1.ResourceInfo.prototype.getTarget = function()
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ResourceInfo} returns this
+ */
 proto.cs3.storage.provider.v1beta1.ResourceInfo.prototype.setTarget = function(value) {
-  jspb.Message.setProto3StringField(this, 12, value);
+  return jspb.Message.setProto3StringField(this, 12, value);
 };
 
 
@@ -978,17 +1023,21 @@ proto.cs3.storage.provider.v1beta1.ResourceInfo.prototype.getCanonicalMetadata =
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.CanonicalMetadata|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.CanonicalMetadata|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ResourceInfo} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ResourceInfo.prototype.setCanonicalMetadata = function(value) {
-  jspb.Message.setWrapperField(this, 13, value);
+  return jspb.Message.setWrapperField(this, 13, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.ResourceInfo} returns this
  */
 proto.cs3.storage.provider.v1beta1.ResourceInfo.prototype.clearCanonicalMetadata = function() {
-  this.setCanonicalMetadata(undefined);
+  return this.setCanonicalMetadata(undefined);
 };
 
 
@@ -1011,17 +1060,21 @@ proto.cs3.storage.provider.v1beta1.ResourceInfo.prototype.getArbitraryMetadata =
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.ArbitraryMetadata|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.ArbitraryMetadata|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ResourceInfo} returns this
+*/
 proto.cs3.storage.provider.v1beta1.ResourceInfo.prototype.setArbitraryMetadata = function(value) {
-  jspb.Message.setWrapperField(this, 14, value);
+  return jspb.Message.setWrapperField(this, 14, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.ResourceInfo} returns this
  */
 proto.cs3.storage.provider.v1beta1.ResourceInfo.prototype.clearArbitraryMetadata = function() {
-  this.setArbitraryMetadata(undefined);
+  return this.setArbitraryMetadata(undefined);
 };
 
 
@@ -1158,17 +1211,21 @@ proto.cs3.storage.provider.v1beta1.CanonicalMetadata.prototype.getTarget = funct
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.CanonicalMetadata} returns this
+*/
 proto.cs3.storage.provider.v1beta1.CanonicalMetadata.prototype.setTarget = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.CanonicalMetadata} returns this
  */
 proto.cs3.storage.provider.v1beta1.CanonicalMetadata.prototype.clearTarget = function() {
-  this.setTarget(undefined);
+  return this.setTarget(undefined);
 };
 
 
@@ -1253,7 +1310,7 @@ proto.cs3.storage.provider.v1beta1.ArbitraryMetadata.deserializeBinaryFromReader
     case 1:
       var value = msg.getMetadataMap();
       reader.readMessage(value, function(message, reader) {
-        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readString, jspb.BinaryReader.prototype.readString, null, "");
+        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readString, jspb.BinaryReader.prototype.readString, null, "", "");
          });
       break;
     default:
@@ -1307,10 +1364,11 @@ proto.cs3.storage.provider.v1beta1.ArbitraryMetadata.prototype.getMetadataMap = 
 
 /**
  * Clears values from the map. The map will be non-null.
+ * @return {!proto.cs3.storage.provider.v1beta1.ArbitraryMetadata} returns this
  */
 proto.cs3.storage.provider.v1beta1.ArbitraryMetadata.prototype.clearMetadataMap = function() {
   this.getMetadataMap().clear();
-};
+  return this;};
 
 
 
@@ -1446,9 +1504,12 @@ proto.cs3.storage.provider.v1beta1.ResourceChecksum.prototype.getType = function
 };
 
 
-/** @param {!proto.cs3.storage.provider.v1beta1.ResourceChecksumType} value */
+/**
+ * @param {!proto.cs3.storage.provider.v1beta1.ResourceChecksumType} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ResourceChecksum} returns this
+ */
 proto.cs3.storage.provider.v1beta1.ResourceChecksum.prototype.setType = function(value) {
-  jspb.Message.setProto3EnumField(this, 1, value);
+  return jspb.Message.setProto3EnumField(this, 1, value);
 };
 
 
@@ -1461,9 +1522,12 @@ proto.cs3.storage.provider.v1beta1.ResourceChecksum.prototype.getSum = function(
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ResourceChecksum} returns this
+ */
 proto.cs3.storage.provider.v1beta1.ResourceChecksum.prototype.setSum = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -1600,9 +1664,12 @@ proto.cs3.storage.provider.v1beta1.ResourceChecksumPriority.prototype.getType = 
 };
 
 
-/** @param {!proto.cs3.storage.provider.v1beta1.ResourceChecksumType} value */
+/**
+ * @param {!proto.cs3.storage.provider.v1beta1.ResourceChecksumType} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ResourceChecksumPriority} returns this
+ */
 proto.cs3.storage.provider.v1beta1.ResourceChecksumPriority.prototype.setType = function(value) {
-  jspb.Message.setProto3EnumField(this, 1, value);
+  return jspb.Message.setProto3EnumField(this, 1, value);
 };
 
 
@@ -1615,9 +1682,12 @@ proto.cs3.storage.provider.v1beta1.ResourceChecksumPriority.prototype.getPriorit
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ResourceChecksumPriority} returns this
+ */
 proto.cs3.storage.provider.v1beta1.ResourceChecksumPriority.prototype.setPriority = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -1757,17 +1827,21 @@ proto.cs3.storage.provider.v1beta1.Reference.prototype.getResourceId = function(
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.ResourceId|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.ResourceId|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.Reference} returns this
+*/
 proto.cs3.storage.provider.v1beta1.Reference.prototype.setResourceId = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.Reference} returns this
  */
 proto.cs3.storage.provider.v1beta1.Reference.prototype.clearResourceId = function() {
-  this.setResourceId(undefined);
+  return this.setResourceId(undefined);
 };
 
 
@@ -1789,9 +1863,12 @@ proto.cs3.storage.provider.v1beta1.Reference.prototype.getPath = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.storage.provider.v1beta1.Reference} returns this
+ */
 proto.cs3.storage.provider.v1beta1.Reference.prototype.setPath = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -1928,9 +2005,12 @@ proto.cs3.storage.provider.v1beta1.ResourceId.prototype.getStorageId = function(
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ResourceId} returns this
+ */
 proto.cs3.storage.provider.v1beta1.ResourceId.prototype.setStorageId = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -1943,9 +2023,12 @@ proto.cs3.storage.provider.v1beta1.ResourceId.prototype.getOpaqueId = function()
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ResourceId} returns this
+ */
 proto.cs3.storage.provider.v1beta1.ResourceId.prototype.setOpaqueId = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -2286,9 +2369,12 @@ proto.cs3.storage.provider.v1beta1.ResourcePermissions.prototype.getAddGrant = f
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ResourcePermissions} returns this
+ */
 proto.cs3.storage.provider.v1beta1.ResourcePermissions.prototype.setAddGrant = function(value) {
-  jspb.Message.setProto3BooleanField(this, 1, value);
+  return jspb.Message.setProto3BooleanField(this, 1, value);
 };
 
 
@@ -2301,9 +2387,12 @@ proto.cs3.storage.provider.v1beta1.ResourcePermissions.prototype.getCreateContai
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ResourcePermissions} returns this
+ */
 proto.cs3.storage.provider.v1beta1.ResourcePermissions.prototype.setCreateContainer = function(value) {
-  jspb.Message.setProto3BooleanField(this, 2, value);
+  return jspb.Message.setProto3BooleanField(this, 2, value);
 };
 
 
@@ -2316,9 +2405,12 @@ proto.cs3.storage.provider.v1beta1.ResourcePermissions.prototype.getDelete = fun
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ResourcePermissions} returns this
+ */
 proto.cs3.storage.provider.v1beta1.ResourcePermissions.prototype.setDelete = function(value) {
-  jspb.Message.setProto3BooleanField(this, 3, value);
+  return jspb.Message.setProto3BooleanField(this, 3, value);
 };
 
 
@@ -2331,9 +2423,12 @@ proto.cs3.storage.provider.v1beta1.ResourcePermissions.prototype.getGetPath = fu
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ResourcePermissions} returns this
+ */
 proto.cs3.storage.provider.v1beta1.ResourcePermissions.prototype.setGetPath = function(value) {
-  jspb.Message.setProto3BooleanField(this, 5, value);
+  return jspb.Message.setProto3BooleanField(this, 5, value);
 };
 
 
@@ -2346,9 +2441,12 @@ proto.cs3.storage.provider.v1beta1.ResourcePermissions.prototype.getGetQuota = f
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ResourcePermissions} returns this
+ */
 proto.cs3.storage.provider.v1beta1.ResourcePermissions.prototype.setGetQuota = function(value) {
-  jspb.Message.setProto3BooleanField(this, 6, value);
+  return jspb.Message.setProto3BooleanField(this, 6, value);
 };
 
 
@@ -2361,9 +2459,12 @@ proto.cs3.storage.provider.v1beta1.ResourcePermissions.prototype.getInitiateFile
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ResourcePermissions} returns this
+ */
 proto.cs3.storage.provider.v1beta1.ResourcePermissions.prototype.setInitiateFileDownload = function(value) {
-  jspb.Message.setProto3BooleanField(this, 7, value);
+  return jspb.Message.setProto3BooleanField(this, 7, value);
 };
 
 
@@ -2376,9 +2477,12 @@ proto.cs3.storage.provider.v1beta1.ResourcePermissions.prototype.getInitiateFile
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ResourcePermissions} returns this
+ */
 proto.cs3.storage.provider.v1beta1.ResourcePermissions.prototype.setInitiateFileUpload = function(value) {
-  jspb.Message.setProto3BooleanField(this, 8, value);
+  return jspb.Message.setProto3BooleanField(this, 8, value);
 };
 
 
@@ -2391,9 +2495,12 @@ proto.cs3.storage.provider.v1beta1.ResourcePermissions.prototype.getListGrants =
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ResourcePermissions} returns this
+ */
 proto.cs3.storage.provider.v1beta1.ResourcePermissions.prototype.setListGrants = function(value) {
-  jspb.Message.setProto3BooleanField(this, 9, value);
+  return jspb.Message.setProto3BooleanField(this, 9, value);
 };
 
 
@@ -2406,9 +2513,12 @@ proto.cs3.storage.provider.v1beta1.ResourcePermissions.prototype.getListContaine
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ResourcePermissions} returns this
+ */
 proto.cs3.storage.provider.v1beta1.ResourcePermissions.prototype.setListContainer = function(value) {
-  jspb.Message.setProto3BooleanField(this, 10, value);
+  return jspb.Message.setProto3BooleanField(this, 10, value);
 };
 
 
@@ -2421,9 +2531,12 @@ proto.cs3.storage.provider.v1beta1.ResourcePermissions.prototype.getListFileVers
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ResourcePermissions} returns this
+ */
 proto.cs3.storage.provider.v1beta1.ResourcePermissions.prototype.setListFileVersions = function(value) {
-  jspb.Message.setProto3BooleanField(this, 11, value);
+  return jspb.Message.setProto3BooleanField(this, 11, value);
 };
 
 
@@ -2436,9 +2549,12 @@ proto.cs3.storage.provider.v1beta1.ResourcePermissions.prototype.getListRecycle 
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ResourcePermissions} returns this
+ */
 proto.cs3.storage.provider.v1beta1.ResourcePermissions.prototype.setListRecycle = function(value) {
-  jspb.Message.setProto3BooleanField(this, 12, value);
+  return jspb.Message.setProto3BooleanField(this, 12, value);
 };
 
 
@@ -2451,9 +2567,12 @@ proto.cs3.storage.provider.v1beta1.ResourcePermissions.prototype.getMove = funct
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ResourcePermissions} returns this
+ */
 proto.cs3.storage.provider.v1beta1.ResourcePermissions.prototype.setMove = function(value) {
-  jspb.Message.setProto3BooleanField(this, 13, value);
+  return jspb.Message.setProto3BooleanField(this, 13, value);
 };
 
 
@@ -2466,9 +2585,12 @@ proto.cs3.storage.provider.v1beta1.ResourcePermissions.prototype.getRemoveGrant 
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ResourcePermissions} returns this
+ */
 proto.cs3.storage.provider.v1beta1.ResourcePermissions.prototype.setRemoveGrant = function(value) {
-  jspb.Message.setProto3BooleanField(this, 14, value);
+  return jspb.Message.setProto3BooleanField(this, 14, value);
 };
 
 
@@ -2481,9 +2603,12 @@ proto.cs3.storage.provider.v1beta1.ResourcePermissions.prototype.getPurgeRecycle
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ResourcePermissions} returns this
+ */
 proto.cs3.storage.provider.v1beta1.ResourcePermissions.prototype.setPurgeRecycle = function(value) {
-  jspb.Message.setProto3BooleanField(this, 15, value);
+  return jspb.Message.setProto3BooleanField(this, 15, value);
 };
 
 
@@ -2496,9 +2621,12 @@ proto.cs3.storage.provider.v1beta1.ResourcePermissions.prototype.getRestoreFileV
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ResourcePermissions} returns this
+ */
 proto.cs3.storage.provider.v1beta1.ResourcePermissions.prototype.setRestoreFileVersion = function(value) {
-  jspb.Message.setProto3BooleanField(this, 16, value);
+  return jspb.Message.setProto3BooleanField(this, 16, value);
 };
 
 
@@ -2511,9 +2639,12 @@ proto.cs3.storage.provider.v1beta1.ResourcePermissions.prototype.getRestoreRecyc
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ResourcePermissions} returns this
+ */
 proto.cs3.storage.provider.v1beta1.ResourcePermissions.prototype.setRestoreRecycleItem = function(value) {
-  jspb.Message.setProto3BooleanField(this, 17, value);
+  return jspb.Message.setProto3BooleanField(this, 17, value);
 };
 
 
@@ -2526,9 +2657,12 @@ proto.cs3.storage.provider.v1beta1.ResourcePermissions.prototype.getStat = funct
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ResourcePermissions} returns this
+ */
 proto.cs3.storage.provider.v1beta1.ResourcePermissions.prototype.setStat = function(value) {
-  jspb.Message.setProto3BooleanField(this, 18, value);
+  return jspb.Message.setProto3BooleanField(this, 18, value);
 };
 
 
@@ -2541,9 +2675,12 @@ proto.cs3.storage.provider.v1beta1.ResourcePermissions.prototype.getUpdateGrant 
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ResourcePermissions} returns this
+ */
 proto.cs3.storage.provider.v1beta1.ResourcePermissions.prototype.setUpdateGrant = function(value) {
-  jspb.Message.setProto3BooleanField(this, 19, value);
+  return jspb.Message.setProto3BooleanField(this, 19, value);
 };
 
 
@@ -2556,9 +2693,12 @@ proto.cs3.storage.provider.v1beta1.ResourcePermissions.prototype.getDenyGrant = 
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.cs3.storage.provider.v1beta1.ResourcePermissions} returns this
+ */
 proto.cs3.storage.provider.v1beta1.ResourcePermissions.prototype.setDenyGrant = function(value) {
-  jspb.Message.setProto3BooleanField(this, 20, value);
+  return jspb.Message.setProto3BooleanField(this, 20, value);
 };
 
 
@@ -2700,17 +2840,21 @@ proto.cs3.storage.provider.v1beta1.Grant.prototype.getGrantee = function() {
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.Grantee|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.Grantee|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.Grant} returns this
+*/
 proto.cs3.storage.provider.v1beta1.Grant.prototype.setGrantee = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.Grant} returns this
  */
 proto.cs3.storage.provider.v1beta1.Grant.prototype.clearGrantee = function() {
-  this.setGrantee(undefined);
+  return this.setGrantee(undefined);
 };
 
 
@@ -2733,17 +2877,21 @@ proto.cs3.storage.provider.v1beta1.Grant.prototype.getPermissions = function() {
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.ResourcePermissions|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.ResourcePermissions|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.Grant} returns this
+*/
 proto.cs3.storage.provider.v1beta1.Grant.prototype.setPermissions = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.Grant} returns this
  */
 proto.cs3.storage.provider.v1beta1.Grant.prototype.clearPermissions = function() {
-  this.setPermissions(undefined);
+  return this.setPermissions(undefined);
 };
 
 
@@ -2945,9 +3093,12 @@ proto.cs3.storage.provider.v1beta1.Grantee.prototype.getType = function() {
 };
 
 
-/** @param {!proto.cs3.storage.provider.v1beta1.GranteeType} value */
+/**
+ * @param {!proto.cs3.storage.provider.v1beta1.GranteeType} value
+ * @return {!proto.cs3.storage.provider.v1beta1.Grantee} returns this
+ */
 proto.cs3.storage.provider.v1beta1.Grantee.prototype.setType = function(value) {
-  jspb.Message.setProto3EnumField(this, 1, value);
+  return jspb.Message.setProto3EnumField(this, 1, value);
 };
 
 
@@ -2961,17 +3112,21 @@ proto.cs3.storage.provider.v1beta1.Grantee.prototype.getUserId = function() {
 };
 
 
-/** @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value */
+/**
+ * @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.Grantee} returns this
+*/
 proto.cs3.storage.provider.v1beta1.Grantee.prototype.setUserId = function(value) {
-  jspb.Message.setOneofWrapperField(this, 3, proto.cs3.storage.provider.v1beta1.Grantee.oneofGroups_[0], value);
+  return jspb.Message.setOneofWrapperField(this, 3, proto.cs3.storage.provider.v1beta1.Grantee.oneofGroups_[0], value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.Grantee} returns this
  */
 proto.cs3.storage.provider.v1beta1.Grantee.prototype.clearUserId = function() {
-  this.setUserId(undefined);
+  return this.setUserId(undefined);
 };
 
 
@@ -2994,17 +3149,21 @@ proto.cs3.storage.provider.v1beta1.Grantee.prototype.getGroupId = function() {
 };
 
 
-/** @param {?proto.cs3.identity.group.v1beta1.GroupId|undefined} value */
+/**
+ * @param {?proto.cs3.identity.group.v1beta1.GroupId|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.Grantee} returns this
+*/
 proto.cs3.storage.provider.v1beta1.Grantee.prototype.setGroupId = function(value) {
-  jspb.Message.setOneofWrapperField(this, 4, proto.cs3.storage.provider.v1beta1.Grantee.oneofGroups_[0], value);
+  return jspb.Message.setOneofWrapperField(this, 4, proto.cs3.storage.provider.v1beta1.Grantee.oneofGroups_[0], value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.Grantee} returns this
  */
 proto.cs3.storage.provider.v1beta1.Grantee.prototype.clearGroupId = function() {
-  this.setGroupId(undefined);
+  return this.setGroupId(undefined);
 };
 
 
@@ -3027,17 +3186,21 @@ proto.cs3.storage.provider.v1beta1.Grantee.prototype.getOpaque = function() {
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.Grantee} returns this
+*/
 proto.cs3.storage.provider.v1beta1.Grantee.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 5, value);
+  return jspb.Message.setWrapperField(this, 5, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.Grantee} returns this
  */
 proto.cs3.storage.provider.v1beta1.Grantee.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -3222,17 +3385,21 @@ proto.cs3.storage.provider.v1beta1.FileVersion.prototype.getOpaque = function() 
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.FileVersion} returns this
+*/
 proto.cs3.storage.provider.v1beta1.FileVersion.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.FileVersion} returns this
  */
 proto.cs3.storage.provider.v1beta1.FileVersion.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -3254,9 +3421,12 @@ proto.cs3.storage.provider.v1beta1.FileVersion.prototype.getKey = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.storage.provider.v1beta1.FileVersion} returns this
+ */
 proto.cs3.storage.provider.v1beta1.FileVersion.prototype.setKey = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -3269,9 +3439,12 @@ proto.cs3.storage.provider.v1beta1.FileVersion.prototype.getSize = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.cs3.storage.provider.v1beta1.FileVersion} returns this
+ */
 proto.cs3.storage.provider.v1beta1.FileVersion.prototype.setSize = function(value) {
-  jspb.Message.setProto3IntField(this, 4, value);
+  return jspb.Message.setProto3IntField(this, 4, value);
 };
 
 
@@ -3284,9 +3457,12 @@ proto.cs3.storage.provider.v1beta1.FileVersion.prototype.getMtime = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.cs3.storage.provider.v1beta1.FileVersion} returns this
+ */
 proto.cs3.storage.provider.v1beta1.FileVersion.prototype.setMtime = function(value) {
-  jspb.Message.setProto3IntField(this, 5, value);
+  return jspb.Message.setProto3IntField(this, 5, value);
 };
 
 
@@ -3299,9 +3475,12 @@ proto.cs3.storage.provider.v1beta1.FileVersion.prototype.getEtag = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.storage.provider.v1beta1.FileVersion} returns this
+ */
 proto.cs3.storage.provider.v1beta1.FileVersion.prototype.setEtag = function(value) {
-  jspb.Message.setProto3StringField(this, 6, value);
+  return jspb.Message.setProto3StringField(this, 6, value);
 };
 
 
@@ -3493,17 +3672,21 @@ proto.cs3.storage.provider.v1beta1.RecycleItem.prototype.getOpaque = function() 
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.RecycleItem} returns this
+*/
 proto.cs3.storage.provider.v1beta1.RecycleItem.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.RecycleItem} returns this
  */
 proto.cs3.storage.provider.v1beta1.RecycleItem.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -3525,9 +3708,12 @@ proto.cs3.storage.provider.v1beta1.RecycleItem.prototype.getType = function() {
 };
 
 
-/** @param {!proto.cs3.storage.provider.v1beta1.ResourceType} value */
+/**
+ * @param {!proto.cs3.storage.provider.v1beta1.ResourceType} value
+ * @return {!proto.cs3.storage.provider.v1beta1.RecycleItem} returns this
+ */
 proto.cs3.storage.provider.v1beta1.RecycleItem.prototype.setType = function(value) {
-  jspb.Message.setProto3EnumField(this, 2, value);
+  return jspb.Message.setProto3EnumField(this, 2, value);
 };
 
 
@@ -3540,9 +3726,12 @@ proto.cs3.storage.provider.v1beta1.RecycleItem.prototype.getKey = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.storage.provider.v1beta1.RecycleItem} returns this
+ */
 proto.cs3.storage.provider.v1beta1.RecycleItem.prototype.setKey = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -3556,17 +3745,21 @@ proto.cs3.storage.provider.v1beta1.RecycleItem.prototype.getRef = function() {
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.RecycleItem} returns this
+*/
 proto.cs3.storage.provider.v1beta1.RecycleItem.prototype.setRef = function(value) {
-  jspb.Message.setWrapperField(this, 4, value);
+  return jspb.Message.setWrapperField(this, 4, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.RecycleItem} returns this
  */
 proto.cs3.storage.provider.v1beta1.RecycleItem.prototype.clearRef = function() {
-  this.setRef(undefined);
+  return this.setRef(undefined);
 };
 
 
@@ -3588,9 +3781,12 @@ proto.cs3.storage.provider.v1beta1.RecycleItem.prototype.getSize = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.cs3.storage.provider.v1beta1.RecycleItem} returns this
+ */
 proto.cs3.storage.provider.v1beta1.RecycleItem.prototype.setSize = function(value) {
-  jspb.Message.setProto3IntField(this, 5, value);
+  return jspb.Message.setProto3IntField(this, 5, value);
 };
 
 
@@ -3604,17 +3800,21 @@ proto.cs3.storage.provider.v1beta1.RecycleItem.prototype.getDeletionTime = funct
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Timestamp|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Timestamp|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.RecycleItem} returns this
+*/
 proto.cs3.storage.provider.v1beta1.RecycleItem.prototype.setDeletionTime = function(value) {
-  jspb.Message.setWrapperField(this, 6, value);
+  return jspb.Message.setWrapperField(this, 6, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.RecycleItem} returns this
  */
 proto.cs3.storage.provider.v1beta1.RecycleItem.prototype.clearDeletionTime = function() {
-  this.setDeletionTime(undefined);
+  return this.setDeletionTime(undefined);
 };
 
 
@@ -3809,17 +4009,21 @@ proto.cs3.storage.provider.v1beta1.FileUploadProtocol.prototype.getOpaque = func
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.FileUploadProtocol} returns this
+*/
 proto.cs3.storage.provider.v1beta1.FileUploadProtocol.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.FileUploadProtocol} returns this
  */
 proto.cs3.storage.provider.v1beta1.FileUploadProtocol.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -3841,9 +4045,12 @@ proto.cs3.storage.provider.v1beta1.FileUploadProtocol.prototype.getProtocol = fu
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.storage.provider.v1beta1.FileUploadProtocol} returns this
+ */
 proto.cs3.storage.provider.v1beta1.FileUploadProtocol.prototype.setProtocol = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -3856,9 +4063,12 @@ proto.cs3.storage.provider.v1beta1.FileUploadProtocol.prototype.getUploadEndpoin
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.storage.provider.v1beta1.FileUploadProtocol} returns this
+ */
 proto.cs3.storage.provider.v1beta1.FileUploadProtocol.prototype.setUploadEndpoint = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -3872,9 +4082,12 @@ proto.cs3.storage.provider.v1beta1.FileUploadProtocol.prototype.getAvailableChec
 };
 
 
-/** @param {!Array<!proto.cs3.storage.provider.v1beta1.ResourceChecksumPriority>} value */
+/**
+ * @param {!Array<!proto.cs3.storage.provider.v1beta1.ResourceChecksumPriority>} value
+ * @return {!proto.cs3.storage.provider.v1beta1.FileUploadProtocol} returns this
+*/
 proto.cs3.storage.provider.v1beta1.FileUploadProtocol.prototype.setAvailableChecksumsList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 4, value);
+  return jspb.Message.setRepeatedWrapperField(this, 4, value);
 };
 
 
@@ -3890,9 +4103,10 @@ proto.cs3.storage.provider.v1beta1.FileUploadProtocol.prototype.addAvailableChec
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.cs3.storage.provider.v1beta1.FileUploadProtocol} returns this
  */
 proto.cs3.storage.provider.v1beta1.FileUploadProtocol.prototype.clearAvailableChecksumsList = function() {
-  this.setAvailableChecksumsList([]);
+  return this.setAvailableChecksumsList([]);
 };
 
 
@@ -3905,9 +4119,12 @@ proto.cs3.storage.provider.v1beta1.FileUploadProtocol.prototype.getExpose = func
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.cs3.storage.provider.v1beta1.FileUploadProtocol} returns this
+ */
 proto.cs3.storage.provider.v1beta1.FileUploadProtocol.prototype.setExpose = function(value) {
-  jspb.Message.setProto3BooleanField(this, 5, value);
+  return jspb.Message.setProto3BooleanField(this, 5, value);
 };
 
 
@@ -4071,17 +4288,21 @@ proto.cs3.storage.provider.v1beta1.FileDownloadProtocol.prototype.getOpaque = fu
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.FileDownloadProtocol} returns this
+*/
 proto.cs3.storage.provider.v1beta1.FileDownloadProtocol.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.FileDownloadProtocol} returns this
  */
 proto.cs3.storage.provider.v1beta1.FileDownloadProtocol.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -4103,9 +4324,12 @@ proto.cs3.storage.provider.v1beta1.FileDownloadProtocol.prototype.getProtocol = 
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.storage.provider.v1beta1.FileDownloadProtocol} returns this
+ */
 proto.cs3.storage.provider.v1beta1.FileDownloadProtocol.prototype.setProtocol = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -4118,9 +4342,12 @@ proto.cs3.storage.provider.v1beta1.FileDownloadProtocol.prototype.getDownloadEnd
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.storage.provider.v1beta1.FileDownloadProtocol} returns this
+ */
 proto.cs3.storage.provider.v1beta1.FileDownloadProtocol.prototype.setDownloadEndpoint = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -4133,9 +4360,12 @@ proto.cs3.storage.provider.v1beta1.FileDownloadProtocol.prototype.getExpose = fu
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.cs3.storage.provider.v1beta1.FileDownloadProtocol} returns this
+ */
 proto.cs3.storage.provider.v1beta1.FileDownloadProtocol.prototype.setExpose = function(value) {
-  jspb.Message.setProto3BooleanField(this, 4, value);
+  return jspb.Message.setProto3BooleanField(this, 4, value);
 };
 
 
@@ -4357,17 +4587,21 @@ proto.cs3.storage.provider.v1beta1.StorageSpace.prototype.getOpaque = function()
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.StorageSpace} returns this
+*/
 proto.cs3.storage.provider.v1beta1.StorageSpace.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.StorageSpace} returns this
  */
 proto.cs3.storage.provider.v1beta1.StorageSpace.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -4390,17 +4624,21 @@ proto.cs3.storage.provider.v1beta1.StorageSpace.prototype.getId = function() {
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.StorageSpaceId|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.StorageSpaceId|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.StorageSpace} returns this
+*/
 proto.cs3.storage.provider.v1beta1.StorageSpace.prototype.setId = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.StorageSpace} returns this
  */
 proto.cs3.storage.provider.v1beta1.StorageSpace.prototype.clearId = function() {
-  this.setId(undefined);
+  return this.setId(undefined);
 };
 
 
@@ -4423,17 +4661,21 @@ proto.cs3.storage.provider.v1beta1.StorageSpace.prototype.getOwner = function() 
 };
 
 
-/** @param {?proto.cs3.identity.user.v1beta1.User|undefined} value */
+/**
+ * @param {?proto.cs3.identity.user.v1beta1.User|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.StorageSpace} returns this
+*/
 proto.cs3.storage.provider.v1beta1.StorageSpace.prototype.setOwner = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.StorageSpace} returns this
  */
 proto.cs3.storage.provider.v1beta1.StorageSpace.prototype.clearOwner = function() {
-  this.setOwner(undefined);
+  return this.setOwner(undefined);
 };
 
 
@@ -4456,17 +4698,21 @@ proto.cs3.storage.provider.v1beta1.StorageSpace.prototype.getRoot = function() {
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.ResourceId|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.ResourceId|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.StorageSpace} returns this
+*/
 proto.cs3.storage.provider.v1beta1.StorageSpace.prototype.setRoot = function(value) {
-  jspb.Message.setWrapperField(this, 4, value);
+  return jspb.Message.setWrapperField(this, 4, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.StorageSpace} returns this
  */
 proto.cs3.storage.provider.v1beta1.StorageSpace.prototype.clearRoot = function() {
-  this.setRoot(undefined);
+  return this.setRoot(undefined);
 };
 
 
@@ -4488,9 +4734,12 @@ proto.cs3.storage.provider.v1beta1.StorageSpace.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.storage.provider.v1beta1.StorageSpace} returns this
+ */
 proto.cs3.storage.provider.v1beta1.StorageSpace.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 5, value);
+  return jspb.Message.setProto3StringField(this, 5, value);
 };
 
 
@@ -4504,17 +4753,21 @@ proto.cs3.storage.provider.v1beta1.StorageSpace.prototype.getQuota = function() 
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.Quota|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.Quota|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.StorageSpace} returns this
+*/
 proto.cs3.storage.provider.v1beta1.StorageSpace.prototype.setQuota = function(value) {
-  jspb.Message.setWrapperField(this, 6, value);
+  return jspb.Message.setWrapperField(this, 6, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.StorageSpace} returns this
  */
 proto.cs3.storage.provider.v1beta1.StorageSpace.prototype.clearQuota = function() {
-  this.setQuota(undefined);
+  return this.setQuota(undefined);
 };
 
 
@@ -4536,9 +4789,12 @@ proto.cs3.storage.provider.v1beta1.StorageSpace.prototype.getSpaceType = functio
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.storage.provider.v1beta1.StorageSpace} returns this
+ */
 proto.cs3.storage.provider.v1beta1.StorageSpace.prototype.setSpaceType = function(value) {
-  jspb.Message.setProto3StringField(this, 7, value);
+  return jspb.Message.setProto3StringField(this, 7, value);
 };
 
 
@@ -4552,17 +4808,21 @@ proto.cs3.storage.provider.v1beta1.StorageSpace.prototype.getMtime = function() 
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Timestamp|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Timestamp|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.StorageSpace} returns this
+*/
 proto.cs3.storage.provider.v1beta1.StorageSpace.prototype.setMtime = function(value) {
-  jspb.Message.setWrapperField(this, 8, value);
+  return jspb.Message.setWrapperField(this, 8, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.StorageSpace} returns this
  */
 proto.cs3.storage.provider.v1beta1.StorageSpace.prototype.clearMtime = function() {
-  this.setMtime(undefined);
+  return this.setMtime(undefined);
 };
 
 
@@ -4696,9 +4956,12 @@ proto.cs3.storage.provider.v1beta1.StorageSpaceId.prototype.getOpaqueId = functi
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.storage.provider.v1beta1.StorageSpaceId} returns this
+ */
 proto.cs3.storage.provider.v1beta1.StorageSpaceId.prototype.setOpaqueId = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -4850,17 +5113,21 @@ proto.cs3.storage.provider.v1beta1.Quota.prototype.getOpaque = function() {
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.storage.provider.v1beta1.Quota} returns this
+*/
 proto.cs3.storage.provider.v1beta1.Quota.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.storage.provider.v1beta1.Quota} returns this
  */
 proto.cs3.storage.provider.v1beta1.Quota.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -4882,9 +5149,12 @@ proto.cs3.storage.provider.v1beta1.Quota.prototype.getQuotaMaxBytes = function()
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.cs3.storage.provider.v1beta1.Quota} returns this
+ */
 proto.cs3.storage.provider.v1beta1.Quota.prototype.setQuotaMaxBytes = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -4897,9 +5167,12 @@ proto.cs3.storage.provider.v1beta1.Quota.prototype.getQuotaMaxFiles = function()
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.cs3.storage.provider.v1beta1.Quota} returns this
+ */
 proto.cs3.storage.provider.v1beta1.Quota.prototype.setQuotaMaxFiles = function(value) {
-  jspb.Message.setProto3IntField(this, 3, value);
+  return jspb.Message.setProto3IntField(this, 3, value);
 };
 
 

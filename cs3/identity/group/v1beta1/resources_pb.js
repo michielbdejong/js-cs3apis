@@ -2,11 +2,14 @@
 /**
  * @fileoverview
  * @enhanceable
+ * @suppress {missingRequire} reports error on implicit type usages.
  * @suppress {messageConventions} JS Compiler reports an error if a variable or
  *     field starts with 'MSG_' and isn't a translatable message.
  * @public
  */
 // GENERATED CODE -- DO NOT EDIT!
+/* eslint-disable */
+// @ts-nocheck
 
 var jspb = require('google-protobuf');
 var goog = jspb;
@@ -193,9 +196,12 @@ proto.cs3.identity.group.v1beta1.GroupId.prototype.getIdp = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.identity.group.v1beta1.GroupId} returns this
+ */
 proto.cs3.identity.group.v1beta1.GroupId.prototype.setIdp = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -208,9 +214,12 @@ proto.cs3.identity.group.v1beta1.GroupId.prototype.getOpaqueId = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.identity.group.v1beta1.GroupId} returns this
+ */
 proto.cs3.identity.group.v1beta1.GroupId.prototype.setOpaqueId = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -434,17 +443,21 @@ proto.cs3.identity.group.v1beta1.Group.prototype.getId = function() {
 };
 
 
-/** @param {?proto.cs3.identity.group.v1beta1.GroupId|undefined} value */
+/**
+ * @param {?proto.cs3.identity.group.v1beta1.GroupId|undefined} value
+ * @return {!proto.cs3.identity.group.v1beta1.Group} returns this
+*/
 proto.cs3.identity.group.v1beta1.Group.prototype.setId = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.identity.group.v1beta1.Group} returns this
  */
 proto.cs3.identity.group.v1beta1.Group.prototype.clearId = function() {
-  this.setId(undefined);
+  return this.setId(undefined);
 };
 
 
@@ -466,9 +479,12 @@ proto.cs3.identity.group.v1beta1.Group.prototype.getGroupName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.identity.group.v1beta1.Group} returns this
+ */
 proto.cs3.identity.group.v1beta1.Group.prototype.setGroupName = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -481,9 +497,12 @@ proto.cs3.identity.group.v1beta1.Group.prototype.getGidNumber = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.cs3.identity.group.v1beta1.Group} returns this
+ */
 proto.cs3.identity.group.v1beta1.Group.prototype.setGidNumber = function(value) {
-  jspb.Message.setProto3IntField(this, 3, value);
+  return jspb.Message.setProto3IntField(this, 3, value);
 };
 
 
@@ -496,9 +515,12 @@ proto.cs3.identity.group.v1beta1.Group.prototype.getMail = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.identity.group.v1beta1.Group} returns this
+ */
 proto.cs3.identity.group.v1beta1.Group.prototype.setMail = function(value) {
-  jspb.Message.setProto3StringField(this, 4, value);
+  return jspb.Message.setProto3StringField(this, 4, value);
 };
 
 
@@ -511,9 +533,12 @@ proto.cs3.identity.group.v1beta1.Group.prototype.getMailVerified = function() {
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.cs3.identity.group.v1beta1.Group} returns this
+ */
 proto.cs3.identity.group.v1beta1.Group.prototype.setMailVerified = function(value) {
-  jspb.Message.setProto3BooleanField(this, 5, value);
+  return jspb.Message.setProto3BooleanField(this, 5, value);
 };
 
 
@@ -526,9 +551,12 @@ proto.cs3.identity.group.v1beta1.Group.prototype.getDisplayName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.identity.group.v1beta1.Group} returns this
+ */
 proto.cs3.identity.group.v1beta1.Group.prototype.setDisplayName = function(value) {
-  jspb.Message.setProto3StringField(this, 6, value);
+  return jspb.Message.setProto3StringField(this, 6, value);
 };
 
 
@@ -542,9 +570,12 @@ proto.cs3.identity.group.v1beta1.Group.prototype.getMembersList = function() {
 };
 
 
-/** @param {!Array<!proto.cs3.identity.user.v1beta1.UserId>} value */
+/**
+ * @param {!Array<!proto.cs3.identity.user.v1beta1.UserId>} value
+ * @return {!proto.cs3.identity.group.v1beta1.Group} returns this
+*/
 proto.cs3.identity.group.v1beta1.Group.prototype.setMembersList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 7, value);
+  return jspb.Message.setRepeatedWrapperField(this, 7, value);
 };
 
 
@@ -560,9 +591,10 @@ proto.cs3.identity.group.v1beta1.Group.prototype.addMembers = function(opt_value
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.cs3.identity.group.v1beta1.Group} returns this
  */
 proto.cs3.identity.group.v1beta1.Group.prototype.clearMembersList = function() {
-  this.setMembersList([]);
+  return this.setMembersList([]);
 };
 
 
@@ -576,17 +608,21 @@ proto.cs3.identity.group.v1beta1.Group.prototype.getOpaque = function() {
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.identity.group.v1beta1.Group} returns this
+*/
 proto.cs3.identity.group.v1beta1.Group.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 8, value);
+  return jspb.Message.setWrapperField(this, 8, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.identity.group.v1beta1.Group} returns this
  */
 proto.cs3.identity.group.v1beta1.Group.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 

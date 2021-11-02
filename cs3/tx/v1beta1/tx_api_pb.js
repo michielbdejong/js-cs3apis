@@ -2,11 +2,14 @@
 /**
  * @fileoverview
  * @enhanceable
+ * @suppress {missingRequire} reports error on implicit type usages.
  * @suppress {messageConventions} JS Compiler reports an error if a variable or
  *     field starts with 'MSG_' and isn't a translatable message.
  * @public
  */
 // GENERATED CODE -- DO NOT EDIT!
+/* eslint-disable */
+// @ts-nocheck
 
 var jspb = require('google-protobuf');
 var goog = jspb;
@@ -304,17 +307,21 @@ proto.cs3.tx.v1beta1.CreateTransferRequest.prototype.getRef = function() {
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value
+ * @return {!proto.cs3.tx.v1beta1.CreateTransferRequest} returns this
+*/
 proto.cs3.tx.v1beta1.CreateTransferRequest.prototype.setRef = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.tx.v1beta1.CreateTransferRequest} returns this
  */
 proto.cs3.tx.v1beta1.CreateTransferRequest.prototype.clearRef = function() {
-  this.setRef(undefined);
+  return this.setRef(undefined);
 };
 
 
@@ -337,17 +344,21 @@ proto.cs3.tx.v1beta1.CreateTransferRequest.prototype.getGrantee = function() {
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.Grantee|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.Grantee|undefined} value
+ * @return {!proto.cs3.tx.v1beta1.CreateTransferRequest} returns this
+*/
 proto.cs3.tx.v1beta1.CreateTransferRequest.prototype.setGrantee = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.tx.v1beta1.CreateTransferRequest} returns this
  */
 proto.cs3.tx.v1beta1.CreateTransferRequest.prototype.clearGrantee = function() {
-  this.setGrantee(undefined);
+  return this.setGrantee(undefined);
 };
 
 
@@ -370,17 +381,21 @@ proto.cs3.tx.v1beta1.CreateTransferRequest.prototype.getOpaque = function() {
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.tx.v1beta1.CreateTransferRequest} returns this
+*/
 proto.cs3.tx.v1beta1.CreateTransferRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.tx.v1beta1.CreateTransferRequest} returns this
  */
 proto.cs3.tx.v1beta1.CreateTransferRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -545,17 +560,21 @@ proto.cs3.tx.v1beta1.CreateTransferResponse.prototype.getStatus = function() {
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.tx.v1beta1.CreateTransferResponse} returns this
+*/
 proto.cs3.tx.v1beta1.CreateTransferResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.tx.v1beta1.CreateTransferResponse} returns this
  */
 proto.cs3.tx.v1beta1.CreateTransferResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -578,17 +597,21 @@ proto.cs3.tx.v1beta1.CreateTransferResponse.prototype.getTxInfo = function() {
 };
 
 
-/** @param {?proto.cs3.tx.v1beta1.TxInfo|undefined} value */
+/**
+ * @param {?proto.cs3.tx.v1beta1.TxInfo|undefined} value
+ * @return {!proto.cs3.tx.v1beta1.CreateTransferResponse} returns this
+*/
 proto.cs3.tx.v1beta1.CreateTransferResponse.prototype.setTxInfo = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.tx.v1beta1.CreateTransferResponse} returns this
  */
 proto.cs3.tx.v1beta1.CreateTransferResponse.prototype.clearTxInfo = function() {
-  this.setTxInfo(undefined);
+  return this.setTxInfo(undefined);
 };
 
 
@@ -611,17 +634,21 @@ proto.cs3.tx.v1beta1.CreateTransferResponse.prototype.getOpaque = function() {
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.tx.v1beta1.CreateTransferResponse} returns this
+*/
 proto.cs3.tx.v1beta1.CreateTransferResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.tx.v1beta1.CreateTransferResponse} returns this
  */
 proto.cs3.tx.v1beta1.CreateTransferResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -772,17 +799,21 @@ proto.cs3.tx.v1beta1.GetTransferStatusRequest.prototype.getTxId = function() {
 };
 
 
-/** @param {?proto.cs3.tx.v1beta1.TxId|undefined} value */
+/**
+ * @param {?proto.cs3.tx.v1beta1.TxId|undefined} value
+ * @return {!proto.cs3.tx.v1beta1.GetTransferStatusRequest} returns this
+*/
 proto.cs3.tx.v1beta1.GetTransferStatusRequest.prototype.setTxId = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.tx.v1beta1.GetTransferStatusRequest} returns this
  */
 proto.cs3.tx.v1beta1.GetTransferStatusRequest.prototype.clearTxId = function() {
-  this.setTxId(undefined);
+  return this.setTxId(undefined);
 };
 
 
@@ -805,17 +836,21 @@ proto.cs3.tx.v1beta1.GetTransferStatusRequest.prototype.getOpaque = function() {
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.tx.v1beta1.GetTransferStatusRequest} returns this
+*/
 proto.cs3.tx.v1beta1.GetTransferStatusRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.tx.v1beta1.GetTransferStatusRequest} returns this
  */
 proto.cs3.tx.v1beta1.GetTransferStatusRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -980,17 +1015,21 @@ proto.cs3.tx.v1beta1.GetTransferStatusResponse.prototype.getStatus = function() 
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.tx.v1beta1.GetTransferStatusResponse} returns this
+*/
 proto.cs3.tx.v1beta1.GetTransferStatusResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.tx.v1beta1.GetTransferStatusResponse} returns this
  */
 proto.cs3.tx.v1beta1.GetTransferStatusResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -1013,17 +1052,21 @@ proto.cs3.tx.v1beta1.GetTransferStatusResponse.prototype.getTxInfo = function() 
 };
 
 
-/** @param {?proto.cs3.tx.v1beta1.TxInfo|undefined} value */
+/**
+ * @param {?proto.cs3.tx.v1beta1.TxInfo|undefined} value
+ * @return {!proto.cs3.tx.v1beta1.GetTransferStatusResponse} returns this
+*/
 proto.cs3.tx.v1beta1.GetTransferStatusResponse.prototype.setTxInfo = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.tx.v1beta1.GetTransferStatusResponse} returns this
  */
 proto.cs3.tx.v1beta1.GetTransferStatusResponse.prototype.clearTxInfo = function() {
-  this.setTxInfo(undefined);
+  return this.setTxInfo(undefined);
 };
 
 
@@ -1046,17 +1089,21 @@ proto.cs3.tx.v1beta1.GetTransferStatusResponse.prototype.getOpaque = function() 
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.tx.v1beta1.GetTransferStatusResponse} returns this
+*/
 proto.cs3.tx.v1beta1.GetTransferStatusResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.tx.v1beta1.GetTransferStatusResponse} returns this
  */
 proto.cs3.tx.v1beta1.GetTransferStatusResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -1207,17 +1254,21 @@ proto.cs3.tx.v1beta1.CancelTransferRequest.prototype.getTxId = function() {
 };
 
 
-/** @param {?proto.cs3.tx.v1beta1.TxId|undefined} value */
+/**
+ * @param {?proto.cs3.tx.v1beta1.TxId|undefined} value
+ * @return {!proto.cs3.tx.v1beta1.CancelTransferRequest} returns this
+*/
 proto.cs3.tx.v1beta1.CancelTransferRequest.prototype.setTxId = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.tx.v1beta1.CancelTransferRequest} returns this
  */
 proto.cs3.tx.v1beta1.CancelTransferRequest.prototype.clearTxId = function() {
-  this.setTxId(undefined);
+  return this.setTxId(undefined);
 };
 
 
@@ -1240,17 +1291,21 @@ proto.cs3.tx.v1beta1.CancelTransferRequest.prototype.getOpaque = function() {
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.tx.v1beta1.CancelTransferRequest} returns this
+*/
 proto.cs3.tx.v1beta1.CancelTransferRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.tx.v1beta1.CancelTransferRequest} returns this
  */
 proto.cs3.tx.v1beta1.CancelTransferRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -1415,17 +1470,21 @@ proto.cs3.tx.v1beta1.CancelTransferResponse.prototype.getStatus = function() {
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.tx.v1beta1.CancelTransferResponse} returns this
+*/
 proto.cs3.tx.v1beta1.CancelTransferResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.tx.v1beta1.CancelTransferResponse} returns this
  */
 proto.cs3.tx.v1beta1.CancelTransferResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -1448,17 +1507,21 @@ proto.cs3.tx.v1beta1.CancelTransferResponse.prototype.getTxInfo = function() {
 };
 
 
-/** @param {?proto.cs3.tx.v1beta1.TxInfo|undefined} value */
+/**
+ * @param {?proto.cs3.tx.v1beta1.TxInfo|undefined} value
+ * @return {!proto.cs3.tx.v1beta1.CancelTransferResponse} returns this
+*/
 proto.cs3.tx.v1beta1.CancelTransferResponse.prototype.setTxInfo = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.tx.v1beta1.CancelTransferResponse} returns this
  */
 proto.cs3.tx.v1beta1.CancelTransferResponse.prototype.clearTxInfo = function() {
-  this.setTxInfo(undefined);
+  return this.setTxInfo(undefined);
 };
 
 
@@ -1481,17 +1544,21 @@ proto.cs3.tx.v1beta1.CancelTransferResponse.prototype.getOpaque = function() {
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.tx.v1beta1.CancelTransferResponse} returns this
+*/
 proto.cs3.tx.v1beta1.CancelTransferResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.tx.v1beta1.CancelTransferResponse} returns this
  */
 proto.cs3.tx.v1beta1.CancelTransferResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 

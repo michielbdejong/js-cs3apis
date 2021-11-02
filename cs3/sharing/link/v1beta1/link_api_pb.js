@@ -2,11 +2,14 @@
 /**
  * @fileoverview
  * @enhanceable
+ * @suppress {missingRequire} reports error on implicit type usages.
  * @suppress {messageConventions} JS Compiler reports an error if a variable or
  *     field starts with 'MSG_' and isn't a translatable message.
  * @public
  */
 // GENERATED CODE -- DO NOT EDIT!
+/* eslint-disable */
+// @ts-nocheck
 
 var jspb = require('google-protobuf');
 var goog = jspb;
@@ -485,17 +488,21 @@ proto.cs3.sharing.link.v1beta1.CreatePublicShareRequest.prototype.getOpaque = fu
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.CreatePublicShareRequest} returns this
+*/
 proto.cs3.sharing.link.v1beta1.CreatePublicShareRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.CreatePublicShareRequest} returns this
  */
 proto.cs3.sharing.link.v1beta1.CreatePublicShareRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -518,17 +525,21 @@ proto.cs3.sharing.link.v1beta1.CreatePublicShareRequest.prototype.getResourceInf
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.ResourceInfo|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.ResourceInfo|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.CreatePublicShareRequest} returns this
+*/
 proto.cs3.sharing.link.v1beta1.CreatePublicShareRequest.prototype.setResourceInfo = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.CreatePublicShareRequest} returns this
  */
 proto.cs3.sharing.link.v1beta1.CreatePublicShareRequest.prototype.clearResourceInfo = function() {
-  this.setResourceInfo(undefined);
+  return this.setResourceInfo(undefined);
 };
 
 
@@ -551,17 +562,21 @@ proto.cs3.sharing.link.v1beta1.CreatePublicShareRequest.prototype.getGrant = fun
 };
 
 
-/** @param {?proto.cs3.sharing.link.v1beta1.Grant|undefined} value */
+/**
+ * @param {?proto.cs3.sharing.link.v1beta1.Grant|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.CreatePublicShareRequest} returns this
+*/
 proto.cs3.sharing.link.v1beta1.CreatePublicShareRequest.prototype.setGrant = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.CreatePublicShareRequest} returns this
  */
 proto.cs3.sharing.link.v1beta1.CreatePublicShareRequest.prototype.clearGrant = function() {
-  this.setGrant(undefined);
+  return this.setGrant(undefined);
 };
 
 
@@ -726,17 +741,21 @@ proto.cs3.sharing.link.v1beta1.CreatePublicShareResponse.prototype.getStatus = f
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.CreatePublicShareResponse} returns this
+*/
 proto.cs3.sharing.link.v1beta1.CreatePublicShareResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.CreatePublicShareResponse} returns this
  */
 proto.cs3.sharing.link.v1beta1.CreatePublicShareResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -759,17 +778,21 @@ proto.cs3.sharing.link.v1beta1.CreatePublicShareResponse.prototype.getOpaque = f
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.CreatePublicShareResponse} returns this
+*/
 proto.cs3.sharing.link.v1beta1.CreatePublicShareResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.CreatePublicShareResponse} returns this
  */
 proto.cs3.sharing.link.v1beta1.CreatePublicShareResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -792,17 +815,21 @@ proto.cs3.sharing.link.v1beta1.CreatePublicShareResponse.prototype.getShare = fu
 };
 
 
-/** @param {?proto.cs3.sharing.link.v1beta1.PublicShare|undefined} value */
+/**
+ * @param {?proto.cs3.sharing.link.v1beta1.PublicShare|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.CreatePublicShareResponse} returns this
+*/
 proto.cs3.sharing.link.v1beta1.CreatePublicShareResponse.prototype.setShare = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.CreatePublicShareResponse} returns this
  */
 proto.cs3.sharing.link.v1beta1.CreatePublicShareResponse.prototype.clearShare = function() {
-  this.setShare(undefined);
+  return this.setShare(undefined);
 };
 
 
@@ -1115,9 +1142,12 @@ proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.Update.prototype.getType
 };
 
 
-/** @param {!proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.Update.Type} value */
+/**
+ * @param {!proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.Update.Type} value
+ * @return {!proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.Update} returns this
+ */
 proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.Update.prototype.setType = function(value) {
-  jspb.Message.setProto3EnumField(this, 3, value);
+  return jspb.Message.setProto3EnumField(this, 3, value);
 };
 
 
@@ -1131,17 +1161,21 @@ proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.Update.prototype.getGran
 };
 
 
-/** @param {?proto.cs3.sharing.link.v1beta1.Grant|undefined} value */
+/**
+ * @param {?proto.cs3.sharing.link.v1beta1.Grant|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.Update} returns this
+*/
 proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.Update.prototype.setGrant = function(value) {
-  jspb.Message.setWrapperField(this, 4, value);
+  return jspb.Message.setWrapperField(this, 4, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.Update} returns this
  */
 proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.Update.prototype.clearGrant = function() {
-  this.setGrant(undefined);
+  return this.setGrant(undefined);
 };
 
 
@@ -1163,9 +1197,12 @@ proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.Update.prototype.getDisp
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.Update} returns this
+ */
 proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.Update.prototype.setDisplayName = function(value) {
-  jspb.Message.setProto3StringField(this, 5, value);
+  return jspb.Message.setProto3StringField(this, 5, value);
 };
 
 
@@ -1179,17 +1216,21 @@ proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.prototype.getOpaque = fu
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest} returns this
+*/
 proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest} returns this
  */
 proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -1212,17 +1253,21 @@ proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.prototype.getRef = funct
 };
 
 
-/** @param {?proto.cs3.sharing.link.v1beta1.PublicShareReference|undefined} value */
+/**
+ * @param {?proto.cs3.sharing.link.v1beta1.PublicShareReference|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest} returns this
+*/
 proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.prototype.setRef = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest} returns this
  */
 proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.prototype.clearRef = function() {
-  this.setRef(undefined);
+  return this.setRef(undefined);
 };
 
 
@@ -1245,17 +1290,21 @@ proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.prototype.getUpdate = fu
 };
 
 
-/** @param {?proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.Update|undefined} value */
+/**
+ * @param {?proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.Update|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest} returns this
+*/
 proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.prototype.setUpdate = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest} returns this
  */
 proto.cs3.sharing.link.v1beta1.UpdatePublicShareRequest.prototype.clearUpdate = function() {
-  this.setUpdate(undefined);
+  return this.setUpdate(undefined);
 };
 
 
@@ -1420,17 +1469,21 @@ proto.cs3.sharing.link.v1beta1.UpdatePublicShareResponse.prototype.getStatus = f
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.UpdatePublicShareResponse} returns this
+*/
 proto.cs3.sharing.link.v1beta1.UpdatePublicShareResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.UpdatePublicShareResponse} returns this
  */
 proto.cs3.sharing.link.v1beta1.UpdatePublicShareResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -1453,17 +1506,21 @@ proto.cs3.sharing.link.v1beta1.UpdatePublicShareResponse.prototype.getOpaque = f
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.UpdatePublicShareResponse} returns this
+*/
 proto.cs3.sharing.link.v1beta1.UpdatePublicShareResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.UpdatePublicShareResponse} returns this
  */
 proto.cs3.sharing.link.v1beta1.UpdatePublicShareResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -1486,17 +1543,21 @@ proto.cs3.sharing.link.v1beta1.UpdatePublicShareResponse.prototype.getShare = fu
 };
 
 
-/** @param {?proto.cs3.sharing.link.v1beta1.PublicShare|undefined} value */
+/**
+ * @param {?proto.cs3.sharing.link.v1beta1.PublicShare|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.UpdatePublicShareResponse} returns this
+*/
 proto.cs3.sharing.link.v1beta1.UpdatePublicShareResponse.prototype.setShare = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.UpdatePublicShareResponse} returns this
  */
 proto.cs3.sharing.link.v1beta1.UpdatePublicShareResponse.prototype.clearShare = function() {
-  this.setShare(undefined);
+  return this.setShare(undefined);
 };
 
 
@@ -1857,9 +1918,12 @@ proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.Filter.prototype.getType 
 };
 
 
-/** @param {!proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.Filter.Type} value */
+/**
+ * @param {!proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.Filter.Type} value
+ * @return {!proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.Filter} returns this
+ */
 proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.Filter.prototype.setType = function(value) {
-  jspb.Message.setProto3EnumField(this, 2, value);
+  return jspb.Message.setProto3EnumField(this, 2, value);
 };
 
 
@@ -1873,17 +1937,21 @@ proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.Filter.prototype.getResou
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.ResourceId|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.ResourceId|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.Filter} returns this
+*/
 proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.Filter.prototype.setResourceId = function(value) {
-  jspb.Message.setOneofWrapperField(this, 3, proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.Filter.oneofGroups_[0], value);
+  return jspb.Message.setOneofWrapperField(this, 3, proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.Filter.oneofGroups_[0], value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.Filter} returns this
  */
 proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.Filter.prototype.clearResourceId = function() {
-  this.setResourceId(undefined);
+  return this.setResourceId(undefined);
 };
 
 
@@ -1906,17 +1974,21 @@ proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.Filter.prototype.getOwner
 };
 
 
-/** @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value */
+/**
+ * @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.Filter} returns this
+*/
 proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.Filter.prototype.setOwner = function(value) {
-  jspb.Message.setOneofWrapperField(this, 4, proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.Filter.oneofGroups_[0], value);
+  return jspb.Message.setOneofWrapperField(this, 4, proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.Filter.oneofGroups_[0], value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.Filter} returns this
  */
 proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.Filter.prototype.clearOwner = function() {
-  this.setOwner(undefined);
+  return this.setOwner(undefined);
 };
 
 
@@ -1939,17 +2011,21 @@ proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.Filter.prototype.getCreat
 };
 
 
-/** @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value */
+/**
+ * @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.Filter} returns this
+*/
 proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.Filter.prototype.setCreator = function(value) {
-  jspb.Message.setOneofWrapperField(this, 5, proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.Filter.oneofGroups_[0], value);
+  return jspb.Message.setOneofWrapperField(this, 5, proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.Filter.oneofGroups_[0], value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.Filter} returns this
  */
 proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.Filter.prototype.clearCreator = function() {
-  this.setCreator(undefined);
+  return this.setCreator(undefined);
 };
 
 
@@ -1972,17 +2048,21 @@ proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.prototype.getOpaque = fun
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest} returns this
+*/
 proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest} returns this
  */
 proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -2005,9 +2085,12 @@ proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.prototype.getFiltersList 
 };
 
 
-/** @param {!Array<!proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.Filter>} value */
+/**
+ * @param {!Array<!proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.Filter>} value
+ * @return {!proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest} returns this
+*/
 proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.prototype.setFiltersList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 2, value);
+  return jspb.Message.setRepeatedWrapperField(this, 2, value);
 };
 
 
@@ -2023,9 +2106,10 @@ proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.prototype.addFilters = fu
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest} returns this
  */
 proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.prototype.clearFiltersList = function() {
-  this.setFiltersList([]);
+  return this.setFiltersList([]);
 };
 
 
@@ -2038,9 +2122,12 @@ proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.prototype.getSign = funct
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest} returns this
+ */
 proto.cs3.sharing.link.v1beta1.ListPublicSharesRequest.prototype.setSign = function(value) {
-  jspb.Message.setProto3BooleanField(this, 3, value);
+  return jspb.Message.setProto3BooleanField(this, 3, value);
 };
 
 
@@ -2204,17 +2291,21 @@ proto.cs3.sharing.link.v1beta1.ListPublicSharesResponse.prototype.getStatus = fu
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.ListPublicSharesResponse} returns this
+*/
 proto.cs3.sharing.link.v1beta1.ListPublicSharesResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.ListPublicSharesResponse} returns this
  */
 proto.cs3.sharing.link.v1beta1.ListPublicSharesResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -2237,17 +2328,21 @@ proto.cs3.sharing.link.v1beta1.ListPublicSharesResponse.prototype.getOpaque = fu
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.ListPublicSharesResponse} returns this
+*/
 proto.cs3.sharing.link.v1beta1.ListPublicSharesResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.ListPublicSharesResponse} returns this
  */
 proto.cs3.sharing.link.v1beta1.ListPublicSharesResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -2270,9 +2365,12 @@ proto.cs3.sharing.link.v1beta1.ListPublicSharesResponse.prototype.getShareList =
 };
 
 
-/** @param {!Array<!proto.cs3.sharing.link.v1beta1.PublicShare>} value */
+/**
+ * @param {!Array<!proto.cs3.sharing.link.v1beta1.PublicShare>} value
+ * @return {!proto.cs3.sharing.link.v1beta1.ListPublicSharesResponse} returns this
+*/
 proto.cs3.sharing.link.v1beta1.ListPublicSharesResponse.prototype.setShareList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 3, value);
+  return jspb.Message.setRepeatedWrapperField(this, 3, value);
 };
 
 
@@ -2288,9 +2386,10 @@ proto.cs3.sharing.link.v1beta1.ListPublicSharesResponse.prototype.addShare = fun
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.cs3.sharing.link.v1beta1.ListPublicSharesResponse} returns this
  */
 proto.cs3.sharing.link.v1beta1.ListPublicSharesResponse.prototype.clearShareList = function() {
-  this.setShareList([]);
+  return this.setShareList([]);
 };
 
 
@@ -2432,17 +2531,21 @@ proto.cs3.sharing.link.v1beta1.RemovePublicShareRequest.prototype.getOpaque = fu
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.RemovePublicShareRequest} returns this
+*/
 proto.cs3.sharing.link.v1beta1.RemovePublicShareRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.RemovePublicShareRequest} returns this
  */
 proto.cs3.sharing.link.v1beta1.RemovePublicShareRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -2465,17 +2568,21 @@ proto.cs3.sharing.link.v1beta1.RemovePublicShareRequest.prototype.getRef = funct
 };
 
 
-/** @param {?proto.cs3.sharing.link.v1beta1.PublicShareReference|undefined} value */
+/**
+ * @param {?proto.cs3.sharing.link.v1beta1.PublicShareReference|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.RemovePublicShareRequest} returns this
+*/
 proto.cs3.sharing.link.v1beta1.RemovePublicShareRequest.prototype.setRef = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.RemovePublicShareRequest} returns this
  */
 proto.cs3.sharing.link.v1beta1.RemovePublicShareRequest.prototype.clearRef = function() {
-  this.setRef(undefined);
+  return this.setRef(undefined);
 };
 
 
@@ -2626,17 +2733,21 @@ proto.cs3.sharing.link.v1beta1.RemovePublicShareResponse.prototype.getStatus = f
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.RemovePublicShareResponse} returns this
+*/
 proto.cs3.sharing.link.v1beta1.RemovePublicShareResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.RemovePublicShareResponse} returns this
  */
 proto.cs3.sharing.link.v1beta1.RemovePublicShareResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -2659,17 +2770,21 @@ proto.cs3.sharing.link.v1beta1.RemovePublicShareResponse.prototype.getOpaque = f
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.RemovePublicShareResponse} returns this
+*/
 proto.cs3.sharing.link.v1beta1.RemovePublicShareResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.RemovePublicShareResponse} returns this
  */
 proto.cs3.sharing.link.v1beta1.RemovePublicShareResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -2832,17 +2947,21 @@ proto.cs3.sharing.link.v1beta1.GetPublicShareRequest.prototype.getOpaque = funct
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.GetPublicShareRequest} returns this
+*/
 proto.cs3.sharing.link.v1beta1.GetPublicShareRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.GetPublicShareRequest} returns this
  */
 proto.cs3.sharing.link.v1beta1.GetPublicShareRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -2865,17 +2984,21 @@ proto.cs3.sharing.link.v1beta1.GetPublicShareRequest.prototype.getRef = function
 };
 
 
-/** @param {?proto.cs3.sharing.link.v1beta1.PublicShareReference|undefined} value */
+/**
+ * @param {?proto.cs3.sharing.link.v1beta1.PublicShareReference|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.GetPublicShareRequest} returns this
+*/
 proto.cs3.sharing.link.v1beta1.GetPublicShareRequest.prototype.setRef = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.GetPublicShareRequest} returns this
  */
 proto.cs3.sharing.link.v1beta1.GetPublicShareRequest.prototype.clearRef = function() {
-  this.setRef(undefined);
+  return this.setRef(undefined);
 };
 
 
@@ -2897,9 +3020,12 @@ proto.cs3.sharing.link.v1beta1.GetPublicShareRequest.prototype.getSign = functio
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.cs3.sharing.link.v1beta1.GetPublicShareRequest} returns this
+ */
 proto.cs3.sharing.link.v1beta1.GetPublicShareRequest.prototype.setSign = function(value) {
-  jspb.Message.setProto3BooleanField(this, 3, value);
+  return jspb.Message.setProto3BooleanField(this, 3, value);
 };
 
 
@@ -3055,17 +3181,21 @@ proto.cs3.sharing.link.v1beta1.GetPublicShareResponse.prototype.getStatus = func
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.GetPublicShareResponse} returns this
+*/
 proto.cs3.sharing.link.v1beta1.GetPublicShareResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.GetPublicShareResponse} returns this
  */
 proto.cs3.sharing.link.v1beta1.GetPublicShareResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -3088,17 +3218,21 @@ proto.cs3.sharing.link.v1beta1.GetPublicShareResponse.prototype.getOpaque = func
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.GetPublicShareResponse} returns this
+*/
 proto.cs3.sharing.link.v1beta1.GetPublicShareResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.GetPublicShareResponse} returns this
  */
 proto.cs3.sharing.link.v1beta1.GetPublicShareResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -3121,17 +3255,21 @@ proto.cs3.sharing.link.v1beta1.GetPublicShareResponse.prototype.getShare = funct
 };
 
 
-/** @param {?proto.cs3.sharing.link.v1beta1.PublicShare|undefined} value */
+/**
+ * @param {?proto.cs3.sharing.link.v1beta1.PublicShare|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.GetPublicShareResponse} returns this
+*/
 proto.cs3.sharing.link.v1beta1.GetPublicShareResponse.prototype.setShare = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.GetPublicShareResponse} returns this
  */
 proto.cs3.sharing.link.v1beta1.GetPublicShareResponse.prototype.clearShare = function() {
-  this.setShare(undefined);
+  return this.setShare(undefined);
 };
 
 
@@ -3306,17 +3444,21 @@ proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenRequest.prototype.getOpaque 
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenRequest} returns this
+*/
 proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenRequest} returns this
  */
 proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -3338,9 +3480,12 @@ proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenRequest.prototype.getToken =
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenRequest} returns this
+ */
 proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenRequest.prototype.setToken = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -3354,17 +3499,21 @@ proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenRequest.prototype.getAuthent
 };
 
 
-/** @param {?proto.cs3.sharing.link.v1beta1.PublicShareAuthentication|undefined} value */
+/**
+ * @param {?proto.cs3.sharing.link.v1beta1.PublicShareAuthentication|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenRequest} returns this
+*/
 proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenRequest.prototype.setAuthentication = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenRequest} returns this
  */
 proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenRequest.prototype.clearAuthentication = function() {
-  this.setAuthentication(undefined);
+  return this.setAuthentication(undefined);
 };
 
 
@@ -3386,9 +3535,12 @@ proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenRequest.prototype.getSign = 
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenRequest} returns this
+ */
 proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenRequest.prototype.setSign = function(value) {
-  jspb.Message.setProto3BooleanField(this, 4, value);
+  return jspb.Message.setProto3BooleanField(this, 4, value);
 };
 
 
@@ -3556,17 +3708,21 @@ proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenResponse.prototype.getStatus
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenResponse} returns this
+*/
 proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenResponse} returns this
  */
 proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -3589,17 +3745,21 @@ proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenResponse.prototype.getOpaque
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenResponse} returns this
+*/
 proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenResponse} returns this
  */
 proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -3622,17 +3782,21 @@ proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenResponse.prototype.getShare 
 };
 
 
-/** @param {?proto.cs3.sharing.link.v1beta1.PublicShare|undefined} value */
+/**
+ * @param {?proto.cs3.sharing.link.v1beta1.PublicShare|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenResponse} returns this
+*/
 proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenResponse.prototype.setShare = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenResponse} returns this
  */
 proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenResponse.prototype.clearShare = function() {
-  this.setShare(undefined);
+  return this.setShare(undefined);
 };
 
 
@@ -3654,9 +3818,12 @@ proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenResponse.prototype.getPasswo
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenResponse} returns this
+ */
 proto.cs3.sharing.link.v1beta1.GetPublicShareByTokenResponse.prototype.setPasswordHash = function(value) {
-  jspb.Message.setProto3StringField(this, 4, value);
+  return jspb.Message.setProto3StringField(this, 4, value);
 };
 
 

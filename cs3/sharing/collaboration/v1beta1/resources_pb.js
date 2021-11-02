@@ -2,11 +2,14 @@
 /**
  * @fileoverview
  * @enhanceable
+ * @suppress {missingRequire} reports error on implicit type usages.
  * @suppress {messageConventions} JS Compiler reports an error if a variable or
  *     field starts with 'MSG_' and isn't a translatable message.
  * @public
  */
 // GENERATED CODE -- DO NOT EDIT!
+/* eslint-disable */
+// @ts-nocheck
 
 var jspb = require('google-protobuf');
 var goog = jspb;
@@ -420,17 +423,21 @@ proto.cs3.sharing.collaboration.v1beta1.Share.prototype.getId = function() {
 };
 
 
-/** @param {?proto.cs3.sharing.collaboration.v1beta1.ShareId|undefined} value */
+/**
+ * @param {?proto.cs3.sharing.collaboration.v1beta1.ShareId|undefined} value
+ * @return {!proto.cs3.sharing.collaboration.v1beta1.Share} returns this
+*/
 proto.cs3.sharing.collaboration.v1beta1.Share.prototype.setId = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.collaboration.v1beta1.Share} returns this
  */
 proto.cs3.sharing.collaboration.v1beta1.Share.prototype.clearId = function() {
-  this.setId(undefined);
+  return this.setId(undefined);
 };
 
 
@@ -453,17 +460,21 @@ proto.cs3.sharing.collaboration.v1beta1.Share.prototype.getResourceId = function
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.ResourceId|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.ResourceId|undefined} value
+ * @return {!proto.cs3.sharing.collaboration.v1beta1.Share} returns this
+*/
 proto.cs3.sharing.collaboration.v1beta1.Share.prototype.setResourceId = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.collaboration.v1beta1.Share} returns this
  */
 proto.cs3.sharing.collaboration.v1beta1.Share.prototype.clearResourceId = function() {
-  this.setResourceId(undefined);
+  return this.setResourceId(undefined);
 };
 
 
@@ -486,17 +497,21 @@ proto.cs3.sharing.collaboration.v1beta1.Share.prototype.getPermissions = functio
 };
 
 
-/** @param {?proto.cs3.sharing.collaboration.v1beta1.SharePermissions|undefined} value */
+/**
+ * @param {?proto.cs3.sharing.collaboration.v1beta1.SharePermissions|undefined} value
+ * @return {!proto.cs3.sharing.collaboration.v1beta1.Share} returns this
+*/
 proto.cs3.sharing.collaboration.v1beta1.Share.prototype.setPermissions = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.collaboration.v1beta1.Share} returns this
  */
 proto.cs3.sharing.collaboration.v1beta1.Share.prototype.clearPermissions = function() {
-  this.setPermissions(undefined);
+  return this.setPermissions(undefined);
 };
 
 
@@ -519,17 +534,21 @@ proto.cs3.sharing.collaboration.v1beta1.Share.prototype.getGrantee = function() 
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.Grantee|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.Grantee|undefined} value
+ * @return {!proto.cs3.sharing.collaboration.v1beta1.Share} returns this
+*/
 proto.cs3.sharing.collaboration.v1beta1.Share.prototype.setGrantee = function(value) {
-  jspb.Message.setWrapperField(this, 4, value);
+  return jspb.Message.setWrapperField(this, 4, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.collaboration.v1beta1.Share} returns this
  */
 proto.cs3.sharing.collaboration.v1beta1.Share.prototype.clearGrantee = function() {
-  this.setGrantee(undefined);
+  return this.setGrantee(undefined);
 };
 
 
@@ -552,17 +571,21 @@ proto.cs3.sharing.collaboration.v1beta1.Share.prototype.getOwner = function() {
 };
 
 
-/** @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value */
+/**
+ * @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value
+ * @return {!proto.cs3.sharing.collaboration.v1beta1.Share} returns this
+*/
 proto.cs3.sharing.collaboration.v1beta1.Share.prototype.setOwner = function(value) {
-  jspb.Message.setWrapperField(this, 5, value);
+  return jspb.Message.setWrapperField(this, 5, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.collaboration.v1beta1.Share} returns this
  */
 proto.cs3.sharing.collaboration.v1beta1.Share.prototype.clearOwner = function() {
-  this.setOwner(undefined);
+  return this.setOwner(undefined);
 };
 
 
@@ -585,17 +608,21 @@ proto.cs3.sharing.collaboration.v1beta1.Share.prototype.getCreator = function() 
 };
 
 
-/** @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value */
+/**
+ * @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value
+ * @return {!proto.cs3.sharing.collaboration.v1beta1.Share} returns this
+*/
 proto.cs3.sharing.collaboration.v1beta1.Share.prototype.setCreator = function(value) {
-  jspb.Message.setWrapperField(this, 6, value);
+  return jspb.Message.setWrapperField(this, 6, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.collaboration.v1beta1.Share} returns this
  */
 proto.cs3.sharing.collaboration.v1beta1.Share.prototype.clearCreator = function() {
-  this.setCreator(undefined);
+  return this.setCreator(undefined);
 };
 
 
@@ -618,17 +645,21 @@ proto.cs3.sharing.collaboration.v1beta1.Share.prototype.getCtime = function() {
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Timestamp|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Timestamp|undefined} value
+ * @return {!proto.cs3.sharing.collaboration.v1beta1.Share} returns this
+*/
 proto.cs3.sharing.collaboration.v1beta1.Share.prototype.setCtime = function(value) {
-  jspb.Message.setWrapperField(this, 7, value);
+  return jspb.Message.setWrapperField(this, 7, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.collaboration.v1beta1.Share} returns this
  */
 proto.cs3.sharing.collaboration.v1beta1.Share.prototype.clearCtime = function() {
-  this.setCtime(undefined);
+  return this.setCtime(undefined);
 };
 
 
@@ -651,17 +682,21 @@ proto.cs3.sharing.collaboration.v1beta1.Share.prototype.getMtime = function() {
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Timestamp|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Timestamp|undefined} value
+ * @return {!proto.cs3.sharing.collaboration.v1beta1.Share} returns this
+*/
 proto.cs3.sharing.collaboration.v1beta1.Share.prototype.setMtime = function(value) {
-  jspb.Message.setWrapperField(this, 8, value);
+  return jspb.Message.setWrapperField(this, 8, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.collaboration.v1beta1.Share} returns this
  */
 proto.cs3.sharing.collaboration.v1beta1.Share.prototype.clearMtime = function() {
-  this.setMtime(undefined);
+  return this.setMtime(undefined);
 };
 
 
@@ -798,17 +833,21 @@ proto.cs3.sharing.collaboration.v1beta1.SharePermissions.prototype.getPermission
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.ResourcePermissions|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.ResourcePermissions|undefined} value
+ * @return {!proto.cs3.sharing.collaboration.v1beta1.SharePermissions} returns this
+*/
 proto.cs3.sharing.collaboration.v1beta1.SharePermissions.prototype.setPermissions = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.collaboration.v1beta1.SharePermissions} returns this
  */
 proto.cs3.sharing.collaboration.v1beta1.SharePermissions.prototype.clearPermissions = function() {
-  this.setPermissions(undefined);
+  return this.setPermissions(undefined);
 };
 
 
@@ -971,17 +1010,21 @@ proto.cs3.sharing.collaboration.v1beta1.ReceivedShare.prototype.getShare = funct
 };
 
 
-/** @param {?proto.cs3.sharing.collaboration.v1beta1.Share|undefined} value */
+/**
+ * @param {?proto.cs3.sharing.collaboration.v1beta1.Share|undefined} value
+ * @return {!proto.cs3.sharing.collaboration.v1beta1.ReceivedShare} returns this
+*/
 proto.cs3.sharing.collaboration.v1beta1.ReceivedShare.prototype.setShare = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.collaboration.v1beta1.ReceivedShare} returns this
  */
 proto.cs3.sharing.collaboration.v1beta1.ReceivedShare.prototype.clearShare = function() {
-  this.setShare(undefined);
+  return this.setShare(undefined);
 };
 
 
@@ -1003,9 +1046,12 @@ proto.cs3.sharing.collaboration.v1beta1.ReceivedShare.prototype.getState = funct
 };
 
 
-/** @param {!proto.cs3.sharing.collaboration.v1beta1.ShareState} value */
+/**
+ * @param {!proto.cs3.sharing.collaboration.v1beta1.ShareState} value
+ * @return {!proto.cs3.sharing.collaboration.v1beta1.ReceivedShare} returns this
+ */
 proto.cs3.sharing.collaboration.v1beta1.ReceivedShare.prototype.setState = function(value) {
-  jspb.Message.setProto3EnumField(this, 2, value);
+  return jspb.Message.setProto3EnumField(this, 2, value);
 };
 
 
@@ -1019,17 +1065,21 @@ proto.cs3.sharing.collaboration.v1beta1.ReceivedShare.prototype.getMountPoint = 
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.Reference|undefined} value
+ * @return {!proto.cs3.sharing.collaboration.v1beta1.ReceivedShare} returns this
+*/
 proto.cs3.sharing.collaboration.v1beta1.ReceivedShare.prototype.setMountPoint = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.collaboration.v1beta1.ReceivedShare} returns this
  */
 proto.cs3.sharing.collaboration.v1beta1.ReceivedShare.prototype.clearMountPoint = function() {
-  this.setMountPoint(undefined);
+  return this.setMountPoint(undefined);
 };
 
 
@@ -1194,17 +1244,21 @@ proto.cs3.sharing.collaboration.v1beta1.ShareKey.prototype.getOwner = function()
 };
 
 
-/** @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value */
+/**
+ * @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value
+ * @return {!proto.cs3.sharing.collaboration.v1beta1.ShareKey} returns this
+*/
 proto.cs3.sharing.collaboration.v1beta1.ShareKey.prototype.setOwner = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.collaboration.v1beta1.ShareKey} returns this
  */
 proto.cs3.sharing.collaboration.v1beta1.ShareKey.prototype.clearOwner = function() {
-  this.setOwner(undefined);
+  return this.setOwner(undefined);
 };
 
 
@@ -1227,17 +1281,21 @@ proto.cs3.sharing.collaboration.v1beta1.ShareKey.prototype.getResourceId = funct
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.ResourceId|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.ResourceId|undefined} value
+ * @return {!proto.cs3.sharing.collaboration.v1beta1.ShareKey} returns this
+*/
 proto.cs3.sharing.collaboration.v1beta1.ShareKey.prototype.setResourceId = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.collaboration.v1beta1.ShareKey} returns this
  */
 proto.cs3.sharing.collaboration.v1beta1.ShareKey.prototype.clearResourceId = function() {
-  this.setResourceId(undefined);
+  return this.setResourceId(undefined);
 };
 
 
@@ -1260,17 +1318,21 @@ proto.cs3.sharing.collaboration.v1beta1.ShareKey.prototype.getGrantee = function
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.Grantee|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.Grantee|undefined} value
+ * @return {!proto.cs3.sharing.collaboration.v1beta1.ShareKey} returns this
+*/
 proto.cs3.sharing.collaboration.v1beta1.ShareKey.prototype.setGrantee = function(value) {
-  jspb.Message.setWrapperField(this, 4, value);
+  return jspb.Message.setWrapperField(this, 4, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.collaboration.v1beta1.ShareKey} returns this
  */
 proto.cs3.sharing.collaboration.v1beta1.ShareKey.prototype.clearGrantee = function() {
-  this.setGrantee(undefined);
+  return this.setGrantee(undefined);
 };
 
 
@@ -1404,9 +1466,12 @@ proto.cs3.sharing.collaboration.v1beta1.ShareId.prototype.getOpaqueId = function
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.sharing.collaboration.v1beta1.ShareId} returns this
+ */
 proto.cs3.sharing.collaboration.v1beta1.ShareId.prototype.setOpaqueId = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -1574,17 +1639,21 @@ proto.cs3.sharing.collaboration.v1beta1.ShareReference.prototype.getId = functio
 };
 
 
-/** @param {?proto.cs3.sharing.collaboration.v1beta1.ShareId|undefined} value */
+/**
+ * @param {?proto.cs3.sharing.collaboration.v1beta1.ShareId|undefined} value
+ * @return {!proto.cs3.sharing.collaboration.v1beta1.ShareReference} returns this
+*/
 proto.cs3.sharing.collaboration.v1beta1.ShareReference.prototype.setId = function(value) {
-  jspb.Message.setOneofWrapperField(this, 1, proto.cs3.sharing.collaboration.v1beta1.ShareReference.oneofGroups_[0], value);
+  return jspb.Message.setOneofWrapperField(this, 1, proto.cs3.sharing.collaboration.v1beta1.ShareReference.oneofGroups_[0], value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.collaboration.v1beta1.ShareReference} returns this
  */
 proto.cs3.sharing.collaboration.v1beta1.ShareReference.prototype.clearId = function() {
-  this.setId(undefined);
+  return this.setId(undefined);
 };
 
 
@@ -1607,17 +1676,21 @@ proto.cs3.sharing.collaboration.v1beta1.ShareReference.prototype.getKey = functi
 };
 
 
-/** @param {?proto.cs3.sharing.collaboration.v1beta1.ShareKey|undefined} value */
+/**
+ * @param {?proto.cs3.sharing.collaboration.v1beta1.ShareKey|undefined} value
+ * @return {!proto.cs3.sharing.collaboration.v1beta1.ShareReference} returns this
+*/
 proto.cs3.sharing.collaboration.v1beta1.ShareReference.prototype.setKey = function(value) {
-  jspb.Message.setOneofWrapperField(this, 2, proto.cs3.sharing.collaboration.v1beta1.ShareReference.oneofGroups_[0], value);
+  return jspb.Message.setOneofWrapperField(this, 2, proto.cs3.sharing.collaboration.v1beta1.ShareReference.oneofGroups_[0], value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.collaboration.v1beta1.ShareReference} returns this
  */
 proto.cs3.sharing.collaboration.v1beta1.ShareReference.prototype.clearKey = function() {
-  this.setKey(undefined);
+  return this.setKey(undefined);
 };
 
 
@@ -1768,17 +1841,21 @@ proto.cs3.sharing.collaboration.v1beta1.ShareGrant.prototype.getGrantee = functi
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.Grantee|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.Grantee|undefined} value
+ * @return {!proto.cs3.sharing.collaboration.v1beta1.ShareGrant} returns this
+*/
 proto.cs3.sharing.collaboration.v1beta1.ShareGrant.prototype.setGrantee = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.collaboration.v1beta1.ShareGrant} returns this
  */
 proto.cs3.sharing.collaboration.v1beta1.ShareGrant.prototype.clearGrantee = function() {
-  this.setGrantee(undefined);
+  return this.setGrantee(undefined);
 };
 
 
@@ -1801,17 +1878,21 @@ proto.cs3.sharing.collaboration.v1beta1.ShareGrant.prototype.getPermissions = fu
 };
 
 
-/** @param {?proto.cs3.sharing.collaboration.v1beta1.SharePermissions|undefined} value */
+/**
+ * @param {?proto.cs3.sharing.collaboration.v1beta1.SharePermissions|undefined} value
+ * @return {!proto.cs3.sharing.collaboration.v1beta1.ShareGrant} returns this
+*/
 proto.cs3.sharing.collaboration.v1beta1.ShareGrant.prototype.setPermissions = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.collaboration.v1beta1.ShareGrant} returns this
  */
 proto.cs3.sharing.collaboration.v1beta1.ShareGrant.prototype.clearPermissions = function() {
-  this.setPermissions(undefined);
+  return this.setPermissions(undefined);
 };
 
 
@@ -2040,9 +2121,12 @@ proto.cs3.sharing.collaboration.v1beta1.Filter.prototype.getType = function() {
 };
 
 
-/** @param {!proto.cs3.sharing.collaboration.v1beta1.Filter.Type} value */
+/**
+ * @param {!proto.cs3.sharing.collaboration.v1beta1.Filter.Type} value
+ * @return {!proto.cs3.sharing.collaboration.v1beta1.Filter} returns this
+ */
 proto.cs3.sharing.collaboration.v1beta1.Filter.prototype.setType = function(value) {
-  jspb.Message.setProto3EnumField(this, 2, value);
+  return jspb.Message.setProto3EnumField(this, 2, value);
 };
 
 
@@ -2056,17 +2140,21 @@ proto.cs3.sharing.collaboration.v1beta1.Filter.prototype.getResourceId = functio
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.ResourceId|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.ResourceId|undefined} value
+ * @return {!proto.cs3.sharing.collaboration.v1beta1.Filter} returns this
+*/
 proto.cs3.sharing.collaboration.v1beta1.Filter.prototype.setResourceId = function(value) {
-  jspb.Message.setOneofWrapperField(this, 3, proto.cs3.sharing.collaboration.v1beta1.Filter.oneofGroups_[0], value);
+  return jspb.Message.setOneofWrapperField(this, 3, proto.cs3.sharing.collaboration.v1beta1.Filter.oneofGroups_[0], value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.collaboration.v1beta1.Filter} returns this
  */
 proto.cs3.sharing.collaboration.v1beta1.Filter.prototype.clearResourceId = function() {
-  this.setResourceId(undefined);
+  return this.setResourceId(undefined);
 };
 
 
@@ -2089,17 +2177,21 @@ proto.cs3.sharing.collaboration.v1beta1.Filter.prototype.getOwner = function() {
 };
 
 
-/** @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value */
+/**
+ * @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value
+ * @return {!proto.cs3.sharing.collaboration.v1beta1.Filter} returns this
+*/
 proto.cs3.sharing.collaboration.v1beta1.Filter.prototype.setOwner = function(value) {
-  jspb.Message.setOneofWrapperField(this, 4, proto.cs3.sharing.collaboration.v1beta1.Filter.oneofGroups_[0], value);
+  return jspb.Message.setOneofWrapperField(this, 4, proto.cs3.sharing.collaboration.v1beta1.Filter.oneofGroups_[0], value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.collaboration.v1beta1.Filter} returns this
  */
 proto.cs3.sharing.collaboration.v1beta1.Filter.prototype.clearOwner = function() {
-  this.setOwner(undefined);
+  return this.setOwner(undefined);
 };
 
 
@@ -2122,17 +2214,21 @@ proto.cs3.sharing.collaboration.v1beta1.Filter.prototype.getCreator = function()
 };
 
 
-/** @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value */
+/**
+ * @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value
+ * @return {!proto.cs3.sharing.collaboration.v1beta1.Filter} returns this
+*/
 proto.cs3.sharing.collaboration.v1beta1.Filter.prototype.setCreator = function(value) {
-  jspb.Message.setOneofWrapperField(this, 5, proto.cs3.sharing.collaboration.v1beta1.Filter.oneofGroups_[0], value);
+  return jspb.Message.setOneofWrapperField(this, 5, proto.cs3.sharing.collaboration.v1beta1.Filter.oneofGroups_[0], value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.collaboration.v1beta1.Filter} returns this
  */
 proto.cs3.sharing.collaboration.v1beta1.Filter.prototype.clearCreator = function() {
-  this.setCreator(undefined);
+  return this.setCreator(undefined);
 };
 
 
@@ -2154,17 +2250,21 @@ proto.cs3.sharing.collaboration.v1beta1.Filter.prototype.getGranteeType = functi
 };
 
 
-/** @param {!proto.cs3.storage.provider.v1beta1.GranteeType} value */
+/**
+ * @param {!proto.cs3.storage.provider.v1beta1.GranteeType} value
+ * @return {!proto.cs3.sharing.collaboration.v1beta1.Filter} returns this
+ */
 proto.cs3.sharing.collaboration.v1beta1.Filter.prototype.setGranteeType = function(value) {
-  jspb.Message.setOneofField(this, 6, proto.cs3.sharing.collaboration.v1beta1.Filter.oneofGroups_[0], value);
+  return jspb.Message.setOneofField(this, 6, proto.cs3.sharing.collaboration.v1beta1.Filter.oneofGroups_[0], value);
 };
 
 
 /**
  * Clears the field making it undefined.
+ * @return {!proto.cs3.sharing.collaboration.v1beta1.Filter} returns this
  */
 proto.cs3.sharing.collaboration.v1beta1.Filter.prototype.clearGranteeType = function() {
-  jspb.Message.setOneofField(this, 6, proto.cs3.sharing.collaboration.v1beta1.Filter.oneofGroups_[0], undefined);
+  return jspb.Message.setOneofField(this, 6, proto.cs3.sharing.collaboration.v1beta1.Filter.oneofGroups_[0], undefined);
 };
 
 

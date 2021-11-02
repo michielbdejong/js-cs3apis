@@ -2,11 +2,14 @@
 /**
  * @fileoverview
  * @enhanceable
+ * @suppress {missingRequire} reports error on implicit type usages.
  * @suppress {messageConventions} JS Compiler reports an error if a variable or
  *     field starts with 'MSG_' and isn't a translatable message.
  * @public
  */
 // GENERATED CODE -- DO NOT EDIT!
+/* eslint-disable */
+// @ts-nocheck
 
 var jspb = require('google-protobuf');
 var goog = jspb;
@@ -227,8 +230,7 @@ proto.cs3.identity.user.v1beta1.GetUserRequest.prototype.toObject = function(opt
 proto.cs3.identity.user.v1beta1.GetUserRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     opaque: (f = msg.getOpaque()) && cs3_types_v1beta1_types_pb.Opaque.toObject(includeInstance, f),
-    userId: (f = msg.getUserId()) && cs3_identity_user_v1beta1_resources_pb.UserId.toObject(includeInstance, f),
-    skipFetchingUserGroups: jspb.Message.getBooleanFieldWithDefault(msg, 3, false)
+    userId: (f = msg.getUserId()) && cs3_identity_user_v1beta1_resources_pb.UserId.toObject(includeInstance, f)
   };
 
   if (includeInstance) {
@@ -275,10 +277,6 @@ proto.cs3.identity.user.v1beta1.GetUserRequest.deserializeBinaryFromReader = fun
       reader.readMessage(value,cs3_identity_user_v1beta1_resources_pb.UserId.deserializeBinaryFromReader);
       msg.setUserId(value);
       break;
-    case 3:
-      var value = /** @type {boolean} */ (reader.readBool());
-      msg.setSkipFetchingUserGroups(value);
-      break;
     default:
       reader.skipField();
       break;
@@ -324,13 +322,6 @@ proto.cs3.identity.user.v1beta1.GetUserRequest.serializeBinaryToWriter = functio
       cs3_identity_user_v1beta1_resources_pb.UserId.serializeBinaryToWriter
     );
   }
-  f = message.getSkipFetchingUserGroups();
-  if (f) {
-    writer.writeBool(
-      3,
-      f
-    );
-  }
 };
 
 
@@ -344,17 +335,21 @@ proto.cs3.identity.user.v1beta1.GetUserRequest.prototype.getOpaque = function() 
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.identity.user.v1beta1.GetUserRequest} returns this
+*/
 proto.cs3.identity.user.v1beta1.GetUserRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.identity.user.v1beta1.GetUserRequest} returns this
  */
 proto.cs3.identity.user.v1beta1.GetUserRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -377,17 +372,21 @@ proto.cs3.identity.user.v1beta1.GetUserRequest.prototype.getUserId = function() 
 };
 
 
-/** @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value */
+/**
+ * @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value
+ * @return {!proto.cs3.identity.user.v1beta1.GetUserRequest} returns this
+*/
 proto.cs3.identity.user.v1beta1.GetUserRequest.prototype.setUserId = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.identity.user.v1beta1.GetUserRequest} returns this
  */
 proto.cs3.identity.user.v1beta1.GetUserRequest.prototype.clearUserId = function() {
-  this.setUserId(undefined);
+  return this.setUserId(undefined);
 };
 
 
@@ -397,21 +396,6 @@ proto.cs3.identity.user.v1beta1.GetUserRequest.prototype.clearUserId = function(
  */
 proto.cs3.identity.user.v1beta1.GetUserRequest.prototype.hasUserId = function() {
   return jspb.Message.getField(this, 2) != null;
-};
-
-
-/**
- * optional bool skip_fetching_user_groups = 3;
- * @return {boolean}
- */
-proto.cs3.identity.user.v1beta1.GetUserRequest.prototype.getSkipFetchingUserGroups = function() {
-  return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 3, false));
-};
-
-
-/** @param {boolean} value */
-proto.cs3.identity.user.v1beta1.GetUserRequest.prototype.setSkipFetchingUserGroups = function(value) {
-  jspb.Message.setProto3BooleanField(this, 3, value);
 };
 
 
@@ -567,17 +551,21 @@ proto.cs3.identity.user.v1beta1.GetUserResponse.prototype.getStatus = function()
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.identity.user.v1beta1.GetUserResponse} returns this
+*/
 proto.cs3.identity.user.v1beta1.GetUserResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.identity.user.v1beta1.GetUserResponse} returns this
  */
 proto.cs3.identity.user.v1beta1.GetUserResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -600,17 +588,21 @@ proto.cs3.identity.user.v1beta1.GetUserResponse.prototype.getOpaque = function()
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.identity.user.v1beta1.GetUserResponse} returns this
+*/
 proto.cs3.identity.user.v1beta1.GetUserResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.identity.user.v1beta1.GetUserResponse} returns this
  */
 proto.cs3.identity.user.v1beta1.GetUserResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -633,17 +625,21 @@ proto.cs3.identity.user.v1beta1.GetUserResponse.prototype.getUser = function() {
 };
 
 
-/** @param {?proto.cs3.identity.user.v1beta1.User|undefined} value */
+/**
+ * @param {?proto.cs3.identity.user.v1beta1.User|undefined} value
+ * @return {!proto.cs3.identity.user.v1beta1.GetUserResponse} returns this
+*/
 proto.cs3.identity.user.v1beta1.GetUserResponse.prototype.setUser = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.identity.user.v1beta1.GetUserResponse} returns this
  */
 proto.cs3.identity.user.v1beta1.GetUserResponse.prototype.clearUser = function() {
-  this.setUser(undefined);
+  return this.setUser(undefined);
 };
 
 
@@ -690,8 +686,7 @@ proto.cs3.identity.user.v1beta1.GetUserByClaimRequest.toObject = function(includ
   var f, obj = {
     opaque: (f = msg.getOpaque()) && cs3_types_v1beta1_types_pb.Opaque.toObject(includeInstance, f),
     claim: jspb.Message.getFieldWithDefault(msg, 2, ""),
-    value: jspb.Message.getFieldWithDefault(msg, 3, ""),
-    skipFetchingUserGroups: jspb.Message.getBooleanFieldWithDefault(msg, 4, false)
+    value: jspb.Message.getFieldWithDefault(msg, 3, "")
   };
 
   if (includeInstance) {
@@ -740,10 +735,6 @@ proto.cs3.identity.user.v1beta1.GetUserByClaimRequest.deserializeBinaryFromReade
     case 3:
       var value = /** @type {string} */ (reader.readString());
       msg.setValue(value);
-      break;
-    case 4:
-      var value = /** @type {boolean} */ (reader.readBool());
-      msg.setSkipFetchingUserGroups(value);
       break;
     default:
       reader.skipField();
@@ -796,13 +787,6 @@ proto.cs3.identity.user.v1beta1.GetUserByClaimRequest.serializeBinaryToWriter = 
       f
     );
   }
-  f = message.getSkipFetchingUserGroups();
-  if (f) {
-    writer.writeBool(
-      4,
-      f
-    );
-  }
 };
 
 
@@ -816,17 +800,21 @@ proto.cs3.identity.user.v1beta1.GetUserByClaimRequest.prototype.getOpaque = func
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.identity.user.v1beta1.GetUserByClaimRequest} returns this
+*/
 proto.cs3.identity.user.v1beta1.GetUserByClaimRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.identity.user.v1beta1.GetUserByClaimRequest} returns this
  */
 proto.cs3.identity.user.v1beta1.GetUserByClaimRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -848,9 +836,12 @@ proto.cs3.identity.user.v1beta1.GetUserByClaimRequest.prototype.getClaim = funct
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.identity.user.v1beta1.GetUserByClaimRequest} returns this
+ */
 proto.cs3.identity.user.v1beta1.GetUserByClaimRequest.prototype.setClaim = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -863,24 +854,12 @@ proto.cs3.identity.user.v1beta1.GetUserByClaimRequest.prototype.getValue = funct
 };
 
 
-/** @param {string} value */
-proto.cs3.identity.user.v1beta1.GetUserByClaimRequest.prototype.setValue = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
-};
-
-
 /**
- * optional bool skip_fetching_user_groups = 4;
- * @return {boolean}
+ * @param {string} value
+ * @return {!proto.cs3.identity.user.v1beta1.GetUserByClaimRequest} returns this
  */
-proto.cs3.identity.user.v1beta1.GetUserByClaimRequest.prototype.getSkipFetchingUserGroups = function() {
-  return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 4, false));
-};
-
-
-/** @param {boolean} value */
-proto.cs3.identity.user.v1beta1.GetUserByClaimRequest.prototype.setSkipFetchingUserGroups = function(value) {
-  jspb.Message.setProto3BooleanField(this, 4, value);
+proto.cs3.identity.user.v1beta1.GetUserByClaimRequest.prototype.setValue = function(value) {
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -1036,17 +1015,21 @@ proto.cs3.identity.user.v1beta1.GetUserByClaimResponse.prototype.getStatus = fun
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.identity.user.v1beta1.GetUserByClaimResponse} returns this
+*/
 proto.cs3.identity.user.v1beta1.GetUserByClaimResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.identity.user.v1beta1.GetUserByClaimResponse} returns this
  */
 proto.cs3.identity.user.v1beta1.GetUserByClaimResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -1069,17 +1052,21 @@ proto.cs3.identity.user.v1beta1.GetUserByClaimResponse.prototype.getOpaque = fun
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.identity.user.v1beta1.GetUserByClaimResponse} returns this
+*/
 proto.cs3.identity.user.v1beta1.GetUserByClaimResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.identity.user.v1beta1.GetUserByClaimResponse} returns this
  */
 proto.cs3.identity.user.v1beta1.GetUserByClaimResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -1102,17 +1089,21 @@ proto.cs3.identity.user.v1beta1.GetUserByClaimResponse.prototype.getUser = funct
 };
 
 
-/** @param {?proto.cs3.identity.user.v1beta1.User|undefined} value */
+/**
+ * @param {?proto.cs3.identity.user.v1beta1.User|undefined} value
+ * @return {!proto.cs3.identity.user.v1beta1.GetUserByClaimResponse} returns this
+*/
 proto.cs3.identity.user.v1beta1.GetUserByClaimResponse.prototype.setUser = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.identity.user.v1beta1.GetUserByClaimResponse} returns this
  */
 proto.cs3.identity.user.v1beta1.GetUserByClaimResponse.prototype.clearUser = function() {
-  this.setUser(undefined);
+  return this.setUser(undefined);
 };
 
 
@@ -1263,17 +1254,21 @@ proto.cs3.identity.user.v1beta1.GetUserGroupsRequest.prototype.getOpaque = funct
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.identity.user.v1beta1.GetUserGroupsRequest} returns this
+*/
 proto.cs3.identity.user.v1beta1.GetUserGroupsRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.identity.user.v1beta1.GetUserGroupsRequest} returns this
  */
 proto.cs3.identity.user.v1beta1.GetUserGroupsRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -1296,17 +1291,21 @@ proto.cs3.identity.user.v1beta1.GetUserGroupsRequest.prototype.getUserId = funct
 };
 
 
-/** @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value */
+/**
+ * @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value
+ * @return {!proto.cs3.identity.user.v1beta1.GetUserGroupsRequest} returns this
+*/
 proto.cs3.identity.user.v1beta1.GetUserGroupsRequest.prototype.setUserId = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.identity.user.v1beta1.GetUserGroupsRequest} returns this
  */
 proto.cs3.identity.user.v1beta1.GetUserGroupsRequest.prototype.clearUserId = function() {
-  this.setUserId(undefined);
+  return this.setUserId(undefined);
 };
 
 
@@ -1476,17 +1475,21 @@ proto.cs3.identity.user.v1beta1.GetUserGroupsResponse.prototype.getStatus = func
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.identity.user.v1beta1.GetUserGroupsResponse} returns this
+*/
 proto.cs3.identity.user.v1beta1.GetUserGroupsResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.identity.user.v1beta1.GetUserGroupsResponse} returns this
  */
 proto.cs3.identity.user.v1beta1.GetUserGroupsResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -1509,17 +1512,21 @@ proto.cs3.identity.user.v1beta1.GetUserGroupsResponse.prototype.getOpaque = func
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.identity.user.v1beta1.GetUserGroupsResponse} returns this
+*/
 proto.cs3.identity.user.v1beta1.GetUserGroupsResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.identity.user.v1beta1.GetUserGroupsResponse} returns this
  */
 proto.cs3.identity.user.v1beta1.GetUserGroupsResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -1541,26 +1548,31 @@ proto.cs3.identity.user.v1beta1.GetUserGroupsResponse.prototype.getGroupsList = 
 };
 
 
-/** @param {!Array<string>} value */
+/**
+ * @param {!Array<string>} value
+ * @return {!proto.cs3.identity.user.v1beta1.GetUserGroupsResponse} returns this
+ */
 proto.cs3.identity.user.v1beta1.GetUserGroupsResponse.prototype.setGroupsList = function(value) {
-  jspb.Message.setField(this, 3, value || []);
+  return jspb.Message.setField(this, 3, value || []);
 };
 
 
 /**
  * @param {string} value
  * @param {number=} opt_index
+ * @return {!proto.cs3.identity.user.v1beta1.GetUserGroupsResponse} returns this
  */
 proto.cs3.identity.user.v1beta1.GetUserGroupsResponse.prototype.addGroups = function(value, opt_index) {
-  jspb.Message.addToRepeatedField(this, 3, value, opt_index);
+  return jspb.Message.addToRepeatedField(this, 3, value, opt_index);
 };
 
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.cs3.identity.user.v1beta1.GetUserGroupsResponse} returns this
  */
 proto.cs3.identity.user.v1beta1.GetUserGroupsResponse.prototype.clearGroupsList = function() {
-  this.setGroupsList([]);
+  return this.setGroupsList([]);
 };
 
 
@@ -1597,8 +1609,7 @@ proto.cs3.identity.user.v1beta1.FindUsersRequest.prototype.toObject = function(o
 proto.cs3.identity.user.v1beta1.FindUsersRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     opaque: (f = msg.getOpaque()) && cs3_types_v1beta1_types_pb.Opaque.toObject(includeInstance, f),
-    filter: jspb.Message.getFieldWithDefault(msg, 2, ""),
-    skipFetchingUserGroups: jspb.Message.getBooleanFieldWithDefault(msg, 3, false)
+    filter: jspb.Message.getFieldWithDefault(msg, 2, "")
   };
 
   if (includeInstance) {
@@ -1644,10 +1655,6 @@ proto.cs3.identity.user.v1beta1.FindUsersRequest.deserializeBinaryFromReader = f
       var value = /** @type {string} */ (reader.readString());
       msg.setFilter(value);
       break;
-    case 3:
-      var value = /** @type {boolean} */ (reader.readBool());
-      msg.setSkipFetchingUserGroups(value);
-      break;
     default:
       reader.skipField();
       break;
@@ -1692,13 +1699,6 @@ proto.cs3.identity.user.v1beta1.FindUsersRequest.serializeBinaryToWriter = funct
       f
     );
   }
-  f = message.getSkipFetchingUserGroups();
-  if (f) {
-    writer.writeBool(
-      3,
-      f
-    );
-  }
 };
 
 
@@ -1712,17 +1712,21 @@ proto.cs3.identity.user.v1beta1.FindUsersRequest.prototype.getOpaque = function(
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.identity.user.v1beta1.FindUsersRequest} returns this
+*/
 proto.cs3.identity.user.v1beta1.FindUsersRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.identity.user.v1beta1.FindUsersRequest} returns this
  */
 proto.cs3.identity.user.v1beta1.FindUsersRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -1744,24 +1748,12 @@ proto.cs3.identity.user.v1beta1.FindUsersRequest.prototype.getFilter = function(
 };
 
 
-/** @param {string} value */
-proto.cs3.identity.user.v1beta1.FindUsersRequest.prototype.setFilter = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
-};
-
-
 /**
- * optional bool skip_fetching_user_groups = 3;
- * @return {boolean}
+ * @param {string} value
+ * @return {!proto.cs3.identity.user.v1beta1.FindUsersRequest} returns this
  */
-proto.cs3.identity.user.v1beta1.FindUsersRequest.prototype.getSkipFetchingUserGroups = function() {
-  return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 3, false));
-};
-
-
-/** @param {boolean} value */
-proto.cs3.identity.user.v1beta1.FindUsersRequest.prototype.setSkipFetchingUserGroups = function(value) {
-  jspb.Message.setProto3BooleanField(this, 3, value);
+proto.cs3.identity.user.v1beta1.FindUsersRequest.prototype.setFilter = function(value) {
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -1925,17 +1917,21 @@ proto.cs3.identity.user.v1beta1.FindUsersResponse.prototype.getStatus = function
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.identity.user.v1beta1.FindUsersResponse} returns this
+*/
 proto.cs3.identity.user.v1beta1.FindUsersResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.identity.user.v1beta1.FindUsersResponse} returns this
  */
 proto.cs3.identity.user.v1beta1.FindUsersResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -1958,17 +1954,21 @@ proto.cs3.identity.user.v1beta1.FindUsersResponse.prototype.getOpaque = function
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.identity.user.v1beta1.FindUsersResponse} returns this
+*/
 proto.cs3.identity.user.v1beta1.FindUsersResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.identity.user.v1beta1.FindUsersResponse} returns this
  */
 proto.cs3.identity.user.v1beta1.FindUsersResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -1991,9 +1991,12 @@ proto.cs3.identity.user.v1beta1.FindUsersResponse.prototype.getUsersList = funct
 };
 
 
-/** @param {!Array<!proto.cs3.identity.user.v1beta1.User>} value */
+/**
+ * @param {!Array<!proto.cs3.identity.user.v1beta1.User>} value
+ * @return {!proto.cs3.identity.user.v1beta1.FindUsersResponse} returns this
+*/
 proto.cs3.identity.user.v1beta1.FindUsersResponse.prototype.setUsersList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 3, value);
+  return jspb.Message.setRepeatedWrapperField(this, 3, value);
 };
 
 
@@ -2009,9 +2012,10 @@ proto.cs3.identity.user.v1beta1.FindUsersResponse.prototype.addUsers = function(
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.cs3.identity.user.v1beta1.FindUsersResponse} returns this
  */
 proto.cs3.identity.user.v1beta1.FindUsersResponse.prototype.clearUsersList = function() {
-  this.setUsersList([]);
+  return this.setUsersList([]);
 };
 
 

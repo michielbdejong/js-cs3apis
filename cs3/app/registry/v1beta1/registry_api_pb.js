@@ -2,11 +2,14 @@
 /**
  * @fileoverview
  * @enhanceable
+ * @suppress {missingRequire} reports error on implicit type usages.
  * @suppress {messageConventions} JS Compiler reports an error if a variable or
  *     field starts with 'MSG_' and isn't a translatable message.
  * @public
  */
 // GENERATED CODE -- DO NOT EDIT!
+/* eslint-disable */
+// @ts-nocheck
 
 var jspb = require('google-protobuf');
 var goog = jspb;
@@ -422,17 +425,21 @@ proto.cs3.app.registry.v1beta1.GetAppProvidersRequest.prototype.getOpaque = func
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.app.registry.v1beta1.GetAppProvidersRequest} returns this
+*/
 proto.cs3.app.registry.v1beta1.GetAppProvidersRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.app.registry.v1beta1.GetAppProvidersRequest} returns this
  */
 proto.cs3.app.registry.v1beta1.GetAppProvidersRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -455,17 +462,21 @@ proto.cs3.app.registry.v1beta1.GetAppProvidersRequest.prototype.getResourceInfo 
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.ResourceInfo|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.ResourceInfo|undefined} value
+ * @return {!proto.cs3.app.registry.v1beta1.GetAppProvidersRequest} returns this
+*/
 proto.cs3.app.registry.v1beta1.GetAppProvidersRequest.prototype.setResourceInfo = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.app.registry.v1beta1.GetAppProvidersRequest} returns this
  */
 proto.cs3.app.registry.v1beta1.GetAppProvidersRequest.prototype.clearResourceInfo = function() {
-  this.setResourceInfo(undefined);
+  return this.setResourceInfo(undefined);
 };
 
 
@@ -638,17 +649,21 @@ proto.cs3.app.registry.v1beta1.GetAppProvidersResponse.prototype.getStatus = fun
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.app.registry.v1beta1.GetAppProvidersResponse} returns this
+*/
 proto.cs3.app.registry.v1beta1.GetAppProvidersResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.app.registry.v1beta1.GetAppProvidersResponse} returns this
  */
 proto.cs3.app.registry.v1beta1.GetAppProvidersResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -671,17 +686,21 @@ proto.cs3.app.registry.v1beta1.GetAppProvidersResponse.prototype.getOpaque = fun
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.app.registry.v1beta1.GetAppProvidersResponse} returns this
+*/
 proto.cs3.app.registry.v1beta1.GetAppProvidersResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.app.registry.v1beta1.GetAppProvidersResponse} returns this
  */
 proto.cs3.app.registry.v1beta1.GetAppProvidersResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -704,9 +723,12 @@ proto.cs3.app.registry.v1beta1.GetAppProvidersResponse.prototype.getProvidersLis
 };
 
 
-/** @param {!Array<!proto.cs3.app.registry.v1beta1.ProviderInfo>} value */
+/**
+ * @param {!Array<!proto.cs3.app.registry.v1beta1.ProviderInfo>} value
+ * @return {!proto.cs3.app.registry.v1beta1.GetAppProvidersResponse} returns this
+*/
 proto.cs3.app.registry.v1beta1.GetAppProvidersResponse.prototype.setProvidersList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 3, value);
+  return jspb.Message.setRepeatedWrapperField(this, 3, value);
 };
 
 
@@ -722,9 +744,10 @@ proto.cs3.app.registry.v1beta1.GetAppProvidersResponse.prototype.addProviders = 
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.cs3.app.registry.v1beta1.GetAppProvidersResponse} returns this
  */
 proto.cs3.app.registry.v1beta1.GetAppProvidersResponse.prototype.clearProvidersList = function() {
-  this.setProvidersList([]);
+  return this.setProvidersList([]);
 };
 
 
@@ -866,17 +889,21 @@ proto.cs3.app.registry.v1beta1.AddAppProviderRequest.prototype.getOpaque = funct
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.app.registry.v1beta1.AddAppProviderRequest} returns this
+*/
 proto.cs3.app.registry.v1beta1.AddAppProviderRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.app.registry.v1beta1.AddAppProviderRequest} returns this
  */
 proto.cs3.app.registry.v1beta1.AddAppProviderRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -899,17 +926,21 @@ proto.cs3.app.registry.v1beta1.AddAppProviderRequest.prototype.getProvider = fun
 };
 
 
-/** @param {?proto.cs3.app.registry.v1beta1.ProviderInfo|undefined} value */
+/**
+ * @param {?proto.cs3.app.registry.v1beta1.ProviderInfo|undefined} value
+ * @return {!proto.cs3.app.registry.v1beta1.AddAppProviderRequest} returns this
+*/
 proto.cs3.app.registry.v1beta1.AddAppProviderRequest.prototype.setProvider = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.app.registry.v1beta1.AddAppProviderRequest} returns this
  */
 proto.cs3.app.registry.v1beta1.AddAppProviderRequest.prototype.clearProvider = function() {
-  this.setProvider(undefined);
+  return this.setProvider(undefined);
 };
 
 
@@ -1060,17 +1091,21 @@ proto.cs3.app.registry.v1beta1.AddAppProviderResponse.prototype.getStatus = func
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.app.registry.v1beta1.AddAppProviderResponse} returns this
+*/
 proto.cs3.app.registry.v1beta1.AddAppProviderResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.app.registry.v1beta1.AddAppProviderResponse} returns this
  */
 proto.cs3.app.registry.v1beta1.AddAppProviderResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -1093,17 +1128,21 @@ proto.cs3.app.registry.v1beta1.AddAppProviderResponse.prototype.getOpaque = func
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.app.registry.v1beta1.AddAppProviderResponse} returns this
+*/
 proto.cs3.app.registry.v1beta1.AddAppProviderResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.app.registry.v1beta1.AddAppProviderResponse} returns this
  */
 proto.cs3.app.registry.v1beta1.AddAppProviderResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -1240,17 +1279,21 @@ proto.cs3.app.registry.v1beta1.ListAppProvidersRequest.prototype.getOpaque = fun
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.app.registry.v1beta1.ListAppProvidersRequest} returns this
+*/
 proto.cs3.app.registry.v1beta1.ListAppProvidersRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.app.registry.v1beta1.ListAppProvidersRequest} returns this
  */
 proto.cs3.app.registry.v1beta1.ListAppProvidersRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -1423,17 +1466,21 @@ proto.cs3.app.registry.v1beta1.ListAppProvidersResponse.prototype.getStatus = fu
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.app.registry.v1beta1.ListAppProvidersResponse} returns this
+*/
 proto.cs3.app.registry.v1beta1.ListAppProvidersResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.app.registry.v1beta1.ListAppProvidersResponse} returns this
  */
 proto.cs3.app.registry.v1beta1.ListAppProvidersResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -1456,17 +1503,21 @@ proto.cs3.app.registry.v1beta1.ListAppProvidersResponse.prototype.getOpaque = fu
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.app.registry.v1beta1.ListAppProvidersResponse} returns this
+*/
 proto.cs3.app.registry.v1beta1.ListAppProvidersResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.app.registry.v1beta1.ListAppProvidersResponse} returns this
  */
 proto.cs3.app.registry.v1beta1.ListAppProvidersResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -1489,9 +1540,12 @@ proto.cs3.app.registry.v1beta1.ListAppProvidersResponse.prototype.getProvidersLi
 };
 
 
-/** @param {!Array<!proto.cs3.app.registry.v1beta1.ProviderInfo>} value */
+/**
+ * @param {!Array<!proto.cs3.app.registry.v1beta1.ProviderInfo>} value
+ * @return {!proto.cs3.app.registry.v1beta1.ListAppProvidersResponse} returns this
+*/
 proto.cs3.app.registry.v1beta1.ListAppProvidersResponse.prototype.setProvidersList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 3, value);
+  return jspb.Message.setRepeatedWrapperField(this, 3, value);
 };
 
 
@@ -1507,9 +1561,10 @@ proto.cs3.app.registry.v1beta1.ListAppProvidersResponse.prototype.addProviders =
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.cs3.app.registry.v1beta1.ListAppProvidersResponse} returns this
  */
 proto.cs3.app.registry.v1beta1.ListAppProvidersResponse.prototype.clearProvidersList = function() {
-  this.setProvidersList([]);
+  return this.setProvidersList([]);
 };
 
 
@@ -1637,17 +1692,21 @@ proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesRequest.prototype.getOpaque
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesRequest} returns this
+*/
 proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesRequest} returns this
  */
 proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -1820,17 +1879,21 @@ proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse.prototype.getStatu
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse} returns this
+*/
 proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse} returns this
  */
 proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -1853,17 +1916,21 @@ proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse.prototype.getOpaqu
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse} returns this
+*/
 proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse} returns this
  */
 proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -1886,9 +1953,12 @@ proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse.prototype.getMimeT
 };
 
 
-/** @param {!Array<!proto.cs3.app.registry.v1beta1.MimeTypeInfo>} value */
+/**
+ * @param {!Array<!proto.cs3.app.registry.v1beta1.MimeTypeInfo>} value
+ * @return {!proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse} returns this
+*/
 proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse.prototype.setMimeTypesList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 3, value);
+  return jspb.Message.setRepeatedWrapperField(this, 3, value);
 };
 
 
@@ -1904,9 +1974,10 @@ proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse.prototype.addMimeT
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse} returns this
  */
 proto.cs3.app.registry.v1beta1.ListSupportedMimeTypesResponse.prototype.clearMimeTypesList = function() {
-  this.setMimeTypesList([]);
+  return this.setMimeTypesList([]);
 };
 
 
@@ -2046,17 +2117,21 @@ proto.cs3.app.registry.v1beta1.GetDefaultAppProviderForMimeTypeRequest.prototype
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.app.registry.v1beta1.GetDefaultAppProviderForMimeTypeRequest} returns this
+*/
 proto.cs3.app.registry.v1beta1.GetDefaultAppProviderForMimeTypeRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.app.registry.v1beta1.GetDefaultAppProviderForMimeTypeRequest} returns this
  */
 proto.cs3.app.registry.v1beta1.GetDefaultAppProviderForMimeTypeRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -2078,9 +2153,12 @@ proto.cs3.app.registry.v1beta1.GetDefaultAppProviderForMimeTypeRequest.prototype
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.app.registry.v1beta1.GetDefaultAppProviderForMimeTypeRequest} returns this
+ */
 proto.cs3.app.registry.v1beta1.GetDefaultAppProviderForMimeTypeRequest.prototype.setMimeType = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -2236,17 +2314,21 @@ proto.cs3.app.registry.v1beta1.GetDefaultAppProviderForMimeTypeResponse.prototyp
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.app.registry.v1beta1.GetDefaultAppProviderForMimeTypeResponse} returns this
+*/
 proto.cs3.app.registry.v1beta1.GetDefaultAppProviderForMimeTypeResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.app.registry.v1beta1.GetDefaultAppProviderForMimeTypeResponse} returns this
  */
 proto.cs3.app.registry.v1beta1.GetDefaultAppProviderForMimeTypeResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -2269,17 +2351,21 @@ proto.cs3.app.registry.v1beta1.GetDefaultAppProviderForMimeTypeResponse.prototyp
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.app.registry.v1beta1.GetDefaultAppProviderForMimeTypeResponse} returns this
+*/
 proto.cs3.app.registry.v1beta1.GetDefaultAppProviderForMimeTypeResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.app.registry.v1beta1.GetDefaultAppProviderForMimeTypeResponse} returns this
  */
 proto.cs3.app.registry.v1beta1.GetDefaultAppProviderForMimeTypeResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -2302,17 +2388,21 @@ proto.cs3.app.registry.v1beta1.GetDefaultAppProviderForMimeTypeResponse.prototyp
 };
 
 
-/** @param {?proto.cs3.app.registry.v1beta1.ProviderInfo|undefined} value */
+/**
+ * @param {?proto.cs3.app.registry.v1beta1.ProviderInfo|undefined} value
+ * @return {!proto.cs3.app.registry.v1beta1.GetDefaultAppProviderForMimeTypeResponse} returns this
+*/
 proto.cs3.app.registry.v1beta1.GetDefaultAppProviderForMimeTypeResponse.prototype.setProvider = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.app.registry.v1beta1.GetDefaultAppProviderForMimeTypeResponse} returns this
  */
 proto.cs3.app.registry.v1beta1.GetDefaultAppProviderForMimeTypeResponse.prototype.clearProvider = function() {
-  this.setProvider(undefined);
+  return this.setProvider(undefined);
 };
 
 
@@ -2475,17 +2565,21 @@ proto.cs3.app.registry.v1beta1.SetDefaultAppProviderForMimeTypeRequest.prototype
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.app.registry.v1beta1.SetDefaultAppProviderForMimeTypeRequest} returns this
+*/
 proto.cs3.app.registry.v1beta1.SetDefaultAppProviderForMimeTypeRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.app.registry.v1beta1.SetDefaultAppProviderForMimeTypeRequest} returns this
  */
 proto.cs3.app.registry.v1beta1.SetDefaultAppProviderForMimeTypeRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -2507,9 +2601,12 @@ proto.cs3.app.registry.v1beta1.SetDefaultAppProviderForMimeTypeRequest.prototype
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.app.registry.v1beta1.SetDefaultAppProviderForMimeTypeRequest} returns this
+ */
 proto.cs3.app.registry.v1beta1.SetDefaultAppProviderForMimeTypeRequest.prototype.setMimeType = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -2523,17 +2620,21 @@ proto.cs3.app.registry.v1beta1.SetDefaultAppProviderForMimeTypeRequest.prototype
 };
 
 
-/** @param {?proto.cs3.app.registry.v1beta1.ProviderInfo|undefined} value */
+/**
+ * @param {?proto.cs3.app.registry.v1beta1.ProviderInfo|undefined} value
+ * @return {!proto.cs3.app.registry.v1beta1.SetDefaultAppProviderForMimeTypeRequest} returns this
+*/
 proto.cs3.app.registry.v1beta1.SetDefaultAppProviderForMimeTypeRequest.prototype.setProvider = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.app.registry.v1beta1.SetDefaultAppProviderForMimeTypeRequest} returns this
  */
 proto.cs3.app.registry.v1beta1.SetDefaultAppProviderForMimeTypeRequest.prototype.clearProvider = function() {
-  this.setProvider(undefined);
+  return this.setProvider(undefined);
 };
 
 
@@ -2684,17 +2785,21 @@ proto.cs3.app.registry.v1beta1.SetDefaultAppProviderForMimeTypeResponse.prototyp
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.app.registry.v1beta1.SetDefaultAppProviderForMimeTypeResponse} returns this
+*/
 proto.cs3.app.registry.v1beta1.SetDefaultAppProviderForMimeTypeResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.app.registry.v1beta1.SetDefaultAppProviderForMimeTypeResponse} returns this
  */
 proto.cs3.app.registry.v1beta1.SetDefaultAppProviderForMimeTypeResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -2717,17 +2822,21 @@ proto.cs3.app.registry.v1beta1.SetDefaultAppProviderForMimeTypeResponse.prototyp
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.app.registry.v1beta1.SetDefaultAppProviderForMimeTypeResponse} returns this
+*/
 proto.cs3.app.registry.v1beta1.SetDefaultAppProviderForMimeTypeResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.app.registry.v1beta1.SetDefaultAppProviderForMimeTypeResponse} returns this
  */
 proto.cs3.app.registry.v1beta1.SetDefaultAppProviderForMimeTypeResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 

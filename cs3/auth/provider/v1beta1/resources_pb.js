@@ -2,11 +2,14 @@
 /**
  * @fileoverview
  * @enhanceable
+ * @suppress {missingRequire} reports error on implicit type usages.
  * @suppress {messageConventions} JS Compiler reports an error if a variable or
  *     field starts with 'MSG_' and isn't a translatable message.
  * @public
  */
 // GENERATED CODE -- DO NOT EDIT!
+/* eslint-disable */
+// @ts-nocheck
 
 var jspb = require('google-protobuf');
 var goog = jspb;
@@ -173,17 +176,21 @@ proto.cs3.auth.provider.v1beta1.Scope.prototype.getResource = function() {
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.OpaqueEntry|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.OpaqueEntry|undefined} value
+ * @return {!proto.cs3.auth.provider.v1beta1.Scope} returns this
+*/
 proto.cs3.auth.provider.v1beta1.Scope.prototype.setResource = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.auth.provider.v1beta1.Scope} returns this
  */
 proto.cs3.auth.provider.v1beta1.Scope.prototype.clearResource = function() {
-  this.setResource(undefined);
+  return this.setResource(undefined);
 };
 
 
@@ -205,9 +212,12 @@ proto.cs3.auth.provider.v1beta1.Scope.prototype.getRole = function() {
 };
 
 
-/** @param {!proto.cs3.auth.provider.v1beta1.Role} value */
+/**
+ * @param {!proto.cs3.auth.provider.v1beta1.Role} value
+ * @return {!proto.cs3.auth.provider.v1beta1.Scope} returns this
+ */
 proto.cs3.auth.provider.v1beta1.Scope.prototype.setRole = function(value) {
-  jspb.Message.setProto3EnumField(this, 2, value);
+  return jspb.Message.setProto3EnumField(this, 2, value);
 };
 
 

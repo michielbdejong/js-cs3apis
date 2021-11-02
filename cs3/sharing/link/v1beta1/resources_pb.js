@@ -2,11 +2,14 @@
 /**
  * @fileoverview
  * @enhanceable
+ * @suppress {missingRequire} reports error on implicit type usages.
  * @suppress {messageConventions} JS Compiler reports an error if a variable or
  *     field starts with 'MSG_' and isn't a translatable message.
  * @public
  */
 // GENERATED CODE -- DO NOT EDIT!
+/* eslint-disable */
+// @ts-nocheck
 
 var jspb = require('google-protobuf');
 var goog = jspb;
@@ -446,17 +449,21 @@ proto.cs3.sharing.link.v1beta1.PublicShare.prototype.getId = function() {
 };
 
 
-/** @param {?proto.cs3.sharing.link.v1beta1.PublicShareId|undefined} value */
+/**
+ * @param {?proto.cs3.sharing.link.v1beta1.PublicShareId|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.PublicShare} returns this
+*/
 proto.cs3.sharing.link.v1beta1.PublicShare.prototype.setId = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.PublicShare} returns this
  */
 proto.cs3.sharing.link.v1beta1.PublicShare.prototype.clearId = function() {
-  this.setId(undefined);
+  return this.setId(undefined);
 };
 
 
@@ -478,9 +485,12 @@ proto.cs3.sharing.link.v1beta1.PublicShare.prototype.getToken = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.sharing.link.v1beta1.PublicShare} returns this
+ */
 proto.cs3.sharing.link.v1beta1.PublicShare.prototype.setToken = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -494,17 +504,21 @@ proto.cs3.sharing.link.v1beta1.PublicShare.prototype.getResourceId = function() 
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.ResourceId|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.ResourceId|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.PublicShare} returns this
+*/
 proto.cs3.sharing.link.v1beta1.PublicShare.prototype.setResourceId = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.PublicShare} returns this
  */
 proto.cs3.sharing.link.v1beta1.PublicShare.prototype.clearResourceId = function() {
-  this.setResourceId(undefined);
+  return this.setResourceId(undefined);
 };
 
 
@@ -527,17 +541,21 @@ proto.cs3.sharing.link.v1beta1.PublicShare.prototype.getPermissions = function()
 };
 
 
-/** @param {?proto.cs3.sharing.link.v1beta1.PublicSharePermissions|undefined} value */
+/**
+ * @param {?proto.cs3.sharing.link.v1beta1.PublicSharePermissions|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.PublicShare} returns this
+*/
 proto.cs3.sharing.link.v1beta1.PublicShare.prototype.setPermissions = function(value) {
-  jspb.Message.setWrapperField(this, 4, value);
+  return jspb.Message.setWrapperField(this, 4, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.PublicShare} returns this
  */
 proto.cs3.sharing.link.v1beta1.PublicShare.prototype.clearPermissions = function() {
-  this.setPermissions(undefined);
+  return this.setPermissions(undefined);
 };
 
 
@@ -560,17 +578,21 @@ proto.cs3.sharing.link.v1beta1.PublicShare.prototype.getOwner = function() {
 };
 
 
-/** @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value */
+/**
+ * @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.PublicShare} returns this
+*/
 proto.cs3.sharing.link.v1beta1.PublicShare.prototype.setOwner = function(value) {
-  jspb.Message.setWrapperField(this, 5, value);
+  return jspb.Message.setWrapperField(this, 5, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.PublicShare} returns this
  */
 proto.cs3.sharing.link.v1beta1.PublicShare.prototype.clearOwner = function() {
-  this.setOwner(undefined);
+  return this.setOwner(undefined);
 };
 
 
@@ -593,17 +615,21 @@ proto.cs3.sharing.link.v1beta1.PublicShare.prototype.getCreator = function() {
 };
 
 
-/** @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value */
+/**
+ * @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.PublicShare} returns this
+*/
 proto.cs3.sharing.link.v1beta1.PublicShare.prototype.setCreator = function(value) {
-  jspb.Message.setWrapperField(this, 6, value);
+  return jspb.Message.setWrapperField(this, 6, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.PublicShare} returns this
  */
 proto.cs3.sharing.link.v1beta1.PublicShare.prototype.clearCreator = function() {
-  this.setCreator(undefined);
+  return this.setCreator(undefined);
 };
 
 
@@ -626,17 +652,21 @@ proto.cs3.sharing.link.v1beta1.PublicShare.prototype.getCtime = function() {
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Timestamp|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Timestamp|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.PublicShare} returns this
+*/
 proto.cs3.sharing.link.v1beta1.PublicShare.prototype.setCtime = function(value) {
-  jspb.Message.setWrapperField(this, 7, value);
+  return jspb.Message.setWrapperField(this, 7, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.PublicShare} returns this
  */
 proto.cs3.sharing.link.v1beta1.PublicShare.prototype.clearCtime = function() {
-  this.setCtime(undefined);
+  return this.setCtime(undefined);
 };
 
 
@@ -659,17 +689,21 @@ proto.cs3.sharing.link.v1beta1.PublicShare.prototype.getMtime = function() {
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Timestamp|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Timestamp|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.PublicShare} returns this
+*/
 proto.cs3.sharing.link.v1beta1.PublicShare.prototype.setMtime = function(value) {
-  jspb.Message.setWrapperField(this, 8, value);
+  return jspb.Message.setWrapperField(this, 8, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.PublicShare} returns this
  */
 proto.cs3.sharing.link.v1beta1.PublicShare.prototype.clearMtime = function() {
-  this.setMtime(undefined);
+  return this.setMtime(undefined);
 };
 
 
@@ -691,9 +725,12 @@ proto.cs3.sharing.link.v1beta1.PublicShare.prototype.getPasswordProtected = func
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.cs3.sharing.link.v1beta1.PublicShare} returns this
+ */
 proto.cs3.sharing.link.v1beta1.PublicShare.prototype.setPasswordProtected = function(value) {
-  jspb.Message.setProto3BooleanField(this, 9, value);
+  return jspb.Message.setProto3BooleanField(this, 9, value);
 };
 
 
@@ -707,17 +744,21 @@ proto.cs3.sharing.link.v1beta1.PublicShare.prototype.getExpiration = function() 
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Timestamp|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Timestamp|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.PublicShare} returns this
+*/
 proto.cs3.sharing.link.v1beta1.PublicShare.prototype.setExpiration = function(value) {
-  jspb.Message.setWrapperField(this, 10, value);
+  return jspb.Message.setWrapperField(this, 10, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.PublicShare} returns this
  */
 proto.cs3.sharing.link.v1beta1.PublicShare.prototype.clearExpiration = function() {
-  this.setExpiration(undefined);
+  return this.setExpiration(undefined);
 };
 
 
@@ -739,9 +780,12 @@ proto.cs3.sharing.link.v1beta1.PublicShare.prototype.getDisplayName = function()
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.sharing.link.v1beta1.PublicShare} returns this
+ */
 proto.cs3.sharing.link.v1beta1.PublicShare.prototype.setDisplayName = function(value) {
-  jspb.Message.setProto3StringField(this, 11, value);
+  return jspb.Message.setProto3StringField(this, 11, value);
 };
 
 
@@ -755,17 +799,21 @@ proto.cs3.sharing.link.v1beta1.PublicShare.prototype.getSignature = function() {
 };
 
 
-/** @param {?proto.cs3.sharing.link.v1beta1.ShareSignature|undefined} value */
+/**
+ * @param {?proto.cs3.sharing.link.v1beta1.ShareSignature|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.PublicShare} returns this
+*/
 proto.cs3.sharing.link.v1beta1.PublicShare.prototype.setSignature = function(value) {
-  jspb.Message.setWrapperField(this, 12, value);
+  return jspb.Message.setWrapperField(this, 12, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.PublicShare} returns this
  */
 proto.cs3.sharing.link.v1beta1.PublicShare.prototype.clearSignature = function() {
-  this.setSignature(undefined);
+  return this.setSignature(undefined);
 };
 
 
@@ -902,17 +950,21 @@ proto.cs3.sharing.link.v1beta1.PublicSharePermissions.prototype.getPermissions =
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.ResourcePermissions|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.ResourcePermissions|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.PublicSharePermissions} returns this
+*/
 proto.cs3.sharing.link.v1beta1.PublicSharePermissions.prototype.setPermissions = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.PublicSharePermissions} returns this
  */
 proto.cs3.sharing.link.v1beta1.PublicSharePermissions.prototype.clearPermissions = function() {
-  this.setPermissions(undefined);
+  return this.setPermissions(undefined);
 };
 
 
@@ -1046,9 +1098,12 @@ proto.cs3.sharing.link.v1beta1.PublicShareId.prototype.getOpaqueId = function() 
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.sharing.link.v1beta1.PublicShareId} returns this
+ */
 proto.cs3.sharing.link.v1beta1.PublicShareId.prototype.setOpaqueId = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -1214,17 +1269,21 @@ proto.cs3.sharing.link.v1beta1.PublicShareReference.prototype.getId = function()
 };
 
 
-/** @param {?proto.cs3.sharing.link.v1beta1.PublicShareId|undefined} value */
+/**
+ * @param {?proto.cs3.sharing.link.v1beta1.PublicShareId|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.PublicShareReference} returns this
+*/
 proto.cs3.sharing.link.v1beta1.PublicShareReference.prototype.setId = function(value) {
-  jspb.Message.setOneofWrapperField(this, 1, proto.cs3.sharing.link.v1beta1.PublicShareReference.oneofGroups_[0], value);
+  return jspb.Message.setOneofWrapperField(this, 1, proto.cs3.sharing.link.v1beta1.PublicShareReference.oneofGroups_[0], value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.PublicShareReference} returns this
  */
 proto.cs3.sharing.link.v1beta1.PublicShareReference.prototype.clearId = function() {
-  this.setId(undefined);
+  return this.setId(undefined);
 };
 
 
@@ -1246,17 +1305,21 @@ proto.cs3.sharing.link.v1beta1.PublicShareReference.prototype.getToken = functio
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.sharing.link.v1beta1.PublicShareReference} returns this
+ */
 proto.cs3.sharing.link.v1beta1.PublicShareReference.prototype.setToken = function(value) {
-  jspb.Message.setOneofField(this, 2, proto.cs3.sharing.link.v1beta1.PublicShareReference.oneofGroups_[0], value);
+  return jspb.Message.setOneofField(this, 2, proto.cs3.sharing.link.v1beta1.PublicShareReference.oneofGroups_[0], value);
 };
 
 
 /**
  * Clears the field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.PublicShareReference} returns this
  */
 proto.cs3.sharing.link.v1beta1.PublicShareReference.prototype.clearToken = function() {
-  jspb.Message.setOneofField(this, 2, proto.cs3.sharing.link.v1beta1.PublicShareReference.oneofGroups_[0], undefined);
+  return jspb.Message.setOneofField(this, 2, proto.cs3.sharing.link.v1beta1.PublicShareReference.oneofGroups_[0], undefined);
 };
 
 
@@ -1430,17 +1493,21 @@ proto.cs3.sharing.link.v1beta1.PublicShareAuthentication.prototype.getPassword =
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.sharing.link.v1beta1.PublicShareAuthentication} returns this
+ */
 proto.cs3.sharing.link.v1beta1.PublicShareAuthentication.prototype.setPassword = function(value) {
-  jspb.Message.setOneofField(this, 1, proto.cs3.sharing.link.v1beta1.PublicShareAuthentication.oneofGroups_[0], value);
+  return jspb.Message.setOneofField(this, 1, proto.cs3.sharing.link.v1beta1.PublicShareAuthentication.oneofGroups_[0], value);
 };
 
 
 /**
  * Clears the field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.PublicShareAuthentication} returns this
  */
 proto.cs3.sharing.link.v1beta1.PublicShareAuthentication.prototype.clearPassword = function() {
-  jspb.Message.setOneofField(this, 1, proto.cs3.sharing.link.v1beta1.PublicShareAuthentication.oneofGroups_[0], undefined);
+  return jspb.Message.setOneofField(this, 1, proto.cs3.sharing.link.v1beta1.PublicShareAuthentication.oneofGroups_[0], undefined);
 };
 
 
@@ -1463,17 +1530,21 @@ proto.cs3.sharing.link.v1beta1.PublicShareAuthentication.prototype.getSignature 
 };
 
 
-/** @param {?proto.cs3.sharing.link.v1beta1.ShareSignature|undefined} value */
+/**
+ * @param {?proto.cs3.sharing.link.v1beta1.ShareSignature|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.PublicShareAuthentication} returns this
+*/
 proto.cs3.sharing.link.v1beta1.PublicShareAuthentication.prototype.setSignature = function(value) {
-  jspb.Message.setOneofWrapperField(this, 2, proto.cs3.sharing.link.v1beta1.PublicShareAuthentication.oneofGroups_[0], value);
+  return jspb.Message.setOneofWrapperField(this, 2, proto.cs3.sharing.link.v1beta1.PublicShareAuthentication.oneofGroups_[0], value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.PublicShareAuthentication} returns this
  */
 proto.cs3.sharing.link.v1beta1.PublicShareAuthentication.prototype.clearSignature = function() {
-  this.setSignature(undefined);
+  return this.setSignature(undefined);
 };
 
 
@@ -1621,9 +1692,12 @@ proto.cs3.sharing.link.v1beta1.ShareSignature.prototype.getSignature = function(
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.sharing.link.v1beta1.ShareSignature} returns this
+ */
 proto.cs3.sharing.link.v1beta1.ShareSignature.prototype.setSignature = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -1637,17 +1711,21 @@ proto.cs3.sharing.link.v1beta1.ShareSignature.prototype.getSignatureExpiration =
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Timestamp|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Timestamp|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.ShareSignature} returns this
+*/
 proto.cs3.sharing.link.v1beta1.ShareSignature.prototype.setSignatureExpiration = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.ShareSignature} returns this
  */
 proto.cs3.sharing.link.v1beta1.ShareSignature.prototype.clearSignatureExpiration = function() {
-  this.setSignatureExpiration(undefined);
+  return this.setSignatureExpiration(undefined);
 };
 
 
@@ -1810,17 +1888,21 @@ proto.cs3.sharing.link.v1beta1.Grant.prototype.getPermissions = function() {
 };
 
 
-/** @param {?proto.cs3.sharing.link.v1beta1.PublicSharePermissions|undefined} value */
+/**
+ * @param {?proto.cs3.sharing.link.v1beta1.PublicSharePermissions|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.Grant} returns this
+*/
 proto.cs3.sharing.link.v1beta1.Grant.prototype.setPermissions = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.Grant} returns this
  */
 proto.cs3.sharing.link.v1beta1.Grant.prototype.clearPermissions = function() {
-  this.setPermissions(undefined);
+  return this.setPermissions(undefined);
 };
 
 
@@ -1842,9 +1924,12 @@ proto.cs3.sharing.link.v1beta1.Grant.prototype.getPassword = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.sharing.link.v1beta1.Grant} returns this
+ */
 proto.cs3.sharing.link.v1beta1.Grant.prototype.setPassword = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -1858,17 +1943,21 @@ proto.cs3.sharing.link.v1beta1.Grant.prototype.getExpiration = function() {
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Timestamp|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Timestamp|undefined} value
+ * @return {!proto.cs3.sharing.link.v1beta1.Grant} returns this
+*/
 proto.cs3.sharing.link.v1beta1.Grant.prototype.setExpiration = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.link.v1beta1.Grant} returns this
  */
 proto.cs3.sharing.link.v1beta1.Grant.prototype.clearExpiration = function() {
-  this.setExpiration(undefined);
+  return this.setExpiration(undefined);
 };
 
 

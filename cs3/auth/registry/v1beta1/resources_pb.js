@@ -2,11 +2,14 @@
 /**
  * @fileoverview
  * @enhanceable
+ * @suppress {missingRequire} reports error on implicit type usages.
  * @suppress {messageConventions} JS Compiler reports an error if a variable or
  *     field starts with 'MSG_' and isn't a translatable message.
  * @public
  */
 // GENERATED CODE -- DO NOT EDIT!
+/* eslint-disable */
+// @ts-nocheck
 
 var jspb = require('google-protobuf');
 var goog = jspb;
@@ -196,17 +199,21 @@ proto.cs3.auth.registry.v1beta1.ProviderInfo.prototype.getOpaque = function() {
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.auth.registry.v1beta1.ProviderInfo} returns this
+*/
 proto.cs3.auth.registry.v1beta1.ProviderInfo.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.auth.registry.v1beta1.ProviderInfo} returns this
  */
 proto.cs3.auth.registry.v1beta1.ProviderInfo.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -228,9 +235,12 @@ proto.cs3.auth.registry.v1beta1.ProviderInfo.prototype.getProviderType = functio
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.auth.registry.v1beta1.ProviderInfo} returns this
+ */
 proto.cs3.auth.registry.v1beta1.ProviderInfo.prototype.setProviderType = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -243,9 +253,12 @@ proto.cs3.auth.registry.v1beta1.ProviderInfo.prototype.getAddress = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.auth.registry.v1beta1.ProviderInfo} returns this
+ */
 proto.cs3.auth.registry.v1beta1.ProviderInfo.prototype.setAddress = function(value) {
-  jspb.Message.setProto3StringField(this, 4, value);
+  return jspb.Message.setProto3StringField(this, 4, value);
 };
 
 
@@ -258,9 +271,12 @@ proto.cs3.auth.registry.v1beta1.ProviderInfo.prototype.getDescription = function
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.auth.registry.v1beta1.ProviderInfo} returns this
+ */
 proto.cs3.auth.registry.v1beta1.ProviderInfo.prototype.setDescription = function(value) {
-  jspb.Message.setProto3StringField(this, 5, value);
+  return jspb.Message.setProto3StringField(this, 5, value);
 };
 
 

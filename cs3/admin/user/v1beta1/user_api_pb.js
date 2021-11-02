@@ -2,11 +2,14 @@
 /**
  * @fileoverview
  * @enhanceable
+ * @suppress {missingRequire} reports error on implicit type usages.
  * @suppress {messageConventions} JS Compiler reports an error if a variable or
  *     field starts with 'MSG_' and isn't a translatable message.
  * @public
  */
 // GENERATED CODE -- DO NOT EDIT!
+/* eslint-disable */
+// @ts-nocheck
 
 var jspb = require('google-protobuf');
 var goog = jspb;
@@ -244,17 +247,21 @@ proto.cs3.admin.user.v1beta1.CreateUserRequest.prototype.getOpaque = function() 
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.admin.user.v1beta1.CreateUserRequest} returns this
+*/
 proto.cs3.admin.user.v1beta1.CreateUserRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.admin.user.v1beta1.CreateUserRequest} returns this
  */
 proto.cs3.admin.user.v1beta1.CreateUserRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -277,17 +284,21 @@ proto.cs3.admin.user.v1beta1.CreateUserRequest.prototype.getUser = function() {
 };
 
 
-/** @param {?proto.cs3.identity.user.v1beta1.User|undefined} value */
+/**
+ * @param {?proto.cs3.identity.user.v1beta1.User|undefined} value
+ * @return {!proto.cs3.admin.user.v1beta1.CreateUserRequest} returns this
+*/
 proto.cs3.admin.user.v1beta1.CreateUserRequest.prototype.setUser = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.admin.user.v1beta1.CreateUserRequest} returns this
  */
 proto.cs3.admin.user.v1beta1.CreateUserRequest.prototype.clearUser = function() {
-  this.setUser(undefined);
+  return this.setUser(undefined);
 };
 
 
@@ -452,17 +463,21 @@ proto.cs3.admin.user.v1beta1.CreateUserResponse.prototype.getStatus = function()
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.admin.user.v1beta1.CreateUserResponse} returns this
+*/
 proto.cs3.admin.user.v1beta1.CreateUserResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.admin.user.v1beta1.CreateUserResponse} returns this
  */
 proto.cs3.admin.user.v1beta1.CreateUserResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -485,17 +500,21 @@ proto.cs3.admin.user.v1beta1.CreateUserResponse.prototype.getOpaque = function()
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.admin.user.v1beta1.CreateUserResponse} returns this
+*/
 proto.cs3.admin.user.v1beta1.CreateUserResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.admin.user.v1beta1.CreateUserResponse} returns this
  */
 proto.cs3.admin.user.v1beta1.CreateUserResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -518,17 +537,21 @@ proto.cs3.admin.user.v1beta1.CreateUserResponse.prototype.getUser = function() {
 };
 
 
-/** @param {?proto.cs3.identity.user.v1beta1.User|undefined} value */
+/**
+ * @param {?proto.cs3.identity.user.v1beta1.User|undefined} value
+ * @return {!proto.cs3.admin.user.v1beta1.CreateUserResponse} returns this
+*/
 proto.cs3.admin.user.v1beta1.CreateUserResponse.prototype.setUser = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.admin.user.v1beta1.CreateUserResponse} returns this
  */
 proto.cs3.admin.user.v1beta1.CreateUserResponse.prototype.clearUser = function() {
-  this.setUser(undefined);
+  return this.setUser(undefined);
 };
 
 
@@ -679,17 +702,21 @@ proto.cs3.admin.user.v1beta1.DeleteUserRequest.prototype.getOpaque = function() 
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.admin.user.v1beta1.DeleteUserRequest} returns this
+*/
 proto.cs3.admin.user.v1beta1.DeleteUserRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.admin.user.v1beta1.DeleteUserRequest} returns this
  */
 proto.cs3.admin.user.v1beta1.DeleteUserRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -712,17 +739,21 @@ proto.cs3.admin.user.v1beta1.DeleteUserRequest.prototype.getUserId = function() 
 };
 
 
-/** @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value */
+/**
+ * @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value
+ * @return {!proto.cs3.admin.user.v1beta1.DeleteUserRequest} returns this
+*/
 proto.cs3.admin.user.v1beta1.DeleteUserRequest.prototype.setUserId = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.admin.user.v1beta1.DeleteUserRequest} returns this
  */
 proto.cs3.admin.user.v1beta1.DeleteUserRequest.prototype.clearUserId = function() {
-  this.setUserId(undefined);
+  return this.setUserId(undefined);
 };
 
 
@@ -873,17 +904,21 @@ proto.cs3.admin.user.v1beta1.DeleteUserResponse.prototype.getStatus = function()
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.admin.user.v1beta1.DeleteUserResponse} returns this
+*/
 proto.cs3.admin.user.v1beta1.DeleteUserResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.admin.user.v1beta1.DeleteUserResponse} returns this
  */
 proto.cs3.admin.user.v1beta1.DeleteUserResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -906,17 +941,21 @@ proto.cs3.admin.user.v1beta1.DeleteUserResponse.prototype.getOpaque = function()
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.admin.user.v1beta1.DeleteUserResponse} returns this
+*/
 proto.cs3.admin.user.v1beta1.DeleteUserResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.admin.user.v1beta1.DeleteUserResponse} returns this
  */
 proto.cs3.admin.user.v1beta1.DeleteUserResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 

@@ -2,11 +2,14 @@
 /**
  * @fileoverview
  * @enhanceable
+ * @suppress {missingRequire} reports error on implicit type usages.
  * @suppress {messageConventions} JS Compiler reports an error if a variable or
  *     field starts with 'MSG_' and isn't a translatable message.
  * @public
  */
 // GENERATED CODE -- DO NOT EDIT!
+/* eslint-disable */
+// @ts-nocheck
 
 var jspb = require('google-protobuf');
 var goog = jspb;
@@ -283,17 +286,21 @@ proto.cs3.app.registry.v1beta1.ProviderInfo.prototype.getOpaque = function() {
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.app.registry.v1beta1.ProviderInfo} returns this
+*/
 proto.cs3.app.registry.v1beta1.ProviderInfo.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.app.registry.v1beta1.ProviderInfo} returns this
  */
 proto.cs3.app.registry.v1beta1.ProviderInfo.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -315,26 +322,31 @@ proto.cs3.app.registry.v1beta1.ProviderInfo.prototype.getMimeTypesList = functio
 };
 
 
-/** @param {!Array<string>} value */
+/**
+ * @param {!Array<string>} value
+ * @return {!proto.cs3.app.registry.v1beta1.ProviderInfo} returns this
+ */
 proto.cs3.app.registry.v1beta1.ProviderInfo.prototype.setMimeTypesList = function(value) {
-  jspb.Message.setField(this, 2, value || []);
+  return jspb.Message.setField(this, 2, value || []);
 };
 
 
 /**
  * @param {string} value
  * @param {number=} opt_index
+ * @return {!proto.cs3.app.registry.v1beta1.ProviderInfo} returns this
  */
 proto.cs3.app.registry.v1beta1.ProviderInfo.prototype.addMimeTypes = function(value, opt_index) {
-  jspb.Message.addToRepeatedField(this, 2, value, opt_index);
+  return jspb.Message.addToRepeatedField(this, 2, value, opt_index);
 };
 
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.cs3.app.registry.v1beta1.ProviderInfo} returns this
  */
 proto.cs3.app.registry.v1beta1.ProviderInfo.prototype.clearMimeTypesList = function() {
-  this.setMimeTypesList([]);
+  return this.setMimeTypesList([]);
 };
 
 
@@ -347,9 +359,12 @@ proto.cs3.app.registry.v1beta1.ProviderInfo.prototype.getAddress = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.app.registry.v1beta1.ProviderInfo} returns this
+ */
 proto.cs3.app.registry.v1beta1.ProviderInfo.prototype.setAddress = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -362,9 +377,12 @@ proto.cs3.app.registry.v1beta1.ProviderInfo.prototype.getCapability = function()
 };
 
 
-/** @param {!proto.cs3.app.registry.v1beta1.ProviderInfo.Capability} value */
+/**
+ * @param {!proto.cs3.app.registry.v1beta1.ProviderInfo.Capability} value
+ * @return {!proto.cs3.app.registry.v1beta1.ProviderInfo} returns this
+ */
 proto.cs3.app.registry.v1beta1.ProviderInfo.prototype.setCapability = function(value) {
-  jspb.Message.setProto3EnumField(this, 4, value);
+  return jspb.Message.setProto3EnumField(this, 4, value);
 };
 
 
@@ -377,9 +395,12 @@ proto.cs3.app.registry.v1beta1.ProviderInfo.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.app.registry.v1beta1.ProviderInfo} returns this
+ */
 proto.cs3.app.registry.v1beta1.ProviderInfo.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 5, value);
+  return jspb.Message.setProto3StringField(this, 5, value);
 };
 
 
@@ -392,9 +413,12 @@ proto.cs3.app.registry.v1beta1.ProviderInfo.prototype.getDescription = function(
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.app.registry.v1beta1.ProviderInfo} returns this
+ */
 proto.cs3.app.registry.v1beta1.ProviderInfo.prototype.setDescription = function(value) {
-  jspb.Message.setProto3StringField(this, 6, value);
+  return jspb.Message.setProto3StringField(this, 6, value);
 };
 
 
@@ -407,9 +431,12 @@ proto.cs3.app.registry.v1beta1.ProviderInfo.prototype.getIcon = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.app.registry.v1beta1.ProviderInfo} returns this
+ */
 proto.cs3.app.registry.v1beta1.ProviderInfo.prototype.setIcon = function(value) {
-  jspb.Message.setProto3StringField(this, 7, value);
+  return jspb.Message.setProto3StringField(this, 7, value);
 };
 
 
@@ -422,9 +449,12 @@ proto.cs3.app.registry.v1beta1.ProviderInfo.prototype.getDesktopOnly = function(
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.cs3.app.registry.v1beta1.ProviderInfo} returns this
+ */
 proto.cs3.app.registry.v1beta1.ProviderInfo.prototype.setDesktopOnly = function(value) {
-  jspb.Message.setProto3BooleanField(this, 8, value);
+  return jspb.Message.setProto3BooleanField(this, 8, value);
 };
 
 
@@ -646,17 +676,21 @@ proto.cs3.app.registry.v1beta1.MimeTypeInfo.prototype.getOpaque = function() {
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.app.registry.v1beta1.MimeTypeInfo} returns this
+*/
 proto.cs3.app.registry.v1beta1.MimeTypeInfo.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.app.registry.v1beta1.MimeTypeInfo} returns this
  */
 proto.cs3.app.registry.v1beta1.MimeTypeInfo.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -678,9 +712,12 @@ proto.cs3.app.registry.v1beta1.MimeTypeInfo.prototype.getMimeType = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.app.registry.v1beta1.MimeTypeInfo} returns this
+ */
 proto.cs3.app.registry.v1beta1.MimeTypeInfo.prototype.setMimeType = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -693,9 +730,12 @@ proto.cs3.app.registry.v1beta1.MimeTypeInfo.prototype.getExt = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.app.registry.v1beta1.MimeTypeInfo} returns this
+ */
 proto.cs3.app.registry.v1beta1.MimeTypeInfo.prototype.setExt = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -709,9 +749,12 @@ proto.cs3.app.registry.v1beta1.MimeTypeInfo.prototype.getAppProvidersList = func
 };
 
 
-/** @param {!Array<!proto.cs3.app.registry.v1beta1.ProviderInfo>} value */
+/**
+ * @param {!Array<!proto.cs3.app.registry.v1beta1.ProviderInfo>} value
+ * @return {!proto.cs3.app.registry.v1beta1.MimeTypeInfo} returns this
+*/
 proto.cs3.app.registry.v1beta1.MimeTypeInfo.prototype.setAppProvidersList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 4, value);
+  return jspb.Message.setRepeatedWrapperField(this, 4, value);
 };
 
 
@@ -727,9 +770,10 @@ proto.cs3.app.registry.v1beta1.MimeTypeInfo.prototype.addAppProviders = function
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.cs3.app.registry.v1beta1.MimeTypeInfo} returns this
  */
 proto.cs3.app.registry.v1beta1.MimeTypeInfo.prototype.clearAppProvidersList = function() {
-  this.setAppProvidersList([]);
+  return this.setAppProvidersList([]);
 };
 
 
@@ -742,9 +786,12 @@ proto.cs3.app.registry.v1beta1.MimeTypeInfo.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.app.registry.v1beta1.MimeTypeInfo} returns this
+ */
 proto.cs3.app.registry.v1beta1.MimeTypeInfo.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 5, value);
+  return jspb.Message.setProto3StringField(this, 5, value);
 };
 
 
@@ -757,9 +804,12 @@ proto.cs3.app.registry.v1beta1.MimeTypeInfo.prototype.getDescription = function(
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.app.registry.v1beta1.MimeTypeInfo} returns this
+ */
 proto.cs3.app.registry.v1beta1.MimeTypeInfo.prototype.setDescription = function(value) {
-  jspb.Message.setProto3StringField(this, 6, value);
+  return jspb.Message.setProto3StringField(this, 6, value);
 };
 
 
@@ -772,9 +822,12 @@ proto.cs3.app.registry.v1beta1.MimeTypeInfo.prototype.getIcon = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.app.registry.v1beta1.MimeTypeInfo} returns this
+ */
 proto.cs3.app.registry.v1beta1.MimeTypeInfo.prototype.setIcon = function(value) {
-  jspb.Message.setProto3StringField(this, 7, value);
+  return jspb.Message.setProto3StringField(this, 7, value);
 };
 
 
@@ -787,9 +840,12 @@ proto.cs3.app.registry.v1beta1.MimeTypeInfo.prototype.getAllowCreation = functio
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.cs3.app.registry.v1beta1.MimeTypeInfo} returns this
+ */
 proto.cs3.app.registry.v1beta1.MimeTypeInfo.prototype.setAllowCreation = function(value) {
-  jspb.Message.setProto3BooleanField(this, 8, value);
+  return jspb.Message.setProto3BooleanField(this, 8, value);
 };
 
 

@@ -2,11 +2,14 @@
 /**
  * @fileoverview
  * @enhanceable
+ * @suppress {missingRequire} reports error on implicit type usages.
  * @suppress {messageConventions} JS Compiler reports an error if a variable or
  *     field starts with 'MSG_' and isn't a translatable message.
  * @public
  */
 // GENERATED CODE -- DO NOT EDIT!
+/* eslint-disable */
+// @ts-nocheck
 
 var jspb = require('google-protobuf');
 var goog = jspb;
@@ -233,9 +236,12 @@ proto.cs3.ocm.provider.v1beta1.ServiceType.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.ocm.provider.v1beta1.ServiceType} returns this
+ */
 proto.cs3.ocm.provider.v1beta1.ServiceType.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -248,9 +254,12 @@ proto.cs3.ocm.provider.v1beta1.ServiceType.prototype.getDescription = function()
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.ocm.provider.v1beta1.ServiceType} returns this
+ */
 proto.cs3.ocm.provider.v1beta1.ServiceType.prototype.setDescription = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -347,7 +356,7 @@ proto.cs3.ocm.provider.v1beta1.ServiceEndpoint.deserializeBinaryFromReader = fun
     case 5:
       var value = msg.getPropertiesMap();
       reader.readMessage(value, function(message, reader) {
-        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readString, jspb.BinaryReader.prototype.readString, null, "");
+        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readString, jspb.BinaryReader.prototype.readString, null, "", "");
          });
       break;
     default:
@@ -425,17 +434,21 @@ proto.cs3.ocm.provider.v1beta1.ServiceEndpoint.prototype.getType = function() {
 };
 
 
-/** @param {?proto.cs3.ocm.provider.v1beta1.ServiceType|undefined} value */
+/**
+ * @param {?proto.cs3.ocm.provider.v1beta1.ServiceType|undefined} value
+ * @return {!proto.cs3.ocm.provider.v1beta1.ServiceEndpoint} returns this
+*/
 proto.cs3.ocm.provider.v1beta1.ServiceEndpoint.prototype.setType = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.ocm.provider.v1beta1.ServiceEndpoint} returns this
  */
 proto.cs3.ocm.provider.v1beta1.ServiceEndpoint.prototype.clearType = function() {
-  this.setType(undefined);
+  return this.setType(undefined);
 };
 
 
@@ -457,9 +470,12 @@ proto.cs3.ocm.provider.v1beta1.ServiceEndpoint.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.ocm.provider.v1beta1.ServiceEndpoint} returns this
+ */
 proto.cs3.ocm.provider.v1beta1.ServiceEndpoint.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -472,9 +488,12 @@ proto.cs3.ocm.provider.v1beta1.ServiceEndpoint.prototype.getPath = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.ocm.provider.v1beta1.ServiceEndpoint} returns this
+ */
 proto.cs3.ocm.provider.v1beta1.ServiceEndpoint.prototype.setPath = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -487,9 +506,12 @@ proto.cs3.ocm.provider.v1beta1.ServiceEndpoint.prototype.getIsMonitored = functi
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.cs3.ocm.provider.v1beta1.ServiceEndpoint} returns this
+ */
 proto.cs3.ocm.provider.v1beta1.ServiceEndpoint.prototype.setIsMonitored = function(value) {
-  jspb.Message.setProto3BooleanField(this, 4, value);
+  return jspb.Message.setProto3BooleanField(this, 4, value);
 };
 
 
@@ -508,10 +530,11 @@ proto.cs3.ocm.provider.v1beta1.ServiceEndpoint.prototype.getPropertiesMap = func
 
 /**
  * Clears values from the map. The map will be non-null.
+ * @return {!proto.cs3.ocm.provider.v1beta1.ServiceEndpoint} returns this
  */
 proto.cs3.ocm.provider.v1beta1.ServiceEndpoint.prototype.clearPropertiesMap = function() {
   this.getPropertiesMap().clear();
-};
+  return this;};
 
 
 
@@ -683,9 +706,12 @@ proto.cs3.ocm.provider.v1beta1.Service.prototype.getHost = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.ocm.provider.v1beta1.Service} returns this
+ */
 proto.cs3.ocm.provider.v1beta1.Service.prototype.setHost = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -699,17 +725,21 @@ proto.cs3.ocm.provider.v1beta1.Service.prototype.getEndpoint = function() {
 };
 
 
-/** @param {?proto.cs3.ocm.provider.v1beta1.ServiceEndpoint|undefined} value */
+/**
+ * @param {?proto.cs3.ocm.provider.v1beta1.ServiceEndpoint|undefined} value
+ * @return {!proto.cs3.ocm.provider.v1beta1.Service} returns this
+*/
 proto.cs3.ocm.provider.v1beta1.Service.prototype.setEndpoint = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.ocm.provider.v1beta1.Service} returns this
  */
 proto.cs3.ocm.provider.v1beta1.Service.prototype.clearEndpoint = function() {
-  this.setEndpoint(undefined);
+  return this.setEndpoint(undefined);
 };
 
 
@@ -731,9 +761,12 @@ proto.cs3.ocm.provider.v1beta1.Service.prototype.getApiVersion = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.ocm.provider.v1beta1.Service} returns this
+ */
 proto.cs3.ocm.provider.v1beta1.Service.prototype.setApiVersion = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -747,9 +780,12 @@ proto.cs3.ocm.provider.v1beta1.Service.prototype.getAdditionalEndpointsList = fu
 };
 
 
-/** @param {!Array<!proto.cs3.ocm.provider.v1beta1.ServiceEndpoint>} value */
+/**
+ * @param {!Array<!proto.cs3.ocm.provider.v1beta1.ServiceEndpoint>} value
+ * @return {!proto.cs3.ocm.provider.v1beta1.Service} returns this
+*/
 proto.cs3.ocm.provider.v1beta1.Service.prototype.setAdditionalEndpointsList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 4, value);
+  return jspb.Message.setRepeatedWrapperField(this, 4, value);
 };
 
 
@@ -765,9 +801,10 @@ proto.cs3.ocm.provider.v1beta1.Service.prototype.addAdditionalEndpoints = functi
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.cs3.ocm.provider.v1beta1.Service} returns this
  */
 proto.cs3.ocm.provider.v1beta1.Service.prototype.clearAdditionalEndpointsList = function() {
-  this.setAdditionalEndpointsList([]);
+  return this.setAdditionalEndpointsList([]);
 };
 
 
@@ -892,7 +929,7 @@ proto.cs3.ocm.provider.v1beta1.ProviderInfo.deserializeBinaryFromReader = functi
     case 9:
       var value = msg.getPropertiesMap();
       reader.readMessage(value, function(message, reader) {
-        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readString, jspb.BinaryReader.prototype.readString, null, "");
+        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readString, jspb.BinaryReader.prototype.readString, null, "", "");
          });
       break;
     default:
@@ -997,9 +1034,12 @@ proto.cs3.ocm.provider.v1beta1.ProviderInfo.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.ocm.provider.v1beta1.ProviderInfo} returns this
+ */
 proto.cs3.ocm.provider.v1beta1.ProviderInfo.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -1012,9 +1052,12 @@ proto.cs3.ocm.provider.v1beta1.ProviderInfo.prototype.getFullName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.ocm.provider.v1beta1.ProviderInfo} returns this
+ */
 proto.cs3.ocm.provider.v1beta1.ProviderInfo.prototype.setFullName = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -1027,9 +1070,12 @@ proto.cs3.ocm.provider.v1beta1.ProviderInfo.prototype.getDescription = function(
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.ocm.provider.v1beta1.ProviderInfo} returns this
+ */
 proto.cs3.ocm.provider.v1beta1.ProviderInfo.prototype.setDescription = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -1042,9 +1088,12 @@ proto.cs3.ocm.provider.v1beta1.ProviderInfo.prototype.getOrganization = function
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.ocm.provider.v1beta1.ProviderInfo} returns this
+ */
 proto.cs3.ocm.provider.v1beta1.ProviderInfo.prototype.setOrganization = function(value) {
-  jspb.Message.setProto3StringField(this, 4, value);
+  return jspb.Message.setProto3StringField(this, 4, value);
 };
 
 
@@ -1057,9 +1106,12 @@ proto.cs3.ocm.provider.v1beta1.ProviderInfo.prototype.getDomain = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.ocm.provider.v1beta1.ProviderInfo} returns this
+ */
 proto.cs3.ocm.provider.v1beta1.ProviderInfo.prototype.setDomain = function(value) {
-  jspb.Message.setProto3StringField(this, 5, value);
+  return jspb.Message.setProto3StringField(this, 5, value);
 };
 
 
@@ -1072,9 +1124,12 @@ proto.cs3.ocm.provider.v1beta1.ProviderInfo.prototype.getHomepage = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.ocm.provider.v1beta1.ProviderInfo} returns this
+ */
 proto.cs3.ocm.provider.v1beta1.ProviderInfo.prototype.setHomepage = function(value) {
-  jspb.Message.setProto3StringField(this, 6, value);
+  return jspb.Message.setProto3StringField(this, 6, value);
 };
 
 
@@ -1087,9 +1142,12 @@ proto.cs3.ocm.provider.v1beta1.ProviderInfo.prototype.getEmail = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.ocm.provider.v1beta1.ProviderInfo} returns this
+ */
 proto.cs3.ocm.provider.v1beta1.ProviderInfo.prototype.setEmail = function(value) {
-  jspb.Message.setProto3StringField(this, 7, value);
+  return jspb.Message.setProto3StringField(this, 7, value);
 };
 
 
@@ -1103,9 +1161,12 @@ proto.cs3.ocm.provider.v1beta1.ProviderInfo.prototype.getServicesList = function
 };
 
 
-/** @param {!Array<!proto.cs3.ocm.provider.v1beta1.Service>} value */
+/**
+ * @param {!Array<!proto.cs3.ocm.provider.v1beta1.Service>} value
+ * @return {!proto.cs3.ocm.provider.v1beta1.ProviderInfo} returns this
+*/
 proto.cs3.ocm.provider.v1beta1.ProviderInfo.prototype.setServicesList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 8, value);
+  return jspb.Message.setRepeatedWrapperField(this, 8, value);
 };
 
 
@@ -1121,9 +1182,10 @@ proto.cs3.ocm.provider.v1beta1.ProviderInfo.prototype.addServices = function(opt
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.cs3.ocm.provider.v1beta1.ProviderInfo} returns this
  */
 proto.cs3.ocm.provider.v1beta1.ProviderInfo.prototype.clearServicesList = function() {
-  this.setServicesList([]);
+  return this.setServicesList([]);
 };
 
 
@@ -1142,10 +1204,11 @@ proto.cs3.ocm.provider.v1beta1.ProviderInfo.prototype.getPropertiesMap = functio
 
 /**
  * Clears values from the map. The map will be non-null.
+ * @return {!proto.cs3.ocm.provider.v1beta1.ProviderInfo} returns this
  */
 proto.cs3.ocm.provider.v1beta1.ProviderInfo.prototype.clearPropertiesMap = function() {
   this.getPropertiesMap().clear();
-};
+  return this;};
 
 
 goog.object.extend(exports, proto.cs3.ocm.provider.v1beta1);

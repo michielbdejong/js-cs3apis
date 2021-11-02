@@ -2,11 +2,14 @@
 /**
  * @fileoverview
  * @enhanceable
+ * @suppress {missingRequire} reports error on implicit type usages.
  * @suppress {messageConventions} JS Compiler reports an error if a variable or
  *     field starts with 'MSG_' and isn't a translatable message.
  * @public
  */
 // GENERATED CODE -- DO NOT EDIT!
+/* eslint-disable */
+// @ts-nocheck
 
 var jspb = require('google-protobuf');
 var goog = jspb;
@@ -266,17 +269,21 @@ proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareRequest.prototype.getOpaque = funct
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareRequest} returns this
+*/
 proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareRequest} returns this
  */
 proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -298,9 +305,12 @@ proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareRequest.prototype.getDescription = 
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareRequest} returns this
+ */
 proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareRequest.prototype.setDescription = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -313,9 +323,12 @@ proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareRequest.prototype.getName = functio
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareRequest} returns this
+ */
 proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareRequest.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -328,9 +341,12 @@ proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareRequest.prototype.getProviderId = f
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareRequest} returns this
+ */
 proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareRequest.prototype.setProviderId = function(value) {
-  jspb.Message.setProto3StringField(this, 4, value);
+  return jspb.Message.setProto3StringField(this, 4, value);
 };
 
 
@@ -344,17 +360,21 @@ proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareRequest.prototype.getOwner = functi
 };
 
 
-/** @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value */
+/**
+ * @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value
+ * @return {!proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareRequest} returns this
+*/
 proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareRequest.prototype.setOwner = function(value) {
-  jspb.Message.setWrapperField(this, 5, value);
+  return jspb.Message.setWrapperField(this, 5, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareRequest} returns this
  */
 proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareRequest.prototype.clearOwner = function() {
-  this.setOwner(undefined);
+  return this.setOwner(undefined);
 };
 
 
@@ -377,17 +397,21 @@ proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareRequest.prototype.getShareWith = fu
 };
 
 
-/** @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value */
+/**
+ * @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value
+ * @return {!proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareRequest} returns this
+*/
 proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareRequest.prototype.setShareWith = function(value) {
-  jspb.Message.setWrapperField(this, 6, value);
+  return jspb.Message.setWrapperField(this, 6, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareRequest} returns this
  */
 proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareRequest.prototype.clearShareWith = function() {
-  this.setShareWith(undefined);
+  return this.setShareWith(undefined);
 };
 
 
@@ -410,17 +434,21 @@ proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareRequest.prototype.getProtocol = fun
 };
 
 
-/** @param {?proto.cs3.ocm.core.v1beta1.Protocol|undefined} value */
+/**
+ * @param {?proto.cs3.ocm.core.v1beta1.Protocol|undefined} value
+ * @return {!proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareRequest} returns this
+*/
 proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareRequest.prototype.setProtocol = function(value) {
-  jspb.Message.setWrapperField(this, 7, value);
+  return jspb.Message.setWrapperField(this, 7, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareRequest} returns this
  */
 proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareRequest.prototype.clearProtocol = function() {
-  this.setProtocol(undefined);
+  return this.setProtocol(undefined);
 };
 
 
@@ -597,17 +625,21 @@ proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareResponse.prototype.getStatus = func
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareResponse} returns this
+*/
 proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareResponse} returns this
  */
 proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -630,17 +662,21 @@ proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareResponse.prototype.getOpaque = func
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareResponse} returns this
+*/
 proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareResponse} returns this
  */
 proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -662,9 +698,12 @@ proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareResponse.prototype.getId = function
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareResponse} returns this
+ */
 proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareResponse.prototype.setId = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -678,17 +717,21 @@ proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareResponse.prototype.getCreated = fun
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Timestamp|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Timestamp|undefined} value
+ * @return {!proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareResponse} returns this
+*/
 proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareResponse.prototype.setCreated = function(value) {
-  jspb.Message.setWrapperField(this, 4, value);
+  return jspb.Message.setWrapperField(this, 4, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareResponse} returns this
  */
 proto.cs3.ocm.core.v1beta1.CreateOCMCoreShareResponse.prototype.clearCreated = function() {
-  this.setCreated(undefined);
+  return this.setCreated(undefined);
 };
 
 

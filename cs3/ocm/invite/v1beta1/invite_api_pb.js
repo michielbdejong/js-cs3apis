@@ -2,11 +2,14 @@
 /**
  * @fileoverview
  * @enhanceable
+ * @suppress {missingRequire} reports error on implicit type usages.
  * @suppress {messageConventions} JS Compiler reports an error if a variable or
  *     field starts with 'MSG_' and isn't a translatable message.
  * @public
  */
 // GENERATED CODE -- DO NOT EDIT!
+/* eslint-disable */
+// @ts-nocheck
 
 var jspb = require('google-protobuf');
 var goog = jspb;
@@ -366,17 +369,21 @@ proto.cs3.ocm.invite.v1beta1.GenerateInviteTokenRequest.prototype.getOpaque = fu
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.ocm.invite.v1beta1.GenerateInviteTokenRequest} returns this
+*/
 proto.cs3.ocm.invite.v1beta1.GenerateInviteTokenRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.ocm.invite.v1beta1.GenerateInviteTokenRequest} returns this
  */
 proto.cs3.ocm.invite.v1beta1.GenerateInviteTokenRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -541,17 +548,21 @@ proto.cs3.ocm.invite.v1beta1.GenerateInviteTokenResponse.prototype.getStatus = f
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.ocm.invite.v1beta1.GenerateInviteTokenResponse} returns this
+*/
 proto.cs3.ocm.invite.v1beta1.GenerateInviteTokenResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.ocm.invite.v1beta1.GenerateInviteTokenResponse} returns this
  */
 proto.cs3.ocm.invite.v1beta1.GenerateInviteTokenResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -574,17 +585,21 @@ proto.cs3.ocm.invite.v1beta1.GenerateInviteTokenResponse.prototype.getOpaque = f
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.ocm.invite.v1beta1.GenerateInviteTokenResponse} returns this
+*/
 proto.cs3.ocm.invite.v1beta1.GenerateInviteTokenResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.ocm.invite.v1beta1.GenerateInviteTokenResponse} returns this
  */
 proto.cs3.ocm.invite.v1beta1.GenerateInviteTokenResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -607,17 +622,21 @@ proto.cs3.ocm.invite.v1beta1.GenerateInviteTokenResponse.prototype.getInviteToke
 };
 
 
-/** @param {?proto.cs3.ocm.invite.v1beta1.InviteToken|undefined} value */
+/**
+ * @param {?proto.cs3.ocm.invite.v1beta1.InviteToken|undefined} value
+ * @return {!proto.cs3.ocm.invite.v1beta1.GenerateInviteTokenResponse} returns this
+*/
 proto.cs3.ocm.invite.v1beta1.GenerateInviteTokenResponse.prototype.setInviteToken = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.ocm.invite.v1beta1.GenerateInviteTokenResponse} returns this
  */
 proto.cs3.ocm.invite.v1beta1.GenerateInviteTokenResponse.prototype.clearInviteToken = function() {
-  this.setInviteToken(undefined);
+  return this.setInviteToken(undefined);
 };
 
 
@@ -782,17 +801,21 @@ proto.cs3.ocm.invite.v1beta1.ForwardInviteRequest.prototype.getOpaque = function
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.ocm.invite.v1beta1.ForwardInviteRequest} returns this
+*/
 proto.cs3.ocm.invite.v1beta1.ForwardInviteRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.ocm.invite.v1beta1.ForwardInviteRequest} returns this
  */
 proto.cs3.ocm.invite.v1beta1.ForwardInviteRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -815,17 +838,21 @@ proto.cs3.ocm.invite.v1beta1.ForwardInviteRequest.prototype.getInviteToken = fun
 };
 
 
-/** @param {?proto.cs3.ocm.invite.v1beta1.InviteToken|undefined} value */
+/**
+ * @param {?proto.cs3.ocm.invite.v1beta1.InviteToken|undefined} value
+ * @return {!proto.cs3.ocm.invite.v1beta1.ForwardInviteRequest} returns this
+*/
 proto.cs3.ocm.invite.v1beta1.ForwardInviteRequest.prototype.setInviteToken = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.ocm.invite.v1beta1.ForwardInviteRequest} returns this
  */
 proto.cs3.ocm.invite.v1beta1.ForwardInviteRequest.prototype.clearInviteToken = function() {
-  this.setInviteToken(undefined);
+  return this.setInviteToken(undefined);
 };
 
 
@@ -848,17 +875,21 @@ proto.cs3.ocm.invite.v1beta1.ForwardInviteRequest.prototype.getOriginSystemProvi
 };
 
 
-/** @param {?proto.cs3.ocm.provider.v1beta1.ProviderInfo|undefined} value */
+/**
+ * @param {?proto.cs3.ocm.provider.v1beta1.ProviderInfo|undefined} value
+ * @return {!proto.cs3.ocm.invite.v1beta1.ForwardInviteRequest} returns this
+*/
 proto.cs3.ocm.invite.v1beta1.ForwardInviteRequest.prototype.setOriginSystemProvider = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.ocm.invite.v1beta1.ForwardInviteRequest} returns this
  */
 proto.cs3.ocm.invite.v1beta1.ForwardInviteRequest.prototype.clearOriginSystemProvider = function() {
-  this.setOriginSystemProvider(undefined);
+  return this.setOriginSystemProvider(undefined);
 };
 
 
@@ -1009,17 +1040,21 @@ proto.cs3.ocm.invite.v1beta1.ForwardInviteResponse.prototype.getStatus = functio
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.ocm.invite.v1beta1.ForwardInviteResponse} returns this
+*/
 proto.cs3.ocm.invite.v1beta1.ForwardInviteResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.ocm.invite.v1beta1.ForwardInviteResponse} returns this
  */
 proto.cs3.ocm.invite.v1beta1.ForwardInviteResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -1042,17 +1077,21 @@ proto.cs3.ocm.invite.v1beta1.ForwardInviteResponse.prototype.getOpaque = functio
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.ocm.invite.v1beta1.ForwardInviteResponse} returns this
+*/
 proto.cs3.ocm.invite.v1beta1.ForwardInviteResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.ocm.invite.v1beta1.ForwardInviteResponse} returns this
  */
 proto.cs3.ocm.invite.v1beta1.ForwardInviteResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -1217,17 +1256,21 @@ proto.cs3.ocm.invite.v1beta1.AcceptInviteRequest.prototype.getOpaque = function(
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.ocm.invite.v1beta1.AcceptInviteRequest} returns this
+*/
 proto.cs3.ocm.invite.v1beta1.AcceptInviteRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.ocm.invite.v1beta1.AcceptInviteRequest} returns this
  */
 proto.cs3.ocm.invite.v1beta1.AcceptInviteRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -1250,17 +1293,21 @@ proto.cs3.ocm.invite.v1beta1.AcceptInviteRequest.prototype.getInviteToken = func
 };
 
 
-/** @param {?proto.cs3.ocm.invite.v1beta1.InviteToken|undefined} value */
+/**
+ * @param {?proto.cs3.ocm.invite.v1beta1.InviteToken|undefined} value
+ * @return {!proto.cs3.ocm.invite.v1beta1.AcceptInviteRequest} returns this
+*/
 proto.cs3.ocm.invite.v1beta1.AcceptInviteRequest.prototype.setInviteToken = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.ocm.invite.v1beta1.AcceptInviteRequest} returns this
  */
 proto.cs3.ocm.invite.v1beta1.AcceptInviteRequest.prototype.clearInviteToken = function() {
-  this.setInviteToken(undefined);
+  return this.setInviteToken(undefined);
 };
 
 
@@ -1283,17 +1330,21 @@ proto.cs3.ocm.invite.v1beta1.AcceptInviteRequest.prototype.getRemoteUser = funct
 };
 
 
-/** @param {?proto.cs3.identity.user.v1beta1.User|undefined} value */
+/**
+ * @param {?proto.cs3.identity.user.v1beta1.User|undefined} value
+ * @return {!proto.cs3.ocm.invite.v1beta1.AcceptInviteRequest} returns this
+*/
 proto.cs3.ocm.invite.v1beta1.AcceptInviteRequest.prototype.setRemoteUser = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.ocm.invite.v1beta1.AcceptInviteRequest} returns this
  */
 proto.cs3.ocm.invite.v1beta1.AcceptInviteRequest.prototype.clearRemoteUser = function() {
-  this.setRemoteUser(undefined);
+  return this.setRemoteUser(undefined);
 };
 
 
@@ -1444,17 +1495,21 @@ proto.cs3.ocm.invite.v1beta1.AcceptInviteResponse.prototype.getStatus = function
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.ocm.invite.v1beta1.AcceptInviteResponse} returns this
+*/
 proto.cs3.ocm.invite.v1beta1.AcceptInviteResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.ocm.invite.v1beta1.AcceptInviteResponse} returns this
  */
 proto.cs3.ocm.invite.v1beta1.AcceptInviteResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -1477,17 +1532,21 @@ proto.cs3.ocm.invite.v1beta1.AcceptInviteResponse.prototype.getOpaque = function
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.ocm.invite.v1beta1.AcceptInviteResponse} returns this
+*/
 proto.cs3.ocm.invite.v1beta1.AcceptInviteResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.ocm.invite.v1beta1.AcceptInviteResponse} returns this
  */
 proto.cs3.ocm.invite.v1beta1.AcceptInviteResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -1638,17 +1697,21 @@ proto.cs3.ocm.invite.v1beta1.GetAcceptedUserRequest.prototype.getOpaque = functi
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.ocm.invite.v1beta1.GetAcceptedUserRequest} returns this
+*/
 proto.cs3.ocm.invite.v1beta1.GetAcceptedUserRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.ocm.invite.v1beta1.GetAcceptedUserRequest} returns this
  */
 proto.cs3.ocm.invite.v1beta1.GetAcceptedUserRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -1671,17 +1734,21 @@ proto.cs3.ocm.invite.v1beta1.GetAcceptedUserRequest.prototype.getRemoteUserId = 
 };
 
 
-/** @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value */
+/**
+ * @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value
+ * @return {!proto.cs3.ocm.invite.v1beta1.GetAcceptedUserRequest} returns this
+*/
 proto.cs3.ocm.invite.v1beta1.GetAcceptedUserRequest.prototype.setRemoteUserId = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.ocm.invite.v1beta1.GetAcceptedUserRequest} returns this
  */
 proto.cs3.ocm.invite.v1beta1.GetAcceptedUserRequest.prototype.clearRemoteUserId = function() {
-  this.setRemoteUserId(undefined);
+  return this.setRemoteUserId(undefined);
 };
 
 
@@ -1846,17 +1913,21 @@ proto.cs3.ocm.invite.v1beta1.GetAcceptedUserResponse.prototype.getStatus = funct
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.ocm.invite.v1beta1.GetAcceptedUserResponse} returns this
+*/
 proto.cs3.ocm.invite.v1beta1.GetAcceptedUserResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.ocm.invite.v1beta1.GetAcceptedUserResponse} returns this
  */
 proto.cs3.ocm.invite.v1beta1.GetAcceptedUserResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -1879,17 +1950,21 @@ proto.cs3.ocm.invite.v1beta1.GetAcceptedUserResponse.prototype.getOpaque = funct
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.ocm.invite.v1beta1.GetAcceptedUserResponse} returns this
+*/
 proto.cs3.ocm.invite.v1beta1.GetAcceptedUserResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.ocm.invite.v1beta1.GetAcceptedUserResponse} returns this
  */
 proto.cs3.ocm.invite.v1beta1.GetAcceptedUserResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -1912,17 +1987,21 @@ proto.cs3.ocm.invite.v1beta1.GetAcceptedUserResponse.prototype.getRemoteUser = f
 };
 
 
-/** @param {?proto.cs3.identity.user.v1beta1.User|undefined} value */
+/**
+ * @param {?proto.cs3.identity.user.v1beta1.User|undefined} value
+ * @return {!proto.cs3.ocm.invite.v1beta1.GetAcceptedUserResponse} returns this
+*/
 proto.cs3.ocm.invite.v1beta1.GetAcceptedUserResponse.prototype.setRemoteUser = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.ocm.invite.v1beta1.GetAcceptedUserResponse} returns this
  */
 proto.cs3.ocm.invite.v1beta1.GetAcceptedUserResponse.prototype.clearRemoteUser = function() {
-  this.setRemoteUser(undefined);
+  return this.setRemoteUser(undefined);
 };
 
 
@@ -2071,17 +2150,21 @@ proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersRequest.prototype.getOpaque = func
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersRequest} returns this
+*/
 proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersRequest} returns this
  */
 proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -2103,9 +2186,12 @@ proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersRequest.prototype.getFilter = func
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersRequest} returns this
+ */
 proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersRequest.prototype.setFilter = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -2269,17 +2355,21 @@ proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersResponse.prototype.getStatus = fun
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersResponse} returns this
+*/
 proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersResponse} returns this
  */
 proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -2302,17 +2392,21 @@ proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersResponse.prototype.getOpaque = fun
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersResponse} returns this
+*/
 proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersResponse} returns this
  */
 proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -2335,9 +2429,12 @@ proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersResponse.prototype.getAcceptedUser
 };
 
 
-/** @param {!Array<!proto.cs3.identity.user.v1beta1.User>} value */
+/**
+ * @param {!Array<!proto.cs3.identity.user.v1beta1.User>} value
+ * @return {!proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersResponse} returns this
+*/
 proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersResponse.prototype.setAcceptedUsersList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 3, value);
+  return jspb.Message.setRepeatedWrapperField(this, 3, value);
 };
 
 
@@ -2353,9 +2450,10 @@ proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersResponse.prototype.addAcceptedUser
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersResponse} returns this
  */
 proto.cs3.ocm.invite.v1beta1.FindAcceptedUsersResponse.prototype.clearAcceptedUsersList = function() {
-  this.setAcceptedUsersList([]);
+  return this.setAcceptedUsersList([]);
 };
 
 

@@ -2,11 +2,14 @@
 /**
  * @fileoverview
  * @enhanceable
+ * @suppress {missingRequire} reports error on implicit type usages.
  * @suppress {messageConventions} JS Compiler reports an error if a variable or
  *     field starts with 'MSG_' and isn't a translatable message.
  * @public
  */
 // GENERATED CODE -- DO NOT EDIT!
+/* eslint-disable */
+// @ts-nocheck
 
 var jspb = require('google-protobuf');
 var goog = jspb;
@@ -288,17 +291,21 @@ proto.cs3.ocm.provider.v1beta1.IsProviderAllowedRequest.prototype.getOpaque = fu
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.ocm.provider.v1beta1.IsProviderAllowedRequest} returns this
+*/
 proto.cs3.ocm.provider.v1beta1.IsProviderAllowedRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.ocm.provider.v1beta1.IsProviderAllowedRequest} returns this
  */
 proto.cs3.ocm.provider.v1beta1.IsProviderAllowedRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -321,17 +328,21 @@ proto.cs3.ocm.provider.v1beta1.IsProviderAllowedRequest.prototype.getProvider = 
 };
 
 
-/** @param {?proto.cs3.ocm.provider.v1beta1.ProviderInfo|undefined} value */
+/**
+ * @param {?proto.cs3.ocm.provider.v1beta1.ProviderInfo|undefined} value
+ * @return {!proto.cs3.ocm.provider.v1beta1.IsProviderAllowedRequest} returns this
+*/
 proto.cs3.ocm.provider.v1beta1.IsProviderAllowedRequest.prototype.setProvider = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.ocm.provider.v1beta1.IsProviderAllowedRequest} returns this
  */
 proto.cs3.ocm.provider.v1beta1.IsProviderAllowedRequest.prototype.clearProvider = function() {
-  this.setProvider(undefined);
+  return this.setProvider(undefined);
 };
 
 
@@ -482,17 +493,21 @@ proto.cs3.ocm.provider.v1beta1.IsProviderAllowedResponse.prototype.getStatus = f
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.ocm.provider.v1beta1.IsProviderAllowedResponse} returns this
+*/
 proto.cs3.ocm.provider.v1beta1.IsProviderAllowedResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.ocm.provider.v1beta1.IsProviderAllowedResponse} returns this
  */
 proto.cs3.ocm.provider.v1beta1.IsProviderAllowedResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -515,17 +530,21 @@ proto.cs3.ocm.provider.v1beta1.IsProviderAllowedResponse.prototype.getOpaque = f
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.ocm.provider.v1beta1.IsProviderAllowedResponse} returns this
+*/
 proto.cs3.ocm.provider.v1beta1.IsProviderAllowedResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.ocm.provider.v1beta1.IsProviderAllowedResponse} returns this
  */
 proto.cs3.ocm.provider.v1beta1.IsProviderAllowedResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -674,17 +693,21 @@ proto.cs3.ocm.provider.v1beta1.GetInfoByDomainRequest.prototype.getOpaque = func
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.ocm.provider.v1beta1.GetInfoByDomainRequest} returns this
+*/
 proto.cs3.ocm.provider.v1beta1.GetInfoByDomainRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.ocm.provider.v1beta1.GetInfoByDomainRequest} returns this
  */
 proto.cs3.ocm.provider.v1beta1.GetInfoByDomainRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -706,9 +729,12 @@ proto.cs3.ocm.provider.v1beta1.GetInfoByDomainRequest.prototype.getDomain = func
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.ocm.provider.v1beta1.GetInfoByDomainRequest} returns this
+ */
 proto.cs3.ocm.provider.v1beta1.GetInfoByDomainRequest.prototype.setDomain = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -864,17 +890,21 @@ proto.cs3.ocm.provider.v1beta1.GetInfoByDomainResponse.prototype.getStatus = fun
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.ocm.provider.v1beta1.GetInfoByDomainResponse} returns this
+*/
 proto.cs3.ocm.provider.v1beta1.GetInfoByDomainResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.ocm.provider.v1beta1.GetInfoByDomainResponse} returns this
  */
 proto.cs3.ocm.provider.v1beta1.GetInfoByDomainResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -897,17 +927,21 @@ proto.cs3.ocm.provider.v1beta1.GetInfoByDomainResponse.prototype.getOpaque = fun
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.ocm.provider.v1beta1.GetInfoByDomainResponse} returns this
+*/
 proto.cs3.ocm.provider.v1beta1.GetInfoByDomainResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.ocm.provider.v1beta1.GetInfoByDomainResponse} returns this
  */
 proto.cs3.ocm.provider.v1beta1.GetInfoByDomainResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -930,17 +964,21 @@ proto.cs3.ocm.provider.v1beta1.GetInfoByDomainResponse.prototype.getProviderInfo
 };
 
 
-/** @param {?proto.cs3.ocm.provider.v1beta1.ProviderInfo|undefined} value */
+/**
+ * @param {?proto.cs3.ocm.provider.v1beta1.ProviderInfo|undefined} value
+ * @return {!proto.cs3.ocm.provider.v1beta1.GetInfoByDomainResponse} returns this
+*/
 proto.cs3.ocm.provider.v1beta1.GetInfoByDomainResponse.prototype.setProviderInfo = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.ocm.provider.v1beta1.GetInfoByDomainResponse} returns this
  */
 proto.cs3.ocm.provider.v1beta1.GetInfoByDomainResponse.prototype.clearProviderInfo = function() {
-  this.setProviderInfo(undefined);
+  return this.setProviderInfo(undefined);
 };
 
 
@@ -1077,17 +1115,21 @@ proto.cs3.ocm.provider.v1beta1.ListAllProvidersRequest.prototype.getOpaque = fun
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.ocm.provider.v1beta1.ListAllProvidersRequest} returns this
+*/
 proto.cs3.ocm.provider.v1beta1.ListAllProvidersRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.ocm.provider.v1beta1.ListAllProvidersRequest} returns this
  */
 proto.cs3.ocm.provider.v1beta1.ListAllProvidersRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -1260,17 +1302,21 @@ proto.cs3.ocm.provider.v1beta1.ListAllProvidersResponse.prototype.getStatus = fu
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.ocm.provider.v1beta1.ListAllProvidersResponse} returns this
+*/
 proto.cs3.ocm.provider.v1beta1.ListAllProvidersResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.ocm.provider.v1beta1.ListAllProvidersResponse} returns this
  */
 proto.cs3.ocm.provider.v1beta1.ListAllProvidersResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -1293,17 +1339,21 @@ proto.cs3.ocm.provider.v1beta1.ListAllProvidersResponse.prototype.getOpaque = fu
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.ocm.provider.v1beta1.ListAllProvidersResponse} returns this
+*/
 proto.cs3.ocm.provider.v1beta1.ListAllProvidersResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.ocm.provider.v1beta1.ListAllProvidersResponse} returns this
  */
 proto.cs3.ocm.provider.v1beta1.ListAllProvidersResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -1326,9 +1376,12 @@ proto.cs3.ocm.provider.v1beta1.ListAllProvidersResponse.prototype.getProvidersLi
 };
 
 
-/** @param {!Array<!proto.cs3.ocm.provider.v1beta1.ProviderInfo>} value */
+/**
+ * @param {!Array<!proto.cs3.ocm.provider.v1beta1.ProviderInfo>} value
+ * @return {!proto.cs3.ocm.provider.v1beta1.ListAllProvidersResponse} returns this
+*/
 proto.cs3.ocm.provider.v1beta1.ListAllProvidersResponse.prototype.setProvidersList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 3, value);
+  return jspb.Message.setRepeatedWrapperField(this, 3, value);
 };
 
 
@@ -1344,9 +1397,10 @@ proto.cs3.ocm.provider.v1beta1.ListAllProvidersResponse.prototype.addProviders =
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.cs3.ocm.provider.v1beta1.ListAllProvidersResponse} returns this
  */
 proto.cs3.ocm.provider.v1beta1.ListAllProvidersResponse.prototype.clearProvidersList = function() {
-  this.setProvidersList([]);
+  return this.setProvidersList([]);
 };
 
 

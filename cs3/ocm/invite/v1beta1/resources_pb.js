@@ -2,11 +2,14 @@
 /**
  * @fileoverview
  * @enhanceable
+ * @suppress {missingRequire} reports error on implicit type usages.
  * @suppress {messageConventions} JS Compiler reports an error if a variable or
  *     field starts with 'MSG_' and isn't a translatable message.
  * @public
  */
 // GENERATED CODE -- DO NOT EDIT!
+/* eslint-disable */
+// @ts-nocheck
 
 var jspb = require('google-protobuf');
 var goog = jspb;
@@ -199,9 +202,12 @@ proto.cs3.ocm.invite.v1beta1.InviteToken.prototype.getToken = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.ocm.invite.v1beta1.InviteToken} returns this
+ */
 proto.cs3.ocm.invite.v1beta1.InviteToken.prototype.setToken = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -215,17 +221,21 @@ proto.cs3.ocm.invite.v1beta1.InviteToken.prototype.getUserId = function() {
 };
 
 
-/** @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value */
+/**
+ * @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value
+ * @return {!proto.cs3.ocm.invite.v1beta1.InviteToken} returns this
+*/
 proto.cs3.ocm.invite.v1beta1.InviteToken.prototype.setUserId = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.ocm.invite.v1beta1.InviteToken} returns this
  */
 proto.cs3.ocm.invite.v1beta1.InviteToken.prototype.clearUserId = function() {
-  this.setUserId(undefined);
+  return this.setUserId(undefined);
 };
 
 
@@ -248,17 +258,21 @@ proto.cs3.ocm.invite.v1beta1.InviteToken.prototype.getExpiration = function() {
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Timestamp|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Timestamp|undefined} value
+ * @return {!proto.cs3.ocm.invite.v1beta1.InviteToken} returns this
+*/
 proto.cs3.ocm.invite.v1beta1.InviteToken.prototype.setExpiration = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.ocm.invite.v1beta1.InviteToken} returns this
  */
 proto.cs3.ocm.invite.v1beta1.InviteToken.prototype.clearExpiration = function() {
-  this.setExpiration(undefined);
+  return this.setExpiration(undefined);
 };
 
 
@@ -280,9 +294,12 @@ proto.cs3.ocm.invite.v1beta1.InviteToken.prototype.getDescription = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.ocm.invite.v1beta1.InviteToken} returns this
+ */
 proto.cs3.ocm.invite.v1beta1.InviteToken.prototype.setDescription = function(value) {
-  jspb.Message.setProto3StringField(this, 4, value);
+  return jspb.Message.setProto3StringField(this, 4, value);
 };
 
 

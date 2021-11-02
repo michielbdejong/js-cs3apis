@@ -1,13 +1,13 @@
 {
-  "name": "@cs3org/cs3apis",
-  "version": "0.0.36",
-  "description": "JavaScript bindings for the CS3APIs to connect Storage and Application Providers ",
+  "name": "@cs3org/node-cs3apis",
+  "version": "0.0.25",
+  "description": "Node.js bindings for the CS3APIs to connect Storage and Application Providers ",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cs3org/js-cs3apis.git"
+    "url": "git+https://github.com/cs3org/node-cs3apis.git"
   },
   "keywords": [
     "cs3-apis",
@@ -18,11 +18,15 @@
   "author": "CS3 Organization",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/cs3org/js-cs3apis/issues"
+    "url": "https://github.com/cs3org/node-cs3apis/issues"
   },
-  "homepage": "https://github.com/cs3org/js-cs3apis#readme",
+  "homepage": "https://github.com/cs3org/node-cs3apis#readme",
   "dependencies": {
-    "google-protobuf": "^3.13.0",
-    "grpc-web": "^1.2.1"
+    "@grpc/grpc-js": "^1.3.7",
+    "google-protobuf": "^3.13.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3"
   }
 }

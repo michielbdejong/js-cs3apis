@@ -2,11 +2,14 @@
 /**
  * @fileoverview
  * @enhanceable
+ * @suppress {missingRequire} reports error on implicit type usages.
  * @suppress {messageConventions} JS Compiler reports an error if a variable or
  *     field starts with 'MSG_' and isn't a translatable message.
  * @public
  */
 // GENERATED CODE -- DO NOT EDIT!
+/* eslint-disable */
+// @ts-nocheck
 
 var jspb = require('google-protobuf');
 var goog = jspb;
@@ -334,17 +337,21 @@ proto.cs3.admin.group.v1beta1.CreateGroupRequest.prototype.getOpaque = function(
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.admin.group.v1beta1.CreateGroupRequest} returns this
+*/
 proto.cs3.admin.group.v1beta1.CreateGroupRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.admin.group.v1beta1.CreateGroupRequest} returns this
  */
 proto.cs3.admin.group.v1beta1.CreateGroupRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -367,17 +374,21 @@ proto.cs3.admin.group.v1beta1.CreateGroupRequest.prototype.getGroup = function()
 };
 
 
-/** @param {?proto.cs3.identity.group.v1beta1.Group|undefined} value */
+/**
+ * @param {?proto.cs3.identity.group.v1beta1.Group|undefined} value
+ * @return {!proto.cs3.admin.group.v1beta1.CreateGroupRequest} returns this
+*/
 proto.cs3.admin.group.v1beta1.CreateGroupRequest.prototype.setGroup = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.admin.group.v1beta1.CreateGroupRequest} returns this
  */
 proto.cs3.admin.group.v1beta1.CreateGroupRequest.prototype.clearGroup = function() {
-  this.setGroup(undefined);
+  return this.setGroup(undefined);
 };
 
 
@@ -542,17 +553,21 @@ proto.cs3.admin.group.v1beta1.CreateGroupResponse.prototype.getStatus = function
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.admin.group.v1beta1.CreateGroupResponse} returns this
+*/
 proto.cs3.admin.group.v1beta1.CreateGroupResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.admin.group.v1beta1.CreateGroupResponse} returns this
  */
 proto.cs3.admin.group.v1beta1.CreateGroupResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -575,17 +590,21 @@ proto.cs3.admin.group.v1beta1.CreateGroupResponse.prototype.getOpaque = function
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.admin.group.v1beta1.CreateGroupResponse} returns this
+*/
 proto.cs3.admin.group.v1beta1.CreateGroupResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.admin.group.v1beta1.CreateGroupResponse} returns this
  */
 proto.cs3.admin.group.v1beta1.CreateGroupResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -608,17 +627,21 @@ proto.cs3.admin.group.v1beta1.CreateGroupResponse.prototype.getGroup = function(
 };
 
 
-/** @param {?proto.cs3.identity.group.v1beta1.Group|undefined} value */
+/**
+ * @param {?proto.cs3.identity.group.v1beta1.Group|undefined} value
+ * @return {!proto.cs3.admin.group.v1beta1.CreateGroupResponse} returns this
+*/
 proto.cs3.admin.group.v1beta1.CreateGroupResponse.prototype.setGroup = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.admin.group.v1beta1.CreateGroupResponse} returns this
  */
 proto.cs3.admin.group.v1beta1.CreateGroupResponse.prototype.clearGroup = function() {
-  this.setGroup(undefined);
+  return this.setGroup(undefined);
 };
 
 
@@ -769,17 +792,21 @@ proto.cs3.admin.group.v1beta1.DeleteGroupRequest.prototype.getOpaque = function(
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.admin.group.v1beta1.DeleteGroupRequest} returns this
+*/
 proto.cs3.admin.group.v1beta1.DeleteGroupRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.admin.group.v1beta1.DeleteGroupRequest} returns this
  */
 proto.cs3.admin.group.v1beta1.DeleteGroupRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -802,17 +829,21 @@ proto.cs3.admin.group.v1beta1.DeleteGroupRequest.prototype.getGroupId = function
 };
 
 
-/** @param {?proto.cs3.identity.group.v1beta1.GroupId|undefined} value */
+/**
+ * @param {?proto.cs3.identity.group.v1beta1.GroupId|undefined} value
+ * @return {!proto.cs3.admin.group.v1beta1.DeleteGroupRequest} returns this
+*/
 proto.cs3.admin.group.v1beta1.DeleteGroupRequest.prototype.setGroupId = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.admin.group.v1beta1.DeleteGroupRequest} returns this
  */
 proto.cs3.admin.group.v1beta1.DeleteGroupRequest.prototype.clearGroupId = function() {
-  this.setGroupId(undefined);
+  return this.setGroupId(undefined);
 };
 
 
@@ -963,17 +994,21 @@ proto.cs3.admin.group.v1beta1.DeleteGroupResponse.prototype.getStatus = function
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.admin.group.v1beta1.DeleteGroupResponse} returns this
+*/
 proto.cs3.admin.group.v1beta1.DeleteGroupResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.admin.group.v1beta1.DeleteGroupResponse} returns this
  */
 proto.cs3.admin.group.v1beta1.DeleteGroupResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -996,17 +1031,21 @@ proto.cs3.admin.group.v1beta1.DeleteGroupResponse.prototype.getOpaque = function
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.admin.group.v1beta1.DeleteGroupResponse} returns this
+*/
 proto.cs3.admin.group.v1beta1.DeleteGroupResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.admin.group.v1beta1.DeleteGroupResponse} returns this
  */
 proto.cs3.admin.group.v1beta1.DeleteGroupResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -1171,17 +1210,21 @@ proto.cs3.admin.group.v1beta1.AddUserToGroupRequest.prototype.getUserId = functi
 };
 
 
-/** @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value */
+/**
+ * @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value
+ * @return {!proto.cs3.admin.group.v1beta1.AddUserToGroupRequest} returns this
+*/
 proto.cs3.admin.group.v1beta1.AddUserToGroupRequest.prototype.setUserId = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.admin.group.v1beta1.AddUserToGroupRequest} returns this
  */
 proto.cs3.admin.group.v1beta1.AddUserToGroupRequest.prototype.clearUserId = function() {
-  this.setUserId(undefined);
+  return this.setUserId(undefined);
 };
 
 
@@ -1204,17 +1247,21 @@ proto.cs3.admin.group.v1beta1.AddUserToGroupRequest.prototype.getGroupId = funct
 };
 
 
-/** @param {?proto.cs3.identity.group.v1beta1.GroupId|undefined} value */
+/**
+ * @param {?proto.cs3.identity.group.v1beta1.GroupId|undefined} value
+ * @return {!proto.cs3.admin.group.v1beta1.AddUserToGroupRequest} returns this
+*/
 proto.cs3.admin.group.v1beta1.AddUserToGroupRequest.prototype.setGroupId = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.admin.group.v1beta1.AddUserToGroupRequest} returns this
  */
 proto.cs3.admin.group.v1beta1.AddUserToGroupRequest.prototype.clearGroupId = function() {
-  this.setGroupId(undefined);
+  return this.setGroupId(undefined);
 };
 
 
@@ -1237,17 +1284,21 @@ proto.cs3.admin.group.v1beta1.AddUserToGroupRequest.prototype.getOpaque = functi
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.admin.group.v1beta1.AddUserToGroupRequest} returns this
+*/
 proto.cs3.admin.group.v1beta1.AddUserToGroupRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.admin.group.v1beta1.AddUserToGroupRequest} returns this
  */
 proto.cs3.admin.group.v1beta1.AddUserToGroupRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -1398,17 +1449,21 @@ proto.cs3.admin.group.v1beta1.AddUserToGroupResponse.prototype.getStatus = funct
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.admin.group.v1beta1.AddUserToGroupResponse} returns this
+*/
 proto.cs3.admin.group.v1beta1.AddUserToGroupResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.admin.group.v1beta1.AddUserToGroupResponse} returns this
  */
 proto.cs3.admin.group.v1beta1.AddUserToGroupResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -1431,17 +1486,21 @@ proto.cs3.admin.group.v1beta1.AddUserToGroupResponse.prototype.getOpaque = funct
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.admin.group.v1beta1.AddUserToGroupResponse} returns this
+*/
 proto.cs3.admin.group.v1beta1.AddUserToGroupResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.admin.group.v1beta1.AddUserToGroupResponse} returns this
  */
 proto.cs3.admin.group.v1beta1.AddUserToGroupResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -1606,17 +1665,21 @@ proto.cs3.admin.group.v1beta1.RemoveUserFromGroupRequest.prototype.getUserId = f
 };
 
 
-/** @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value */
+/**
+ * @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value
+ * @return {!proto.cs3.admin.group.v1beta1.RemoveUserFromGroupRequest} returns this
+*/
 proto.cs3.admin.group.v1beta1.RemoveUserFromGroupRequest.prototype.setUserId = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.admin.group.v1beta1.RemoveUserFromGroupRequest} returns this
  */
 proto.cs3.admin.group.v1beta1.RemoveUserFromGroupRequest.prototype.clearUserId = function() {
-  this.setUserId(undefined);
+  return this.setUserId(undefined);
 };
 
 
@@ -1639,17 +1702,21 @@ proto.cs3.admin.group.v1beta1.RemoveUserFromGroupRequest.prototype.getGroupId = 
 };
 
 
-/** @param {?proto.cs3.identity.group.v1beta1.GroupId|undefined} value */
+/**
+ * @param {?proto.cs3.identity.group.v1beta1.GroupId|undefined} value
+ * @return {!proto.cs3.admin.group.v1beta1.RemoveUserFromGroupRequest} returns this
+*/
 proto.cs3.admin.group.v1beta1.RemoveUserFromGroupRequest.prototype.setGroupId = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.admin.group.v1beta1.RemoveUserFromGroupRequest} returns this
  */
 proto.cs3.admin.group.v1beta1.RemoveUserFromGroupRequest.prototype.clearGroupId = function() {
-  this.setGroupId(undefined);
+  return this.setGroupId(undefined);
 };
 
 
@@ -1672,17 +1739,21 @@ proto.cs3.admin.group.v1beta1.RemoveUserFromGroupRequest.prototype.getOpaque = f
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.admin.group.v1beta1.RemoveUserFromGroupRequest} returns this
+*/
 proto.cs3.admin.group.v1beta1.RemoveUserFromGroupRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.admin.group.v1beta1.RemoveUserFromGroupRequest} returns this
  */
 proto.cs3.admin.group.v1beta1.RemoveUserFromGroupRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -1833,17 +1904,21 @@ proto.cs3.admin.group.v1beta1.RemoveUserFromGroupResponse.prototype.getStatus = 
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.admin.group.v1beta1.RemoveUserFromGroupResponse} returns this
+*/
 proto.cs3.admin.group.v1beta1.RemoveUserFromGroupResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.admin.group.v1beta1.RemoveUserFromGroupResponse} returns this
  */
 proto.cs3.admin.group.v1beta1.RemoveUserFromGroupResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -1866,17 +1941,21 @@ proto.cs3.admin.group.v1beta1.RemoveUserFromGroupResponse.prototype.getOpaque = 
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.admin.group.v1beta1.RemoveUserFromGroupResponse} returns this
+*/
 proto.cs3.admin.group.v1beta1.RemoveUserFromGroupResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.admin.group.v1beta1.RemoveUserFromGroupResponse} returns this
  */
 proto.cs3.admin.group.v1beta1.RemoveUserFromGroupResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 

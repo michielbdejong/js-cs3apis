@@ -2,11 +2,14 @@
 /**
  * @fileoverview
  * @enhanceable
+ * @suppress {missingRequire} reports error on implicit type usages.
  * @suppress {messageConventions} JS Compiler reports an error if a variable or
  *     field starts with 'MSG_' and isn't a translatable message.
  * @public
  */
 // GENERATED CODE -- DO NOT EDIT!
+/* eslint-disable */
+// @ts-nocheck
 
 var jspb = require('google-protobuf');
 var goog = jspb;
@@ -591,17 +594,21 @@ proto.cs3.sharing.ocm.v1beta1.CreateOCMShareRequest.prototype.getOpaque = functi
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.sharing.ocm.v1beta1.CreateOCMShareRequest} returns this
+*/
 proto.cs3.sharing.ocm.v1beta1.CreateOCMShareRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.ocm.v1beta1.CreateOCMShareRequest} returns this
  */
 proto.cs3.sharing.ocm.v1beta1.CreateOCMShareRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -624,17 +631,21 @@ proto.cs3.sharing.ocm.v1beta1.CreateOCMShareRequest.prototype.getResourceId = fu
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.ResourceId|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.ResourceId|undefined} value
+ * @return {!proto.cs3.sharing.ocm.v1beta1.CreateOCMShareRequest} returns this
+*/
 proto.cs3.sharing.ocm.v1beta1.CreateOCMShareRequest.prototype.setResourceId = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.ocm.v1beta1.CreateOCMShareRequest} returns this
  */
 proto.cs3.sharing.ocm.v1beta1.CreateOCMShareRequest.prototype.clearResourceId = function() {
-  this.setResourceId(undefined);
+  return this.setResourceId(undefined);
 };
 
 
@@ -657,17 +668,21 @@ proto.cs3.sharing.ocm.v1beta1.CreateOCMShareRequest.prototype.getGrant = functio
 };
 
 
-/** @param {?proto.cs3.sharing.ocm.v1beta1.ShareGrant|undefined} value */
+/**
+ * @param {?proto.cs3.sharing.ocm.v1beta1.ShareGrant|undefined} value
+ * @return {!proto.cs3.sharing.ocm.v1beta1.CreateOCMShareRequest} returns this
+*/
 proto.cs3.sharing.ocm.v1beta1.CreateOCMShareRequest.prototype.setGrant = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.ocm.v1beta1.CreateOCMShareRequest} returns this
  */
 proto.cs3.sharing.ocm.v1beta1.CreateOCMShareRequest.prototype.clearGrant = function() {
-  this.setGrant(undefined);
+  return this.setGrant(undefined);
 };
 
 
@@ -690,17 +705,21 @@ proto.cs3.sharing.ocm.v1beta1.CreateOCMShareRequest.prototype.getRecipientMeshPr
 };
 
 
-/** @param {?proto.cs3.ocm.provider.v1beta1.ProviderInfo|undefined} value */
+/**
+ * @param {?proto.cs3.ocm.provider.v1beta1.ProviderInfo|undefined} value
+ * @return {!proto.cs3.sharing.ocm.v1beta1.CreateOCMShareRequest} returns this
+*/
 proto.cs3.sharing.ocm.v1beta1.CreateOCMShareRequest.prototype.setRecipientMeshProvider = function(value) {
-  jspb.Message.setWrapperField(this, 4, value);
+  return jspb.Message.setWrapperField(this, 4, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.ocm.v1beta1.CreateOCMShareRequest} returns this
  */
 proto.cs3.sharing.ocm.v1beta1.CreateOCMShareRequest.prototype.clearRecipientMeshProvider = function() {
-  this.setRecipientMeshProvider(undefined);
+  return this.setRecipientMeshProvider(undefined);
 };
 
 
@@ -865,17 +884,21 @@ proto.cs3.sharing.ocm.v1beta1.CreateOCMShareResponse.prototype.getStatus = funct
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.sharing.ocm.v1beta1.CreateOCMShareResponse} returns this
+*/
 proto.cs3.sharing.ocm.v1beta1.CreateOCMShareResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.ocm.v1beta1.CreateOCMShareResponse} returns this
  */
 proto.cs3.sharing.ocm.v1beta1.CreateOCMShareResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -898,17 +921,21 @@ proto.cs3.sharing.ocm.v1beta1.CreateOCMShareResponse.prototype.getOpaque = funct
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.sharing.ocm.v1beta1.CreateOCMShareResponse} returns this
+*/
 proto.cs3.sharing.ocm.v1beta1.CreateOCMShareResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.ocm.v1beta1.CreateOCMShareResponse} returns this
  */
 proto.cs3.sharing.ocm.v1beta1.CreateOCMShareResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -931,17 +958,21 @@ proto.cs3.sharing.ocm.v1beta1.CreateOCMShareResponse.prototype.getShare = functi
 };
 
 
-/** @param {?proto.cs3.sharing.ocm.v1beta1.Share|undefined} value */
+/**
+ * @param {?proto.cs3.sharing.ocm.v1beta1.Share|undefined} value
+ * @return {!proto.cs3.sharing.ocm.v1beta1.CreateOCMShareResponse} returns this
+*/
 proto.cs3.sharing.ocm.v1beta1.CreateOCMShareResponse.prototype.setShare = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.ocm.v1beta1.CreateOCMShareResponse} returns this
  */
 proto.cs3.sharing.ocm.v1beta1.CreateOCMShareResponse.prototype.clearShare = function() {
-  this.setShare(undefined);
+  return this.setShare(undefined);
 };
 
 
@@ -1258,17 +1289,21 @@ proto.cs3.sharing.ocm.v1beta1.UpdateOCMShareRequest.UpdateField.prototype.getPer
 };
 
 
-/** @param {?proto.cs3.sharing.ocm.v1beta1.SharePermissions|undefined} value */
+/**
+ * @param {?proto.cs3.sharing.ocm.v1beta1.SharePermissions|undefined} value
+ * @return {!proto.cs3.sharing.ocm.v1beta1.UpdateOCMShareRequest.UpdateField} returns this
+*/
 proto.cs3.sharing.ocm.v1beta1.UpdateOCMShareRequest.UpdateField.prototype.setPermissions = function(value) {
-  jspb.Message.setOneofWrapperField(this, 2, proto.cs3.sharing.ocm.v1beta1.UpdateOCMShareRequest.UpdateField.oneofGroups_[0], value);
+  return jspb.Message.setOneofWrapperField(this, 2, proto.cs3.sharing.ocm.v1beta1.UpdateOCMShareRequest.UpdateField.oneofGroups_[0], value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.ocm.v1beta1.UpdateOCMShareRequest.UpdateField} returns this
  */
 proto.cs3.sharing.ocm.v1beta1.UpdateOCMShareRequest.UpdateField.prototype.clearPermissions = function() {
-  this.setPermissions(undefined);
+  return this.setPermissions(undefined);
 };
 
 
@@ -1290,17 +1325,21 @@ proto.cs3.sharing.ocm.v1beta1.UpdateOCMShareRequest.UpdateField.prototype.getDis
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.sharing.ocm.v1beta1.UpdateOCMShareRequest.UpdateField} returns this
+ */
 proto.cs3.sharing.ocm.v1beta1.UpdateOCMShareRequest.UpdateField.prototype.setDisplayName = function(value) {
-  jspb.Message.setOneofField(this, 3, proto.cs3.sharing.ocm.v1beta1.UpdateOCMShareRequest.UpdateField.oneofGroups_[0], value);
+  return jspb.Message.setOneofField(this, 3, proto.cs3.sharing.ocm.v1beta1.UpdateOCMShareRequest.UpdateField.oneofGroups_[0], value);
 };
 
 
 /**
  * Clears the field making it undefined.
+ * @return {!proto.cs3.sharing.ocm.v1beta1.UpdateOCMShareRequest.UpdateField} returns this
  */
 proto.cs3.sharing.ocm.v1beta1.UpdateOCMShareRequest.UpdateField.prototype.clearDisplayName = function() {
-  jspb.Message.setOneofField(this, 3, proto.cs3.sharing.ocm.v1beta1.UpdateOCMShareRequest.UpdateField.oneofGroups_[0], undefined);
+  return jspb.Message.setOneofField(this, 3, proto.cs3.sharing.ocm.v1beta1.UpdateOCMShareRequest.UpdateField.oneofGroups_[0], undefined);
 };
 
 
@@ -1323,17 +1362,21 @@ proto.cs3.sharing.ocm.v1beta1.UpdateOCMShareRequest.prototype.getOpaque = functi
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.sharing.ocm.v1beta1.UpdateOCMShareRequest} returns this
+*/
 proto.cs3.sharing.ocm.v1beta1.UpdateOCMShareRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.ocm.v1beta1.UpdateOCMShareRequest} returns this
  */
 proto.cs3.sharing.ocm.v1beta1.UpdateOCMShareRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -1356,17 +1399,21 @@ proto.cs3.sharing.ocm.v1beta1.UpdateOCMShareRequest.prototype.getRef = function(
 };
 
 
-/** @param {?proto.cs3.sharing.ocm.v1beta1.ShareReference|undefined} value */
+/**
+ * @param {?proto.cs3.sharing.ocm.v1beta1.ShareReference|undefined} value
+ * @return {!proto.cs3.sharing.ocm.v1beta1.UpdateOCMShareRequest} returns this
+*/
 proto.cs3.sharing.ocm.v1beta1.UpdateOCMShareRequest.prototype.setRef = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.ocm.v1beta1.UpdateOCMShareRequest} returns this
  */
 proto.cs3.sharing.ocm.v1beta1.UpdateOCMShareRequest.prototype.clearRef = function() {
-  this.setRef(undefined);
+  return this.setRef(undefined);
 };
 
 
@@ -1389,17 +1436,21 @@ proto.cs3.sharing.ocm.v1beta1.UpdateOCMShareRequest.prototype.getField = functio
 };
 
 
-/** @param {?proto.cs3.sharing.ocm.v1beta1.UpdateOCMShareRequest.UpdateField|undefined} value */
+/**
+ * @param {?proto.cs3.sharing.ocm.v1beta1.UpdateOCMShareRequest.UpdateField|undefined} value
+ * @return {!proto.cs3.sharing.ocm.v1beta1.UpdateOCMShareRequest} returns this
+*/
 proto.cs3.sharing.ocm.v1beta1.UpdateOCMShareRequest.prototype.setField = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.ocm.v1beta1.UpdateOCMShareRequest} returns this
  */
 proto.cs3.sharing.ocm.v1beta1.UpdateOCMShareRequest.prototype.clearField = function() {
-  this.setField(undefined);
+  return this.setField(undefined);
 };
 
 
@@ -1550,17 +1601,21 @@ proto.cs3.sharing.ocm.v1beta1.UpdateOCMShareResponse.prototype.getStatus = funct
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.sharing.ocm.v1beta1.UpdateOCMShareResponse} returns this
+*/
 proto.cs3.sharing.ocm.v1beta1.UpdateOCMShareResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.ocm.v1beta1.UpdateOCMShareResponse} returns this
  */
 proto.cs3.sharing.ocm.v1beta1.UpdateOCMShareResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -1583,17 +1638,21 @@ proto.cs3.sharing.ocm.v1beta1.UpdateOCMShareResponse.prototype.getOpaque = funct
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.sharing.ocm.v1beta1.UpdateOCMShareResponse} returns this
+*/
 proto.cs3.sharing.ocm.v1beta1.UpdateOCMShareResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.ocm.v1beta1.UpdateOCMShareResponse} returns this
  */
 proto.cs3.sharing.ocm.v1beta1.UpdateOCMShareResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -1945,9 +2004,12 @@ proto.cs3.sharing.ocm.v1beta1.ListOCMSharesRequest.Filter.prototype.getType = fu
 };
 
 
-/** @param {!proto.cs3.sharing.ocm.v1beta1.ListOCMSharesRequest.Filter.Type} value */
+/**
+ * @param {!proto.cs3.sharing.ocm.v1beta1.ListOCMSharesRequest.Filter.Type} value
+ * @return {!proto.cs3.sharing.ocm.v1beta1.ListOCMSharesRequest.Filter} returns this
+ */
 proto.cs3.sharing.ocm.v1beta1.ListOCMSharesRequest.Filter.prototype.setType = function(value) {
-  jspb.Message.setProto3EnumField(this, 2, value);
+  return jspb.Message.setProto3EnumField(this, 2, value);
 };
 
 
@@ -1961,17 +2023,21 @@ proto.cs3.sharing.ocm.v1beta1.ListOCMSharesRequest.Filter.prototype.getResourceI
 };
 
 
-/** @param {?proto.cs3.storage.provider.v1beta1.ResourceId|undefined} value */
+/**
+ * @param {?proto.cs3.storage.provider.v1beta1.ResourceId|undefined} value
+ * @return {!proto.cs3.sharing.ocm.v1beta1.ListOCMSharesRequest.Filter} returns this
+*/
 proto.cs3.sharing.ocm.v1beta1.ListOCMSharesRequest.Filter.prototype.setResourceId = function(value) {
-  jspb.Message.setOneofWrapperField(this, 3, proto.cs3.sharing.ocm.v1beta1.ListOCMSharesRequest.Filter.oneofGroups_[0], value);
+  return jspb.Message.setOneofWrapperField(this, 3, proto.cs3.sharing.ocm.v1beta1.ListOCMSharesRequest.Filter.oneofGroups_[0], value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.ocm.v1beta1.ListOCMSharesRequest.Filter} returns this
  */
 proto.cs3.sharing.ocm.v1beta1.ListOCMSharesRequest.Filter.prototype.clearResourceId = function() {
-  this.setResourceId(undefined);
+  return this.setResourceId(undefined);
 };
 
 
@@ -1994,17 +2060,21 @@ proto.cs3.sharing.ocm.v1beta1.ListOCMSharesRequest.Filter.prototype.getOwner = f
 };
 
 
-/** @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value */
+/**
+ * @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value
+ * @return {!proto.cs3.sharing.ocm.v1beta1.ListOCMSharesRequest.Filter} returns this
+*/
 proto.cs3.sharing.ocm.v1beta1.ListOCMSharesRequest.Filter.prototype.setOwner = function(value) {
-  jspb.Message.setOneofWrapperField(this, 4, proto.cs3.sharing.ocm.v1beta1.ListOCMSharesRequest.Filter.oneofGroups_[0], value);
+  return jspb.Message.setOneofWrapperField(this, 4, proto.cs3.sharing.ocm.v1beta1.ListOCMSharesRequest.Filter.oneofGroups_[0], value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.ocm.v1beta1.ListOCMSharesRequest.Filter} returns this
  */
 proto.cs3.sharing.ocm.v1beta1.ListOCMSharesRequest.Filter.prototype.clearOwner = function() {
-  this.setOwner(undefined);
+  return this.setOwner(undefined);
 };
 
 
@@ -2027,17 +2097,21 @@ proto.cs3.sharing.ocm.v1beta1.ListOCMSharesRequest.Filter.prototype.getCreator =
 };
 
 
-/** @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value */
+/**
+ * @param {?proto.cs3.identity.user.v1beta1.UserId|undefined} value
+ * @return {!proto.cs3.sharing.ocm.v1beta1.ListOCMSharesRequest.Filter} returns this
+*/
 proto.cs3.sharing.ocm.v1beta1.ListOCMSharesRequest.Filter.prototype.setCreator = function(value) {
-  jspb.Message.setOneofWrapperField(this, 5, proto.cs3.sharing.ocm.v1beta1.ListOCMSharesRequest.Filter.oneofGroups_[0], value);
+  return jspb.Message.setOneofWrapperField(this, 5, proto.cs3.sharing.ocm.v1beta1.ListOCMSharesRequest.Filter.oneofGroups_[0], value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.ocm.v1beta1.ListOCMSharesRequest.Filter} returns this
  */
 proto.cs3.sharing.ocm.v1beta1.ListOCMSharesRequest.Filter.prototype.clearCreator = function() {
-  this.setCreator(undefined);
+  return this.setCreator(undefined);
 };
 
 
@@ -2060,17 +2134,21 @@ proto.cs3.sharing.ocm.v1beta1.ListOCMSharesRequest.prototype.getOpaque = functio
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.sharing.ocm.v1beta1.ListOCMSharesRequest} returns this
+*/
 proto.cs3.sharing.ocm.v1beta1.ListOCMSharesRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.ocm.v1beta1.ListOCMSharesRequest} returns this
  */
 proto.cs3.sharing.ocm.v1beta1.ListOCMSharesRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -2093,9 +2171,12 @@ proto.cs3.sharing.ocm.v1beta1.ListOCMSharesRequest.prototype.getFiltersList = fu
 };
 
 
-/** @param {!Array<!proto.cs3.sharing.ocm.v1beta1.ListOCMSharesRequest.Filter>} value */
+/**
+ * @param {!Array<!proto.cs3.sharing.ocm.v1beta1.ListOCMSharesRequest.Filter>} value
+ * @return {!proto.cs3.sharing.ocm.v1beta1.ListOCMSharesRequest} returns this
+*/
 proto.cs3.sharing.ocm.v1beta1.ListOCMSharesRequest.prototype.setFiltersList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 2, value);
+  return jspb.Message.setRepeatedWrapperField(this, 2, value);
 };
 
 
@@ -2111,9 +2192,10 @@ proto.cs3.sharing.ocm.v1beta1.ListOCMSharesRequest.prototype.addFilters = functi
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.cs3.sharing.ocm.v1beta1.ListOCMSharesRequest} returns this
  */
 proto.cs3.sharing.ocm.v1beta1.ListOCMSharesRequest.prototype.clearFiltersList = function() {
-  this.setFiltersList([]);
+  return this.setFiltersList([]);
 };
 
 
@@ -2277,17 +2359,21 @@ proto.cs3.sharing.ocm.v1beta1.ListOCMSharesResponse.prototype.getStatus = functi
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.sharing.ocm.v1beta1.ListOCMSharesResponse} returns this
+*/
 proto.cs3.sharing.ocm.v1beta1.ListOCMSharesResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.ocm.v1beta1.ListOCMSharesResponse} returns this
  */
 proto.cs3.sharing.ocm.v1beta1.ListOCMSharesResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -2310,17 +2396,21 @@ proto.cs3.sharing.ocm.v1beta1.ListOCMSharesResponse.prototype.getOpaque = functi
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.sharing.ocm.v1beta1.ListOCMSharesResponse} returns this
+*/
 proto.cs3.sharing.ocm.v1beta1.ListOCMSharesResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.ocm.v1beta1.ListOCMSharesResponse} returns this
  */
 proto.cs3.sharing.ocm.v1beta1.ListOCMSharesResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -2343,9 +2433,12 @@ proto.cs3.sharing.ocm.v1beta1.ListOCMSharesResponse.prototype.getSharesList = fu
 };
 
 
-/** @param {!Array<!proto.cs3.sharing.ocm.v1beta1.Share>} value */
+/**
+ * @param {!Array<!proto.cs3.sharing.ocm.v1beta1.Share>} value
+ * @return {!proto.cs3.sharing.ocm.v1beta1.ListOCMSharesResponse} returns this
+*/
 proto.cs3.sharing.ocm.v1beta1.ListOCMSharesResponse.prototype.setSharesList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 3, value);
+  return jspb.Message.setRepeatedWrapperField(this, 3, value);
 };
 
 
@@ -2361,9 +2454,10 @@ proto.cs3.sharing.ocm.v1beta1.ListOCMSharesResponse.prototype.addShares = functi
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.cs3.sharing.ocm.v1beta1.ListOCMSharesResponse} returns this
  */
 proto.cs3.sharing.ocm.v1beta1.ListOCMSharesResponse.prototype.clearSharesList = function() {
-  this.setSharesList([]);
+  return this.setSharesList([]);
 };
 
 
@@ -2505,17 +2599,21 @@ proto.cs3.sharing.ocm.v1beta1.RemoveOCMShareRequest.prototype.getOpaque = functi
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.sharing.ocm.v1beta1.RemoveOCMShareRequest} returns this
+*/
 proto.cs3.sharing.ocm.v1beta1.RemoveOCMShareRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.ocm.v1beta1.RemoveOCMShareRequest} returns this
  */
 proto.cs3.sharing.ocm.v1beta1.RemoveOCMShareRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -2538,17 +2636,21 @@ proto.cs3.sharing.ocm.v1beta1.RemoveOCMShareRequest.prototype.getRef = function(
 };
 
 
-/** @param {?proto.cs3.sharing.ocm.v1beta1.ShareReference|undefined} value */
+/**
+ * @param {?proto.cs3.sharing.ocm.v1beta1.ShareReference|undefined} value
+ * @return {!proto.cs3.sharing.ocm.v1beta1.RemoveOCMShareRequest} returns this
+*/
 proto.cs3.sharing.ocm.v1beta1.RemoveOCMShareRequest.prototype.setRef = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.ocm.v1beta1.RemoveOCMShareRequest} returns this
  */
 proto.cs3.sharing.ocm.v1beta1.RemoveOCMShareRequest.prototype.clearRef = function() {
-  this.setRef(undefined);
+  return this.setRef(undefined);
 };
 
 
@@ -2699,17 +2801,21 @@ proto.cs3.sharing.ocm.v1beta1.RemoveOCMShareResponse.prototype.getStatus = funct
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.sharing.ocm.v1beta1.RemoveOCMShareResponse} returns this
+*/
 proto.cs3.sharing.ocm.v1beta1.RemoveOCMShareResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.ocm.v1beta1.RemoveOCMShareResponse} returns this
  */
 proto.cs3.sharing.ocm.v1beta1.RemoveOCMShareResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -2732,17 +2838,21 @@ proto.cs3.sharing.ocm.v1beta1.RemoveOCMShareResponse.prototype.getOpaque = funct
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.sharing.ocm.v1beta1.RemoveOCMShareResponse} returns this
+*/
 proto.cs3.sharing.ocm.v1beta1.RemoveOCMShareResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.ocm.v1beta1.RemoveOCMShareResponse} returns this
  */
 proto.cs3.sharing.ocm.v1beta1.RemoveOCMShareResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -2893,17 +3003,21 @@ proto.cs3.sharing.ocm.v1beta1.GetOCMShareRequest.prototype.getOpaque = function(
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.sharing.ocm.v1beta1.GetOCMShareRequest} returns this
+*/
 proto.cs3.sharing.ocm.v1beta1.GetOCMShareRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.ocm.v1beta1.GetOCMShareRequest} returns this
  */
 proto.cs3.sharing.ocm.v1beta1.GetOCMShareRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -2926,17 +3040,21 @@ proto.cs3.sharing.ocm.v1beta1.GetOCMShareRequest.prototype.getRef = function() {
 };
 
 
-/** @param {?proto.cs3.sharing.ocm.v1beta1.ShareReference|undefined} value */
+/**
+ * @param {?proto.cs3.sharing.ocm.v1beta1.ShareReference|undefined} value
+ * @return {!proto.cs3.sharing.ocm.v1beta1.GetOCMShareRequest} returns this
+*/
 proto.cs3.sharing.ocm.v1beta1.GetOCMShareRequest.prototype.setRef = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.ocm.v1beta1.GetOCMShareRequest} returns this
  */
 proto.cs3.sharing.ocm.v1beta1.GetOCMShareRequest.prototype.clearRef = function() {
-  this.setRef(undefined);
+  return this.setRef(undefined);
 };
 
 
@@ -3101,17 +3219,21 @@ proto.cs3.sharing.ocm.v1beta1.GetOCMShareResponse.prototype.getStatus = function
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.sharing.ocm.v1beta1.GetOCMShareResponse} returns this
+*/
 proto.cs3.sharing.ocm.v1beta1.GetOCMShareResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.ocm.v1beta1.GetOCMShareResponse} returns this
  */
 proto.cs3.sharing.ocm.v1beta1.GetOCMShareResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -3134,17 +3256,21 @@ proto.cs3.sharing.ocm.v1beta1.GetOCMShareResponse.prototype.getOpaque = function
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.sharing.ocm.v1beta1.GetOCMShareResponse} returns this
+*/
 proto.cs3.sharing.ocm.v1beta1.GetOCMShareResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.ocm.v1beta1.GetOCMShareResponse} returns this
  */
 proto.cs3.sharing.ocm.v1beta1.GetOCMShareResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -3167,17 +3293,21 @@ proto.cs3.sharing.ocm.v1beta1.GetOCMShareResponse.prototype.getShare = function(
 };
 
 
-/** @param {?proto.cs3.sharing.ocm.v1beta1.Share|undefined} value */
+/**
+ * @param {?proto.cs3.sharing.ocm.v1beta1.Share|undefined} value
+ * @return {!proto.cs3.sharing.ocm.v1beta1.GetOCMShareResponse} returns this
+*/
 proto.cs3.sharing.ocm.v1beta1.GetOCMShareResponse.prototype.setShare = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.ocm.v1beta1.GetOCMShareResponse} returns this
  */
 proto.cs3.sharing.ocm.v1beta1.GetOCMShareResponse.prototype.clearShare = function() {
-  this.setShare(undefined);
+  return this.setShare(undefined);
 };
 
 
@@ -3314,17 +3444,21 @@ proto.cs3.sharing.ocm.v1beta1.ListReceivedOCMSharesRequest.prototype.getOpaque =
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.sharing.ocm.v1beta1.ListReceivedOCMSharesRequest} returns this
+*/
 proto.cs3.sharing.ocm.v1beta1.ListReceivedOCMSharesRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.ocm.v1beta1.ListReceivedOCMSharesRequest} returns this
  */
 proto.cs3.sharing.ocm.v1beta1.ListReceivedOCMSharesRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -3497,17 +3631,21 @@ proto.cs3.sharing.ocm.v1beta1.ListReceivedOCMSharesResponse.prototype.getStatus 
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.sharing.ocm.v1beta1.ListReceivedOCMSharesResponse} returns this
+*/
 proto.cs3.sharing.ocm.v1beta1.ListReceivedOCMSharesResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.ocm.v1beta1.ListReceivedOCMSharesResponse} returns this
  */
 proto.cs3.sharing.ocm.v1beta1.ListReceivedOCMSharesResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -3530,17 +3668,21 @@ proto.cs3.sharing.ocm.v1beta1.ListReceivedOCMSharesResponse.prototype.getOpaque 
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.sharing.ocm.v1beta1.ListReceivedOCMSharesResponse} returns this
+*/
 proto.cs3.sharing.ocm.v1beta1.ListReceivedOCMSharesResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.ocm.v1beta1.ListReceivedOCMSharesResponse} returns this
  */
 proto.cs3.sharing.ocm.v1beta1.ListReceivedOCMSharesResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -3563,9 +3705,12 @@ proto.cs3.sharing.ocm.v1beta1.ListReceivedOCMSharesResponse.prototype.getSharesL
 };
 
 
-/** @param {!Array<!proto.cs3.sharing.ocm.v1beta1.ReceivedShare>} value */
+/**
+ * @param {!Array<!proto.cs3.sharing.ocm.v1beta1.ReceivedShare>} value
+ * @return {!proto.cs3.sharing.ocm.v1beta1.ListReceivedOCMSharesResponse} returns this
+*/
 proto.cs3.sharing.ocm.v1beta1.ListReceivedOCMSharesResponse.prototype.setSharesList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 3, value);
+  return jspb.Message.setRepeatedWrapperField(this, 3, value);
 };
 
 
@@ -3581,9 +3726,10 @@ proto.cs3.sharing.ocm.v1beta1.ListReceivedOCMSharesResponse.prototype.addShares 
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.cs3.sharing.ocm.v1beta1.ListReceivedOCMSharesResponse} returns this
  */
 proto.cs3.sharing.ocm.v1beta1.ListReceivedOCMSharesResponse.prototype.clearSharesList = function() {
-  this.setSharesList([]);
+  return this.setSharesList([]);
 };
 
 
@@ -3739,17 +3885,21 @@ proto.cs3.sharing.ocm.v1beta1.UpdateReceivedOCMShareRequest.prototype.getOpaque 
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.sharing.ocm.v1beta1.UpdateReceivedOCMShareRequest} returns this
+*/
 proto.cs3.sharing.ocm.v1beta1.UpdateReceivedOCMShareRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.ocm.v1beta1.UpdateReceivedOCMShareRequest} returns this
  */
 proto.cs3.sharing.ocm.v1beta1.UpdateReceivedOCMShareRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -3772,17 +3922,21 @@ proto.cs3.sharing.ocm.v1beta1.UpdateReceivedOCMShareRequest.prototype.getShare =
 };
 
 
-/** @param {?proto.cs3.sharing.ocm.v1beta1.ReceivedShare|undefined} value */
+/**
+ * @param {?proto.cs3.sharing.ocm.v1beta1.ReceivedShare|undefined} value
+ * @return {!proto.cs3.sharing.ocm.v1beta1.UpdateReceivedOCMShareRequest} returns this
+*/
 proto.cs3.sharing.ocm.v1beta1.UpdateReceivedOCMShareRequest.prototype.setShare = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.ocm.v1beta1.UpdateReceivedOCMShareRequest} returns this
  */
 proto.cs3.sharing.ocm.v1beta1.UpdateReceivedOCMShareRequest.prototype.clearShare = function() {
-  this.setShare(undefined);
+  return this.setShare(undefined);
 };
 
 
@@ -3805,17 +3959,21 @@ proto.cs3.sharing.ocm.v1beta1.UpdateReceivedOCMShareRequest.prototype.getUpdateM
 };
 
 
-/** @param {?proto.google.protobuf.FieldMask|undefined} value */
+/**
+ * @param {?proto.google.protobuf.FieldMask|undefined} value
+ * @return {!proto.cs3.sharing.ocm.v1beta1.UpdateReceivedOCMShareRequest} returns this
+*/
 proto.cs3.sharing.ocm.v1beta1.UpdateReceivedOCMShareRequest.prototype.setUpdateMask = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.ocm.v1beta1.UpdateReceivedOCMShareRequest} returns this
  */
 proto.cs3.sharing.ocm.v1beta1.UpdateReceivedOCMShareRequest.prototype.clearUpdateMask = function() {
-  this.setUpdateMask(undefined);
+  return this.setUpdateMask(undefined);
 };
 
 
@@ -3966,17 +4124,21 @@ proto.cs3.sharing.ocm.v1beta1.UpdateReceivedOCMShareResponse.prototype.getStatus
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.sharing.ocm.v1beta1.UpdateReceivedOCMShareResponse} returns this
+*/
 proto.cs3.sharing.ocm.v1beta1.UpdateReceivedOCMShareResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.ocm.v1beta1.UpdateReceivedOCMShareResponse} returns this
  */
 proto.cs3.sharing.ocm.v1beta1.UpdateReceivedOCMShareResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -3999,17 +4161,21 @@ proto.cs3.sharing.ocm.v1beta1.UpdateReceivedOCMShareResponse.prototype.getOpaque
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.sharing.ocm.v1beta1.UpdateReceivedOCMShareResponse} returns this
+*/
 proto.cs3.sharing.ocm.v1beta1.UpdateReceivedOCMShareResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.ocm.v1beta1.UpdateReceivedOCMShareResponse} returns this
  */
 proto.cs3.sharing.ocm.v1beta1.UpdateReceivedOCMShareResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -4160,17 +4326,21 @@ proto.cs3.sharing.ocm.v1beta1.GetReceivedOCMShareRequest.prototype.getOpaque = f
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.sharing.ocm.v1beta1.GetReceivedOCMShareRequest} returns this
+*/
 proto.cs3.sharing.ocm.v1beta1.GetReceivedOCMShareRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.ocm.v1beta1.GetReceivedOCMShareRequest} returns this
  */
 proto.cs3.sharing.ocm.v1beta1.GetReceivedOCMShareRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -4193,17 +4363,21 @@ proto.cs3.sharing.ocm.v1beta1.GetReceivedOCMShareRequest.prototype.getRef = func
 };
 
 
-/** @param {?proto.cs3.sharing.ocm.v1beta1.ShareReference|undefined} value */
+/**
+ * @param {?proto.cs3.sharing.ocm.v1beta1.ShareReference|undefined} value
+ * @return {!proto.cs3.sharing.ocm.v1beta1.GetReceivedOCMShareRequest} returns this
+*/
 proto.cs3.sharing.ocm.v1beta1.GetReceivedOCMShareRequest.prototype.setRef = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.ocm.v1beta1.GetReceivedOCMShareRequest} returns this
  */
 proto.cs3.sharing.ocm.v1beta1.GetReceivedOCMShareRequest.prototype.clearRef = function() {
-  this.setRef(undefined);
+  return this.setRef(undefined);
 };
 
 
@@ -4368,17 +4542,21 @@ proto.cs3.sharing.ocm.v1beta1.GetReceivedOCMShareResponse.prototype.getStatus = 
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.sharing.ocm.v1beta1.GetReceivedOCMShareResponse} returns this
+*/
 proto.cs3.sharing.ocm.v1beta1.GetReceivedOCMShareResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.ocm.v1beta1.GetReceivedOCMShareResponse} returns this
  */
 proto.cs3.sharing.ocm.v1beta1.GetReceivedOCMShareResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -4401,17 +4579,21 @@ proto.cs3.sharing.ocm.v1beta1.GetReceivedOCMShareResponse.prototype.getOpaque = 
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.sharing.ocm.v1beta1.GetReceivedOCMShareResponse} returns this
+*/
 proto.cs3.sharing.ocm.v1beta1.GetReceivedOCMShareResponse.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.ocm.v1beta1.GetReceivedOCMShareResponse} returns this
  */
 proto.cs3.sharing.ocm.v1beta1.GetReceivedOCMShareResponse.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -4434,17 +4616,21 @@ proto.cs3.sharing.ocm.v1beta1.GetReceivedOCMShareResponse.prototype.getShare = f
 };
 
 
-/** @param {?proto.cs3.sharing.ocm.v1beta1.ReceivedShare|undefined} value */
+/**
+ * @param {?proto.cs3.sharing.ocm.v1beta1.ReceivedShare|undefined} value
+ * @return {!proto.cs3.sharing.ocm.v1beta1.GetReceivedOCMShareResponse} returns this
+*/
 proto.cs3.sharing.ocm.v1beta1.GetReceivedOCMShareResponse.prototype.setShare = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.sharing.ocm.v1beta1.GetReceivedOCMShareResponse} returns this
  */
 proto.cs3.sharing.ocm.v1beta1.GetReceivedOCMShareResponse.prototype.clearShare = function() {
-  this.setShare(undefined);
+  return this.setShare(undefined);
 };
 
 

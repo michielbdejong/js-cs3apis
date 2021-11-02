@@ -2,11 +2,14 @@
 /**
  * @fileoverview
  * @enhanceable
+ * @suppress {missingRequire} reports error on implicit type usages.
  * @suppress {messageConventions} JS Compiler reports an error if a variable or
  *     field starts with 'MSG_' and isn't a translatable message.
  * @public
  */
 // GENERATED CODE -- DO NOT EDIT!
+/* eslint-disable */
+// @ts-nocheck
 
 var jspb = require('google-protobuf');
 var goog = jspb;
@@ -212,17 +215,21 @@ proto.cs3.auth.provider.v1beta1.AuthenticateRequest.prototype.getOpaque = functi
 };
 
 
-/** @param {?proto.cs3.types.v1beta1.Opaque|undefined} value */
+/**
+ * @param {?proto.cs3.types.v1beta1.Opaque|undefined} value
+ * @return {!proto.cs3.auth.provider.v1beta1.AuthenticateRequest} returns this
+*/
 proto.cs3.auth.provider.v1beta1.AuthenticateRequest.prototype.setOpaque = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.auth.provider.v1beta1.AuthenticateRequest} returns this
  */
 proto.cs3.auth.provider.v1beta1.AuthenticateRequest.prototype.clearOpaque = function() {
-  this.setOpaque(undefined);
+  return this.setOpaque(undefined);
 };
 
 
@@ -244,9 +251,12 @@ proto.cs3.auth.provider.v1beta1.AuthenticateRequest.prototype.getClientId = func
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.auth.provider.v1beta1.AuthenticateRequest} returns this
+ */
 proto.cs3.auth.provider.v1beta1.AuthenticateRequest.prototype.setClientId = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -259,9 +269,12 @@ proto.cs3.auth.provider.v1beta1.AuthenticateRequest.prototype.getClientSecret = 
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.cs3.auth.provider.v1beta1.AuthenticateRequest} returns this
+ */
 proto.cs3.auth.provider.v1beta1.AuthenticateRequest.prototype.setClientSecret = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -349,7 +362,7 @@ proto.cs3.auth.provider.v1beta1.AuthenticateResponse.deserializeBinaryFromReader
     case 3:
       var value = msg.getTokenScopeMap();
       reader.readMessage(value, function(message, reader) {
-        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readString, jspb.BinaryReader.prototype.readMessage, proto.cs3.auth.provider.v1beta1.Scope.deserializeBinaryFromReader, "");
+        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readString, jspb.BinaryReader.prototype.readMessage, proto.cs3.auth.provider.v1beta1.Scope.deserializeBinaryFromReader, "", new proto.cs3.auth.provider.v1beta1.Scope());
          });
       break;
     default:
@@ -414,17 +427,21 @@ proto.cs3.auth.provider.v1beta1.AuthenticateResponse.prototype.getStatus = funct
 };
 
 
-/** @param {?proto.cs3.rpc.v1beta1.Status|undefined} value */
+/**
+ * @param {?proto.cs3.rpc.v1beta1.Status|undefined} value
+ * @return {!proto.cs3.auth.provider.v1beta1.AuthenticateResponse} returns this
+*/
 proto.cs3.auth.provider.v1beta1.AuthenticateResponse.prototype.setStatus = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.auth.provider.v1beta1.AuthenticateResponse} returns this
  */
 proto.cs3.auth.provider.v1beta1.AuthenticateResponse.prototype.clearStatus = function() {
-  this.setStatus(undefined);
+  return this.setStatus(undefined);
 };
 
 
@@ -447,17 +464,21 @@ proto.cs3.auth.provider.v1beta1.AuthenticateResponse.prototype.getUser = functio
 };
 
 
-/** @param {?proto.cs3.identity.user.v1beta1.User|undefined} value */
+/**
+ * @param {?proto.cs3.identity.user.v1beta1.User|undefined} value
+ * @return {!proto.cs3.auth.provider.v1beta1.AuthenticateResponse} returns this
+*/
 proto.cs3.auth.provider.v1beta1.AuthenticateResponse.prototype.setUser = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.cs3.auth.provider.v1beta1.AuthenticateResponse} returns this
  */
 proto.cs3.auth.provider.v1beta1.AuthenticateResponse.prototype.clearUser = function() {
-  this.setUser(undefined);
+  return this.setUser(undefined);
 };
 
 
@@ -485,10 +506,11 @@ proto.cs3.auth.provider.v1beta1.AuthenticateResponse.prototype.getTokenScopeMap 
 
 /**
  * Clears values from the map. The map will be non-null.
+ * @return {!proto.cs3.auth.provider.v1beta1.AuthenticateResponse} returns this
  */
 proto.cs3.auth.provider.v1beta1.AuthenticateResponse.prototype.clearTokenScopeMap = function() {
   this.getTokenScopeMap().clear();
-};
+  return this;};
 
 
 goog.object.extend(exports, proto.cs3.auth.provider.v1beta1);
